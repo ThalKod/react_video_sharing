@@ -1,0 +1,457 @@
+//BOOTSTRAP
+.col-xs-1-5,
+.col-sm-1-5,
+.col-md-1-5,
+.col-lg-1-5 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.col-xs-1-5 {
+  width: 20%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .col-sm-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+//FORMS
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+textarea,
+label.checkbox {
+  border: solid 1px @c-from-b;
+  border-radius: 2px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+textarea {
+  width: 100%;
+  padding-left: 14px;
+  padding-right: 14px;
+  color: @c-light;
+  font-size: 16px;
+  font-weight: normal;
+  .transition(border 0.3s);
+  &:focus {
+    outline: none;
+    border-color: @c-from-b-active;
+  }
+  &[readonly]:focus {
+    outline: none;
+    border-color: @c-from-b;
+  }
+}
+
+textarea {
+  padding-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="search"] {
+  height: 40px;
+  padding-top: 4px;
+}
+
+label.checkbox {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-color: @c-white;
+  .arrow {
+    display: none;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    border: solid 1px @c-active;
+    border-radius: 2px;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 12px;
+      height: 8px;
+      left: 3px;
+      top: 3px;
+      border-top: solid 2px @c-active;
+      border-right: solid 2px @c-active;
+      .rotate(135deg);
+    }
+  }
+  input[type="checkbox"]:checked {
+    & + .arrow { display: block; }
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+}
+
+label.clipboard {
+  position: relative;
+  width: 100%;
+  .btn-copy {
+    position: absolute;
+    display: block;
+    width: 56px;
+    height: 28px;
+    padding-top: 5px;
+    top: 50%;
+    right: 6px;
+    margin-top: -14px;
+    border-radius: 2px;
+    text-align: center;
+    background-color: @c-divider;
+    color: @c-light;
+    font-weight: normal;
+    cursor: pointer;
+    .transition(0.3s);
+  }
+  &:hover .btn-copy {
+    background-color: @c-from-b-active;
+    color: white;
+  }
+}
+
+.login-window {
+  input {
+    height: 46px;
+    padding-top: 18px;
+  }
+  button {
+    padding-top: 22px;
+    padding-bottom: 16px;
+  }
+}
+
+input,
+select,
+textarea {
+  &:focus {
+    -webkit-box-shadow: none !important;
+    moz-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+}
+
+
+//TYPOGRAPHY
+label.checkbox-text {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding-left: 36px;
+  .checkbox {
+    position: absolute;
+    left: 0;
+  }
+  p {
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-weight: normal;
+  }
+}
+
+.cv-percent {
+  color: @c-green-v;
+  display: inline-block;
+  position: relative;
+  padding-left: 19px;
+  .cv-circle {
+    border: solid 2px @c-green-v;
+    border-radius: 7px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    position: absolute;
+    top: 1px;
+    left: 0px;
+  }
+}
+
+ul.list-inline {
+  li {
+    a {
+      &:not(.color-active) {
+        color: @c-light;
+        &:hover {
+          color: @c-default;
+        }
+      }
+      &.color-active {
+        color: @c-active;
+      }
+    }
+  }
+}
+
+//SOCIAL
+.social {
+  overflow: hidden;
+  a {
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    padding-top: 6px;
+    margin-bottom: 8px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    &:not(:last-child) {
+      margin-right: 14px;
+    }
+    &:hover {
+      transform: rotateY(360deg);
+      .transition(1s);
+    }
+    &.facebook { background-color: #3b5998; padding-top: 7px;}
+    &.twitter { background-color: #55acee; padding-top: 7px;}
+    &.google { background-color: #dd4b39; padding-top: 7px;}
+    &.pinterest { background-color: #cb2027; padding-top: 7px;}
+    &.btc { background-color: #ff6600;}
+    &.tumblr { background-color: #32506d; padding-top: 7px;}
+    &.vk { background-color: #45668e;}
+    &.reddit { background-color: white; color: #5f99cf; font-size: 30px; padding-top: 0;}
+    &.stumbleupon { background-color: #eb4924;}
+    &.odnoklassniki { background-color: #ed812b;}
+  }
+}
+
+//TAGS
+.tags-type1,
+.tags-type2 {
+  fond-size: 0;
+  display: table;
+  a {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: @c-light;
+    background-color: white;
+    border: solid 1px @c-from-b;
+    border-radius: 2px;
+    .transition(0.3s);
+    &:hover {
+      background-color: @c-divider;
+    }
+  }
+  a:not(:last-child) {
+    margin-right: 16px;
+  }
+}
+.tags-type1 {
+  a {
+    height: 34px;
+    padding: 8px 8px 8px;
+    font-size: 16px;
+  }
+}
+.tags-type2 {
+  a {
+    height: 46px;
+    padding: 12px 16px 12px;
+    font-size: 20px;
+    font-weight: 500;
+    i {
+      margin-right: 14px;
+    }
+  }
+}
+
+//BLOCKS
+.block-list {
+  & > div {
+    min-height: 48px;
+    padding: 14px 18px 10px;
+    border: solid 1px @c-from-b;
+    cursor: pointer;
+    overflow: hidden;
+    &:hover:not(.active) {
+      border-color: @c-from-b-active;
+    }
+    &:not(:last-child):not(.active) {
+      margin-bottom: -1px;
+    }
+    span {
+      display: block;
+      color: @c-light;
+    }
+    .name {
+      float: left;
+    }
+    .time {
+      float: right;
+    }
+    i {
+      display: block;
+      float: left;
+      margin-top: -2px;
+      color: @c-icon;
+      font-size: 20px;
+      &:first-child {
+        margin-left: -6px;
+        margin-right: 10px;
+      }
+      &.cvicon-cv-plus {
+        float: right;
+      }
+    }
+    &.active {
+      border-color: @c-active;
+      span {
+        font-weight: 500;
+        color: black;
+      }
+      i {
+        color: @c-active;
+      }
+    }
+  }
+}
+
+video {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sv-video {
+  width: 100%;
+  .sv-play {
+    cursor: pointer;
+  }
+  .mejs-container {
+    .mejs-inner {
+      .mejs-layers {
+        .mejs-poster {
+          background-size: cover;
+        }
+      }
+      .mejs-controls {
+        .mejs-time-rail {
+          .mejs-time-total {
+            .mejs-time-loaded {
+              background: @c-blue-play;
+              background: rgba(77,134,254,.8);
+              background: -webkit-gradient(linear,0 0,0 100%,from(rgba(44,124,145,.8)),to(rgba(77,134,254,.8)));
+              background: -webkit-linear-gradient(top,rgba(44,124,145,.8),rgba(77,134,254,.8));
+              background: -moz-linear-gradient(top,rgba(44,124,145,.8),rgba(77,134,254,.8));
+              background: -o-linear-gradient(top,rgba(44,124,145,.8),rgba(77,134,254,.8));
+              background: -ms-linear-gradient(top,rgba(44,124,145,.8),rgba(77,134,254,.8));
+              background: linear-gradient(rgba(44,124,145,.8),rgba(77,134,254,.8));
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.mejs-overlay-button {
+  background-image: none;
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: '\e816';
+    font-family: "circle-video";
+    width: 66px;
+    height: 66px;
+    background-color: #343434;
+    border-radius: 33px;
+    opacity: 0.85;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -33px;
+    margin-left: -33px;
+    color: @c-white;
+    padding-top: 18px;
+    font-size: @fs-md;
+    text-align: center;
+  }
+}
+
+
+
+//OTHER
+.login-window {
+  div.checkbox > label {
+    padding-left: 40px;
+  }
+  label.checkbox {
+    position: absolute;
+    margin-left: -40px;
+  }
+}
+
+
+.u-form {
+  div.checkbox {
+    label.checkbox {
+      position: absolute;
+      margin-left: -36px;
+      margin-top: -3px;
+      padding: 0 !important;
+    }
+    &.checked label{
+      color: @c-active !important;
+    }
+  }
+}
+
+
+.form-group {
+  input,
+  select {
+    height: 46px;
+  }
+}
+
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow:hidden;
+}
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
