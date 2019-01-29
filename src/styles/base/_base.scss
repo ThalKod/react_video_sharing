@@ -1,0 +1,119 @@
+body {
+  color: #2e2e2e;
+  font-family: 'Hind Guntur', sans-serif;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+.logo {
+  width: 44px;
+  height: 44px;
+}
+a {
+  color: #2e2e2e;
+}
+a:hover {
+  color: #ea2c5a;
+  text-decoration: none;
+}
+.form-control,
+.btn {
+  font-size: 16px;
+}
+.color-default {
+  color: #2e2e2e;
+}
+.color-active {
+  color: #ea2c5a;
+}
+.padding-def {
+  padding: 70px 0;
+}
+.delimiter {
+  margin: 23px 0;
+  height: 1px;
+  border-top: solid 1px #eceff0;
+}
+.bg-clean .btn-default {
+  border: none;
+  background: transparent;
+}
+.btn-group.open .dropdown-toggle {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn:active,
+.btn.active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn-default {
+  color: #637076;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn-default:hover,
+.btn-default:active,
+.btn-default.active,
+.btn-default:focus,
+.btn-default.focus,
+.open > .dropdown-toggle.btn-default {
+  color: #637076;
+  background-color: transparent;
+  border-color: transparent;
+}
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open > .dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default.focus {
+  color: #637076;
+  background-color: transparent;
+  border-color: transparent;
+}
+.pull-right > .dropdown-menu {
+  right: -1px;
+}
+ul.dropdown-menu {
+  border-color: #eceff0;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+ul.dropdown-menu li {
+  border-bottom: solid 1px #eceff0;
+}
+ul.dropdown-menu li a {
+  padding: 14px 16px;
+}
+ul.dropdown-menu li a i {
+  padding-right: 5px;
+  font-size: 19px;
+}
+ul.dropdown-menu li:last-child {
+  border: none;
+}
+ul.dropdown-menu li:nth-child(even) {
+  background-color: #fbfdfe;
+}
+.tooltip-inner {
+  background-color: #44474e;
+  font-family: 'Hind Guntur', sans-serif;
+  font-size: 14px;
+  padding: 5px 9px 1px 9px;
+}
+.tooltip.top .tooltip-arrow {
+  border-top-color: #44474e;
+}
+.ta-r {
+  text-align: right;
+}
+a.active {
+  color: #ea2c5a;
+}
+

@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'circle-video';
+  src: url('../fonts/circle-video.eot?73698447');
+  src: url('../fonts/circle-video.eot?73698447#iefix') format('embedded-opentype'),
+       url('../fonts/circle-video.woff2?73698447') format('woff2'),
+       url('../fonts/circle-video.woff?73698447') format('woff'),
+       url('../fonts/circle-video.ttf?73698447') format('truetype'),
+       url('../fonts/circle-video.svg?73698447#circle-video') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'circle-video';
+    src: url('../font/circle-video.svg?73698447#circle-video') format('svg');
+  }
+}
+*/
+
+.cv {
+    display: inline-block;
+    font: normal normal normal 14px/1 circle-video;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ [class^="cvicon-"]:before, [class*=" cvicon-"]:before {
+  font-family: "circle-video";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.cvicon-cv-upload-video:before { content: '\e800'; } /* '' */
+.cvicon-cv-relevant:before { content: '\e801'; } /* '' */
+.cvicon-cv-watch-later:before { content: '\e802'; } /* '' */
+.cvicon-cv-add-comment:before { content: '\e803'; } /* '' */
+.cvicon-cv-btn-off:before { content: '\e804'; } /* '' */
+.cvicon-cv-calender:before { content: '\e805'; } /* '' */
+.cvicon-cv-cancel:before { content: '\e806'; } /* '' */
+.cvicon-cv-liked:before { content: '\e807'; } /* '' */
+.cvicon-cv-menu:before { content: '\e808'; } /* '' */
+.cvicon-cv-btn-on:before { content: '\e809'; } /* '' */
+.cvicon-cv-comment:before { content: '\e80a'; } /* '' */
+.cvicon-cv-history:before { content: '\e80b'; } /* '' */
+.cvicon-cv-list-view:before { content: '\e80c'; } /* '' */
+.cvicon-cv-add-to-playlist:before { content: '\e80d'; } /* '' */
+.cvicon-cv-view-stats:before { content: '\e80e'; } /* '' */
+.cvicon-cv-video-file:before { content: '\e80f'; } /* '' */
+.cvicon-cv-next:before { content: '\e810'; } /* '' */
+.cvicon-cv-download:before { content: '\e811'; } /* '' */
+.cvicon-cv-grid-view:before { content: '\e812'; } /* '' */
+.cvicon-cv-about:before { content: '\e813'; } /* '' */
+.cvicon-cv-flag:before { content: '\e814'; } /* '' */
+.cvicon-cv-goto:before { content: '\e815'; } /* '' */
+.cvicon-cv-play:before { content: '\e816'; } /* '' */
+.cvicon-cv-star:before { content: '\e817'; } /* '' */
+.cvicon-cv-playlist:before { content: '\e818'; } /* '' */
+.cvicon-cv-shuffle:before { content: '\e819'; } /* '' */
+.cvicon-cv-play-circle:before { content: '\e81a'; } /* '' */
+.cvicon-cv-share:before { content: '\e81b'; } /* '' */
+.cvicon-cv-play-next:before { content: '\e81c'; } /* '' */
+.cvicon-cv-repeat:before { content: '\e81d'; } /* '' */
+.cvicon-cv-play-previous:before { content: '\e81e'; } /* '' */
+.cvicon-cv-purchased:before { content: '\e81f'; } /* '' */
+.cvicon-cv-plus:before { content: '\e820'; } /* '' */
+.cvicon-cv-previous:before { content: '\e821'; } /* '' */
