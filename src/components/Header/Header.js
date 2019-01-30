@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"
 
 import SearchBar from "./SearchBar";
 import Avatar from "./Avatar";
-import bulbLight from "../assets/images/icon_bulb_light.png";
-import logo from "../assets/images/logo.svg";
+import bulbLight from "../../assets/images/icon_bulb_light.png";
+import logo from "../../assets/images/logo.svg";
 
 export default class Header extends React.Component{
   render(){
