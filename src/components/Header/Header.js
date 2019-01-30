@@ -27,12 +27,11 @@ export default class Header extends React.Component{
                     <SearchBar />
                   </div>
                   <div className="visible-xs clearfix"></div>
-                  <div className="col-lg-3 col-sm-4  col-xs-8">
-                    <div style={{ marginLeft: 160,  marginTop: 15, fontSize: 20}} className="avatar pull-left">
-                      <Link style={{ color: "#a2aec1"}} to="/login">
-                        Login
-                      </Link>
+                  <div className="col-lg-2 col-sm-4  col-xs-8">
+                    <div className="loginsignup pull-right">
+                      <Link to="/signin">Login</Link> . <Link to="/signup">Signup</Link>
                     </div>
+                    <div className="clearfix"></div>
                   </div>
                 </div>
               </div>
