@@ -113,15 +113,6 @@ $( document ).ready(function() {
             if($('.btn-copy').length)
                 new Clipboard('.btn-copy');
 
-            $('.btn-color-toggle').on('click', function() {
-                if($('body').hasClass('light')) {
-                    $('body').removeClass('light').addClass('dark');
-                    $(this).find('img').attr('src', 'images/icon_bulb_dark.png');
-                } else { if($('body').hasClass('dark'))
-                    $('body').removeClass('dark').addClass('light');
-                    $(this).find('img').attr('src', 'images/icon_bulb_light.png');
-                }
-            });
 
             function align_categor_col() {
                 vCategor_Left.removeAttr('style');
