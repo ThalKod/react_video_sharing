@@ -1,6 +1,5 @@
 import React from "react";
 
-import Header from "../Header/Header";
 import RegistrationForm from "../Register/RegistrationForm";
 import bgLogin from "../../assets/images/login.jpg";
 
@@ -8,7 +7,6 @@ export default class RegistrationPage extends React.Component {
   render(){
     return (
         <div>
-          <Header/>
           <div className="container-fluid bg-image">
             <div className="row">
               <div className="login-wraper">

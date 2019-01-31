@@ -4,11 +4,14 @@ import configureStore from "./store/configureStore";
 
 import AppRouter from "./routers/AppRouter";
 
+
 export default class App extends React.Component {
     render() {
       return (
           <Provider store={configureStore()}>
-            <AppRouter/>
+            <div>
+              <AppRouter/>
+            </div>
           </Provider>
       )
     }

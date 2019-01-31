@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 
 export default class RegistrationForm extends React.Component{
   render(){
@@ -23,7 +24,7 @@ export default class RegistrationForm extends React.Component{
                     <input type="checkbox" name="#"/>
                       <span className="arrow"></span>
                   </label> <span>Remember me on this computer</span>
-                  <span className="text2">(not recomended on public or shared computers)</span>
+                  <span className="text2">(not recommended on public or shared computers)</span>
                 </label>
               </div>
               <div className="row">
@@ -31,7 +32,7 @@ export default class RegistrationForm extends React.Component{
                   <button type="submit" className="btn btn-cv1">Login</button>
                 </div>
                 <div className="col-lg-1 ortext">or</div>
-                <div className="col-lg-4 signuptext"><a href="signup.html">Sign Up</a></div>
+                <div className="col-lg-4 signuptext"><Link to="/signup">Sign Up</Link></div>
               </div>
               <div className="row">
                 <div className="col-lg-12 forgottext">
