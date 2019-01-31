@@ -1,0 +1,162 @@
+/*
+* Content Account
+*/
+
+.bg-image {
+  text-align: center;
+  img {
+    width: 100%;
+  }
+}
+
+.login-wraper{
+  position: relative;
+  .login-window {
+    position: absolute;
+    width: 570px;
+    top: 50%;
+    left: 50%;
+    margin-left: -2px;
+    margin-top: -288px;
+    .l-head {
+      background-color: @c-white;
+      padding: 40px;
+      border-bottom: solid 1px @c-divider;
+      font-weight: 500;
+      font-size: @fs-lg;
+      color: @c-caption;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+    .l-form {
+      text-align: left;
+      background-color: @c-bg;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      padding: 25px 70px 70px;
+      label {
+        font-weight: 500;
+      }
+    }
+  }
+  .checkbox {
+    font-weight: normal;
+    p {
+      margin-bottom: 4px;
+    }
+    .text2{
+      display: block;
+      font-size: @fs-sm;
+      color: @c-light;
+    }
+  }
+
+  .ortext {
+    padding-top: 25px;
+    color: @c-light;
+  }
+  .signuptext {
+    padding-top: 25px;
+    text-align: center;
+    color: @c-caption;
+    font-weight: 500;
+  }
+  .forgottext {
+    a {
+      color: @c-light;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    margin-top: 25px;
+  }
+
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -580px;
+  width: 550px;
+  .line {
+    height: 1px;
+    border-top: solid 1px @c-active;
+    padding-bottom: 50px;
+    width: 280px;
+  }
+  .b-text {
+    color: @c-white;
+    font-size: @fs-xl;
+    text-align: left;
+    line-height: @fs-xl;
+    .color-b1 {
+      color: #b7135d;
+    }
+    .color-b2 {
+      color: #be154e;
+    }
+    .color-b3 {
+      color: #d71d52;
+    }
+  }
+  .overtext {
+    margin-top: 30px;
+    color: @c-banner-t;
+    text-align: left;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 1365px) {
+  .banner-text {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    margin-left: 0;
+    width: auto;
+    .line {
+      display: none;
+    }
+    .b-text {
+      color: #000000;
+      font-size: 30px;
+      text-align: center;
+      line-height: 30px;
+      padding-top: 30px;
+    }
+    .overtext {
+      margin: 15px 0;
+      color: #a1a1a1;
+      text-align: center;
+    }
+  }
+
+  .login-wraper {
+    .login-window {
+      position: relative;
+      width: auto;
+      top: 0;
+      left: 0;
+      margin-left:0;
+      margin-top: 0;
+      .l-head{
+        padding: 20px 10px;
+      }
+      .l-form {
+
+        //text-align: left;
+        //background-color: #fbfdfe;
+        //border-bottom-left-radius: 3px;
+        //border-bottom-right-radius: 3px;
+        padding: 25px 20px;
+      }
+    }
+  }
+
+
+}
+/*
+* Content Account END
+*/
