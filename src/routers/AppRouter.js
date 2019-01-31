@@ -19,11 +19,11 @@ const AppRouter = ()=>(
           <Route exact path="/" component={HomePage}/>
           <Route
               path="/signin"
-              render={(props) => <RegistrationPage {...props} signin={true} />}
+              render={(props) => <RegistrationPage {...props} signup={false} />}
           />
           <Route
               path="/signup"
-              render={(props) => <RegistrationPage {...props} signin={false} />}
+              render={(props) => <RegistrationPage {...props} signup={true} />}
           />
           <Route component={NotFoundPage}/>
         </Switch>
