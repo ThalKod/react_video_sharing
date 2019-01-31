@@ -6,7 +6,7 @@ import {
 
 import HomePage from "../components/HomePage";
 import NotFoundPage from "../components/NotFoundPage";
-import RegistrationPage from "../components/RegistrationPage"
+import RegistrationPage from "../components/Register/RegistrationPage"
 
 const AppRouter = ()=>(
     <Router>
