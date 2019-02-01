@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { connect } from "react-redux";
+import { startSignupUser } from "../../actions/auth";
 
-export default class RegistrationForm extends React.Component{
+class RegistrationForm extends React.Component{
 
   constructor(props) {
     super(props);
@@ -10,8 +12,9 @@ export default class RegistrationForm extends React.Component{
       email: "",
       password: "",
       passwordVerification: "",
-      error: false,
-      ...props
+      errorPass: false,
+      errorEmail: false,
+      signup: this.props.history
     }
   }
 
@@ -19,19 +22,33 @@ export default class RegistrationForm extends React.Component{
     e.preventDefault();
 
     if(this.props.signup){
-      const { email, password, passwordVerification, signup } = this.state;
-      if(passwordVerification !== password) return this.setState({ error: true});
+      const { email, password, passwordVerification } = this.state;
+      if(passwordVerification !== password) return this.setState({ errorPass: true});
 
-      axios.post("/api/v0/signup", { email, password })
-          .then(res => console.log(res.data))
-          .catch(err => console.log(err));
-
-      console.log(this.state);
+      this.props.signup({ email, password }, (res) => {
+        if(!res.error) this.props.submit();
+      })
     }
+  };
+
+  checkEmail = () => {
+    axios.post("/api/v0/check/email", { email: this.state.email })
+        .then(res => {
+          if(!res.data.error){
+            if(!res.data.valid) return this.setState({ errorEmail: true });
+          }
+        })
+        .catch(err => console.log(err));
+  };
+
+  passwordMatch = () => {
+    const { password, passwordVerification } = this.state;
+    if(passwordVerification !== password) return this.setState({ errorPass: true});
   };
 
   render(){
     const { signup } = this.props;
+    const { errorEmail, errorPass, passwordVerification, password, email } = this.state;
     return (
         <div className="login-window">
           {signup ?
@@ -47,19 +64,44 @@ export default class RegistrationForm extends React.Component{
             <form>
               <div className="form-group">
                 <label  htmlFor="exampleInputEmail1">Email</label>
-                <input value={this.state.email} onChange={e => this.setState({ email: e.target.value })} type="email" className="form-control" id="exampleInputEmail1" placeholder="sample@gmail.com"/>
+                {errorEmail && <p style={{ color: "red"}}>Already registered with that email, please try signin !</p>}
+                <input
+                    value={email}
+                    onChange={e => this.setState({ email: e.target.value, errorEmail: false })}
+                    onBlur={this.checkEmail}
+                    type="email"
+                    className="form-control"
+                    id="exampleInputEmail1"
+                    placeholder="sample@gmail.com"
+                />
               </div>
               <div className="form-group">
                 <label htmlFor="exampleInputPassword1">Password</label>
-                <input value={this.state.password} onChange={e => this.setState({ password : e.target.value, error: false })} type="password" className="form-control" id="exampleInputPassword1" placeholder="**********"/>
+                <input
+                    value={password}
+                    onChange={e => this.setState({ password : e.target.value, errorPass: false })}
+                    type="password"
+                    className="form-control"
+                    id="exampleInputPassword1"
+                    placeholder="**********"
+                />
               </div>
               {signup && (
                   <div className="form-group">
                     <label htmlFor="exampleInputPassword2">Re-type Password</label>
-                    <input value={this.state.passwordVerification} onChange={e => this.setState({ passwordVerification : e.target.value })} type="password" className="form-control" id="exampleInputPassword2" placeholder="**********"/>
+                    <input
+                        value={passwordVerification}
+                        onChange={e => this.setState({ passwordVerification : e.target.value })}
+                        onBlur={this.passwordMatch}
+                        onFocus={() => this.setState({errorPass: false})}
+                        type="password"
+                        className="form-control"
+                        id="exampleInputPassword2"
+                        placeholder="**********"
+                    />
                   </div>
               )}
-              {this.state.error && <p style={{ color: "red" }}>Password don't match !</p>}
+              {errorPass && <p style={{ color: "red" }}>Password don't match !</p>}
               <div className="checkbox">
                 <label>
                   <label className="checkbox">
@@ -73,7 +115,7 @@ export default class RegistrationForm extends React.Component{
                 {signup ?
                     <div>
                       <div className="col-lg-7">
-                        <button onClick={this.handleSubmit} type="submit" className="btn btn-cv1">Sign Up</button>
+                        <button onClick={this.handleSubmit} disabled={ errorPass || errorEmail || !email || !password || !passwordVerification} type="submit" className="btn btn-cv1">Sign Up</button>
                       </div>
                       <div className="col-lg-1 ortext">or</div>
                       <div className="col-lg-4 signuptext">
@@ -105,3 +147,9 @@ export default class RegistrationForm extends React.Component{
     )
   }
 }
+
+const mapDispatchToProps = (dispatch) =>({
+  signup: (user, callback) => dispatch(startSignupUser(user, callback)),
+});
+
+export default connect(null , mapDispatchToProps)(RegistrationForm);

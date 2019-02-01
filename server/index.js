@@ -1,7 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
-const router = require("./routes/index.js");
+const index = require("./routes/index.js");
+const check = require("./routes/check");
 const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config();
@@ -19,7 +20,10 @@ mongoose.connect(process.env.DB_LOCAL_URL, { useNewUrlParser: true });
 app.use(morgan("combined"));
 app.use(bodyParser.json({ type: "*/*"}));
 app.use(cors());
-router(app);
+
+// Api Routes
+index(app);
+check(app);
 
 app.listen(port, () => {
     console.log("Listenning on " + port);

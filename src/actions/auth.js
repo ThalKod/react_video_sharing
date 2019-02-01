@@ -1,4 +1,4 @@
-import { AUTH_USER } from "actionTypes";
+import { AUTH_USER } from "./actionTypes";
 import axios from "axios";
 
 
@@ -9,7 +9,7 @@ export const startSignupUser = (user, callback) => (dispatch) =>{
         dispatch({ type: AUTH_USER, payload: res.data.token});
         callback({error: false})
       })
-      .then(err => callback({error: true, msg: err}));
+      .catch(err => callback({error: true, msg: err}));
 };
 
 
