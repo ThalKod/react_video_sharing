@@ -2,6 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom"
 
 export default class RegistrationForm extends React.Component{
+
+  state = {
+    email: "",
+    password: "",
+    passwordVerification: "",
+    error: false
+  };
+
   render(){
     const { signup } = this.props;
     return (
@@ -19,16 +27,16 @@ export default class RegistrationForm extends React.Component{
             <form>
               <div className="form-group">
                 <label for="exampleInputEmail1">Email</label>
-                <input type="email" className="form-control" id="exampleInputEmail1" placeholder="sample@gmail.com"/>
+                <input value={this.state.email} onChange={e => this.setState({ email: e.target.value })} type="email" className="form-control" id="exampleInputEmail1" placeholder="sample@gmail.com"/>
               </div>
               <div className="form-group">
                 <label htmlFor="exampleInputPassword1">Password</label>
-                <input type="password" className="form-control" id="exampleInputPassword1" placeholder="**********"/>
+                <input value={this.state.password} onChange={e => this.setState({ password : e.target.value })} type="password" className="form-control" id="exampleInputPassword1" placeholder="**********"/>
               </div>
               {signup && (
                   <div className="form-group">
                     <label htmlFor="exampleInputPassword2">Re-type Password</label>
-                    <input type="password" className="form-control" id="exampleInputPassword2" placeholder="**********"/>
+                    <input value={this.state.passwordVerification} onChange={e => this.setState({ passwordVerification : e.target.value })} type="password" className="form-control" id="exampleInputPassword2" placeholder="**********"/>
                   </div>
               )}
               <div className="checkbox">
