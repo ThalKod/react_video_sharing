@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { connect } from "react-redux";
-import { startSignupUser } from "../../actions/auth";
+import { startSignupUser, startSigninUser } from "../../actions/auth";
 
 class RegistrationForm extends React.Component{
 
@@ -16,15 +16,18 @@ class RegistrationForm extends React.Component{
 
   handleSubmit = (e) => {
     e.preventDefault();
+    const { email, password, passwordVerification } = this.state;
 
     if(this.props.signup){
-      const { email, password, passwordVerification } = this.state;
       if(passwordVerification !== password) return this.setState({ errorPass: true});
 
       this.props.signupUser({ email, password }, (res) => {
         if(!res.error) this.props.submit();
       })
     }
+    this.props.signinUser({ email, password }, (res) => {
+      if(!res.error) this.props.submit();
+    });
   };
 
   checkEmail = () => {
@@ -43,8 +46,6 @@ class RegistrationForm extends React.Component{
   };
 
   render(){
-
-    console.log(this.props);
     const { signup } = this.props;
     const { errorEmail, errorPass, passwordVerification, password, email } = this.state;
     return (
@@ -62,7 +63,7 @@ class RegistrationForm extends React.Component{
             <form>
               <div className="form-group">
                 <label  htmlFor="exampleInputEmail1">Email</label>
-                {errorEmail && <p style={{ color: "red"}}>Already registered with that email, please try signin !</p>}
+                { signup && errorEmail && <p style={{ color: "red"}}>Already registered with that email, please try signin !</p>}
                 <input
                     value={email}
                     onChange={e => this.setState({ email: e.target.value, errorEmail: false })}
@@ -113,7 +114,12 @@ class RegistrationForm extends React.Component{
                 {signup ?
                     <div>
                       <div className="col-lg-7">
-                        <button onClick={this.handleSubmit} disabled={ errorPass || errorEmail || !email || !password || !passwordVerification} type="submit" className="btn btn-cv1">Sign Up</button>
+                        <button
+                            onClick={this.handleSubmit}
+                            disabled={ errorPass || errorEmail || !email || !password || !passwordVerification}
+                            type="submit"
+                            className="btn btn-cv1"
+                        >Sign Up</button>
                       </div>
                       <div className="col-lg-1 ortext">or</div>
                       <div className="col-lg-4 signuptext">
@@ -122,7 +128,10 @@ class RegistrationForm extends React.Component{
                     </div>   :
                     <div>
                       <div className="col-lg-7">
-                        <button type="submit" className="btn btn-cv1">Login</button>
+                        <button
+                            onClick={this.handleSubmit}
+                            disabled={ !email || !password }
+                            className="btn btn-cv1">Login</button>
                       </div>
                       <div className="col-lg-1 ortext">or</div>
                       <div className="col-lg-4 signuptext">
@@ -148,6 +157,7 @@ class RegistrationForm extends React.Component{
 
 const mapDispatchToProps = (dispatch) =>({
   signupUser: (user, callback) => dispatch(startSignupUser(user, callback)),
+  signinUser: (user, callback) => dispatch(startSigninUser(user, callback)),
 });
 
 export default connect(null , mapDispatchToProps)(RegistrationForm);
