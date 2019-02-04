@@ -26,7 +26,7 @@ const localLogin = new LocalStrategy(localOptions, (email, password, done) => {
             if(err) { return done(err) }
             if(!isMatch){ return done(null, false) }
 
-            return done(null, rUser);
+            return done(null, { id: rUser._id});
         });
     }).catch((err) => {
         return done(err);
@@ -35,11 +35,15 @@ const localLogin = new LocalStrategy(localOptions, (email, password, done) => {
 
 // create JWT Strategy
 const jwtLogin = new JwtStrategy(jwtOptions, (payload, done) => {
-    User.findById(payload.sub).then((rUser) => {
+    console.log(payload);
+    if(!payload.grantFullAccess)
+        done(null, false);
+
+    User.findById(payload.user._id).then((rUser) => {
         if(!rUser){
             return done(null, false);
         }
-        done(null,rUser);
+        done(null,{ id: rUser._id});
     }).catch((err) => {
          done(err, false)
     });
