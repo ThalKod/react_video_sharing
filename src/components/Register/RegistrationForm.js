@@ -6,17 +6,13 @@ import { startSignupUser } from "../../actions/auth";
 
 class RegistrationForm extends React.Component{
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      email: "",
-      password: "",
-      passwordVerification: "",
-      errorPass: false,
-      errorEmail: false,
-      signup: this.props.history
-    }
-  }
+  state = {
+    email: "",
+    password: "",
+    passwordVerification: "",
+    errorPass: false,
+    errorEmail: false,
+  };
 
   handleSubmit = (e) => {
     e.preventDefault();
@@ -25,7 +21,7 @@ class RegistrationForm extends React.Component{
       const { email, password, passwordVerification } = this.state;
       if(passwordVerification !== password) return this.setState({ errorPass: true});
 
-      this.props.signup({ email, password }, (res) => {
+      this.props.signupUser({ email, password }, (res) => {
         if(!res.error) this.props.submit();
       })
     }
@@ -47,6 +43,8 @@ class RegistrationForm extends React.Component{
   };
 
   render(){
+
+    console.log(this.props);
     const { signup } = this.props;
     const { errorEmail, errorPass, passwordVerification, password, email } = this.state;
     return (
@@ -149,7 +147,7 @@ class RegistrationForm extends React.Component{
 }
 
 const mapDispatchToProps = (dispatch) =>({
-  signup: (user, callback) => dispatch(startSignupUser(user, callback)),
+  signupUser: (user, callback) => dispatch(startSignupUser(user, callback)),
 });
 
 export default connect(null , mapDispatchToProps)(RegistrationForm);

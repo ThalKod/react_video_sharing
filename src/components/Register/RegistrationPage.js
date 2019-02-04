@@ -4,8 +4,8 @@ import RegistrationForm from "../Register/RegistrationForm";
 import bgLogin from "../../assets/images/login.jpg";
 
 export default class RegistrationPage extends React.Component {
-
   render(){
+    console.log(this.props.signup);
     return (
         <div>
           <div className="container-fluid bg-image">
