@@ -1,6 +1,8 @@
 import { AUTH_USER } from "../actions/actionTypes";
 
-export default (state={ userToken: "" }, action) => {
+const defaulState = { userToken: localStorage.getItem("token") };
+
+export default (state= defaulState, action) => {
   switch(action.type){
 
     case AUTH_USER:

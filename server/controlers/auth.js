@@ -4,13 +4,13 @@ const _ = require("lodash");
 
 
 const createJwtToken = (user, type) => {
+  console.log(_.pick(user, ["id"]));
+
     if(type === "refreshToken")
-        return  jwt.sign({user: _.pick(user.toJSON(), ["_id"]), grantFullAccess: false}, process.env.JWT_REFRESH_TOKEN_SECRET, { expiresIn: '7d' });
+        return  jwt.sign({user: _.pick(user, ["id"])}, process.env.JWT_REFRESH_TOKEN_SECRET, { expiresIn: '7d' });
 
-    return  jwt.sign({ user: user.toJSON(), grantFullAccess: true}, process.env.JWT_SECRET, { expiresIn: '5m' });
+    return  jwt.sign({ user: user.toJSON()}, process.env.JWT_SECRET, { expiresIn: '5m' });
 };
-
-
 
 module.exports.signUp = (req, res, next) => {
     const { email, password } = req.body;
@@ -48,7 +48,8 @@ module.exports.getToken = (req, res) => {
     jwt.verify(token, process.env.JWT_REFRESH_TOKEN_SECRET, (err, decoded) => {
       if(err)
         return res.status(401).json({"error": true, "message": 'Unauthorized access.' });
-       User.findById(decoded.user._id)
+      console.log(decoded);
+       User.findById(decoded.user.id)
            .then(rUser => {
              res.json({ token: "jwt " + createJwtToken(rUser, "accessToken")});
            })

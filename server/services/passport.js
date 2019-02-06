@@ -35,10 +35,9 @@ const localLogin = new LocalStrategy(localOptions, (email, password, done) => {
 
 // create JWT Strategy
 const jwtLogin = new JwtStrategy(jwtOptions, (payload, done) => {
-    console.log(payload);
+    /*console.log(payload);
     if(!payload.grantFullAccess)
-        done(null, false);
-
+        done(null, false);*/
     User.findById(payload.user._id).then((rUser) => {
         if(!rUser){
             return done(null, false);
