@@ -8,9 +8,10 @@ module.exports = (app) => {
     // Index Routes
     app.post("/api/v0/signin", requireSignin, signIn);
     app.post("/api/v0/signup", signUp);
-    app.post("/api/v0/token", getToken);
+    app.get("/api/v0/token", getToken);
 
-    app.get("/", requireAuth, (req, res) => {
+    app.get("/api/v0", requireAuth, (req, res) => {
+        console.log("success");
         res.send(req.user);
     })
 };
