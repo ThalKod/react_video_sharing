@@ -7,7 +7,13 @@ const userSchema = new mongoose.Schema({
         unique: true,
         lowercase: true
     },
+    username: {
+        type: String,
+        unique: true,
+        lowercase: true
+    },
     password: String,
+
 });
 
 userSchema.pre("save", function(next){

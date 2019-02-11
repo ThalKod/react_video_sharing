@@ -3,38 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="63415b28-8174-4354-9629-d6b6324e3c8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/.idea/server.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/controlers/auth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/controlers/check.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/models/User.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/routes/check.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/routes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/services/passport.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/actions/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/actions/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/actions/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/actions/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/Header/Avatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Header/Avatar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/Header/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Header/SearchBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/NotFoundPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/NotFoundPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/Register/RegistrationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Register/RegistrationForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/Register/RegistrationPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Register/RegistrationPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/reducers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/reducers/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/reducers/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/reducers/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/routers/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/routers/AppRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/serviceWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -93,18 +62,20 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="js" value="65" />
           <entry key="json" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="12" />
+          <entry key="JavaScript" value="65" />
         </counts>
       </usages-collector>
     </session>
@@ -114,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
+            <state relative-caret-position="575">
               <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
             </state>
           </provider>
@@ -129,7 +100,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="23">
@@ -138,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/User.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state relative-caret-position="143">
+              <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -183,9 +154,9 @@
         <option value="$PROJECT_DIR$/services/passport.js" />
         <option value="$PROJECT_DIR$/controlers/auth.js" />
         <option value="$PROJECT_DIR$/.eslintrc.js" />
-        <option value="$PROJECT_DIR$/models/User.js" />
         <option value="$PROJECT_DIR$/.eslintrc" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/models/User.js" />
       </list>
     </option>
   </component>
@@ -205,7 +176,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="823" />
@@ -222,6 +193,11 @@
             <path>
               <item name="api" type="b2602c69:ProjectViewProjectNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -267,20 +243,22 @@
       <workItem from="1549902357361" duration="631000" />
       <workItem from="1549903106854" duration="6000" />
       <workItem from="1549903176326" duration="60000" />
+      <workItem from="1549909874034" duration="86000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27431000" />
+    <option name="totallyTimeSpent" value="27517000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="823" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.24947146" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.46433565" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.46314496" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -331,7 +309,7 @@
     <entry file="file://$PROJECT_DIR$/.eslintrc" />
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
+        <state relative-caret-position="575">
           <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
         </state>
       </provider>
@@ -340,13 +318,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/User.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -368,6 +339,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/User.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
         </state>
       </provider>
     </entry>
