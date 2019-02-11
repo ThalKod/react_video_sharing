@@ -2,17 +2,16 @@ import React from 'react';
 import { Link } from "react-router-dom"
 
 import SearchBar from "./SearchBar";
-import Avatar from "./Avatar";
+// import Avatar from "./Avatar";
 import bulbLight from "../../assets/images/icon_bulb_light.png";
 import logo from "../../assets/images/logo.svg";
 
-export default class Header extends React.Component{
-  render(){
+export default function Header(){
     return (
         <div className="container-fluid">
           <div className="row">
             <div className="btn-color-toggle">
-              <img src={bulbLight}/>
+              <img src={bulbLight} alt="light bulb"/>
             </div>
             <div className="navbar-container">
               <div className="container">
@@ -22,16 +21,16 @@ export default class Header extends React.Component{
                       <img src={logo} alt="Circle Logo" className="logo"/>
                     </Link>
                   </div>
-                  <div className="visible-xs visible-sm clearfix"></div>
+                  <div className="visible-xs visible-sm clearfix" />
                   <div className="col-lg-6 col-sm-6 col-xs-12">
                     <SearchBar />
                   </div>
-                  <div className="visible-xs clearfix"></div>
+                  <div className="visible-xs clearfix" />
                   <div className="col-lg-2 col-sm-4  col-xs-8">
                     <div className="loginsignup pull-right">
                       <Link to="/signin">Login</Link> . <Link to="/signup">Signup</Link>
                     </div>
-                    <div className="clearfix"></div>
+                    <div className="clearfix" />
                   </div>
                 </div>
               </div>
@@ -39,5 +38,4 @@ export default class Header extends React.Component{
           </div>
         </div>
     )
-  }
 }

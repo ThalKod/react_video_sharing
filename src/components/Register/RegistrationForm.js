@@ -16,26 +16,34 @@ class RegistrationForm extends React.Component{
 
   handleSubmit = (e) => {
     e.preventDefault();
+
+    const { signup, signupUser, submit, signinUser } = this.props;
     const { email, password, passwordVerification } = this.state;
 
-    if(this.props.signup){
+    if(signup){
       if(passwordVerification !== password) return this.setState({ errorPass: true});
 
-      this.props.signupUser({ email, password }, (res) => {
-        if(!res.error) this.props.submit();
+      return signupUser({ email, password }, (res) => {
+        if(!res.error) return submit();
+        return res.error;
       })
     }
-    this.props.signinUser({ email, password }, (res) => {
-      if(!res.error) this.props.submit();
+
+    return signinUser({ email, password }, (res) => {
+      if(!res.error) return submit();
+      return res.error;
     });
   };
 
   checkEmail = () => {
-    axios.post("/api/v0/check/email", { email: this.state.email })
+    const { email } = this.state;
+
+    axios.post("/api/v0/check/email", { email })
         .then(res => {
           if(!res.data.error){
             if(!res.data.valid) return this.setState({ errorEmail: true });
           }
+          return res.data.error;
         })
         .catch(err => console.log(err));
   };
@@ -43,6 +51,7 @@ class RegistrationForm extends React.Component{
   passwordMatch = () => {
     const { password, passwordVerification } = this.state;
     if(passwordVerification !== password) return this.setState({ errorPass: true});
+    return false;
   };
 
   render(){
@@ -105,7 +114,7 @@ class RegistrationForm extends React.Component{
                 <label>
                   <label className="checkbox">
                     <input type="checkbox" name="#"/>
-                      <span className="arrow"></span>
+                      <span className="arrow"/>
                   </label> <span>Remember me on this computer</span>
                   <span className="text2">(not recommended on public or shared computers)</span>
                 </label>
@@ -129,6 +138,7 @@ class RegistrationForm extends React.Component{
                     <div>
                       <div className="col-lg-7">
                         <button
+                            type="submit"
                             onClick={this.handleSubmit}
                             disabled={ !email || !password }
                             className="btn btn-cv1">Login</button>
@@ -143,8 +153,8 @@ class RegistrationForm extends React.Component{
               <div className="row">
                 <div className="col-lg-12 forgottext">
                   { signup ?
-                      <a href="#">By clicking "Sign Up" I agree to circle's Terms of Service.</a> :
-                      <a href="#">Forgot Username or Password?</a>
+                      <a href="/">By clicking "Sign Up" I agree to circle's Terms of Service.</a> :
+                      <a href="/">Forgot Username or Password?</a>
                   }
                 </div>
               </div>

@@ -1,10 +1,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
-const index = require("./routes/index.js");
-const check = require("./routes/check");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const index = require("./routes/index.js");
+const check = require("./routes/check");
 require("dotenv").config();
 
 // Mkae sure passport is initialised and don't have "unknow authentication"
@@ -26,5 +26,5 @@ index(app);
 check(app);
 
 app.listen(port, () => {
-    console.log("Listenning on " + port);
+    console.log(`Listenning on ${port}` );
 });

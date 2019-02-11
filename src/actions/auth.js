@@ -1,5 +1,5 @@
-import { AUTH_USER } from "./actionTypes";
 import axios from "axios";
+import { AUTH_USER } from "./actionTypes";
 
 
 

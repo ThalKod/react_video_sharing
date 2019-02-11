@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios";
+// import axios from "axios";
 import { connect } from "react-redux";
 
 import { startGetUserinfo } from "../actions/index";
@@ -8,7 +8,8 @@ import { startGetUserinfo } from "../actions/index";
 class HomePage extends React.Component{
 
   componentDidMount = () => {
-    this.props.getUser(this.props.token);
+    const { getUser, token } = this.props;
+    getUser(token);
   };
 
   render(){

@@ -18,20 +18,19 @@ userSchema.pre("save", function(next){
 
         bcrypt.hash(user.password, salt, null, (err, hash) => {
             if(err) { return next(err);}
-
             user.password = hash;
-            next();
+            return next();
         });
     })
 });
 
 userSchema.methods.comparePassword = function(candidatePassword, callback){
+  const user = this;
     bcrypt.compare(candidatePassword, this.password, (err, isMatch) => {
         if(err){ return callback(err)}
 
-        callback(null, isMatch);
+        return callback(null, isMatch);
     });
 };
-
 
 module.exports = mongoose.model("User", userSchema);

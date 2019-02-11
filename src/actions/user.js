@@ -1,5 +1,6 @@
-import { GET_USER } from "./actionTypes";
 import axios from "axios";
+
+import { GET_USER } from "./actionTypes";
 
 
 export const startGetUserinfo = (token) => (dispatch) =>{
@@ -9,4 +10,8 @@ export const startGetUserinfo = (token) => (dispatch) =>{
       })
       .catch(err => console.log(err));
 };
+
+export const ne = () => {
+
+}
 

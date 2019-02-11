@@ -1,8 +1,9 @@
 const passport = require("passport");
-const User = require("../models/User");
 const JwtStrategy = require("passport-jwt").Strategy;
-const ExtractJwt = require("passport-jwt").ExtractJwt;
+const {ExtractJwt} = require("passport-jwt");
 const LocalStrategy = require("passport-local").Strategy;
+const User = require("../models/User");
+
 
 
 // Setup options for Strategies
@@ -17,32 +18,36 @@ const localOptions = {
 
 // create Local Strategy
 const localLogin = new LocalStrategy(localOptions, (email, password, done) => {
+    console.log("here");
     User.findOne({ email }).then((rUser) => {
+      console.log(rUser);
         if(!rUser){
+          console.log("not here");
             return done(null, false);
         }
         // Compare password
+      console.log("compare");
         rUser.comparePassword(password, (err, isMatch) => {
+          console.log(err);
             if(err) { return done(err) }
+            console.log(isMatch);
             if(!isMatch){ return done(null, false) }
 
-            return done(null, { id: rUser._id});
+            console.log("done comparing");
+            done(null, { id: rUser._id});
         });
     }).catch((err) => {
-        return done(err);
+        done(err);
     });
 });
 
 // create JWT Strategy
 const jwtLogin = new JwtStrategy(jwtOptions, (payload, done) => {
-    /*console.log(payload);
-    if(!payload.grantFullAccess)
-        done(null, false);*/
     User.findById(payload.user._id).then((rUser) => {
         if(!rUser){
             return done(null, false);
         }
-        done(null,{ id: rUser._id});
+        return done(null,{ id: rUser._id});
     }).catch((err) => {
          done(err, false)
     });

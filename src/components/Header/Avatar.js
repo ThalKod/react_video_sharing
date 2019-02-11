@@ -1,6 +1,6 @@
 import React from "react";
 
-export default ({ username }) => {
+export default () => {
   const style = {
     avatar:{
       backgroundColor: "#a2aec1",

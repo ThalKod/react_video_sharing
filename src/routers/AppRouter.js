@@ -23,7 +23,7 @@ const AppRouter = ()=>(
           />
           <Route
               path="/signup"
-              render={(props) => <RegistrationPage {...props} signup={true} />}
+              render={(props) => <RegistrationPage {...props} signup />}
           />
           <Route component={NotFoundPage}/>
         </Switch>

@@ -5,8 +5,7 @@ import configureStore from "./store/configureStore";
 import AppRouter from "./routers/AppRouter";
 
 
-export default class App extends React.Component {
-    render() {
+export default function App(){
       return (
           <Provider store={configureStore()}>
             <div>
@@ -14,5 +13,4 @@ export default class App extends React.Component {
             </div>
           </Provider>
       )
-    }
 };

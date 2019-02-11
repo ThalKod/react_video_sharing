@@ -6,8 +6,8 @@ module.exports.checkEmail = (req, res) => {
   User.findOne({email: req.body.email})
       .then(rUser => {
         if(!rUser) return res.send({error: false, valid: true});
-        res.send({error: false, valid: false});
+        return res.send({error: false, valid: false});
       })
-      .catch(err => res.send({ error: true }));
+      .catch(err => res.send({ error: true, msg: err }));
 };
 

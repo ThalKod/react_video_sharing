@@ -1,5 +1,5 @@
-const { signUp, signIn, getToken } = require("../controlers/auth.js");
 const passport = require("passport");
+const { signUp, signIn, getToken } = require("../controlers/auth.js");
 
 const requireAuth = passport.authenticate("jwt", { session: false });
 const requireSignin = passport.authenticate("local", { session: false });

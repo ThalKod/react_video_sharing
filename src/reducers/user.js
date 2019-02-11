@@ -1,8 +1,8 @@
 import { GET_USER } from "../actions/actionTypes";
 
-const defaulState = { user: {id: ""}};
+const defaultState = { user: {id: ""}};
 
-export default (state= defaulState, action) => {
+export default (state= defaultState, action) => {
   switch(action.type){
 
     case GET_USER:

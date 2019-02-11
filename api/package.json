@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "circle_api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -28,5 +28,7 @@
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
     "rand-token": "^0.4.0"
+  },
+  "devDependencies": {
   }
 }
