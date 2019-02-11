@@ -15,10 +15,10 @@ const createJwtToken = (user, type) => {
 
 
 module.exports.signUp = (req, res, next) => {
-    const { email, password } = req.body;
+    const { email, password, username } = req.body;
 
-    if(!email || !password){
-        return res.status(422).send({ error: "You must provide an email and password" });
+    if(!email || !password || !username){
+        return res.status(422).send({ error: "You must provide an email, username and password" });
     }
 
     User.findOne({ email }, (err, rUser) => {
@@ -29,7 +29,7 @@ module.exports.signUp = (req, res, next) => {
             return res.status(422).send({ error: "Already registered with this email" });
         }
 
-        const user = new User({ email, password});
+        const user = new User({ email, password, username});
         user.save((err, rUser) => {
           if(err) return next(err);
           const jwtToken = createJwtToken(rUser, "refreshToken");
