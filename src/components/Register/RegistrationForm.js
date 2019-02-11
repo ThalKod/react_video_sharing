@@ -20,12 +20,12 @@ class RegistrationForm extends React.Component{
     e.preventDefault();
 
     const { signup, signupUser, submit, signinUser } = this.props;
-    const { email, password, passwordVerification } = this.state;
+    const { email, password, username, passwordVerification } = this.state;
 
     if(signup){
       if(passwordVerification !== password) return this.setState({ errorPass: true});
 
-      return signupUser({ email, password }, (res) => {
+      return signupUser({ email, password, username }, (res) => {
         if(!res.error) return submit();
         return res.error;
       })
@@ -100,17 +100,19 @@ class RegistrationForm extends React.Component{
                 />
               </div>
               { signup && errorUName && <p style={{ color: "red"}}>Already registered with that username, please try signin !</p>}
-              <div className="form-group">
-                <label>Username</label>
-                <input
-                    value={username}
-                    onChange={e => this.setState({ username : e.target.value, errorUName: false })}
-                    onBlur={this.checkUserName}
-                    type="text"
-                    className="form-control"
-                    placeholder="username"
-                />
-              </div>
+              {signup &&
+                <div className="form-group">
+                  <label>Username</label>
+                  <input
+                      value={username}
+                      onChange={e => this.setState({ username : e.target.value, errorUName: false })}
+                      onBlur={this.checkUserName}
+                      type="text"
+                      className="form-control"
+                      placeholder="username"
+                  />
+                </div>
+              }
               <div className="form-group">
                 <label htmlFor="exampleInputPassword1">Password</label>
                 <input
