@@ -9,9 +9,11 @@ class RegistrationForm extends React.Component{
   state = {
     email: "",
     password: "",
+    username: "",
     passwordVerification: "",
     errorPass: false,
     errorEmail: false,
+    errorUName: false,
   };
 
   handleSubmit = (e) => {
@@ -35,6 +37,7 @@ class RegistrationForm extends React.Component{
     });
   };
 
+  // checking if email is already registered
   checkEmail = () => {
     const { email } = this.state;
 
@@ -42,6 +45,19 @@ class RegistrationForm extends React.Component{
         .then(res => {
           if(!res.data.error){
             if(!res.data.valid) return this.setState({ errorEmail: true });
+          }
+          return res.data.error;
+        })
+        .catch(err => console.log(err));
+  };
+
+  // checking if username is already registered
+  checkUserName = () => {
+    const { username } = this.state;
+    axios.post("/api/v0/check/username", { username })
+        .then(res => {
+          if(!res.data.error){
+            if(!res.data.valid) return this.setState({ errorUName: true });
           }
           return res.data.error;
         })
@@ -56,7 +72,7 @@ class RegistrationForm extends React.Component{
 
   render(){
     const { signup } = this.props;
-    const { errorEmail, errorPass, passwordVerification, password, email } = this.state;
+    const { errorEmail, errorPass, errorUName, passwordVerification, password, email, username } = this.state;
     return (
         <div className="login-window">
           {signup ?
@@ -83,6 +99,18 @@ class RegistrationForm extends React.Component{
                     placeholder="sample@gmail.com"
                 />
               </div>
+              { signup && errorUName && <p style={{ color: "red"}}>Already registered with that username, please try signin !</p>}
+              <div className="form-group">
+                <label>Username</label>
+                <input
+                    value={username}
+                    onChange={e => this.setState({ username : e.target.value, errorUName: false })}
+                    onBlur={this.checkUserName}
+                    type="text"
+                    className="form-control"
+                    placeholder="username"
+                />
+              </div>
               <div className="form-group">
                 <label htmlFor="exampleInputPassword1">Password</label>
                 <input
@@ -95,19 +123,19 @@ class RegistrationForm extends React.Component{
                 />
               </div>
               {signup && (
-                  <div className="form-group">
-                    <label htmlFor="exampleInputPassword2">Re-type Password</label>
-                    <input
-                        value={passwordVerification}
-                        onChange={e => this.setState({ passwordVerification : e.target.value })}
-                        onBlur={this.passwordMatch}
-                        onFocus={() => this.setState({errorPass: false})}
-                        type="password"
-                        className="form-control"
-                        id="exampleInputPassword2"
-                        placeholder="**********"
-                    />
-                  </div>
+                    <div className="form-group">
+                      <label htmlFor="exampleInputPassword2">Re-type Password</label>
+                      <input
+                          value={passwordVerification}
+                          onChange={e => this.setState({ passwordVerification : e.target.value })}
+                          onBlur={this.passwordMatch}
+                          onFocus={() => this.setState({errorPass: false})}
+                          type="password"
+                          className="form-control"
+                          id="exampleInputPassword2"
+                          placeholder="**********"
+                      />
+                    </div>
               )}
               {errorPass && <p style={{ color: "red" }}>Password don't match !</p>}
               <div className="checkbox">
@@ -125,7 +153,7 @@ class RegistrationForm extends React.Component{
                       <div className="col-lg-7">
                         <button
                             onClick={this.handleSubmit}
-                            disabled={ errorPass || errorEmail || !email || !password || !passwordVerification}
+                            disabled={ errorPass || errorEmail || errorUName || !username || !email || !password || !passwordVerification}
                             type="submit"
                             className="btn btn-cv1"
                         >Sign Up</button>
