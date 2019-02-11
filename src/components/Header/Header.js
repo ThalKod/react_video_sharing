@@ -1,12 +1,25 @@
 import React from 'react';
 import { Link } from "react-router-dom"
+import { connect } from "react-redux";
 
 import SearchBar from "./SearchBar";
-// import Avatar from "./Avatar";
+import Avatar from "./Avatar";
 import bulbLight from "../../assets/images/icon_bulb_light.png";
 import logo from "../../assets/images/logo.svg";
 
-export default function Header(){
+class Header extends React.Component{
+
+  state = {
+    loggedIn: false
+  };
+
+  componentDidMount = () => {
+    const { token } = this.props;
+    if(token) this.setState({ loggedIn: true});
+  };
+
+  render() {
+    const { loggedIn } = this.state;
     return (
         <div className="container-fluid">
           <div className="row">
@@ -21,16 +34,20 @@ export default function Header(){
                       <img src={logo} alt="Circle Logo" className="logo"/>
                     </Link>
                   </div>
-                  <div className="visible-xs visible-sm clearfix" />
+                  <div className="visible-xs visible-sm clearfix"/>
                   <div className="col-lg-6 col-sm-6 col-xs-12">
-                    <SearchBar />
+                    <SearchBar/>
                   </div>
-                  <div className="visible-xs clearfix" />
+                  <div className="visible-xs clearfix"/>
                   <div className="col-lg-2 col-sm-4  col-xs-8">
-                    <div className="loginsignup pull-right">
-                      <Link to="/signin">Login</Link> . <Link to="/signup">Signup</Link>
+                    <div className="pull-right">
+                      {loggedIn ? <Avatar/> :
+                          <div className="loginsignup">
+                            <Link to="/signin">Login</Link> . <Link to="/signup">Signup</Link>
+                          </div>
+                      }
                     </div>
-                    <div className="clearfix" />
+                    <div className="clearfix"/>
                   </div>
                 </div>
               </div>
@@ -38,4 +55,11 @@ export default function Header(){
           </div>
         </div>
     )
+  }
 }
+
+const mapStateToProps = (state) => ({
+  token: state.auth.userToken,
+});
+
+export default connect(mapStateToProps)(Header);

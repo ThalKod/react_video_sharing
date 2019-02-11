@@ -8,7 +8,7 @@ export default () => {
       height: 50,
       borderRadius: 50/2,
       textAlign: "center",
-
+      marginTop: 10,
     },
     text: {
       color: "white",
