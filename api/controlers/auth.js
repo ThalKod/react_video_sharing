@@ -33,21 +33,23 @@ module.exports.signUp = (req, res, next) => {
         user.save((err, rUser) => {
           if(err) return next(err);
           const jwtToken = createJwtToken(rUser, "refreshToken");
-          return res.json({ token: `jwt ${jwtToken}`});
+          return res.json({ user: { email, username }, token: `jwt ${jwtToken}`});
         });
     });
 };
 
 module.exports.signIn = (req, res) => {
-  console.log("hey");
-    // User has already had their email and passwrod auth'd, we just need to need to send back jwt
   const jwtToken = createJwtToken(req.user, "refreshToken");
-  return res.json({ token: `jwt ${jwtToken}`});
+
+  User.findById(req.user.id)
+      .then(({ email, username }) => {
+        return res.json({ user: {email, username}, token: `jwt ${jwtToken}`});
+      })
+
 };
 
 module.exports.getToken = (req, res) => {
   const token = req.headers.authorization.substring(4);
-  console.log(token);
   if(token){
     jwt.verify(token, process.env.JWT_REFRESH_TOKEN_SECRET, (err, decoded) => {
       console.log(err);

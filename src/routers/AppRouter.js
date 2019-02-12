@@ -11,7 +11,7 @@ import RegistrationPage from "../components/Register/RegistrationPage";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer";
 
-const AppRouter = ()=>(
+const AppRouter = () => (
     <Router>
       <div>
         <Header/>

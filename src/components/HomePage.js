@@ -2,8 +2,6 @@ import React from "react";
 // import axios from "axios";
 import { connect } from "react-redux";
 
-import { startGetUserinfo } from "../actions/index";
-
 
 class HomePage extends React.Component{
 
@@ -25,10 +23,10 @@ const mapStateToProps = (state) =>({
   token: state.auth.userToken
 });
 
-const mapDispatchToProps = (dispatch) => {
+/* const mapDispatchToProps = (dispatch) => {
   return {
     getUser: (token) => dispatch(startGetUserinfo(token))
   }
-};
+}; */
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
+export default connect(mapStateToProps)(HomePage);

@@ -6,6 +6,7 @@ import SearchBar from "./SearchBar";
 import Avatar from "./Avatar";
 import bulbLight from "../../assets/images/icon_bulb_light.png";
 import logo from "../../assets/images/logo.svg";
+import { startGetMyInfo } from "../../actions/index";
 
 class Header extends React.Component{
 
@@ -14,9 +15,12 @@ class Header extends React.Component{
   };
 
   componentDidMount = () => {
-    const { token } = this.props;
+    const { token, getMyInfo } = this.props;
     if(token) {
-      this.setState({ loggedIn: true});
+      getMyInfo((res) => {
+        if(!res.error) return this.setState({ loggedIn: true});
+        return console.error(res.msg);
+      });
     }
   };
 
@@ -31,6 +35,7 @@ class Header extends React.Component{
 
   render() {
     const { loggedIn } = this.state;
+    const {username} = this.props;
     return (
         <div className="container-fluid">
           <div className="row">
@@ -52,7 +57,7 @@ class Header extends React.Component{
                   <div className="visible-xs clearfix"/>
                   <div className="col-lg-2 col-sm-4  col-xs-8">
                     <div className="pull-right">
-                      {loggedIn ? <Avatar/> :
+                      {loggedIn ? <Avatar username={username} /> :
                           <div className="loginsignup">
                             <Link to="/signin">Login</Link> . <Link to="/signup">Signup</Link>
                           </div>
@@ -71,6 +76,11 @@ class Header extends React.Component{
 
 const mapStateToProps = (state) => ({
   token: state.auth.userToken,
+  username: state.user.username,
 });
 
-export default connect(mapStateToProps)(Header);
+const mapDispatchToProps = (dispatch) => ({
+  getMyInfo: (callback) => dispatch(startGetMyInfo(callback)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

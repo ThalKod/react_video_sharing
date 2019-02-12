@@ -1,6 +1,9 @@
 import React from "react";
 
-export default () => {
+import getInitial from "../../utils/username";
+
+export default ({ username }) => {
+
   const style = {
     avatar:{
       backgroundColor: "#a2aec1",
@@ -19,7 +22,7 @@ export default () => {
   return (
         <div style={style.avatar} className="avatar pull-left">
           <div style={style.text}>
-            TM
+            {getInitial(username)}
           </div>
         </div>
   )

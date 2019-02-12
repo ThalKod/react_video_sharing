@@ -1,7 +1,7 @@
-export const isAuth = () => {
-  return window.localStorage.getItem("token");
+import store from "../store/configureStore";
+
+const getRefreshToken = () => {
+  return store().getState().auth.userToken;
 };
 
-export const getRefreshToken = () => {
-  return isAuth() ? window.localStorage.getItem("token") : "";
-};
+export default getRefreshToken;

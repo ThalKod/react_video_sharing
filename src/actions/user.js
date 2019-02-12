@@ -1,14 +1,16 @@
 import axios from "axios";
 
-import { GET_USER } from "./actionTypes";
+import { GET_MY_INFO } from "./actionTypes";
+import getRefreshToken from "../utils/index";
 
-
-export const startGetUserinfo = (token) => (dispatch) =>{
-  axios.get("/api/v0/", { headers: { Authorization: `jwt ${token}` } })
+export const startGetMyInfo = (callback) => (dispatch) =>{
+  axios.get("/api/v0/user/me", { headers: { Authorization: `${getRefreshToken()}` } })
       .then(res => {
-        dispatch({ type: GET_USER, payload: res.data.id });
+        console.log("res===",res);
+        dispatch({ type: GET_MY_INFO, payload: res.data });
+        callback({error: false});
       })
-      .catch(err => console.log(err));
+      .catch(err => callback({error: true, mes: err}));
 };
 
 export const ne = () => {
