@@ -12,6 +12,7 @@ export default ({ username }) => {
       borderRadius: 50/2,
       textAlign: "center",
       marginTop: 10,
+      marginRight:  15
     },
     text: {
       color: "white",

@@ -1,7 +1,5 @@
 import axios from "axios";
-import { AUTH_USER } from "./actionTypes";
-
-
+import { AUTH_USER, SIGN_OUT_USER } from "./actionTypes";
 
 
 export const startSignupUser = (user, callback) => (dispatch) =>{
@@ -22,5 +20,12 @@ export const startSigninUser = (user, callback) => (dispatch) =>{
         callback({error: false})
       })
       .catch(err => callback({error: true, msg: err}));
+};
+
+export const signOut = () => {
+  localStorage.removeItem("token");
+  return {
+    type: SIGN_OUT_USER,
+  }
 };
 

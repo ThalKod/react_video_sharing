@@ -19,7 +19,6 @@ axios.interceptors.response.use((response) => {
           console.log("should redirect", err);
         })
   }
-
   return Promise.reject(error);
 });
 

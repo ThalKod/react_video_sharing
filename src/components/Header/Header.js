@@ -6,7 +6,7 @@ import SearchBar from "./SearchBar";
 import Avatar from "./Avatar";
 import bulbLight from "../../assets/images/icon_bulb_light.png";
 import logo from "../../assets/images/logo.svg";
-import { startGetMyInfo } from "../../actions/index";
+import { signOut, startGetMyInfo } from "../../actions/index";
 
 class Header extends React.Component{
 
@@ -35,7 +35,7 @@ class Header extends React.Component{
 
   render() {
     const { loggedIn } = this.state;
-    const {username} = this.props;
+    const {username, signOutUser } = this.props;
     return (
         <div className="container-fluid">
           <div className="row">
@@ -57,7 +57,10 @@ class Header extends React.Component{
                   <div className="visible-xs clearfix"/>
                   <div className="col-lg-2 col-sm-4  col-xs-8">
                     <div className="pull-right">
-                      {loggedIn ? <Avatar username={username} /> :
+                      {loggedIn ? <div className="flex">
+                            <Avatar username={username} />
+                            <button type="submit" onClick={signOutUser}>Sign Out</button>
+                      </div> :
                           <div className="loginsignup">
                             <Link to="/signin">Login</Link> . <Link to="/signup">Signup</Link>
                           </div>
@@ -81,6 +84,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   getMyInfo: (callback) => dispatch(startGetMyInfo(callback)),
+  signOutUser: () => dispatch(signOut())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);

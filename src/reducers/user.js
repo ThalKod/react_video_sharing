@@ -1,4 +1,4 @@
-import { GET_MY_INFO, AUTH_USER } from "../actions/actionTypes";
+import { GET_MY_INFO, AUTH_USER, SIGN_OUT_USER } from "../actions/actionTypes";
 
 const defaultState = { username: "", email: "" };
 
@@ -10,6 +10,9 @@ export default (state= defaultState, action) => {
 
     case AUTH_USER:
       return {...state, ...action.payload.user };
+
+    case SIGN_OUT_USER:
+      return {...state, username: "", email: "" };
 
     default:
       return state;
