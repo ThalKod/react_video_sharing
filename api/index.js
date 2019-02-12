@@ -4,7 +4,6 @@ const morgan = require("morgan");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const index = require("./routes/index.js");
-const check = require("./routes/check");
 require("dotenv").config();
 
 // Mkae sure passport is initialised and don't have "unknow authentication"
@@ -23,7 +22,6 @@ app.use(cors());
 
 // Api Routes
 index(app);
-check(app);
 
 app.listen(port, () => {
     console.log(`Listenning on ${port}` );

@@ -8,8 +8,8 @@ import { startGetUserinfo } from "../actions/index";
 class HomePage extends React.Component{
 
   componentDidMount = () => {
-    const { getUser, token } = this.props;
-    getUser(token);
+    // const { getUser, token } = this.props;
+    // getUser(token);
   };
 
   render(){

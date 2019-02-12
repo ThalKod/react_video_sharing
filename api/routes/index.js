@@ -1,8 +1,8 @@
-const passport = require("passport");
+const { requireAuth, requireSignin } = require("../middlewares/auth");
+const userRoutes = require("./user");
+const checkRoutes = require("./check");
 const { signUp, signIn, getToken } = require("../controlers/auth.js");
 
-const requireAuth = passport.authenticate("jwt", { session: false });
-const requireSignin = passport.authenticate("local", { session: false });
 
 module.exports = (app) => {
     // Index Routes
@@ -10,8 +10,6 @@ module.exports = (app) => {
     app.post("/api/v0/signup", signUp);
     app.get("/api/v0/token", getToken);
 
-    app.get("/api/v0", requireAuth, (req, res) => {
-        console.log("success");
-        res.send(req.user);
-    })
+    userRoutes(app);
+    checkRoutes(app);
 };

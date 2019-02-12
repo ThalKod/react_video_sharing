@@ -1,4 +1,3 @@
-const User = require("../models/User");
 const { checkEmail, checkUsername } = require("../controlers/check");
 
 module.exports = (app) => {

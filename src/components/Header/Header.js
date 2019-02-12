@@ -17,7 +17,6 @@ class Header extends React.Component{
     const { token } = this.props;
     if(token) {
       this.setState({ loggedIn: true});
-      
     }
   };
 
