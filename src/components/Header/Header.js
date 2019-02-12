@@ -15,7 +15,10 @@ class Header extends React.Component{
 
   componentDidMount = () => {
     const { token } = this.props;
-    if(token) this.setState({ loggedIn: true});
+    if(token) {
+      this.setState({ loggedIn: true});
+      
+    }
   };
 
   componentDidUpdate = (prevProps) => {
