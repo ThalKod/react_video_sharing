@@ -1,7 +1,10 @@
-const { checkEmail, checkUsername } = require("../controlers/check");
+const express = require("express");
 
-module.exports = (app) => {
+const { checkEmail, checkUsername } = require("../controlers/check");
+const router = express.Router();
+
   // Check routes
-  app.post("/api/v0/check/email", checkEmail);
-  app.post("/api/v0/check/username", checkUsername);
-};
+  router.post("/check/email", checkEmail);
+  router.post("/check/username", checkUsername);
+
+  module.exports = router;

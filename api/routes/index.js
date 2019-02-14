@@ -1,15 +1,14 @@
+const express = require("express");
 const { requireAuth, requireSignin } = require("../middlewares/auth");
 const userRoutes = require("./user");
 const checkRoutes = require("./check");
 const { signUp, signIn, getToken } = require("../controlers/auth.js");
+const router = express.Router();
 
 
-module.exports = (app) => {
     // Index Routes
-    app.post("/api/v0/signin", requireSignin, signIn);
-    app.post("/api/v0/signup", signUp);
-    app.get("/api/v0/token", getToken);
+router.post("/signin", requireSignin, signIn);
+router.post("/signup", signUp);
+router.get("/token", getToken);
 
-    userRoutes(app);
-    checkRoutes(app);
-};
+module.exports = router;
