@@ -8,7 +8,7 @@ import bulbLight from "../../assets/images/icon_bulb_light.png";
 import logo from "../../assets/images/logo.svg";
 import { signOut, startGetMyInfo } from "../../actions/index";
 
-class Header extends React.Component{
+export class Header extends React.Component{
 
   state = {
     loggedIn: false

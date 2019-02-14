@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render the Avatar and signout button if login 1`] = `
+<div
+  className="container-fluid"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="btn-color-toggle"
+    >
+      <img
+        alt="light bulb"
+        src="icon_bulb_light.png"
+      />
+    </div>
+    <div
+      className="navbar-container"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-lg-3 col-sm-2 col-xs-2"
+          >
+            <Link
+              className="navbar-brand"
+              replace={false}
+              to="/"
+            >
+              <img
+                alt="Circle Logo"
+                className="logo"
+                src="logo.svg"
+              />
+            </Link>
+          </div>
+          <div
+            className="visible-xs visible-sm clearfix"
+          />
+          <div
+            className="col-lg-6 col-sm-6 col-xs-12"
+          >
+            <SearchBar />
+          </div>
+          <div
+            className="visible-xs clearfix"
+          />
+          <div
+            className="col-lg-2 col-sm-4  col-xs-8"
+          >
+            <div
+              className="pull-right"
+            >
+              <div
+                className="flex"
+              >
+                <_default
+                  username="John Doe"
+                />
+                <button
+                  type="submit"
+                >
+                  Sign Out
+                </button>
+              </div>
+            </div>
+            <div
+              className="clearfix"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Header should render the signin and logout link when not login 1`] = `
+<div
+  className="container-fluid"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="btn-color-toggle"
+    >
+      <img
+        alt="light bulb"
+        src="icon_bulb_light.png"
+      />
+    </div>
+    <div
+      className="navbar-container"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-lg-3 col-sm-2 col-xs-2"
+          >
+            <Link
+              className="navbar-brand"
+              replace={false}
+              to="/"
+            >
+              <img
+                alt="Circle Logo"
+                className="logo"
+                src="logo.svg"
+              />
+            </Link>
+          </div>
+          <div
+            className="visible-xs visible-sm clearfix"
+          />
+          <div
+            className="col-lg-6 col-sm-6 col-xs-12"
+          >
+            <SearchBar />
+          </div>
+          <div
+            className="visible-xs clearfix"
+          />
+          <div
+            className="col-lg-2 col-sm-4  col-xs-8"
+          >
+            <div
+              className="pull-right"
+            >
+              <div
+                className="loginsignup"
+              >
+                <Link
+                  replace={false}
+                  to="/signin"
+                >
+                  Login
+                </Link>
+                 . 
+                <Link
+                  replace={false}
+                  to="/signup"
+                >
+                  Signup
+                </Link>
+              </div>
+            </div>
+            <div
+              className="clearfix"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
