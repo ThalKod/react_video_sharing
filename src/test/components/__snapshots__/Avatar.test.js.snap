@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar should render the Avatar component correctly 1`] = `
+<div
+  className="avatar pull-left"
+  style={
+    Object {
+      "backgroundColor": "#a2aec1",
+      "borderRadius": 25,
+      "height": 50,
+      "marginRight": 15,
+      "marginTop": 10,
+      "textAlign": "center",
+      "width": 50,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "white",
+        "fontSize": 15,
+        "marginTop": 5,
+      }
+    }
+  >
+    JD
+  </div>
+</div>
+`;
