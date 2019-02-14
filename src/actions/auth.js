@@ -3,7 +3,7 @@ import { AUTH_USER, SIGN_OUT_USER } from "./actionTypes";
 
 
 export const startSignupUser = (user, callback) => (dispatch) =>{
-  axios.post("/api/v0/signup", user)
+  return axios.post("/api/v0/signup", user)
       .then(res => {
         localStorage.setItem("token", res.data.token);
         dispatch({ type: AUTH_USER, payload: res.data });
@@ -13,7 +13,7 @@ export const startSignupUser = (user, callback) => (dispatch) =>{
 };
 
 export const startSigninUser = (user, callback) => (dispatch) =>{
-  axios.post("/api/v0/signin", user)
+  return axios.post("/api/v0/signin", user)
       .then(res => {
         localStorage.setItem("token", res.data.token);
         dispatch({ type: AUTH_USER, payload: res.data });
