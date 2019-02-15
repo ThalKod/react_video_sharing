@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegistrationPage component should render the NotFoundPage correctly 1`] = `
+<div>
+  <div
+    className="container-fluid bg-image"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="login-wraper"
+      >
+        <img
+          alt="bg-login"
+          src="login.jpg"
+        />
+        <div
+          className="banner-text"
+        >
+          <div
+            className="line"
+          />
+          <div
+            className="b-text"
+          >
+            Watch 
+            <span
+              className="color-active"
+            >
+              and
+              <br />
+               upload
+            </span>
+             
+            <span
+              className="color-b1"
+            >
+              v
+            </span>
+            <span
+              className="color-b2"
+            >
+              i
+            </span>
+            <span
+              className="color-b3"
+            >
+              de
+            </span>
+            <span
+              className="color-active"
+            >
+              os
+            </span>
+             for free.
+          </div>
+        </div>
+        <Connect(RegistrationForm)
+          submit={[Function]}
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
