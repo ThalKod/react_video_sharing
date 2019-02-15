@@ -4,7 +4,7 @@ import axios from "axios";
 import { connect } from "react-redux";
 import { startSignupUser, startSigninUser } from "../../actions/auth";
 
-class RegistrationForm extends React.Component{
+export class RegistrationForm extends React.Component{
 
   state = {
     email: "",
