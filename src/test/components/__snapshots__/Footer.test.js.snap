@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component should render the footer correctly 1`] = `
+<div
+  className="container-fluid"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="container padding-def"
+    >
+      <div
+        className="col-lg-1  col-sm-2 col-xs-12 footer-logo"
+      >
+        <Link
+          className="navbar-brand"
+          replace={false}
+          to="/"
+        >
+          <img
+            alt="Project name"
+            className="logo"
+            src="logo.svg"
+          />
+        </Link>
+      </div>
+      <div
+        className="col-lg-7  col-sm-7 col-xs-12"
+      >
+        <p>
+          <i>
+            Inspired from Circle's 
+            <a
+              href="https://www.azyrusthemes.com"
+            >
+              Azyrus Themes
+            </a>
+          </i>
+        </p>
+        <div
+          className="delimiter"
+        />
+        <div
+          className="f-copy"
+        >
+          <p>
+            <i>
+              Ⓒ Copyrights 2019 - By 
+              <a
+                href="https://www.thal.tech"
+              >
+                Thal Marcelin
+              </a>
+            </i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

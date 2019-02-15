@@ -3,7 +3,7 @@ import React from "react";
 
 export default function NotFoundPage(){
   return (
-      <div>Hello World !</div>
+      <div>Error 404 !</div>
   )
 };
 
