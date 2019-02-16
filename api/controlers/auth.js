@@ -49,6 +49,9 @@ module.exports.signIn = (req, res) => {
 };
 
 module.exports.getToken = (req, res) => {
+
+  if(!req.headers.authorization) return res.status(403).send({"error": true, "message": 'No token provided.'});
+
   const token = req.headers.authorization.substring(4);
   if(token){
     jwt.verify(token, process.env.JWT_REFRESH_TOKEN_SECRET, (err, decoded) => {
