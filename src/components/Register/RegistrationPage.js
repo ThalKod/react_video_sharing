@@ -4,7 +4,6 @@ import RegistrationForm from "./RegistrationForm";
 import bgLogin from "../../assets/images/login.jpg";
 
 export default function RegistrationPage({ signup, history}){
-    console.log(signup);
     return (
         <div>
           <div className="container-fluid bg-image">

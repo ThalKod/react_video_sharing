@@ -15,6 +15,7 @@
     "no-underscore-dangle": 0,
     "no-console": "off",
     "import/imports-first": ["error", "absolute-first"],
+    "import/no-named-as-default": 0,
     "import/newline-after-import": "error"
   },
   "globals": {
@@ -25,6 +26,9 @@
     "FileReader": true,
     "Blob": true,
     "navigator": true
+  },
+  "env": {
+    "jest": true
   },
   "parser": "babel-eslint"
 }

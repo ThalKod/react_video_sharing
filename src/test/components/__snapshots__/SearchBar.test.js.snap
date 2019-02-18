@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar should render the SearchBar correctly 1`] = `
+<div
+  className="topsearch"
+>
+  <div
+    className="input-group"
+  >
+    <span
+      className="input-group-addon"
+      id="sizing-addon2"
+    >
+      <i
+        className="fa fa-search"
+      />
+    </span>
+    <input
+      aria-describedby="sizing-addon2"
+      className="form-control"
+      placeholder="Search"
+      type="text"
+    />
+  </div>
+</div>
+`;

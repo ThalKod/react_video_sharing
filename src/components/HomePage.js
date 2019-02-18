@@ -3,7 +3,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 
-class HomePage extends React.Component{
+export class HomePage extends React.Component{
 
   componentDidMount = () => {
     // const { getUser, token } = this.props;
