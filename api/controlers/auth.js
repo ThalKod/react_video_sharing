@@ -3,7 +3,7 @@ const _ = require("lodash");
 
 const User = require("../models/User");
 
-
+// Create an access or refresh token based on type
 const createJwtToken = (user, type) => {
   console.log(_.pick(user, ["id"]));
 
@@ -48,6 +48,7 @@ module.exports.signIn = (req, res) => {
 
 };
 
+// Get an access token with a valid refresh token
 module.exports.getToken = (req, res) => {
 
   if(!req.headers.authorization) return res.status(403).send({"error": true, "message": 'No token provided.'});
@@ -58,7 +59,6 @@ module.exports.getToken = (req, res) => {
       console.log(err);
       if(err)
         return res.status(401).json({"error": true, "message": 'Unauthorized access.' });
-      console.log(decoded);
        User.findById(decoded.user.id)
            .then(rUser => {
              const jwtToken = createJwtToken(rUser, "accessToken");

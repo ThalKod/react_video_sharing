@@ -18,7 +18,6 @@ const localOptions = {
 
 // create Local Strategy
 const localLogin = new LocalStrategy(localOptions, (email, password, done) => {
-    console.log("here");
     User.findOne({ email }).then((rUser) => {
       console.log(rUser);
         if(!rUser){
@@ -26,14 +25,12 @@ const localLogin = new LocalStrategy(localOptions, (email, password, done) => {
             return done(null, false);
         }
         // Compare password
-      console.log("compare");
         rUser.comparePassword(password, (err, isMatch) => {
           console.log(err);
             if(err) { return done(err) }
             console.log(isMatch);
             if(!isMatch){ return done(null, false) }
 
-            console.log("done comparing");
             done(null, { id: rUser._id});
         });
     }).catch((err) => {
@@ -43,7 +40,6 @@ const localLogin = new LocalStrategy(localOptions, (email, password, done) => {
 
 // create JWT Strategy
 const jwtLogin = new JwtStrategy(jwtOptions, (payload, done) => {
-  console.log("here !");
     User.findById(payload.user._id).then((rUser) => {
         if(!rUser){
             return done(null, false);

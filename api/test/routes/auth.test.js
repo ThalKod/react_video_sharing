@@ -5,13 +5,17 @@ const User = require("../../models/User");
 let app;
 const user = { email: "test@mail.com", username: "test", password: "password" };
 
-beforeEach(async () => {
+
+beforeAll(async () => {
   app = require("../../index");
-  await User.remove({});
 });
 
-afterEach(async () => {
+afterAll(async () => {
   await app.close()
+});
+
+beforeEach(async () => {
+  await User.remove({});
 });
 
 describe("POST /api/v0/signup", () => {
@@ -19,7 +23,6 @@ describe("POST /api/v0/signup", () => {
     const res = await request(app).post("/api/v0/signup").send(user);
     expect(res.statusCode).toBe(200);
     const rUser = await User.find({email: user.email });
-
     expect(rUser[0].email).toBe(user.email);
     expect(res.body.token).toContain("jwt");
   });
@@ -27,7 +30,7 @@ describe("POST /api/v0/signup", () => {
 
 describe("POST /api/v0/signin", () =>{
   it("should signin a user", async () => {
-    const rUser = await User.create(user);
+    await User.create(user);
     const res = await request(app).post("/api/v0/signin").send(user);
     expect(res.statusCode).toBe(200);
     expect(res.body.token).toContain("jwt");

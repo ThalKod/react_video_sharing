@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test jest --watch",
+    "test": "NODE_ENV=test jest --watch --runInBand",
     "dev": "NODE_ENV=dev && nodemon index.js"
   },
   "author": "Thal Marcelin(https://github.com/ThalKod)",
