@@ -1,4 +1,4 @@
-import getInitial from "../../utils/username";
+import {getInitial} from "../../utils";
 
 describe("Utils", () => {
   it("should return the correct initial", () => {

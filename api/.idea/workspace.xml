@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63415b28-8174-4354-9629-d6b6324e3c8a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/../.eslintrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/actions/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/actions/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/actions/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/actions/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/Header/Avatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Header/Avatar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/Register/RegistrationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Register/RegistrationForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/utils/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/utils/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/utils/username.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/utils/username.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Register/RegistrationPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Register/RegistrationPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/UploadPicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/UploadPicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/RegistrationForm.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/RegistrationForm.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/RegistrationPage.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/RegistrationPage.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/__snapshots__/RegistrationPage.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/__snapshots__/RegistrationPage.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/utils/username.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/utils/username.test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -68,7 +66,7 @@
     <session id="-311914715">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.1" value="7" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
@@ -248,9 +246,10 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="823" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -360,12 +359,12 @@
       <workItem from="1550172681327" duration="456000" />
       <workItem from="1550344988287" duration="8868000" />
       <workItem from="1550503816770" duration="5199000" />
-      <workItem from="1550586898035" duration="621000" />
+      <workItem from="1550586898035" duration="624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54536000" />
+    <option name="totallyTimeSpent" value="54539000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -377,14 +376,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="823" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.26904178" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.3062937" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />

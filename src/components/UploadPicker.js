@@ -1,22 +1,13 @@
 import React from "react";
-import { connect } from "react-redux";
 
-class UploadPicker extends React.Component{
+import requireLoggedIn from "./HOC/requireLoggedIn";
 
-  componentDidMount = () => {
-    const { token, history } = this.props;
-    if(!token) history.push("/signin");
-  };
-
-  render(){
+const UploadPicker = () => {
     return(
         <div>Hello Picker</div>
     )
-  }
-}
+};
 
-const mapStateToProps = (state) => ({
-  token: state.auth.userToken
-});
+export default requireLoggedIn(UploadPicker);
 
-export default connect(mapStateToProps)(UploadPicker);
+
