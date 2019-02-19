@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63415b28-8174-4354-9629-d6b6324e3c8a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/../.eslintrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/routers/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/routers/AppRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/actions/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/actions/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/actions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/actions/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/actions/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Header/Avatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Header/Avatar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Register/RegistrationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Register/RegistrationForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utils/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/utils/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utils/username.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/utils/username.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -242,9 +249,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="823" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -354,12 +360,12 @@
       <workItem from="1550172681327" duration="456000" />
       <workItem from="1550344988287" duration="8868000" />
       <workItem from="1550503816770" duration="5199000" />
-      <workItem from="1550586898035" duration="523000" />
+      <workItem from="1550586898035" duration="621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54438000" />
+    <option name="totallyTimeSpent" value="54536000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
