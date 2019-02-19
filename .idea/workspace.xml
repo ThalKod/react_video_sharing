@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f6ba216-dee2-489f-9342-55d1a1c7e4e4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controlers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controlers/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/services/passport.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/services/passport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/test/routes/auth.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/test/routes/auth.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/AppRouter.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,7 +20,7 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="19" />
-          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.14" value="1" />
@@ -32,7 +29,7 @@
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="4" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -41,7 +38,7 @@
           <entry key="eslintrc" value="8" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="2" />
-          <entry key="js" value="201" />
+          <entry key="js" value="204" />
           <entry key="json" value="10" />
           <entry key="less" value="15" />
           <entry key="prettierrc" value="1" />
@@ -54,7 +51,7 @@
           <entry key="CSS" value="3" />
           <entry key="HTML" value="2" />
           <entry key="JSON" value="19" />
-          <entry key="JavaScript" value="201" />
+          <entry key="JavaScript" value="204" />
           <entry key="Jest Snapshot" value="4" />
           <entry key="Less" value="15" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -63,14 +60,14 @@
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="15" />
+          <entry key="ESLintLanguageService" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="eslintrc" value="89" />
           <entry key="html" value="45" />
-          <entry key="js" value="19695" />
+          <entry key="js" value="20288" />
           <entry key="json" value="67" />
           <entry key="less" value="234" />
           <entry key="scss" value="4" />
@@ -80,7 +77,7 @@
         <counts>
           <entry key="HTML" value="45" />
           <entry key="JSON" value="156" />
-          <entry key="JavaScript" value="19695" />
+          <entry key="JavaScript" value="20288" />
           <entry key="Less" value="234" />
           <entry key="SCSS" value="4" />
         </counts>
@@ -88,7 +85,29 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/UploadPicker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/routers/AppRouter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -105,8 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/styles/base/_account.less" />
-        <option value="$PROJECT_DIR$/src/styles/components/_footer.less" />
         <option value="$PROJECT_DIR$/src/styles/styles.less" />
         <option value="$PROJECT_DIR$/src/middlewares/refreshToken.js" />
         <option value="$PROJECT_DIR$/src/store/configureStore.js" />
@@ -123,7 +140,6 @@
         <option value="$PROJECT_DIR$/src/components/Footer.js" />
         <option value="$PROJECT_DIR$/src/utils/index.js" />
         <option value="$PROJECT_DIR$/src/utils/username.js" />
-        <option value="$PROJECT_DIR$/src/routers/AppRouter.js" />
         <option value="$PROJECT_DIR$/src/actions/user.js" />
         <option value="$PROJECT_DIR$/src/actions/actionTypes.js" />
         <option value="$PROJECT_DIR$/src/components/Header/Avatar.js" />
@@ -156,6 +172,9 @@
         <option value="$PROJECT_DIR$/src/test/components/RegistrationForm.test.js" />
         <option value="$PROJECT_DIR$/src/test/utils/username.js" />
         <option value="$PROJECT_DIR$/src/test/utils/index.test.js" />
+        <option value="$PROJECT_DIR$/src/components/UplooadPicker.js" />
+        <option value="$PROJECT_DIR$/src/routers/AppRouter.js" />
+        <option value="$PROJECT_DIR$/src/components/UploadPicker.js" />
       </list>
     </option>
   </component>
@@ -190,7 +209,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -208,6 +226,13 @@
               <item name="Circle_Video" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Circle_Video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Circle_Video" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Header" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Circle_Video" type="b2602c69:ProjectViewProjectNode" />
@@ -245,6 +270,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -307,20 +333,22 @@
       <workItem from="1550145518417" duration="962000" />
       <workItem from="1550162946747" duration="8656000" />
       <workItem from="1550509345137" duration="97000" />
+      <workItem from="1550585035550" duration="1246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82234000" />
+    <option name="totallyTimeSpent" value="83480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.43243244" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.34398034" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -357,7 +385,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/services/passport.js" />
     <entry file="file://$PROJECT_DIR$/server/index.js" />
     <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -455,13 +482,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/Avatar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/components/Avatar.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -488,13 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routers/AppRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -656,6 +669,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2584">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header/Avatar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routers/AppRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/UploadPicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

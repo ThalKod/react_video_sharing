@@ -7,6 +7,7 @@ import {
 import HomePage from "../components/HomePage";
 import NotFoundPage from "../components/NotFoundPage";
 import RegistrationPage from "../components/Register/RegistrationPage";
+import UploadPicker from "../components/UploadPicker";
 
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer";
@@ -25,6 +26,7 @@ const AppRouter = () => (
               path="/signup"
               render={(props) => <RegistrationPage {...props} signup />}
           />
+          <Route path="/upload" component={UploadPicker}/>
           <Route component={NotFoundPage}/>
         </Switch>
         <Footer/>
