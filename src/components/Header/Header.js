@@ -33,9 +33,19 @@ export class Header extends React.Component{
     }
   };
 
+  renderAvatarAndOthers = () => {
+    const { username, signOutUser} = this.props;
+    return (
+        <div className="flex">
+          <Avatar username={username} />
+          <button type="submit" onClick={signOutUser}>Sign Out</button>
+          <Link className="upload-button" to="/upload"><i className="cv cvicon-cv-upload-video"/></Link>
+        </div>
+    )
+  };
+
   render() {
     const { loggedIn } = this.state;
-    const {username, signOutUser } = this.props;
     return (
         <div className="container-fluid">
           <div className="row">
@@ -57,10 +67,7 @@ export class Header extends React.Component{
                   <div className="visible-xs clearfix"/>
                   <div className="col-lg-2 col-sm-4  col-xs-8">
                     <div className="pull-right">
-                      {loggedIn ? <div className="flex">
-                            <Avatar username={username} />
-                            <button type="submit" onClick={signOutUser}>Sign Out</button>
-                      </div> :
+                      {loggedIn ? this.renderAvatarAndOthers() :
                           <div className="loginsignup">
                             <Link to="/signin">Login</Link> . <Link to="/signup">Signup</Link>
                           </div>
