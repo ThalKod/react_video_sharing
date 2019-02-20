@@ -12,7 +12,6 @@ const UploadPicker = () => {
                     <i className="cv cv cvicon-cv-upload-video"/>
 
                     <p className="u-text1">Select Video files to upload</p>
-                    <p className="u-text2">or drag and drop video files</p>
 
                     <button type="submit" className="btn btn-primary u-btn">Upload Video</button>
                   </div>
