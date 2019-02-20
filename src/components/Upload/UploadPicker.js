@@ -2,9 +2,7 @@ import React from "react";
 import ReactFilestack from 'filestack-react';
 
 
-import requireLoggedIn from "../HOC/requireLoggedIn";
-
-const UploadPicker = () => {
+const UploadPicker = ({ onUploadSuccess }) => {
 
     const options = {
       "maxFiles": 1,
@@ -35,7 +33,10 @@ const UploadPicker = () => {
                     <ReactFilestack
                       apikey={process.env.REACT_APP_API_KEY}
                       options={options}
-                      onSuccess={(res) => { console.log("upload Res", res)}}
+                      onSuccess={(res) => {
+                        console.log("upload Res", res);
+                        onUploadSuccess();
+                      }}
                       onError={(err) => {console.log("Upload err", err)}}
                       render={({ onPick }) => (
                         <div>
@@ -59,6 +60,6 @@ const UploadPicker = () => {
     )
 };
 
-export default requireLoggedIn(UploadPicker);
+export default UploadPicker
 
 

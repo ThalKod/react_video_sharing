@@ -38,7 +38,7 @@ export class Header extends React.Component{
     return (
         <div className="flex">
           <Avatar username={username} />
-          <button type="submit" onClick={signOutUser}>Sign Out</button>
+          <button className="unStyledButton" type="submit" onClick={signOutUser}>Sign Out</button>
           <Link className="upload-button" to="/upload"><i className="cv cvicon-cv-upload-video"/></Link>
         </div>
     )

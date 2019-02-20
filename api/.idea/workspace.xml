@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="63415b28-8174-4354-9629-d6b6324e3c8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/UploadPicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/UploadPicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/components/__snapshots__/Footer.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/__snapshots__/Footer.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/components/__snapshots__/Header.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/__snapshots__/Header.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Upload/UploadPicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Upload/UploadPicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routers/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/routers/AppRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/styles/components/_header.less" beforeDir="false" afterPath="$PROJECT_DIR$/../src/styles/components/_header.less" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
