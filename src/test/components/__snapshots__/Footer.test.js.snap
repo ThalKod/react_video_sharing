@@ -19,7 +19,7 @@ exports[`Footer component should render the footer correctly 1`] = `
           to="/"
         >
           <img
-            alt="Project name"
+            alt="Circle logo"
             className="logo"
             src="logo.svg"
           />
@@ -46,7 +46,12 @@ exports[`Footer component should render the footer correctly 1`] = `
         >
           <p>
             <i>
-              Ⓒ Copyrights 2019 - By 
+              Ⓒ Copyrights 2019 - Made with 
+              <img
+                alt="love icon"
+                src="like.png"
+              />
+               By 
               <a
                 href="https://www.thal.tech"
               >

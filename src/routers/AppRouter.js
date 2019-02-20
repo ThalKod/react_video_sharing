@@ -7,7 +7,7 @@ import {
 import HomePage from "../components/HomePage";
 import NotFoundPage from "../components/NotFoundPage";
 import RegistrationPage from "../components/Register/RegistrationPage";
-import UploadPicker from "../components/UploadPicker";
+import UploadPicker from "../components/Upload/UploadPicker";
 
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer";
