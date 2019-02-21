@@ -6,6 +6,11 @@ const videosSchema = new mongoose.Schema({
     unique: true,
     require: true
   },
+  handle: {
+    type: String,
+    unique: true,
+    require: true
+  },
   mimeType: String,
   url: {
     type: String,
@@ -18,7 +23,10 @@ const videosSchema = new mongoose.Schema({
     type: mongoose.Types.ObjectId,
     ref: "User"
   },
-  uploadDate: Date.now,
+  uploadDate: {
+    type: Date,
+    default: Date.now,
+  },
   viewCount: Number,
 });
 
