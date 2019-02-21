@@ -13,7 +13,6 @@ const userSchema = new mongoose.Schema({
         lowercase: true
     },
     password: String,
-
 });
 
 userSchema.pre("save", function(next){
