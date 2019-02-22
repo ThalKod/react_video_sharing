@@ -9,6 +9,7 @@ const auth = require("./routes/auth");
 const check = require("./routes/check");
 const user = require("./routes/user");
 const upload = require("./routes/upload");
+const video = require("./routes/video");
 
 // Prevent .env dev variable on deployement...
 if (process.env.NODE_ENV !== 'production') {
@@ -34,6 +35,7 @@ app.use(process.env.API_BASE_URL, auth);
 app.use(process.env.API_BASE_URL, check);
 app.use(process.env.API_BASE_URL, user);
 app.use(process.env.API_BASE_URL, upload);
+app.use(process.env.API_BASE_URL, video);
 
 const server = app.listen(port, () => {
     console.log(`Listenning on ${port}` );

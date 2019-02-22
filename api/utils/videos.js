@@ -17,9 +17,11 @@ const takeScreenshot = (video, duration, callback) => {
         console.log('filename : ' + filenames.join(', '));
       })
       .on('end', () => {
+        console.log("Saved !");
         return callback({ error: false, pathToScreenshot: path.join(pathToScreenshot, filename) });
       })
       .on('error', (err) => {
+        console.log("Error");
         return callback({ error: true, msg: err});
       })
       .takeScreenshots({ count: 1, timemarks: [ (duration / 4).toString() ], size: '150x100' }, pathToScreenshot);
