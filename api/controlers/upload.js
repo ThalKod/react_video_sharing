@@ -1,14 +1,18 @@
 const Video = require("../models/Video");
-const { transcodeVideo } = require("../utils/videos");
+const { processVideo } = require("../utils/videos");
 
 module.exports.saveVideo = (req, res) => {
   const video = req.body;
   video.author = req.user.id;
 
-  transcodeVideo(video)
-      .then((duration, path) => {
-        console.log({duration, path});
-        res.send({duration, path});
+  // Getting video duration and a default cover photo
+  processVideo(video)
+      .then((result) => {
+        video.duration = result.duration;
+        video.defaultCoverPhoto = result.defaultCoverPhoto;
+        Video.create(video)
+            .then((rVideo) => res.send({error: false, id: rVideo.id}))
+            .catch(err => res.send({error: true, msg: err }));
       })
       .catch(err => res.send({ error: true, msg: err}));
 };

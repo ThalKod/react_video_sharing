@@ -8,6 +8,10 @@
 
 .env
 
+/api/data/*
+
+!/api/data/.gitkeep
+
 # testing
 /coverage
 
