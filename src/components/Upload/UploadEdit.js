@@ -1,5 +1,5 @@
 import React from "react";
 
-export default () => (
-    <div>Hello There !</div>
+export default (videoId) => (
+    <div>Hello There ! {videoId}</div>
 );

@@ -35,7 +35,15 @@ const UploadPicker = ({ onUploadSuccess }) => {
                       options={options}
                       onSuccess={(res) => {
                         console.log("upload Res", res);
-                        onUploadSuccess();
+                        const file = res.filesUploaded[0];
+                        const video = {
+                          name: file.filename,
+                          handle: file.handle,
+                          mimeType: file.mimetype,
+                          url: file.url,
+                          size: file.size
+                        };
+                        onUploadSuccess(video);
                       }}
                       onError={(err) => {console.log("Upload err", err)}}
                       render={({ onPick }) => (

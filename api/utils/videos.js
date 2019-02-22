@@ -2,7 +2,7 @@ const ffmpeg = require('fluent-ffmpeg');
 const path = require("path");
 
 const getDuration = (url, callback) =>{
-  ffmpeg.ffprobe('https://cdn.filestackcontent.com/D15RcPMqQhmyL2m4GzmR', (err, metadata) => {
+  ffmpeg.ffprobe(url, (err, metadata) => {
     if(err) return callback({ error: true, msg: err});
     return callback({ error: false, duration: metadata.format.duration });
   });
@@ -11,7 +11,7 @@ const getDuration = (url, callback) =>{
 const takeScreenshot = (video, duration, callback) => {
   const pathToScreenshot = path.join(__dirname, "../data", video.handle);
   let filename;
-  const proc = ffmpeg("https://cdn.filestackcontent.com/D15RcPMqQhmyL2m4GzmR")
+  const proc = ffmpeg(video.url)
       .on('filenames', (filenames) => {
         filename = filenames[0];
         console.log('filename : ' + filenames.join(', '));
