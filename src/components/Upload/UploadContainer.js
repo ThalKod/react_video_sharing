@@ -9,7 +9,7 @@ import { request } from "../../utils";
 
 class UploadContainer extends React.Component{
   state = {
-    uploaded: false,
+    uploaded: true,
     loading: false,
     videoId: null
   };

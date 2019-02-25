@@ -9,7 +9,7 @@ module.exports.saveVideo = (req, res) => {
   processVideo(video)
       .then((result) => {
         video.duration = result.duration;
-        video.defaultCoverPhoto = result.defaultCoverPhoto;
+        video.defaultCoverPhoto = result.pathToScreenshot;
         Video.create(video)
             .then((rVideo) => res.send({error: false, id: rVideo.id}))
             .catch(err => res.send({error: true, msg: err }));
