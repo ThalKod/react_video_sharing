@@ -13,7 +13,7 @@ export default ({text}) => (
                   color='#123abc'
                   loading
               />
-              <p>{text}</p>
+              {text && <p>{text}</p>}
             </div>
           </div>
         </div>

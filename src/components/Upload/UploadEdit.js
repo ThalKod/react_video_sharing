@@ -1,6 +1,7 @@
 import React from "react";
 
-import { request } from "../../utils";
+import { request, formatBytes, formatSecond } from "../../utils";
+import LoadingSpinner from "../LaodingSpinner";
 
 class UploadEdit extends React.Component{
 
@@ -9,20 +10,24 @@ class UploadEdit extends React.Component{
     size: 0,
     duration: 0,
     coverPhoto: null,
+    loading: true,
   };
 
   componentDidMount = () => {
-    // const { videoId } = this.props;
-    const getBasicInfo = request("get", `/video/basic/5c743c4062c93e05613ffdb0`);
-    const getImage = request("get", "/video/cover/default/5c743c4062c93e05613ffdb0");
+    const { videoId } = this.props;
+    const getBasicInfo = request("get", `/video/basic/${videoId}`);
+    const getImage = request("get", `/video/cover/default/${videoId}`);
 
     Promise.all([getBasicInfo, getImage])
-        .then(res => this.setState({ ...res[0].data.video, ...res[1].data }))
+        .then(res => this.setState({ ...res[0].data.video, ...res[1].data, loading: false }))
         .catch(err => console.log(err));
   };
 
   render(){
-    const { name, duration, size, coverPhoto } = this.state;
+    const { name, size, duration, coverPhoto, loading } = this.state;
+
+    if(loading) return <LoadingSpinner/>;
+
     return (
          <div className="content-wrapper upload-page edit-page">
            <div className="container-fluid u-details-wrap">
@@ -39,7 +44,7 @@ class UploadEdit extends React.Component{
                        </div>
                        <div className="col-lg-10">
                          <div className="u-title">{name}</div>
-                         <div className="u-size">{size}.{duration}</div>
+                         <div className="u-size"><b>Size :</b> {formatBytes(size)} <b>Length:</b> {formatSecond(duration)}</div>
                          <div className="u-progress">
                            <div className="progress">
                              <div className="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
