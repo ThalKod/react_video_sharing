@@ -13,7 +13,6 @@ module.exports.getBasicVideoInfoById = (req, res) => {
 };
 
 module.exports.getDefaultImageCoverById = (req, res) => {
-  console.log("hey");
   Video.findById(req.params.id)
       .then(rVideo => {
         if(!rVideo) return res.send({ error: true, msg: "No Video"});

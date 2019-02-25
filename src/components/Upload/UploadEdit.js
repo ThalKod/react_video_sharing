@@ -24,10 +24,42 @@ class UploadEdit extends React.Component{
   render(){
     const { name, duration, size, coverPhoto } = this.state;
     return (
-        <div>
-          <div>{`${name}${duration}${size}`}</div>
-          <div><img src={coverPhoto} alt="he"/></div>
-        </div>
+         <div className="content-wrapper upload-page edit-page">
+           <div className="container-fluid u-details-wrap">
+             <div className="row">
+               <div className="container">
+                 <div className="col-lg-12">
+                   <div className="u-details">
+                     <div className="row">
+                       <div className="col-lg-12 ud-caption">Upload Details</div>
+                       <div className="col-lg-2">
+                         <div className="imgplace">
+                           <img src={coverPhoto} alt="cover" />
+                         </div>
+                       </div>
+                       <div className="col-lg-10">
+                         <div className="u-title">{name}</div>
+                         <div className="u-size">{size}.{duration}</div>
+                         <div className="u-progress">
+                           <div className="progress">
+                             <div className="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                  aria-valuemax="100" style={{"width": "100%"}}>
+                               <span className="sr-only">100% Complete</span>
+                             </div>
+                           </div>
+                           <div className="u-close">
+                             <a href="/"><i className="cvicon-cv-cancel" /></a>
+                           </div>
+                         </div>
+                         <div className="u-desc">Your video is uploaded, please edit and save.</div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
     )
   }
 }
