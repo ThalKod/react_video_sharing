@@ -11,6 +11,7 @@ class UploadEdit extends React.Component{
     duration: 0,
     coverPhoto: null,
     loading: true,
+    description: "",
   };
 
   componentDidMount = () => {
@@ -24,11 +25,12 @@ class UploadEdit extends React.Component{
   };
 
   render(){
-    const { name, size, duration, coverPhoto, loading } = this.state;
+    const { name, size, duration, coverPhoto, loading, description } = this.state;
 
     if(loading) return <LoadingSpinner/>;
 
     return (
+        <div>
          <div className="content-wrapper upload-page edit-page">
            <div className="container-fluid u-details-wrap">
              <div className="row">
@@ -65,6 +67,43 @@ class UploadEdit extends React.Component{
              </div>
            </div>
          </div>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="u-form">
+                  <div className="row">
+                    <div className="col-lg-12">
+                      <div className="form-group">
+                        <label htmlFor="e1">Video Title</label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            id="e1"
+                            onChange={(e) => this.setState({ name: e.target.value })}
+                            value={name}
+                        />
+                      </div>
+                    </div>
+                    <div className="col-lg-12">
+                      <div className="form-group">
+                        <label htmlFor="e2">About</label>
+                        <textarea
+                            onChange={e => this.setState({ description: e.target.value})}
+                            value={description}
+                            placeholder="Description of your videos"
+                            className="form-control"
+                            name="e2"
+                            id="e2"
+                            rows="3"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     )
   }
 }
