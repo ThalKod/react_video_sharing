@@ -1,4 +1,5 @@
 import React from "react";
+import { WithContext as ReactTags } from 'react-tag-input';
 
 import { request, formatBytes, formatSecond } from "../../utils";
 import LoadingSpinner from "../LaodingSpinner";
@@ -12,7 +13,31 @@ class UploadEdit extends React.Component{
     coverPhoto: null,
     loading: true,
     description: "",
+    tags: [],
   };
+
+  handleTagDelete = (i) => {
+    const { tags } = this.state;
+    this.setState({
+      tags: tags.filter((tag, index) => index !== i),
+    });
+  };
+
+  handleTagAddition = (tag) => {
+    this.setState(state => ({ tags: [...state.tags, tag] }));
+  };
+
+ handleTagDrag = (tag, currPos, newPos) => {
+   const { tags } = this.state;
+   const tagsArr = [...tags];
+   const newTags = tagsArr.slice();
+
+   newTags.splice(currPos, 1);
+   newTags.splice(newPos, 0, tag);
+
+   // re-render
+   this.setState({ tags: newTags });
+ };
 
   componentDidMount = () => {
     const { videoId } = this.props;
@@ -25,12 +50,18 @@ class UploadEdit extends React.Component{
   };
 
   render(){
-    const { name, size, duration, coverPhoto, loading, description } = this.state;
+    const {
+      name,
+      size,
+      duration,
+      coverPhoto,
+      loading,
+      description,
+      tags} = this.state;
 
     if(loading) return <LoadingSpinner/>;
 
     return (
-        <div>
          <div className="content-wrapper upload-page edit-page">
            <div className="container-fluid u-details-wrap">
              <div className="row">
@@ -58,7 +89,7 @@ class UploadEdit extends React.Component{
                              <a href="/"><i className="cvicon-cv-cancel" /></a>
                            </div>
                          </div>
-                         <div className="u-desc">Your video is uploaded, please edit and save.</div>
+                         <div className="u-desc">Your video is uploaded, please edit, add tags and save.</div>
                        </div>
                      </div>
                    </div>
@@ -66,44 +97,63 @@ class UploadEdit extends React.Component{
                </div>
              </div>
            </div>
+           <div className="container">
+             <div className="row">
+               <div className="col-lg-12">
+                 <div className="u-form">
+                   <div className="row">
+                     <div className="col-lg-12">
+                       <div className="form-group">
+                         <label htmlFor="e1">Video Title</label>
+                         <input
+                             type="text"
+                             className="form-control"
+                             id="e1"
+                             onChange={(e) => this.setState({ name: e.target.value })}
+                             value={name}
+                         />
+                       </div>
+                     </div>
+                     <div className="col-lg-12">
+                       <div className="form-group">
+                         <label htmlFor="e2">About</label>
+                         <textarea
+                             onChange={e => this.setState({ description: e.target.value})}
+                             value={description}
+                             placeholder="Description of your video"
+                             className="form-control"
+                             name="e2"
+                             id="e2"
+                             rows="3"
+                         />
+                       </div>
+                     </div>
+                     <div className="col-lg-12">
+                       <div className="form-group">
+                         <ReactTags
+                             tags={tags}
+                             className="form-control"
+                             handleDelete={this.handleTagDelete}
+                             handleAddition={this.handleTagAddition}
+                             handleDrag={this.handleTagDrag}
+                             delimiters={[188, 13]}
+                         />
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div className="u-area">
+                     <button className="btn btn-primary u-btn" type="submit">Save</button>
+                 </div>
+                 <div className="u-terms">
+                   <p>By submitting your videos to us, you acknowledge that you agree to circle's <a href="/">Terms
+                     of Service</a> and <a href="/">Community Guidelines</a>.</p>
+                   <p>Please be sure not to violate others' copyright or privacy rights. Learn more</p>
+                 </div>
+               </div>
+             </div>
+           </div>
          </div>
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="u-form">
-                  <div className="row">
-                    <div className="col-lg-12">
-                      <div className="form-group">
-                        <label htmlFor="e1">Video Title</label>
-                        <input
-                            type="text"
-                            className="form-control"
-                            id="e1"
-                            onChange={(e) => this.setState({ name: e.target.value })}
-                            value={name}
-                        />
-                      </div>
-                    </div>
-                    <div className="col-lg-12">
-                      <div className="form-group">
-                        <label htmlFor="e2">About</label>
-                        <textarea
-                            onChange={e => this.setState({ description: e.target.value})}
-                            value={description}
-                            placeholder="Description of your videos"
-                            className="form-control"
-                            name="e2"
-                            id="e2"
-                            rows="3"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
     )
   }
 }

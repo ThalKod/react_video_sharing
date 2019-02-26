@@ -18,7 +18,7 @@ export default function Footer(){
                 <p><i>Inspired from Circle's <a href="https://www.azyrusthemes.com">Azyrus Themes</a></i></p>
                 <div className="delimiter"/>
                 <div className="f-copy">
-                  <p><i>Ⓒ Copyrights 2019 - Made with <img src={loveIcon} alt="love icon"/> By <a href="https://www.thal.tech">Thal Marcelin</a></i></p>
+                  <p><i>Ⓒ Copyrights 2019 - Made with <img src={loveIcon} alt="love icon"/> By <a href="https://www.thal.tech"><u>Thal Marcelin</u></a></i></p>
                 </div>
               </div>
             </div>
