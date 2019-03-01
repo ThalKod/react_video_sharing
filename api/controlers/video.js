@@ -18,10 +18,15 @@ module.exports.getDefaultImageCoverById = (req, res) => {
         if(!rVideo) return res.send({ error: true, msg: "No Video"});
         fs.readFile(rVideo.defaultCoverPhoto, "base64", (err, base64) => {
           if(err) return console.log("err",err);
-          console.log(base64);
           const data = `data:image/png;base64, ${base64}`;
           res.send({ coverPhoto: data});
         });
       })
+      .catch(err => res.send({ error: true, msg: err}))
+};
+
+module.exports.updateVideo = (req, res) => {
+  Video.findByIdAndUpdate(req.params.id, req.body)
+      .then(() => res.send({ error: false }) )
       .catch(err => res.send({ error: true, msg: err}))
 };
