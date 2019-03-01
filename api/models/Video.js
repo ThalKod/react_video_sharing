@@ -25,6 +25,7 @@ const videosSchema = new mongoose.Schema({
   },
   defaultCoverPhoto: String,
   description: String,
+  tags: [],
   uploadDate: {
     type: Date,
     default: Date.now,

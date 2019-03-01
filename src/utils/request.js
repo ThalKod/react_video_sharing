@@ -33,7 +33,7 @@ export const request = (method, url, options, data) => {
 
   if(token) headers.Authorization = token;
 
-  if(method === "post")
+  if(method === "post" || method === "put")
     return axios[method](`${API_URL}${url}`, data, {headers, ...options});
 
   return axios[method](`${API_URL}${url}`, { headers, ...options });

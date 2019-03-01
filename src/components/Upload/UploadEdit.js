@@ -49,6 +49,15 @@ class UploadEdit extends React.Component{
         .catch(err => console.log(err));
   };
 
+  handleSubmit = () => {
+    const { name, description, tags} = this.state;
+    const { videoId, redirect } = this.props;
+
+    request("put", `/video/${videoId}`, {}, {name, description, tags})
+        .then(() => redirect())
+        .catch(err => console.log(err));
+  };
+
   render(){
     const {
       name,
@@ -143,7 +152,7 @@ class UploadEdit extends React.Component{
                    </div>
                  </div>
                  <div className="u-area">
-                     <button className="btn btn-primary u-btn" type="submit">Save</button>
+                     <button onClick={this.handleSubmit} className="btn btn-primary u-btn" type="submit">Save</button>
                  </div>
                  <div className="u-terms">
                    <p>By submitting your videos to us, you acknowledge that you agree to circle's <a href="/">Terms

@@ -9,7 +9,7 @@ import { request } from "../../utils";
 
 class UploadContainer extends React.Component{
   state = {
-    uploaded: true,
+    uploaded: false,
     loading: false,
     videoId: null
   };
@@ -18,19 +18,20 @@ class UploadContainer extends React.Component{
     this.setState({ uploaded: true, loading: true});
     request("post", "/upload/video", {}, video)
         .then(res => {
-          if(!res.error) return this.setState({ videoId: res.id, loading: false});
+          console.log(res);
+          if(!res.error) return this.setState({ videoId: res.data.id, loading: false});
           return console.log(res.msg); // temp Let's check the error !
         })
         .catch(err => console.log(err)) // temp Let's check the error
   };
 
-
   render(){
     const { uploaded, loading, videoId } = this.state;
+    const { history } = this.props;
 
     if(loading) return <LoadingSpinner text="Processing Your Video"/>;
 
-    if(uploaded && !loading) return <UploadEdit videoId={videoId}/>;
+    if(uploaded && !loading) return <UploadEdit videoId={videoId} redirect={() => history.push("/") }/>;
     return <UploadPicker onUploadSuccess={this.onUploadSuccess}/>
   }
 }
