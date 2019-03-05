@@ -1,0 +1,167 @@
+/*
+* Content Upload
+*/
+
+.upload-page {
+  text-align: center;
+  color: @c-light;
+  .u-area {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    i {
+      font-size: 144px;
+      color: @c-icon;
+    }
+    .u-text1 {
+      display: block;
+      margin-top: 60px;
+      margin-bottom: 0;
+      font-size: @fs-md;
+      color: @c-default;
+    }
+    .u-btn {
+      margin-top: 60px;
+      background-color: @c-active;
+      color: white;
+      padding: 15px 65px;
+      border: solid 1px @c-active;
+      height: 48px;
+      border-radius: 24px;
+      font-weight: 500;
+      &:hover {
+        color: @c-active;
+        background-color: @c-white;
+      }
+    }
+  }
+  .u-terms {
+    padding: 45px 0;
+    a {
+      color: @c-active;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    p {
+      margin-bottom: 7px;
+    }
+  }
+
+}
+
+.edit-page {
+  text-align: left;
+  .u-details-wrap {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: solid 1px @c-divider;
+  }
+  .u-details {
+    .ud-caption {
+      font-family: @ff-hind;
+      font-weight: 500;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      color: @c-default;
+    }
+    .imgplace{
+      background-color: #8781bd;
+      border-radius: 3px;
+      width: 100%;
+      height: 113px;
+    }
+    .u-title {
+      color: @c-default;
+      font-family: @ff-hind;
+      font-weight: 500;
+      padding-bottom: 4px;
+    }
+    .u-progress {
+      position: relative;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .u-close {
+        position: absolute;
+        top: 2px;
+        right: 21px;
+        i {
+          font-size: @fs-md;
+        }
+      }
+      .progress {
+        width: 90%;
+        margin-bottom: 0;
+        height: 8px;
+        background-color: @c-divider;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        .progress-bar {
+          background-color: @c-green-v;
+          font-size: 8px;
+          line-height: 8px;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+  .u-form {
+    label {
+      //margin-bottom: 10px;
+      color: @c-default;
+      font-weight: normal;
+    }
+    .form-control {
+      padding: 6px 12px;
+    }
+    .u-category {
+      color: @c-default;
+      padding-bottom: 6px;
+    }
+    input[type=checkbox] {
+      height: 19px;
+      width: 19px;
+      margin: 0;
+      margin-left: -35px;
+    }
+    .checkbox {
+      margin-bottom: 17px;
+      label {
+        padding-left: 35px;
+        color: @c-light;
+      }
+    }
+  }
+  .u-area {
+    text-align: center;
+    padding-top: 65px;
+    padding-bottom: 20px;
+    .u-btn {
+      margin-top: 0;
+    }
+  }
+  .u-terms {
+    text-align: center;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 767px) {
+  .upload-page {
+    .u-area {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      .u-text1 {
+        margin-top: 30px;
+      }
+      .u-btn {
+        margin-top: 30px;
+      }
+    }
+    .u-terms {
+      padding: 30px 0;
+    }
+  }
+}
+
+/*
+* Content Upload END
+*/

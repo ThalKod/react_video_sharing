@@ -1,6 +1,6 @@
-import getInitial from "../../utils/username";
+import {getInitial} from "../../utils";
 
-describe("Utils", () => {
+describe("Username Utils", () => {
   it("should return the correct initial", () => {
     expect(
         getInitial("John Doe")

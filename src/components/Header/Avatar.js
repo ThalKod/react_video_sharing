@@ -1,6 +1,6 @@
 import React from "react";
 
-import getInitial from "../../utils/username";
+import { getInitial } from "../../utils/username";
 
 export default ({ username }) => {
 
