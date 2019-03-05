@@ -55,7 +55,9 @@ exports[`Footer component should render the footer correctly 1`] = `
               <a
                 href="https://www.thal.tech"
               >
-                Thal Marcelin
+                <u>
+                  Thal Marcelin
+                </u>
               </a>
             </i>
           </p>
