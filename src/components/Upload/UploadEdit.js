@@ -2,7 +2,7 @@ import React from "react";
 import { WithContext as ReactTags } from 'react-tag-input';
 
 import { request, formatBytes, formatSecond } from "../../utils";
-import LoadingSpinner from "../LaodingSpinner";
+import LoadingSpinner from "../LoadingSpinner";
 
 class UploadEdit extends React.Component{
 

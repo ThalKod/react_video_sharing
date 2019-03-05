@@ -3,11 +3,11 @@ import React from "react";
 import UploadEdit from "./UploadEdit"
 import UploadPicker from "./UploadPicker";
 import requireLoggedIn from "../HOC/requireLoggedIn";
-import LoadingSpinner from "../LaodingSpinner";
+import LoadingSpinner from "../LoadingSpinner";
 import { request } from "../../utils";
 
 
-class UploadContainer extends React.Component{
+export class UploadContainer extends React.Component{
   state = {
     uploaded: false,
     loading: false,
