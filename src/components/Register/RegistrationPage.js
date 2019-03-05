@@ -2,8 +2,9 @@ import React from "react";
 
 import RegistrationForm from "./RegistrationForm";
 import bgLogin from "../../assets/images/login.jpg";
+import alreadyLoggedIn from "../HOC/alreadyLoggedIn";
 
-export default function RegistrationPage({ signup, history}){
+export const RegistrationPage = ({ signup, history }) => {
     return (
         <div>
           <div className="container-fluid bg-image">
@@ -22,4 +23,6 @@ export default function RegistrationPage({ signup, history}){
           </div>
         </div>
     )
-}
+};
+
+export default alreadyLoggedIn(RegistrationPage);

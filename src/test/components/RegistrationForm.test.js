@@ -33,7 +33,7 @@ describe("RegistrationForm component", () => {
       expect(wrapper.state("password")).toBe(value);
     });
 
-    it("Login button should be deactivate if email and password not set", () => {
+    it("Login button should be disable if email and password not set", () => {
       const wrapper = shallow(<RegistrationForm />);
       const loginButton = wrapper.find("button").first();
       expect(

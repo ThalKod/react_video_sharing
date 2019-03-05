@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RegistrationPage component should render the NotFoundPage correctly 1`] = `
+exports[`RegistrationPage component should render the Registration correctly 1`] = `
 <div>
   <div
     className="container-fluid bg-image"

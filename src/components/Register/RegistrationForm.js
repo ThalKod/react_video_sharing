@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
 import { connect } from "react-redux";
+
+import { request } from "../../utils";
 import { startSignupUser, startSigninUser } from "../../actions/auth";
 
 export class RegistrationForm extends React.Component{
@@ -41,7 +42,7 @@ export class RegistrationForm extends React.Component{
   checkEmail = () => {
     const { email } = this.state;
 
-    axios.post("/api/v0/check/email", { email })
+    request("post", "/check/email", {}, {email})
         .then(res => {
           if(!res.data.error){
             if(!res.data.valid) return this.setState({ errorEmail: true });
@@ -53,15 +54,16 @@ export class RegistrationForm extends React.Component{
 
   // checking if username is already registered
   checkUserName = () => {
-    const { username } = this.state;
-    axios.post("/api/v0/check/username", { username })
-        .then(res => {
-          if(!res.data.error){
-            if(!res.data.valid) return this.setState({ errorUName: true });
-          }
-          return res.data.error;
-        })
-        .catch(err => console.log(err));
+   const { username } = this.state;
+
+   request("post", "/check/username", {}, { username })
+       .then(res => {
+         if(!res.data.error){
+           if(!res.data.valid) return this.setState({ errorUName: true });
+         }
+         return res.data.error;
+       })
+       .catch(err => console.log(err));
   };
 
   passwordMatch = () => {

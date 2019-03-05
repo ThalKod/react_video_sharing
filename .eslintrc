@@ -16,7 +16,8 @@
     "no-console": "off",
     "import/imports-first": ["error", "absolute-first"],
     "import/no-named-as-default": 0,
-    "import/newline-after-import": "error"
+    "import/newline-after-import": "error",
+    "import/prefer-default-export": 0
   },
   "globals": {
     "window": true,

@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoadingSpinner should correctly render the loading spinner 1`] = `
+<div
+  className="content-wrapper"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-lg-12 upload-page"
+      >
+        <div
+          className="u-area"
+        >
+          <onlyUpdateForKeys(Loader)
+            color="#123abc"
+            css=""
+            loading={true}
+            margin="2px"
+            size={30}
+            sizeUnit="px"
+          />
+          <p>
+            Loading
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

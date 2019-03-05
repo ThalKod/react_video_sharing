@@ -63,10 +63,20 @@ exports[`Header should render the Avatar and signout button if login 1`] = `
                   username="John Doe"
                 />
                 <button
+                  className="unStyledButton"
                   type="submit"
                 >
                   Sign Out
                 </button>
+                <Link
+                  className="upload-button"
+                  replace={false}
+                  to="/upload"
+                >
+                  <i
+                    className="cv cvicon-cv-upload-video"
+                  />
+                </Link>
               </div>
             </div>
             <div

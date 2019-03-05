@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UploadPicker should render correctly the UploadEdit component 1`] = `
+<div
+  className="content-wrapper"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-lg-12 upload-page"
+      >
+        <div
+          className="u-area"
+        >
+          <t
+            apikey="ASNAiFSMAR58GpAz66oWyz"
+            buttonClass=""
+            buttonText="Pick file"
+            cname={null}
+            file={null}
+            link={false}
+            mode="pick"
+            onError={[Function]}
+            onSuccess={[Function]}
+            options={
+              Object {
+                "accept": Array [
+                  "video/mp4",
+                  "video/x-m4v",
+                  "video/*",
+                ],
+                "fromSources": Array [
+                  "local_file_system",
+                  "url",
+                  "googledrive",
+                  "dropbox",
+                ],
+                "maxFiles": 1,
+                "storeTo": Object {
+                  "container": "devportal-customers-assets",
+                  "path": "user-uploads/",
+                  "region": "us-east-1",
+                },
+              }
+            }
+            render={[Function]}
+            security={null}
+            sessionCache={false}
+          />
+        </div>
+        <div
+          className="u-terms"
+        >
+          <p>
+            By submitting your videos to circle, you acknowledge that you agree to circle's 
+            <a
+              href="/"
+            >
+              Terms of Service
+            </a>
+             and 
+            <a
+              href="/"
+            >
+              Community Guidelines
+            </a>
+            .
+          </p>
+          <p>
+            Please be sure not to violate others' copyright or privacy rights. Learn more
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

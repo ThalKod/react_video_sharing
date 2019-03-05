@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoadingSpinner should correctly render the Loading Spinner 1`] = `
+<_default
+  text="Processing Your Video"
+/>
+`;
+
+exports[`LoadingSpinner should correctly render the UploadEdit components 1`] = `
+<UploadEdit
+  redirect={[Function]}
+  videoId={null}
+/>
+`;
+
+exports[`LoadingSpinner should correctly render the UploadPicker components 1`] = `
+<UploadPicker
+  onUploadSuccess={[Function]}
+/>
+`;

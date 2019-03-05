@@ -3,15 +3,20 @@ const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
 const cors = require("cors");
+
+// API routes
 const auth = require("./routes/auth");
 const check = require("./routes/check");
 const user = require("./routes/user");
+const upload = require("./routes/upload");
+const video = require("./routes/video");
 
+// Prevent .env dev variable on deployement...
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config()
 }
 
-// Mkae sure passport is initialised and don't have "unknow authentication"
+// Initialise passport
 require("./services/passport");
 
 const app = express();
@@ -29,6 +34,8 @@ app.use(cors());
 app.use(process.env.API_BASE_URL, auth);
 app.use(process.env.API_BASE_URL, check);
 app.use(process.env.API_BASE_URL, user);
+app.use(process.env.API_BASE_URL, upload);
+app.use(process.env.API_BASE_URL, video);
 
 const server = app.listen(port, () => {
     console.log(`Listenning on ${port}` );
