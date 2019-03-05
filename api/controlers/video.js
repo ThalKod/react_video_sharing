@@ -19,7 +19,7 @@ module.exports.getDefaultImageCoverById = (req, res) => {
         fs.readFile(rVideo.defaultCoverPhoto, "base64", (err, base64) => {
           if(err) return console.log("err",err);
           const data = `data:image/png;base64, ${base64}`;
-          res.send({ coverPhoto: data});
+          res.send({ error: false, coverPhoto: data});
         });
       })
       .catch(err => res.send({ error: true, msg: err}))
