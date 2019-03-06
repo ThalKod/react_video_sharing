@@ -1,8 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import VideoList from "./VideoList";
-
+import VideoSection from "./VideoSection";
 
 export class HomePage extends React.Component{
 
@@ -17,10 +16,8 @@ export class HomePage extends React.Component{
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-                <div className="content-block head-div">
-                  <VideoList/>
-                </div>
-                </div>
+               <VideoSection />
+              </div>
             </div>
           </div>
         </div>
