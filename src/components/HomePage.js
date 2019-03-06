@@ -1,6 +1,7 @@
 import React from "react";
 // import axios from "axios";
 import { connect } from "react-redux";
+import VideoSingle from "./VideoSingle";
 
 
 export class HomePage extends React.Component{
@@ -12,8 +13,17 @@ export class HomePage extends React.Component{
 
   render(){
     return (
-        <div>
-          Homepage !
+        <div className="content-wrapper">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <VideoSingle/>
+                <VideoSingle/>
+                <VideoSingle/>
+                <VideoSingle/>
+              </div>
+            </div>
+          </div>
         </div>
     )
   }
