@@ -33,6 +33,7 @@ module.exports.updateVideo = (req, res) => {
       })
 };
 
+// TODO: basic AI for recommended video...
 module.exports.getRecommended = (req, res) => {
   Video.find()
       .sort({ viewCount: -1})
@@ -43,4 +44,16 @@ module.exports.getRecommended = (req, res) => {
       .catch(err => {
         res.send({ error: true, msg: err});
       });
+};
+
+// Right now we temporary just fetch the last videos... TODO: take into account the new uploaded video...
+module.exports.getVideos = async (req, res) => {
+  const { limit, offset } = req.query;
+
+  Video.find()
+      .sort({ createdAt: -1 })
+      .skip(parseInt(offset))
+      .limit(parseInt(limit))
+      .then(rVideos => res.send({ error: false, videos: rVideos}))
+      .catch(err => res.send({ error: true, msg: err }));
 };

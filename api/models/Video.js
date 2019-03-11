@@ -1,4 +1,6 @@
 const mongoose = require("mongoose");
+const mongoosePaginate = require('mongoose-paginate');
+
 
 const videosSchema = new mongoose.Schema({
   name: {
@@ -31,5 +33,7 @@ const videosSchema = new mongoose.Schema({
     default: 0
   },
 }, {timestamps: true});
+
+videosSchema.plugin(mongoosePaginate);
 
 module.exports = mongoose.model("Video", videosSchema);
