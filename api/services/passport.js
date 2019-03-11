@@ -44,8 +44,10 @@ const jwtLogin = new JwtStrategy(jwtOptions, (payload, done) => {
         if(!rUser){
             return done(null, false);
         }
+        console.log(rUser);
         return done(null,{ id: rUser._id});
     }).catch((err) => {
+      console.log("error========",err);
          done(err, false)
     });
 });

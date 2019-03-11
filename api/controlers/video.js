@@ -28,5 +28,20 @@ module.exports.getDefaultImageCoverById = (req, res) => {
 module.exports.updateVideo = (req, res) => {
   Video.findByIdAndUpdate(req.params.id, req.body)
       .then(() => res.send({ error: false }) )
-      .catch(err => res.send({ error: true, msg: err}))
+      .catch(err => {
+        console.log("new Err=====",err);
+        res.send({ error: true, msg: err})
+      })
+};
+
+module.exports.getRecommended = (req, res) => {
+  Video.find()
+      .sort({ viewCount: -1})
+      .limit(8)
+      .then(rVideos => {
+        res.send({ error: false, videos: rVideos})
+      })
+      .catch(err => {
+        res.send({ error: true, msg: err});
+      });
 };

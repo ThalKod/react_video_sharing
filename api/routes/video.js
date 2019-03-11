@@ -1,5 +1,5 @@
 const express = require("express");
-const { getBasicVideoInfoById, getDefaultImageCoverById, updateVideo } = require("../controlers/video");
+const { getBasicVideoInfoById, getDefaultImageCoverById, updateVideo, getRecommended } = require("../controlers/video");
 const { requireAuth } = require("../middlewares/auth");
 const { isVideoOwner } = require("../middlewares/ownership");
 const router = express.Router();
@@ -10,6 +10,9 @@ const router = express.Router();
 router.get("/video/basic/:id", getBasicVideoInfoById);
 
 router.get("/video/cover/default/:id", getDefaultImageCoverById);
+
+// For now we just fetch the eight most watched video... as recemommended
+router.get("/video/list/recommended/", getRecommended);
 
 router.put("/video/:id", requireAuth, isVideoOwner, updateVideo);
 
