@@ -29,7 +29,6 @@ module.exports.updateVideo = (req, res) => {
   Video.findByIdAndUpdate(req.params.id, req.body)
       .then(() => res.send({ error: false }) )
       .catch(err => {
-        console.log("new Err=====",err);
         res.send({ error: true, msg: err})
       })
 };
