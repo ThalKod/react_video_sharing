@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 import { request } from "../../utils";
-import { startSignupUser, startSigninUser } from "../../actions/auth";
+import { startSignupUser, startSigninUser } from "../../actions/authActions";
 
 export class RegistrationForm extends React.Component{
 

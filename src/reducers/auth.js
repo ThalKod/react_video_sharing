@@ -1,4 +1,4 @@
-import { AUTH_USER, SIGN_OUT_USER } from "../actions/actionTypes";
+import { AUTH_USER, SIGN_OUT_USER } from "../actions/types";
 
 const defaultState = { userToken: localStorage.getItem("token") || "" };
 

@@ -1,4 +1,4 @@
-import { AUTH_USER, SIGN_OUT_USER } from "./actionTypes";
+import { AUTH_USER, SIGN_OUT_USER } from "./types";
 
 import { request, setToken, removeToken } from "../utils";
 
