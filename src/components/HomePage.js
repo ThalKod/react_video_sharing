@@ -2,37 +2,45 @@ import React from "react";
 import { connect } from "react-redux";
 
 import VideoSection from "./VideoSection";
+import { startGetRecommendedVideo } from "../actions";
 
 export class HomePage extends React.Component{
 
+  state = {
+    loading: true
+  };
+
   componentDidMount = () => {
-    // const { getUser, token } = this.props;
-    // getUser(token);
+    const { getRecommendedVideo } = this.props;
+    getRecommendedVideo((res) => {
+      if(!res.error) this.setState({ loading: false })
+    });
   };
 
   render(){
+    const { loading } = this.state;
+
+    // temp loading..
+    if(loading) return <div>Loading...</div>;
+
     return (
         <div className="content-wrapper">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-               <VideoSection />
+               <VideoSection type="Recommended" />
               </div>
             </div>
           </div>
         </div>
     )
   }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    getRecommendedVideo: (callback) => dispatch(startGetRecommendedVideo(callback))
+  }
 };
 
-const mapStateToProps = (state) =>({
-  token: state.auth.userToken
-});
-
-/* const mapDispatchToProps = (dispatch) => {
-  return {
-    getUser: (token) => dispatch(startGetUserinfo(token))
-  }
-}; */
-
-export default connect(mapStateToProps)(HomePage);
+export default connect(null, mapDispatchToProps)(HomePage);

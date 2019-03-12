@@ -33,7 +33,7 @@ module.exports.updateVideo = (req, res) => {
       })
 };
 
-// TODO: basic AI for recommended video...
+// TODO: basic AI for recommended video(user preference..)...
 module.exports.getRecommended = (req, res) => {
   Video.find()
       .sort({ viewCount: -1})

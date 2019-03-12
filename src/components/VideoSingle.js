@@ -2,7 +2,7 @@ import React from "react";
 
 import videoPlaceholder from "../assets/images/video_placeholder.png";
 
-export default ({ name, duration, viewsCount }) => {
+export default ({ name, duration, viewCount }) => {
   return (
       <div className="col-lg-3 col-sm-6 videoitem">
         <div className="b-video">
@@ -14,7 +14,7 @@ export default ({ name, duration, viewsCount }) => {
             <a href="/">{name}</a>
           </div>
           <div className="v-views">
-            {viewsCount} views.
+            {viewCount} views.
           </div>
         </div>
       </div>
