@@ -4,7 +4,7 @@ import VideoList from "./VideoList";
 class VideoSection extends React.Component{
 
   state = {
-    categories: "Featured",
+    categories: "Recommended",
   };
 
   render() {
