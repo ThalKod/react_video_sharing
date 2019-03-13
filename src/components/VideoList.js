@@ -5,8 +5,8 @@ import VideoSingle from "./VideoSingle";
 const VideoList = ({ videos }) => {
 
   const renderVideo = () => {
-    return videos.map(singleVideo => {
-      return <VideoSingle { ...singleVideo}/>
+    return videos.map((singleVideo) => {
+      return <VideoSingle key={singleVideo._id} { ...singleVideo}/>
     })
   };
 

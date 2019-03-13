@@ -24,7 +24,7 @@ const takeScreenshot = (video, duration, callback) => {
         console.log("Error");
         return callback({ error: true, msg: err});
       })
-      .takeScreenshots({ count: 1, timemarks: [ (duration / 4).toString() ], size: '165x113' }, pathToScreenshot);
+      .takeScreenshots({ count: 1, timemarks: [ (duration / 4).toString() ], size: '1280x720' }, pathToScreenshot);
 };
 
 // process vidoe by taking a getting a video dutaion and a default screenscht
