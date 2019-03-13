@@ -1,6 +1,7 @@
 import React from "react";
 
-import { request } from "../utils";
+import { request, formatSecondForRendering } from "../utils";
+
 // import videoPlaceholder from "../assets/images/video_placeholder.png";
 
 class VideoSingle extends React.Component{
@@ -29,7 +30,7 @@ class VideoSingle extends React.Component{
           <div className="b-video">
             <div className="v-img">
               <a href="/"><img  src={videoImage} alt="placeholder" /></a>
-              <div className="time">{duration}</div>
+              <div className="time">{formatSecondForRendering(duration)}</div>
             </div>
             <div className="v-desc">
               <a href="/">{name}</a>

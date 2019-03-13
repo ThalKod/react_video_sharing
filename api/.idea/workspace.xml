@@ -3,15 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="63415b28-8174-4354-9629-d6b6324e3c8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/videos.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/videos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/VideoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/VideoSingle.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSingle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/base/_account.less" beforeDir="false" afterPath="$PROJECT_DIR$/../src/styles/base/_account.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/base/_content.less" beforeDir="false" afterPath="$PROJECT_DIR$/../src/styles/base/_content.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/components/_upload_picker.less" beforeDir="false" afterPath="$PROJECT_DIR$/../src/styles/components/_upload_picker.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/components/_v_tabs.less" beforeDir="false" afterPath="$PROJECT_DIR$/../src/styles/components/_v_tabs.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/components/_video.less" beforeDir="false" afterPath="$PROJECT_DIR$/../src/styles/components/_video.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utils/format.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/utils/format.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -124,38 +117,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/utils/videos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
+            <state relative-caret-position="176">
               <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/OC7Mhy42SHegyulphS8O/tn.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/9idyq4V1TqCx8PKm3Gyw/tn.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data/sOcL7EjROanxB2Jd6VW3/tn.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/Dyh4IRGCRxOYEPACzY5o/tn.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/Cd1mB8L8Tt21TmyMSgav/tn.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -276,36 +244,6 @@
             <path>
               <item name="api" type="b2602c69:ProjectViewProjectNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="9idyq4V1TqCx8PKm3Gyw" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="Cd1mB8L8Tt21TmyMSgav" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="Dyh4IRGCRxOYEPACzY5o" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="OC7Mhy42SHegyulphS8O" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="sOcL7EjROanxB2Jd6VW3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="middlewares" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -415,12 +353,12 @@
       <workItem from="1552317046221" duration="2064000" />
       <workItem from="1552328380286" duration="3892000" />
       <workItem from="1552393696432" duration="3488000" />
-      <workItem from="1552499052821" duration="2313000" />
+      <workItem from="1552499052821" duration="2946000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103712000" />
+    <option name="totallyTimeSpent" value="104345000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -636,20 +574,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/videos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/Cd1mB8L8Tt21TmyMSgav/tn.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/Dyh4IRGCRxOYEPACzY5o/tn.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/OC7Mhy42SHegyulphS8O/tn.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/9idyq4V1TqCx8PKm3Gyw/tn.png">
@@ -657,6 +585,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/sOcL7EjROanxB2Jd6VW3/tn.png">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/OC7Mhy42SHegyulphS8O/tn.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/videos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

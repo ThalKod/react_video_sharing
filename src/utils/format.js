@@ -15,3 +15,14 @@ export const formatSecond = (second) => {
     const sDisplay = s > 0 ? s + (s === 1 ? " second" : " seconds") : "";
     return hDisplay + mDisplay + sDisplay;
 };
+
+export const formatSecondForRendering  = (second) => {
+  const h = Math.floor(second / 3600);
+  const m = Math.floor(second % 3600 / 60);
+  const s = Math.floor(second % 3600 % 60);
+
+  const hDisplay = h <= 0 ? "" : `${h}:`;
+  const mDisplay = m <= 0 ? "0:" : `${m}:`;
+  const sDisplay = s > 0 ? s : "";
+  return hDisplay + mDisplay + sDisplay;
+};
