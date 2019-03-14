@@ -1,6 +1,18 @@
-import { GET_RECOMMENDED_VIDEO } from "../actions/types";
+import { GET_RECOMMENDED_VIDEO, GET_VIDEOS } from "../actions/types";
 
-const defaultState = { recommended: [] };
+const defaultState = {
+  recommended: [],
+  featured: {
+    videos: [],
+    offset: 0
+  }
+};
+
+const getVideos = (state, action) => {
+  const { videos, offset } = state.featured;
+  const { payload } = action;
+  return { ...state, featured: { ...state.featured, videos: videos.concat(payload.videos)}, offset: offset + payload.videos.length };
+};
 
 export default (state = defaultState, action) => {
   switch(action.type){
@@ -8,7 +20,11 @@ export default (state = defaultState, action) => {
     case GET_RECOMMENDED_VIDEO:
       return { ...state, recommended: action.payload };
 
+    case GET_VIDEOS:
+      return getVideos(state, action);
+
     default:
       return state;
   }
 }
+
