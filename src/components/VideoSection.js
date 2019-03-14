@@ -1,21 +1,15 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import VideoList from "./VideoList";
+import VideoSingle from "./VideoSingle";
 
 class VideoSection extends React.Component{
 
   renderVideoList = () => {
     const { videos } = this.props;
 
-    // split the video array into four then map over it...
-    const splited = videos.reduce((result, value, index, array) => {
-      if(index % 4 === 0) result.push(array.slice(index, index + 4));
-      return result;
-    }, []);
-
-     return splited.map((splitedVideos, index) => {
-      return <VideoList key={index} videos={splitedVideos}/>
+    return videos.map(video => {
+      return <VideoSingle key={video._id} {...video} />
     })
   };
 
@@ -32,7 +26,11 @@ class VideoSection extends React.Component{
               </div>
             </div>
           </div>
-          {this.renderVideoList()}
+          <div className="cb-content videolist">
+            <div className="row">
+              {this.renderVideoList()}
+            </div>
+          </div>
         </div>
     )
   }

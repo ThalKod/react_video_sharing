@@ -29,6 +29,7 @@ export class HomePage extends React.Component{
             <div className="row">
               <div className="col-lg-12">
                <VideoSection type="Recommended" />
+               <VideoSection type="Featured"/>
               </div>
             </div>
           </div>
