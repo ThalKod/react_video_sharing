@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 import VideoSection from "./VideoSection";
-import { startGetRecommendedVideo } from "../actions";
+import { startGetRecommendedVideo, startGetVideos } from "../actions";
 
 export class HomePage extends React.Component{
 
@@ -11,10 +11,16 @@ export class HomePage extends React.Component{
   };
 
   componentDidMount = () => {
-    const { getRecommendedVideo } = this.props;
-    getRecommendedVideo((res) => {
-      if(!res.error) this.setState({ loading: false })
-    });
+    const { getRecommendedVideo, getVideos } = this.props;
+
+    const getRecommendedVideoPromise = getRecommendedVideo();
+    const getVideosPromise = getVideos({});
+
+    Promise.all([ getRecommendedVideoPromise , getVideosPromise ])
+        .then(res => {
+          if(res[0].error === false && res[1].error === false) this.setState({ loading: false });
+        })
+        .catch(err => console.log(err));
   };
 
   render(){
@@ -38,10 +44,15 @@ export class HomePage extends React.Component{
   }
 }
 
+const mapStateToProps = (state) => ({
+  offset: state.video.featured.offset
+});
+
 const mapDispatchToProps = (dispatch) => {
   return {
-    getRecommendedVideo: (callback) => dispatch(startGetRecommendedVideo(callback))
+    getRecommendedVideo: (callback) => dispatch(startGetRecommendedVideo(callback)),
+    getVideos: (options, callback) => dispatch(startGetVideos(options, callback)),
   }
 };
 
-export default connect(null, mapDispatchToProps)(HomePage);
+export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
