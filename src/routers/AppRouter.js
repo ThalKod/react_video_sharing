@@ -11,6 +11,7 @@ import UploadContainer from "../components/Upload/UploadContainer";
 
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer";
+import VideoSinglePage from "../components/VideoSinglePage/VideoSinglePage";
 
 const AppRouter = () => (
     <Router>
@@ -27,6 +28,7 @@ const AppRouter = () => (
               render={(props) => <RegistrationPage {...props} signup />}
           />
           <Route path="/upload" component={UploadContainer}/>
+          <Route path="/video/:id" component={VideoSinglePage}/>
           <Route component={NotFoundPage}/>
         </Switch>
         <Footer/>

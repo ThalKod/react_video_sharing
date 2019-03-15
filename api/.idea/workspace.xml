@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="63415b28-8174-4354-9629-d6b6324e3c8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/HomePage/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/VideoSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/HomePage/VideoSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/VideoSingle.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/HomePage/VideoSingle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/HomePage/VideoSingle.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/HomePage/VideoSingle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/routers/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/routers/AppRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/components/Homepage.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/Homepage.test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { request, formatSecondForRendering } from "../../utils/index";
 
@@ -22,18 +23,18 @@ class VideoSingle extends React.Component{
   };
 
   render(){
-    const { name, duration, viewCount } = this.props;
+    const { name, duration, viewCount, _id } = this.props;
     const { videoImage } = this.state;
 
     return (
         <div className="col-lg-3 col-sm-6 videoitem">
           <div className="b-video">
             <div className="v-img">
-              <a href="/"><img src={videoImage} alt="placeholder" /></a>
+              <Link to={`/video/${_id}`}><img src={videoImage} alt="placeholder" /></Link>
               <div className="time">{formatSecondForRendering(duration)}</div>
             </div>
             <div className="v-desc">
-              <a href="/">{name}</a>
+              <Link to={`/video/${_id}`}>{name}</Link>
             </div>
             <div className="v-views">
               {viewCount} views.
