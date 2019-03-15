@@ -4,7 +4,7 @@ import {
   Route,
   Switch, } from "react-router-dom";
 
-import HomePage from "../components/HomePage";
+import HomePage from "../components/HomePage/HomePage";
 import NotFoundPage from "../components/NotFoundPage";
 import RegistrationPage from "../components/Register/RegistrationPage";
 import UploadContainer from "../components/Upload/UploadContainer";
