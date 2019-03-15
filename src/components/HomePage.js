@@ -35,7 +35,7 @@ export class HomePage extends React.Component{
             <div className="row">
               <div className="col-lg-12">
                <VideoSection type="Recommended" />
-               <VideoSection type="Featured"/>
+               <VideoSection scrollable type="Featured"/>
               </div>
             </div>
           </div>
@@ -44,15 +44,9 @@ export class HomePage extends React.Component{
   }
 }
 
-const mapStateToProps = (state) => ({
-  offset: state.video.featured.offset
+const mapDispatchToProps = (dispatch) => ({
+    getRecommendedVideo: () => dispatch(startGetRecommendedVideo()),
+    getVideos: (options) => dispatch(startGetVideos(options)),
 });
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    getRecommendedVideo: (callback) => dispatch(startGetRecommendedVideo(callback)),
-    getVideos: (options, callback) => dispatch(startGetVideos(options, callback)),
-  }
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
+export default connect(null,mapDispatchToProps)(HomePage);

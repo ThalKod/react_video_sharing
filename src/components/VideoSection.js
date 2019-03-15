@@ -2,15 +2,44 @@ import React from "react";
 import { connect } from "react-redux";
 
 import VideoSingle from "./VideoSingle";
+import { startGetVideos } from "../actions";
 
 class VideoSection extends React.Component{
 
   renderVideoList = () => {
-    const { videos } = this.props;
+    const { recommendedVideos, featuredVideos, scrollable } = this.props;
 
-    return videos.map(video => {
+    if(scrollable){
+      return featuredVideos.map(video => {
+        return <VideoSingle key={video._id} {...video} />
+      })
+    }
+
+    return recommendedVideos.map(video => {
       return <VideoSingle key={video._id} {...video} />
     })
+  };
+
+  onScroll = () => {
+    const { getMoreVideos, offset } = this.props;
+    if (// TODO: refactor scrolling and implement a better infinite bottom scroll for this component. lets' keep this for this mvp...
+        window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight
+    ) {
+      getMoreVideos({ offset })
+          .catch(err => console.log(err));
+    }
+  };
+
+  componentDidMount = () => {
+    const { scrollable } = this.props;
+    if(!scrollable) return;
+    window.addEventListener("scroll", this.onScroll, false);
+  };
+
+  componentWillUnmount = () => {
+    const { scrollable } = this.props;
+    if(!scrollable) return;
+    window.removeEventListener("scroll", this.onScroll, false);
   };
 
   render() {
@@ -37,7 +66,13 @@ class VideoSection extends React.Component{
 }
 
 const mapStateToProps = (state) => ({
-  videos: state.video.recommended,
+  recommendedVideos: state.video.recommended,
+  featuredVideos: state.video.featured.videos,
+  offset: state.video.featured.offset,
 });
 
-export default connect(mapStateToProps)(VideoSection);
+const mapDispatchToProps = (dispatch) => ({
+  getMoreVideos: (options) => dispatch(startGetVideos(options))
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(VideoSection);

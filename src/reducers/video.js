@@ -11,9 +11,6 @@ const defaultState = {
 const getVideos = (state, action) => {
   const { videos, offset } = state.featured;
   const { payload } = action;
-  console.log(payload);
-  console.log({ ...state, featured: { ...state.featured, videos: videos.concat(payload)}, offset: offset + payload.length });
-
   return { ...state, featured: { ...state.featured, videos: videos.concat(payload), offset: offset + payload.length } };
 };
 
