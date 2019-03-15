@@ -1,4 +1,6 @@
 const mongoose = require("mongoose");
+const mongoosePaginate = require('mongoose-paginate');
+
 
 const videosSchema = new mongoose.Schema({
   name: {
@@ -26,11 +28,12 @@ const videosSchema = new mongoose.Schema({
   defaultCoverPhoto: String,
   description: String,
   tags: [],
-  uploadDate: {
-    type: Date,
-    default: Date.now,
+  viewCount: {
+    type: Number,
+    default: 0
   },
-  viewCount: Number,
-});
+}, {timestamps: true});
+
+videosSchema.plugin(mongoosePaginate);
 
 module.exports = mongoose.model("Video", videosSchema);

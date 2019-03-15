@@ -45,6 +45,7 @@ describe("PUT /video/:id",  () => {
 
     const newRes = await request(app).get("/api/v0/token").set('Authorization', token);
     const res = await request(app).put(`/api/v0/video/${id}`).set('Authorization', newRes.body.token).send({ name: "name232"});
+
     expect(res.body.error).toBe(false);
     const updatedVideo = await Video.find({ name: "name232"});
 

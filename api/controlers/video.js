@@ -28,5 +28,32 @@ module.exports.getDefaultImageCoverById = (req, res) => {
 module.exports.updateVideo = (req, res) => {
   Video.findByIdAndUpdate(req.params.id, req.body)
       .then(() => res.send({ error: false }) )
-      .catch(err => res.send({ error: true, msg: err}))
+      .catch(err => {
+        res.send({ error: true, msg: err})
+      })
+};
+
+// TODO: basic AI for recommended video(user preference..)...
+module.exports.getRecommended = (req, res) => {
+  Video.find()
+      .sort({ viewCount: -1})
+      .limit(8)
+      .then(rVideos => {
+        res.send({ error: false, videos: rVideos})
+      })
+      .catch(err => {
+        res.send({ error: true, msg: err});
+      });
+};
+
+// Right now we temporary just fetch the last videos... TODO: Refactoring and Take into account the new uploaded video...
+module.exports.getVideos = async (req, res) => {
+  const { limit, offset } = req.query;
+
+  Video.find()
+      .sort({ createdAt: -1 })
+      .skip(parseInt(offset))
+      .limit(parseInt(limit))
+      .then(rVideos => res.send({ error: false, videos: rVideos}))
+      .catch(err => res.send({ error: true, msg: err }));
 };
