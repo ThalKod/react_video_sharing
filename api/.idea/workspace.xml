@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63415b28-8174-4354-9629-d6b6324e3c8a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlers/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/controlers/video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Video.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/video.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/HomePage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/HomePage/HomePage.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -65,22 +61,22 @@
     <session id="-311914715">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="25" />
+          <entry key="project.closed" value="30" />
           <entry key="project.open.time.1" value="14" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.2" value="5" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.6" value="6" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="26" />
+          <entry key="project.opened" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="env" value="32" />
-          <entry key="js" value="13392" />
+          <entry key="js" value="13444" />
           <entry key="json" value="49" />
         </counts>
       </usages-collector>
@@ -88,70 +84,52 @@
         <counts>
           <entry key=".env file" value="32" />
           <entry key="JSON" value="49" />
-          <entry key="JavaScript" value="13392" />
+          <entry key="JavaScript" value="13444" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="env" value="3" />
-          <entry key="js" value="110" />
+          <entry key="js" value="114" />
           <entry key="json" value="7" />
-          <entry key="png" value="9" />
+          <entry key="png" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="3" />
-          <entry key="Image" value="9" />
+          <entry key="Image" value="14" />
           <entry key="JSON" value="7" />
-          <entry key="JavaScript" value="110" />
+          <entry key="JavaScript" value="114" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controlers/video.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-57">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="276">
+              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/videos.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/video.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controlers/upload.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/middlewares/ownership.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/routes/video.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1012">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="483">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -168,7 +146,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/passport.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
+            <state relative-caret-position="1058">
               <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
             </state>
           </provider>
@@ -205,7 +183,6 @@
         <option value="$PROJECT_DIR$/routes/upload.js" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/controlers/upload.js" />
-        <option value="$PROJECT_DIR$/utils/videos.js" />
         <option value="$PROJECT_DIR$/test/routes/upload.test.js" />
         <option value="$PROJECT_DIR$/controlers/auth.js" />
         <option value="$PROJECT_DIR$/middlewares/ownership.js" />
@@ -213,8 +190,9 @@
         <option value="$PROJECT_DIR$/test/routes/video.test.js" />
         <option value="$PROJECT_DIR$/models/User.js" />
         <option value="$PROJECT_DIR$/models/Video.js" />
-        <option value="$PROJECT_DIR$/controlers/video.js" />
         <option value="$PROJECT_DIR$/routes/video.js" />
+        <option value="$PROJECT_DIR$/utils/videos.js" />
+        <option value="$PROJECT_DIR$/controlers/video.js" />
       </list>
     </option>
   </component>
@@ -234,10 +212,10 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="823" />
+    <option name="height" value="827" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -251,47 +229,6 @@
             <path>
               <item name="api" type="b2602c69:ProjectViewProjectNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="controlers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="middlewares" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -367,12 +304,17 @@
       <workItem from="1552065226880" duration="368000" />
       <workItem from="1552077231554" duration="4000" />
       <workItem from="1552317046221" duration="2064000" />
-      <workItem from="1552328380286" duration="3735000" />
+      <workItem from="1552328380286" duration="3892000" />
+      <workItem from="1552393696432" duration="3488000" />
+      <workItem from="1552499052821" duration="2950000" />
+      <workItem from="1552566889817" duration="1497000" />
+      <workItem from="1552575894317" duration="2000" />
+      <workItem from="1552665099013" duration="848000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97754000" />
+    <option name="totallyTimeSpent" value="106696000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -384,14 +326,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="827" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.114250615" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.24617524" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -452,15 +394,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/D15RcPMqQhmyL2m4GzmR/tn.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/7yH8WJq1S8ej2PcGIQoF/tn.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/yJe7yoqyQ6eM9fdatIVc/tn.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/D15RcPMqQhmyL2m4GzmR/tn.png" />
+    <entry file="file://$PROJECT_DIR$/data/7yH8WJq1S8ej2PcGIQoF/tn.png" />
+    <entry file="file://$PROJECT_DIR$/data/yJe7yoqyQ6eM9fdatIVc/tn.png" />
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="851">
@@ -469,13 +405,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/routes/upload.test.js" />
-    <entry file="file://$PROJECT_DIR$/utils/videos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="24" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/routes/check.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
@@ -511,45 +440,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controlers/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1357">
-          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/upload.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controlers/upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlewares/ownership.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/routes/video.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middlewares/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
@@ -574,24 +468,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/passport.js">
+    <entry file="file://$PROJECT_DIR$/controlers/auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+        <state relative-caret-position="-577">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controlers/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlewares/ownership.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/routes/video.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Cd1mB8L8Tt21TmyMSgav/tn.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Dyh4IRGCRxOYEPACzY5o/tn.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/9idyq4V1TqCx8PKm3Gyw/tn.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/sOcL7EjROanxB2Jd6VW3/tn.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/OC7Mhy42SHegyulphS8O/tn.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/controlers/video.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="276">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/videos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/video.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+        <state relative-caret-position="483">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middlewares/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/passport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1058">
+          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
         </state>
       </provider>
     </entry>

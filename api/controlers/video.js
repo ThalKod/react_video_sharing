@@ -33,7 +33,7 @@ module.exports.updateVideo = (req, res) => {
       })
 };
 
-// TODO: basic AI for recommended video...
+// TODO: basic AI for recommended video(user preference..)...
 module.exports.getRecommended = (req, res) => {
   Video.find()
       .sort({ viewCount: -1})
@@ -46,7 +46,7 @@ module.exports.getRecommended = (req, res) => {
       });
 };
 
-// Right now we temporary just fetch the last videos... TODO: take into account the new uploaded video...
+// Right now we temporary just fetch the last videos... TODO: Refactoring and Take into account the new uploaded video...
 module.exports.getVideos = async (req, res) => {
   const { limit, offset } = req.query;
 

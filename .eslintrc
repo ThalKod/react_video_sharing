@@ -12,6 +12,7 @@
     ],
     "react/prop-types": 0,
     "react/no-unescaped-entities": 0,
+    "react/no-array-index-key": 0,
     "no-underscore-dangle": 0,
     "no-console": "off",
     "import/imports-first": ["error", "absolute-first"],

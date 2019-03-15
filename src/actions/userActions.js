@@ -1,4 +1,4 @@
-import { GET_MY_INFO } from "./actionTypes";
+import { GET_MY_INFO } from "./types";
 import { request } from "../utils";
 
 export const startGetMyInfo = (callback) => (dispatch) =>{
@@ -7,6 +7,6 @@ export const startGetMyInfo = (callback) => (dispatch) =>{
         dispatch({ type: GET_MY_INFO, payload: res.data });
         callback({error: false});
       })
-      .catch(err => callback({error: true, mes: err}));
+      .catch(err => callback({error: true, msg: err}));
 };
 
