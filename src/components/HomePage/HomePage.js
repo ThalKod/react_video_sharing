@@ -11,10 +11,10 @@ export class HomePage extends React.Component{
   };
 
   componentDidMount = () => {
-    const { getRecommendedVideo, getVideos } = this.props;
+    const { getRecommendedVideo, getVideos, offset } = this.props;
 
     const getRecommendedVideoPromise = getRecommendedVideo();
-    const getVideosPromise = getVideos({});
+    const getVideosPromise = getVideos({ offset });
 
     Promise.all([ getRecommendedVideoPromise , getVideosPromise ])
         .then(res => {
@@ -44,9 +44,13 @@ export class HomePage extends React.Component{
   }
 }
 
+const mapStateToProps = (state) => ({
+  offset: state.video.featured.offset,
+});
+
 const mapDispatchToProps = (dispatch) => ({
     getRecommendedVideo: () => dispatch(startGetRecommendedVideo()),
     getVideos: (options) => dispatch(startGetVideos(options)),
 });
 
-export default connect(null,mapDispatchToProps)(HomePage);
+export default connect(mapStateToProps,mapDispatchToProps)(HomePage);
