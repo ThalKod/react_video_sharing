@@ -4,9 +4,6 @@
     <list default="true" id="63415b28-8174-4354-9629-d6b6324e3c8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlers/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/controlers/video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/VideoSinglePage/VideoPlayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSinglePage/VideoPlayer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/VideoSinglePage/VideoSinglePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSinglePage/VideoSinglePage.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -216,7 +213,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="827" />
@@ -319,12 +316,12 @@
       <workItem from="1552566889817" duration="1497000" />
       <workItem from="1552575894317" duration="2000" />
       <workItem from="1552665099013" duration="851000" />
-      <workItem from="1552915230615" duration="1557000" />
+      <workItem from="1552915230615" duration="2032000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108256000" />
+    <option name="totallyTimeSpent" value="108731000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -336,14 +333,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="827" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.24570024" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.27816412" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
