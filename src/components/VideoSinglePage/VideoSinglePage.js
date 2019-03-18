@@ -1,24 +1,57 @@
 import React from "react";
+import { connect } from "react-redux";
 
 import VideoPlayer from "./VideoPlayer";
 import VideoSingleTab from "./VideoSingleTab";
 import { request } from "../../utils";
 
 
-export default class VideoSinglePage extends React.Component{
+class VideoSinglePage extends React.Component{
 
   state = {
     videoUrl: "",
+    currentVideoId: null,
+    nextVideos: []
+  };
+
+  renderUpNextVideo = () => {
+    const { upNext } = this.props;
+    const { currentVideoId, nextVideos } =  this.state;
+
+    let filtered;
+    if(upNext.length !== 0){
+      filtered = upNext.filter(video => video._id !== currentVideoId);
+    }else{
+      filtered = nextVideos.filter(video => video._id !== currentVideoId);
+    }
+
+    return filtered.map(video => {
+      return <VideoSingleTab
+          key={video._id}
+          id={video._id}
+          videoDefaultCover={video.videoDefaultCover}
+          duration={video.duration}
+          name={video.name}
+          viewCount={video.viewCount}
+      />
+    });
   };
 
   componentDidMount = () => {
-    const { match: { params: { id } } } = this.props;
+    const { match: { params: { id } }, upNext } = this.props;
 
     request("get", `/video/${id}`)
         .then((res) => {
-          this.setState({ videoUrl: res.data.video.url})
+          const { url, _id } = res.data.video;
+          this.setState({ videoUrl: url, currentVideoId: _id})
         })
         .catch(err => console.log(err));
+
+    if(upNext.length === 0){
+      request("get", "/video/list?limit=10")
+          .then(res => this.setState({ nextVideos: res.data.videos}))
+          .catch(err => console.log(err));
+    }
   };
 
   render(){
@@ -33,14 +66,12 @@ export default class VideoSinglePage extends React.Component{
                   <VideoPlayer videoUrl={videoUrl}/>
                 </div>
                 <div className="col-lg-4 col-xs-12 col-sm-12">
-                  <div className="caption" style={{ "margin-top": "30px"}}>
+                  <div className="caption">
                     <div className="left">Up Next</div>
                     <div className="clearfix"/>
                   </div>
                   <div className="list">
-                    <VideoSingleTab/>
-                    <VideoSingleTab/>
-                    <VideoSingleTab/>
+                    {this.renderUpNextVideo()}
                   </div>
                 </div>
               </div>
@@ -50,3 +81,9 @@ export default class VideoSinglePage extends React.Component{
     )
   }
 }
+
+const mapStateToProps = (state) => {
+  return {upNext: state.video.featured.videos} // Just taking the recomended video as up next :)
+};
+
+export default connect(mapStateToProps)(VideoSinglePage);
