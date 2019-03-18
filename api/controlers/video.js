@@ -57,3 +57,14 @@ module.exports.getVideos = async (req, res) => {
       .then(rVideos => res.send({ error: false, videos: rVideos}))
       .catch(err => res.send({ error: true, msg: err }));
 };
+
+module.exports.getVideoById = (req, res) => {
+  const { id } = req.params;
+
+  Video.findById(id)
+      .then(video => {
+        if(!video) res.send({ error: true, msg: "Video Not Found"});
+        res.send({ error: false, video });
+      })
+      .catch(err => res.send({ error: true, msg: err}));
+};
