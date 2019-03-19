@@ -17,7 +17,8 @@ class VideoSinglePage extends React.Component{
     name: "",
     viewCount: 0,
     description: "",
-    tags: []
+    tags: [],
+    author: null
   };
 
   renderUpNextVideo = () => {
@@ -48,8 +49,15 @@ class VideoSinglePage extends React.Component{
 
     request("get", `/video/${id}`)
         .then((res) => {
-          const { url, _id, name, viewCount, description, tags } = res.data.video;
-          this.setState({ videoUrl: url, currentVideoId: _id, name, viewCount, description, tags })
+          const {
+            url,
+            _id,
+            name,
+            viewCount,
+            description,
+            tags,
+            author } = res.data.video;
+          this.setState({ videoUrl: url, currentVideoId: _id, name, viewCount, description, tags, author })
         })
         .catch(err => console.log(err));
 
@@ -61,7 +69,7 @@ class VideoSinglePage extends React.Component{
   };
 
   render(){
-    const { videoUrl, name, viewCount, description, tags } = this.state;
+    const { videoUrl, name, viewCount, description, tags, author } = this.state;
 
     return(
         <div className="single-video">
@@ -71,7 +79,7 @@ class VideoSinglePage extends React.Component{
                 <div className="col-lg-8 col-xs-12 col-sm-12">
                   <VideoPlayer videoUrl={videoUrl}/>
                   <h1>{name}</h1>
-                  <AuthorSection viewCount={viewCount}/>
+                  {author && <AuthorSection author={author} viewCount={viewCount}/>}
                   <VideoDescription description={description} tags={tags}/>
                 </div>
                 <div className="col-lg-4 col-xs-12 col-sm-12">
@@ -92,7 +100,7 @@ class VideoSinglePage extends React.Component{
 }
 
 const mapStateToProps = (state) => {
-  return {upNext: state.video.featured.videos} // Just taking the recomended video as up next :)
+  return {upNext: state.video.featured.videos} // Just taking the recomended video as upnext :)
 };
 
 export default connect(mapStateToProps)(VideoSinglePage);
