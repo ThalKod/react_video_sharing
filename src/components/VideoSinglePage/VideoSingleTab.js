@@ -42,7 +42,6 @@ export default class VideoSingleTab extends React.Component{
         </div>
     );
   }
-
 }
 
 
