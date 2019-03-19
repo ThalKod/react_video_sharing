@@ -1,7 +1,6 @@
 import  React from "react";
 
 export default function VideoDescription({ description, tags}){
-  console.log(tags, description);
   return (
       <div className="info">
         <h4>Categories:</h4>
