@@ -22,7 +22,7 @@ const videosSchema = new mongoose.Schema({
   duration: Number,
   size: Number,
   author: {
-    type: mongoose.Types.ObjectId,
+    type: mongoose.Schema.ObjectId,
     ref: "User"
   },
   defaultCoverPhoto: String,
