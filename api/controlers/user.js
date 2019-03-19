@@ -17,3 +17,12 @@ module.exports.getVideoCountByUserId = (req, res) => {
       })
       .catch(err => res.send({ error: true, msg: err }));
 };
+
+module.exports.getSubscribersCountByUserId = (req, res) => {
+  const { id } = req.params;
+  if(!id) return res.send({ error: true, msg: "Please provide a user id"});
+
+  User.findById(id)
+      .then(({ subscribersCount }) => res.send({ error: false, count: subscribersCount}))
+      .catch(err => res.send({error: true, msg: err}));
+};

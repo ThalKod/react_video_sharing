@@ -13,6 +13,10 @@ const userSchema = new mongoose.Schema({
         lowercase: true
     },
     password: String,
+    subscribersCount: {
+      type: Number,
+      default: 0
+    }
 }, {timestamps: true});
 
 userSchema.pre("save", function(next){
