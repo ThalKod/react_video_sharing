@@ -4,8 +4,7 @@
     <list default="true" id="63415b28-8174-4354-9629-d6b6324e3c8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/VideoSinglePage/VideoDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSinglePage/VideoDescription.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/VideoSinglePage/VideoSingleTab.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSinglePage/VideoSingleTab.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/utils/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/utils/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/styles/components/_v_tabs.less" beforeDir="false" afterPath="$PROJECT_DIR$/../src/styles/components/_v_tabs.less" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />

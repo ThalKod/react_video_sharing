@@ -4,8 +4,7 @@
     <list default="true" id="5f6ba216-dee2-489f-9342-55d1a1c7e4e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/VideoSinglePage/VideoDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoSinglePage/VideoDescription.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VideoSinglePage/VideoSingleTab.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoSinglePage/VideoSingleTab.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/components/_v_tabs.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/_v_tabs.less" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,7 +43,7 @@
           <entry key="html" value="4" />
           <entry key="js" value="400" />
           <entry key="json" value="10" />
-          <entry key="less" value="48" />
+          <entry key="less" value="50" />
           <entry key="png" value="2" />
           <entry key="prettierrc" value="1" />
           <entry key="scss" value="5" />
@@ -60,7 +59,7 @@
           <entry key="JSON" value="21" />
           <entry key="JavaScript" value="400" />
           <entry key="Jest Snapshot" value="19" />
-          <entry key="Less" value="48" />
+          <entry key="Less" value="50" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="5" />
         </counts>
@@ -75,9 +74,9 @@
           <entry key="env" value="68" />
           <entry key="eslintrc" value="136" />
           <entry key="html" value="51" />
-          <entry key="js" value="41842" />
+          <entry key="js" value="41853" />
           <entry key="json" value="67" />
-          <entry key="less" value="599" />
+          <entry key="less" value="606" />
           <entry key="scss" value="4" />
         </counts>
       </usages-collector>
@@ -86,8 +85,8 @@
           <entry key=".env file" value="68" />
           <entry key="HTML" value="51" />
           <entry key="JSON" value="203" />
-          <entry key="JavaScript" value="41842" />
-          <entry key="Less" value="599" />
+          <entry key="JavaScript" value="41853" />
+          <entry key="Less" value="606" />
           <entry key="SCSS" value="4" />
         </counts>
       </usages-collector>
@@ -119,16 +118,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/VideoDescription.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="366">
+              <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/base/_colors.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1830">
+              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/styles/components/_v_tabs.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="335" column="16" lean-forward="true" selection-start-line="335" selection-start-column="16" selection-end-line="335" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/VideoSingleTab.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
+            <state relative-caret-position="-3">
               <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -197,6 +214,7 @@
       <find>\.sv\-video \{\n    img \{\n      width\: 100\%\;\n    \}</find>
       <find>sv-video</find>
       <find>sv-views-count</find>
+      <find>showless</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -248,14 +266,14 @@
         <option value="$PROJECT_DIR$/src/components/HomePage/HomePage.js" />
         <option value="$PROJECT_DIR$/src/components/VideoSinglePage/VideoPlayer.js" />
         <option value="$PROJECT_DIR$/src/components/VideoSinglePage/VideoList.js" />
-        <option value="$PROJECT_DIR$/src/styles/components/_v_tabs.less" />
         <option value="$PROJECT_DIR$/src/styles/components/_video.less" />
         <option value="$PROJECT_DIR$/src/styles/base/_custom.less" />
         <option value="$PROJECT_DIR$/src/components/VideoSinglePage/AuthorSection.js" />
         <option value="$PROJECT_DIR$/src/components/VideoSinglePage/VideoSinglePage.js" />
-        <option value="$PROJECT_DIR$/src/components/VideoSinglePage/VideoDescription.js" />
         <option value="$PROJECT_DIR$/src/utils/request.js" />
         <option value="$PROJECT_DIR$/src/components/VideoSinglePage/VideoSingleTab.js" />
+        <option value="$PROJECT_DIR$/src/styles/components/_v_tabs.less" />
+        <option value="$PROJECT_DIR$/src/components/VideoSinglePage/VideoDescription.js" />
       </list>
     </option>
   </component>
@@ -441,12 +459,12 @@
       <workItem from="1552575895817" duration="4000" />
       <workItem from="1552665073204" duration="5519000" />
       <workItem from="1552914597270" duration="8358000" />
-      <workItem from="1552999857262" duration="3990000" />
+      <workItem from="1552999857262" duration="4152000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166654000" />
+    <option name="totallyTimeSpent" value="166816000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -493,9 +511,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/utils/username.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/utils/username.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -764,13 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/components/_v_tabs.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="638" column="9" selection-start-line="638" selection-start-column="9" selection-end-line="638" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/AuthorSection.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -795,13 +803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/VideoDescription.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/VideoSinglePage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="954">
@@ -821,11 +822,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/VideoSingleTab.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
+        <state relative-caret-position="-3">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/base/_colors.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1830">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/VideoDescription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/components/_v_tabs.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="335" column="16" lean-forward="true" selection-start-line="335" selection-start-column="16" selection-end-line="335" selection-end-column="16" />
         </state>
       </provider>
     </entry>

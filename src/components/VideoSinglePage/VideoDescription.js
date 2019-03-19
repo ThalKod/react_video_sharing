@@ -22,7 +22,7 @@ export default function VideoDescription({ description, tags}){
           </div>
         </div>
         <div className="showless">
-          <a href="/">showless</a>
+          <button type="submit">showless</button>
         </div>
       </div>
   )
