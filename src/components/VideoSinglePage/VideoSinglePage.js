@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 import VideoPlayer from "./VideoPlayer";
 import VideoSingleTab from "./VideoSingleTab";
+import AuthorSection from "./AuthorSection";
 import { request } from "../../utils";
 
 
@@ -11,7 +12,9 @@ class VideoSinglePage extends React.Component{
   state = {
     videoUrl: "",
     currentVideoId: null,
-    nextVideos: []
+    nextVideos: [],
+    currentVideoName: "",
+    viewCount: 0
   };
 
   renderUpNextVideo = () => {
@@ -42,8 +45,8 @@ class VideoSinglePage extends React.Component{
 
     request("get", `/video/${id}`)
         .then((res) => {
-          const { url, _id } = res.data.video;
-          this.setState({ videoUrl: url, currentVideoId: _id})
+          const { url, _id, name, viewCount } = res.data.video;
+          this.setState({ videoUrl: url, currentVideoId: _id, currentVideoName: name, viewCount  })
         })
         .catch(err => console.log(err));
 
@@ -55,7 +58,7 @@ class VideoSinglePage extends React.Component{
   };
 
   render(){
-    const { videoUrl } = this.state;
+    const { videoUrl, currentVideoName, viewCount } = this.state;
 
     return(
         <div className="single-video">
@@ -64,6 +67,8 @@ class VideoSinglePage extends React.Component{
               <div className="row">
                 <div className="col-lg-8 col-xs-12 col-sm-12">
                   <VideoPlayer videoUrl={videoUrl}/>
+                  <h1>{currentVideoName}</h1>
+                  <AuthorSection viewCount={viewCount}/>
                 </div>
                 <div className="col-lg-4 col-xs-12 col-sm-12">
                   <div className="caption">
