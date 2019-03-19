@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="63415b28-8174-4354-9629-d6b6324e3c8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/VideoSinglePage/VideoDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSinglePage/VideoDescription.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/components/_v_tabs.less" beforeDir="false" afterPath="$PROJECT_DIR$/../src/styles/components/_v_tabs.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/VideoSinglePage/VideoSingleTab.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSinglePage/VideoSingleTab.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routers/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/routers/AppRouter.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -129,8 +129,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/video.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="22" />
+            <state relative-caret-position="230">
+              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -355,12 +355,12 @@
       <workItem from="1552665099013" duration="851000" />
       <workItem from="1552915230615" duration="2647000" />
       <workItem from="1552933020311" duration="4771000" />
-      <workItem from="1552999822950" duration="1197000" />
+      <workItem from="1552999822950" duration="1201000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115314000" />
+    <option name="totallyTimeSpent" value="115318000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -587,8 +587,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/video.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="22" />
+        <state relative-caret-position="230">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
         </state>
       </provider>
     </entry>
