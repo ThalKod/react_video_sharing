@@ -6,8 +6,6 @@ import { request } from "../../utils";
 
 import Avatar from "../Header/Avatar";
 
-
-
 export default class AuthorSection extends React.Component{
 
   state = {
