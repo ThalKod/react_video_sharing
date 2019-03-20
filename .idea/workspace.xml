@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f6ba216-dee2-489f-9342-55d1a1c7e4e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VideoSinglePage/AuthorSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoSinglePage/AuthorSection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/VideoSinglePage/VideoDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoSinglePage/VideoDescription.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/base/_base.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/base/_base.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/styles.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/styles.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/VideoSinglePage/VideoSinglePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoSinglePage/VideoSinglePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/format.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/format.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -47,7 +45,7 @@
           <entry key="eslintrc" value="10" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="4" />
-          <entry key="js" value="404" />
+          <entry key="js" value="405" />
           <entry key="json" value="10" />
           <entry key="less" value="56" />
           <entry key="png" value="2" />
@@ -63,7 +61,7 @@
           <entry key="HTML" value="4" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="21" />
-          <entry key="JavaScript" value="404" />
+          <entry key="JavaScript" value="405" />
           <entry key="Jest Snapshot" value="19" />
           <entry key="Less" value="56" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -80,7 +78,7 @@
           <entry key="env" value="68" />
           <entry key="eslintrc" value="136" />
           <entry key="html" value="51" />
-          <entry key="js" value="43736" />
+          <entry key="js" value="43962" />
           <entry key="json" value="67" />
           <entry key="less" value="644" />
           <entry key="scss" value="4" />
@@ -91,7 +89,7 @@
           <entry key=".env file" value="68" />
           <entry key="HTML" value="51" />
           <entry key="JSON" value="203" />
-          <entry key="JavaScript" value="43736" />
+          <entry key="JavaScript" value="43962" />
           <entry key="Less" value="644" />
           <entry key="SCSS" value="4" />
         </counts>
@@ -103,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/VideoSinglePage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1386">
-              <caret line="82" column="29" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
+            <state relative-caret-position="-1470">
+              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -115,11 +113,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/VideoDescription.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="49" column="36" lean-forward="true" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+            <state relative-caret-position="504">
+              <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/format.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -155,7 +162,7 @@
         <entry file="file://$PROJECT_DIR$/src/styles/base/_base.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="219" lean-forward="true" selection-start-line="219" selection-end-line="219" />
+              <caret line="219" selection-start-line="219" selection-end-line="219" />
             </state>
           </provider>
         </entry>
@@ -164,7 +171,7 @@
         <entry file="file://$PROJECT_DIR$/src/styles/base/_transition.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
-              <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+              <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -244,7 +251,6 @@
         <option value="$PROJECT_DIR$/src/components/Upload/UploadEdit.js" />
         <option value="$PROJECT_DIR$/src/styles/components/_upload_picker.less" />
         <option value="$PROJECT_DIR$/src/components/Upload/UploadContainer.js" />
-        <option value="$PROJECT_DIR$/src/utils/format.js" />
         <option value="$PROJECT_DIR$/src/components/VideoList.js" />
         <option value="$PROJECT_DIR$/src/styles/base/_account.less" />
         <option value="$PROJECT_DIR$/src/actions/types.js" />
@@ -265,11 +271,12 @@
         <option value="$PROJECT_DIR$/src/routers/AppRouter.js" />
         <option value="$PROJECT_DIR$/src/components/VideoSinglePage/VideoSingleTab.js" />
         <option value="$PROJECT_DIR$/src/styles/components/_v_tabs.less" />
-        <option value="$PROJECT_DIR$/src/components/VideoSinglePage/VideoSinglePage.js" />
         <option value="$PROJECT_DIR$/src/components/VideoSinglePage/AuthorSection.js" />
         <option value="$PROJECT_DIR$/src/styles/styles.less" />
         <option value="$PROJECT_DIR$/src/styles/base/_transition.less" />
         <option value="$PROJECT_DIR$/src/styles/base/_base.less" />
+        <option value="$PROJECT_DIR$/src/utils/format.js" />
+        <option value="$PROJECT_DIR$/src/components/VideoSinglePage/VideoSinglePage.js" />
         <option value="$PROJECT_DIR$/src/components/VideoSinglePage/VideoDescription.js" />
       </list>
     </option>
@@ -467,12 +474,12 @@
       <workItem from="1552914597270" duration="8358000" />
       <workItem from="1552999857262" duration="8213000" />
       <workItem from="1553013309764" duration="4511000" />
-      <workItem from="1553085849357" duration="2071000" />
+      <workItem from="1553085849357" duration="2491000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177459000" />
+    <option name="totallyTimeSpent" value="177879000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -482,7 +489,7 @@
       <window_info id="npm" order="1" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.22972973" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.08476658" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -565,13 +572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="69" column="18" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/format.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -825,7 +825,7 @@
     <entry file="file://$PROJECT_DIR$/src/styles/base/_transition.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -839,14 +839,21 @@
     <entry file="file://$PROJECT_DIR$/src/styles/base/_base.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="219" lean-forward="true" selection-start-line="219" selection-end-line="219" />
+          <caret line="219" selection-start-line="219" selection-end-line="219" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/format.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/VideoSinglePage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1386">
-          <caret line="82" column="29" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
+        <state relative-caret-position="-1470">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -855,8 +862,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/VideoDescription.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="49" column="36" lean-forward="true" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+        <state relative-caret-position="504">
+          <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>

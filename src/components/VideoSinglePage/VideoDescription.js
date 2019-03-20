@@ -1,6 +1,7 @@
 import  React from "react";
-
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
+
+import { formatTimestamps } from "../../utils";
 
 export default class VideoDescription extends React.Component{
 
@@ -14,7 +15,7 @@ export default class VideoDescription extends React.Component{
   };
 
   render(){
-    const { description, tags} = this.props;
+    const { description, tags, createdAt} = this.props;
     const { showDescription } = this.state;
 
     const descriptionItems = (
@@ -31,7 +32,7 @@ export default class VideoDescription extends React.Component{
           <div className="row date-lic">
             <div className="col-lg-6">
               <h4>Release Date: </h4><br />
-              <p>2 Days ago</p>
+              <p>{formatTimestamps(createdAt)}</p>
             </div>
           </div>
         </div>

@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="63415b28-8174-4354-9629-d6b6324e3c8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/VideoSinglePage/AuthorSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSinglePage/AuthorSection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/VideoSinglePage/VideoDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSinglePage/VideoDescription.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/base/_base.less" beforeDir="false" afterPath="$PROJECT_DIR$/../src/styles/base/_base.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/styles.less" beforeDir="false" afterPath="$PROJECT_DIR$/../src/styles/styles.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/VideoSinglePage/VideoSinglePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSinglePage/VideoSinglePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utils/format.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/utils/format.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />

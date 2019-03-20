@@ -7,7 +7,6 @@ import AuthorSection from "./AuthorSection";
 import VideoDescription from "./VideoDescription";
 import { request } from "../../utils";
 
-
 class VideoSinglePage extends React.Component{
 
   state = {
@@ -18,7 +17,8 @@ class VideoSinglePage extends React.Component{
     viewCount: 0,
     description: "",
     tags: [],
-    author: null
+    author: null,
+    createdAt: 0
   };
 
   renderUpNextVideo = () => {
@@ -56,8 +56,9 @@ class VideoSinglePage extends React.Component{
             viewCount,
             description,
             tags,
-            author } = res.data.video;
-          this.setState({ videoUrl: url, currentVideoId: _id, name, viewCount, description, tags, author })
+            author,
+            createdAt, } = res.data.video;
+          this.setState({ videoUrl: url, currentVideoId: _id, name, viewCount, description, tags, author , createdAt })
         })
         .catch(err => console.log(err));
 
@@ -69,7 +70,7 @@ class VideoSinglePage extends React.Component{
   };
 
   render(){
-    const { videoUrl, name, viewCount, description, tags, author } = this.state;
+    const { videoUrl, name, viewCount, description, tags, author, createdAt } = this.state;
 
     return(
         <div className="single-video">
@@ -80,7 +81,7 @@ class VideoSinglePage extends React.Component{
                   <VideoPlayer videoUrl={videoUrl}/>
                   <h1>{name}</h1>
                   {author && <AuthorSection author={author} viewCount={viewCount}/>}
-                  <VideoDescription description={description} tags={tags}/>
+                  <VideoDescription createdAt={createdAt} description={description} tags={tags}/>
                 </div>
                 <div className="col-lg-4 col-xs-12 col-sm-12">
                   <div className="caption">
