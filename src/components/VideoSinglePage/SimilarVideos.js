@@ -15,7 +15,6 @@ export default class SimilarVideos extends React.Component{
 
     request("get", `/video/${id}/similar`)
         .then(res => {
-          console.log(res.data);
           this.setState({ videos: res.data.videos, loading: false })
         })
         .catch(err => console.log(err));

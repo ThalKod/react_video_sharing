@@ -7,9 +7,8 @@ import { request } from "../../utils";
 class CommentSection extends React.Component{
 
   state = {
-    commentText: "Enter your comment here...",
+    commentText: "",
   };
-
 
   checkIfCanComment = () => {
     const  { userName, redirect } = this.props;
@@ -20,9 +19,14 @@ class CommentSection extends React.Component{
     e.preventDefault();
 
     const { commentText } = this.state;
+    const { id } = this.props;
 
-    request("post", "/comments/new", {}, { commentText })
-        .then(res => console.log(res))
+    request("post", `/comment/video/${id}`, {}, { commentText })
+        .then(({ data }) =>{
+          if(!data.error)
+            this.setState({ commentText: "" });
+          // then handling error
+        })
         .catch(err => console.log(err));
   };
 
@@ -46,6 +50,7 @@ class CommentSection extends React.Component{
                 <textarea
                     rows="3"
                     value={commentText}
+                    placeholder="Enter comment here..."
                     onChange={({ target: { value }}) => { this.setState({ commentText: value }) }}
                     onFocus={this.checkIfCanComment}
                     />

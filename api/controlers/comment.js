@@ -15,3 +15,12 @@ module.exports.addCommentToVideo = (req, res) => {
       .then(() => res.send({ error: false }))
       .catch(err => res.send({ error: true, msg: err }));
 };
+
+module.exports.getCommentCountOfVideo = (req, res) => {
+  const { id } = req.params;
+  if(!id) res.send({ error: true, msg: "Please provide video id "});
+
+  Comment.count({ video: id })
+      .then(count => res.send({ error: false, count}))
+      .catch(err => res.send({ error: true, msg: err}));
+};
