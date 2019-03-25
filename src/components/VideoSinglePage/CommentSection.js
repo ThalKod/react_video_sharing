@@ -8,6 +8,7 @@ class CommentSection extends React.Component{
 
   state = {
     commentText: "",
+    commentTotal: 0
   };
 
   checkIfCanComment = () => {
@@ -30,16 +31,25 @@ class CommentSection extends React.Component{
         .catch(err => console.log(err));
   };
 
+  componentDidMount = () => {
+    const { id } = this.props;
+    request("get",  `/comment/count/video/${id}`)
+        .then(({ data }) => {
+          if(!data.error) this.setState({ commentTotal: data.count})
+        })
+        .catch(err => console.log(err));
+  };
+
   render(){
 
     const { userName } = this.props;
-    const { commentText} = this.state;
+    const { commentText, commentTotal} = this.state;
 
     return(
         <div className="comments">
           <div className="reply-comment">
             <div className="rc-header"><i className="cv cvicon-cv-comment"/> <span
-                className="semibold">236</span> Comments
+                className="semibold">{commentTotal}</span> Comments
             </div>
             { userName && <div className="rc-ava">
                             <Avatar username={userName}/>
