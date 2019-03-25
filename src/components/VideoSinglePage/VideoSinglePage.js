@@ -6,6 +6,7 @@ import VideoSingleTab from "./VideoSingleTab";
 import AuthorSection from "./AuthorSection";
 import VideoDescription from "./VideoDescription";
 import SimilarVideos from "./SimilarVideos";
+import CommentSection from "./CommentSection";
 import { request } from "../../utils";
 
 class VideoSinglePage extends React.Component{
@@ -72,6 +73,7 @@ class VideoSinglePage extends React.Component{
 
   render(){
     const { videoUrl, name, viewCount, description, tags, author, createdAt, currentVideoId } = this.state;
+    const { history } = this.props;
 
     return(
         <div className="single-video">
@@ -84,6 +86,7 @@ class VideoSinglePage extends React.Component{
                   {author && <AuthorSection author={author} viewCount={viewCount}/>}
                   <VideoDescription createdAt={createdAt} description={description} tags={tags}/>
                   { currentVideoId && <SimilarVideos id={currentVideoId}/> }
+                  { currentVideoId && <CommentSection id={currentVideoId} redirect={() => history.push("/signin")}/>}
                 </div>
                 <div className="col-lg-4 col-xs-12 col-sm-12">
                   <div className="caption">
