@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f6ba216-dee2-489f-9342-55d1a1c7e4e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/VideoSinglePage/CommentSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoSinglePage/CommentSection.js" afterDir="false" />
     </list>
@@ -25,14 +24,14 @@
           <entry key="project.open.time.11" value="3" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.2" value="11" />
+          <entry key="project.open.time.2" value="12" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="3" />
           <entry key="project.open.time.8" value="5" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="44" />
+          <entry key="project.opened" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -42,7 +41,7 @@
           <entry key="eslintrc" value="10" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="4" />
-          <entry key="js" value="417" />
+          <entry key="js" value="418" />
           <entry key="json" value="10" />
           <entry key="less" value="56" />
           <entry key="png" value="2" />
@@ -58,7 +57,7 @@
           <entry key="HTML" value="4" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="21" />
-          <entry key="JavaScript" value="417" />
+          <entry key="JavaScript" value="418" />
           <entry key="Jest Snapshot" value="19" />
           <entry key="Less" value="56" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -67,7 +66,7 @@
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="37" />
+          <entry key="ESLintLanguageService" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -75,7 +74,7 @@
           <entry key="env" value="68" />
           <entry key="eslintrc" value="136" />
           <entry key="html" value="51" />
-          <entry key="js" value="46607" />
+          <entry key="js" value="46941" />
           <entry key="json" value="67" />
           <entry key="less" value="644" />
           <entry key="scss" value="4" />
@@ -86,7 +85,7 @@
           <entry key=".env file" value="68" />
           <entry key="HTML" value="51" />
           <entry key="JSON" value="203" />
-          <entry key="JavaScript" value="46607" />
+          <entry key="JavaScript" value="46941" />
           <entry key="Less" value="644" />
           <entry key="SCSS" value="4" />
         </counts>
@@ -98,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/VideoSinglePage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1357">
+            <state relative-caret-position="551">
               <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -110,8 +109,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/CommentSection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+            <state relative-caret-position="269">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/CommentSingle.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -163,7 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/Upload/UploadPicker.js" />
         <option value="$PROJECT_DIR$/src/test/components/UploadPicker.test.js" />
         <option value="$PROJECT_DIR$/src/test/components/UploadEdit.test.js" />
         <option value="$PROJECT_DIR$/src/test/utils/username.test.js" />
@@ -213,6 +223,7 @@
         <option value="$PROJECT_DIR$/src/components/VideoSinglePage/VideoDescription.js" />
         <option value="$PROJECT_DIR$/src/components/VideoSinglePage/SimilarVideos.js" />
         <option value="$PROJECT_DIR$/src/components/VideoSinglePage/VideoSinglePage.js" />
+        <option value="$PROJECT_DIR$/src/components/VideoSinglePage/CommentSingle.js" />
         <option value="$PROJECT_DIR$/src/components/VideoSinglePage/CommentSection.js" />
       </list>
     </option>
@@ -237,7 +248,7 @@
       <path value="$PROJECT_DIR$/public/js/vendor/player/johndyer-mediaelement-89793bc/info/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="827" />
@@ -248,6 +259,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -271,20 +283,6 @@
               <item name="Circle_Video" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="HomePage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circle_Video" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circle_Video" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Register" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circle_Video" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circle_Video" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="VideoSinglePage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -297,7 +295,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -389,20 +386,22 @@
       <workItem from="1553085849357" duration="5573000" />
       <workItem from="1553518097089" duration="4688000" />
       <workItem from="1553532526152" duration="1150000" />
+      <workItem from="1553603690741" duration="1247000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186799000" />
+    <option name="totallyTimeSpent" value="188046000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="827" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.24756606" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.116707616" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -439,13 +438,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/styles/base/_content.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="298" column="43" selection-start-line="298" selection-start-column="43" selection-end-line="298" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/components/_header.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
@@ -737,9 +729,12 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/user.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/VideoSinglePage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1357">
+        <state relative-caret-position="551">
           <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -747,13 +742,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/user.js">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/CommentSingle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/CommentSection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+        <state relative-caret-position="269">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

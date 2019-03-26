@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 import Avatar from "../Header/Avatar";
+import CommentSingle from "./CommentSingle";
 import { request } from "../../utils";
 
 class CommentSection extends React.Component{
@@ -29,6 +30,10 @@ class CommentSection extends React.Component{
           // then handling error
         })
         .catch(err => console.log(err));
+  };
+
+  renderCommentList = () => {
+    return [<CommentSingle/>, <CommentSingle/>, <CommentSingle/>, <CommentSingle/>]
   };
 
   componentDidMount = () => {
@@ -70,6 +75,24 @@ class CommentSection extends React.Component{
               </form>
             </div>
             <div className="clearfix"/>
+          </div>
+          <div className="comments-list">
+            <div className="cl-header">
+              <div className="c-nav">
+                <ul className="list-inline">
+                  <li><a href="/" className="active">Newest Comments</a></li>
+                  <li><a href="/">Popular Comments</a></li>
+                </ul>
+              </div>
+            </div>
+            {this.renderCommentList()}
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="loadmore-comments">
+                    <button type="submit" className="btn btn-default h-btn">Load more Comments</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
     )
