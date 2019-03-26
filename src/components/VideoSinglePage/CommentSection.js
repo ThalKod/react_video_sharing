@@ -24,6 +24,8 @@ class CommentSection extends React.Component{
     const { commentText } = this.state;
     const { id } = this.props;
 
+    if(!commentText) return;
+
     request("post", `/comment/video/${id}`, {}, { commentText })
         .then(({ data }) =>{
           if(!data.error)
@@ -90,8 +92,7 @@ class CommentSection extends React.Component{
             <div className="cl-header">
               <div className="c-nav">
                 <ul className="list-inline">
-                  <li><a href="/" className="active">Newest Comments</a></li>
-                  <li><a href="/">Popular Comments</a></li>
+                  <li className="active">Newest Comments</li>
                 </ul>
               </div>
             </div>
