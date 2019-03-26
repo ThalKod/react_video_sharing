@@ -9,7 +9,8 @@ class CommentSection extends React.Component{
 
   state = {
     commentText: "",
-    commentTotal: 0
+    commentTotal: 0,
+    comments: []
   };
 
   checkIfCanComment = () => {
@@ -33,14 +34,23 @@ class CommentSection extends React.Component{
   };
 
   renderCommentList = () => {
-    return [<CommentSingle/>, <CommentSingle/>, <CommentSingle/>, <CommentSingle/>]
+    const { comments } = this.state;
+
+    return comments.map(({ _id, text, author, createdAt}) => {
+      return <CommentSingle text={text} key={_id} author={author} createdAt={createdAt}/>
+    });
   };
 
   componentDidMount = () => {
     const { id } = this.props;
-    request("get",  `/comment/count/video/${id}`)
-        .then(({ data }) => {
-          if(!data.error) this.setState({ commentTotal: data.count})
+
+    const getVideoCountPromise = request("get",  `/comment/count/video/${id}`);
+    const getCommentsList = request("get", `/comment/video/${id}`);
+
+    Promise.all([getVideoCountPromise, getCommentsList])
+        .then(res => {
+          if(!res[0].data.error && !res[1].data.error)
+              this.setState({ commentTotal: res[0].data.count, comments: res[1].data.comments});
         })
         .catch(err => console.log(err));
   };
