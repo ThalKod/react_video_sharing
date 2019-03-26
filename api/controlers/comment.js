@@ -27,14 +27,17 @@ module.exports.getCommentCountOfVideo = (req, res) => {
 
 module.exports.getVideoComment = (req, res) => {
   const { id } = req.params;
+  const { limit, offset = 0 } = req.query;
 
-  console.log("requested", id);
-  if(!id) res.send({ error: true, msg: "Please provide video id "});
+  if(!id || ! limit ) return res.send({ error: true, msg: "Please provide the correct params"});
 
   Comment.find({ video: id })
+      .sort({ createdAt: -1 })
+      .skip(parseInt(offset))
+      .limit(parseInt(limit))
       .populate("author", "username")
       .then(rComments => {
         res.send({ error: false, comments: rComments});
       })
-      .catch(err => console.log(err));
+      .catch(err => res.send({ error: true, msg: err}));
 };

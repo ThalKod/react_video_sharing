@@ -13,5 +13,4 @@ router.get("/comment/count/video/:id", getCommentCountOfVideo);
 router.get("/comment/video/:id", getVideoComment);
 
 
-
 module.exports = router;
