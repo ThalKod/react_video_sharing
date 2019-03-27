@@ -1,4 +1,4 @@
-import { GET_COMMENTS, ADD_COMMENTS } from "../actions/types";
+import { GET_COMMENTS, ADD_COMMENTS, CLEAR_COMMENTS } from "../actions/types";
 
 const defaultState = {
   offset: 0,
@@ -21,6 +21,9 @@ export default (state = defaultState, action) => {
           comments: [ action.payload, ...state.comments],
           offset: state.offset + 1
       };
+
+    case CLEAR_COMMENTS:
+      return defaultState;
 
     default:
       return state;

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Avatar from "../Header/Avatar";
 import CommentSingle from "./CommentSingle";
 import { request } from "../../utils";
-import { startGetComments, startAddComments } from "../../actions";
+import { startGetComments, startAddComments, clearComment } from "../../actions";
 
 class CommentSection extends React.Component{
 
@@ -76,6 +76,11 @@ class CommentSection extends React.Component{
         .catch(err => console.log(err));
   };
 
+  componentWillUnmount = () => {
+    const { clearComments } = this.props;
+    clearComments();
+  };
+
   render(){
 
     const { userName } = this.props;
@@ -139,7 +144,8 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   getComments: (options, id) => dispatch(startGetComments(options, id)),
-  addComments: (comment, id) => dispatch(startAddComments(comment, id))
+  addComments: (comment, id) => dispatch(startAddComments(comment, id)),
+  clearComments: () => dispatch(clearComment())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CommentSection);
