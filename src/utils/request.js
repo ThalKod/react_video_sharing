@@ -1,7 +1,7 @@
 // Request helper
 import axios from"axios";
 
-import { getRefreshToken } from "./index";
+import { getRefreshToken } from "utils";
 
 const API_URL = process.env.REACT_APP_API_URL;
 const refresh = axios.create();

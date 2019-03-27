@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from "react-router-dom"
 import { connect } from "react-redux";
 
-import SearchBar from "./SearchBar";
-import Avatar from "./Avatar";
-import bulbLight from "../../assets/images/icon_bulb_light.png";
-import logo from "../../assets/images/logo.svg";
-import { signOut, startGetMyInfo } from "../../actions/index";
+import SearchBar from "components/Header/SearchBar";
+import Avatar from "components/Header/Avatar";
+import bulbLight from "assets/images/icon_bulb_light.png";
+import logo from "assets/images/logo.svg";
+import { signOut, startGetMyInfo } from "actions";
 
 export class Header extends React.Component{
 

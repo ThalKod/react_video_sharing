@@ -1,4 +1,4 @@
-import { GET_MY_INFO, AUTH_USER, SIGN_OUT_USER } from "../actions/types";
+import { GET_MY_INFO, AUTH_USER, SIGN_OUT_USER } from "actions/types";
 
 const defaultState = { username: "", email: "" };
 

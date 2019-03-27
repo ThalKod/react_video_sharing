@@ -1,8 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import VideoSection from "./VideoSection";
-import { startGetRecommendedVideo, startGetVideos } from "../../actions/index";
+import VideoSection from "components/HomePage/VideoSection";
+import { startGetRecommendedVideo, startGetVideos } from "actions";
 
 export class HomePage extends React.Component{
 

@@ -1,6 +1,5 @@
-import { AUTH_USER, SIGN_OUT_USER } from "./types";
-
-import { request, setToken, removeToken } from "../utils";
+import { AUTH_USER, SIGN_OUT_USER } from "actions/types";
+import { request, setToken, removeToken } from "utils";
 
 export const startSignupUser = (user, callback) => (dispatch) =>{
 

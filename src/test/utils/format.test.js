@@ -1,4 +1,4 @@
-import { formatSecond, formatBytes } from "../../utils";
+import { formatSecond, formatBytes } from "utils";
 
 describe("Format Utils", () => {
   it("should correctly format the seconds", () => {

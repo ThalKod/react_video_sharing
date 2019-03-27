@@ -4,14 +4,14 @@ import {
   Route,
   Switch, } from "react-router-dom";
 
-import HomePage from "../components/HomePage/HomePage";
-import NotFoundPage from "../components/NotFoundPage";
-import RegistrationPage from "../components/Register/RegistrationPage";
-import UploadContainer from "../components/Upload/UploadContainer";
+import HomePage from "components/HomePage/HomePage";
+import NotFoundPage from "components/NotFoundPage";
+import RegistrationPage from "components/Register/RegistrationPage";
+import UploadContainer from "components/Upload/UploadContainer";
 
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer";
-import VideoSinglePage from "../components/VideoSinglePage/VideoSinglePage";
+import Header from "components/Header/Header";
+import Footer from "components/Footer";
+import VideoSinglePage from "components/VideoSinglePage/VideoSinglePage";
 
 const AppRouter = () => (
     <Router>

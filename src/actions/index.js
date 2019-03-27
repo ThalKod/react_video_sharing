@@ -1,5 +1,5 @@
-export * from "./userActions";
-export * from "./authActions";
-export * from "./videoActions";
-export * from "./commentActions";
+export * from "actions/userActions";
+export * from "actions/authActions";
+export * from "actions/videoActions";
+export * from "actions/commentActions";
 

@@ -1,4 +1,4 @@
-import { GET_COMMENTS, ADD_COMMENTS, CLEAR_COMMENTS } from "../actions/types";
+import { GET_COMMENTS, ADD_COMMENTS, CLEAR_COMMENTS } from "actions/types";
 
 const defaultState = {
   offset: 0,

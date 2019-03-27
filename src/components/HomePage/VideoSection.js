@@ -1,8 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import VideoSingle from "./VideoSingle";
-import { startGetVideos } from "../../actions/index";
+import VideoSingle from "components/HomePage/VideoSingle";
+import { startGetVideos } from "actions";
 
 class VideoSection extends React.Component{
 

@@ -2,11 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63415b28-8174-4354-9629-d6b6324e3c8a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/../.eslintrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/actions/authActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/actions/authActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/actions/commentActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/actions/commentActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/actions/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/actions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/actions/userActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/actions/userActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/actions/videoActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/actions/videoActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Header/Avatar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Header/Avatar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/HomePage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/HomePage/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/HomePage/VideoSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/HomePage/VideoSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/HomePage/VideoSingle.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/HomePage/VideoSingle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Register/RegistrationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Register/RegistrationForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Register/RegistrationPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Register/RegistrationPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Upload/UploadContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Upload/UploadContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Upload/UploadEdit.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Upload/UploadEdit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/VideoSinglePage/AuthorSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSinglePage/AuthorSection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/VideoSinglePage/CommentSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSinglePage/CommentSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/VideoSinglePage/CommentSingle.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSinglePage/CommentSingle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/VideoSinglePage/SimilarVideos.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSinglePage/SimilarVideos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/VideoSinglePage/VideoDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSinglePage/VideoDescription.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/VideoSinglePage/VideoSinglePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSinglePage/VideoSinglePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/VideoSinglePage/VideoSingleTab.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSinglePage/VideoSingleTab.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/reducers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/reducers/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/reducers/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/reducers/comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/reducers/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/reducers/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/reducers/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/reducers/video.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/routers/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/routers/AppRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/store/configureStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/store/configureStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/Avatar.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/Avatar.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/Footer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/Footer.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/Header.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/Header.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/Homepage.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/Homepage.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/LoadingSpinner.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/LoadingSpinner.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/NotFoundPage.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/NotFoundPage.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/RegistrationForm.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/RegistrationForm.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/RegistrationPage.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/RegistrationPage.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/SearchBar.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/SearchBar.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/UploadContainer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/UploadContainer.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/UploadEdit.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/UploadEdit.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/UploadPicker.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/UploadPicker.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/reducers/auth.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/reducers/auth.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/reducers/user.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/reducers/user.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/utils/format.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/utils/format.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/utils/username.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/utils/username.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utils/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/utils/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utils/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/utils/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utils/token.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/utils/token.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -64,16 +113,17 @@
     <session id="-311914715">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="43" />
-          <entry key="project.open.time.1" value="20" />
+          <entry key="project.closed" value="45" />
+          <entry key="project.open.time.1" value="21" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="6" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.6" value="10" />
           <entry key="project.open.time.7" value="3" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="44" />
+          <entry key="project.opened" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -93,7 +143,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="env" value="4" />
-          <entry key="js" value="149" />
+          <entry key="js" value="151" />
           <entry key="json" value="7" />
           <entry key="png" value="14" />
         </counts>
@@ -103,7 +153,7 @@
           <entry key=".env file" value="4" />
           <entry key="Image" value="14" />
           <entry key="JSON" value="7" />
-          <entry key="JavaScript" value="149" />
+          <entry key="JavaScript" value="151" />
         </counts>
       </usages-collector>
     </session>
@@ -128,20 +178,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controlers/comment.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+            <state relative-caret-position="713">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/video.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controlers/upload.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controlers/video.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1150">
-              <caret line="50" column="30" selection-start-line="50" selection-end-line="51" />
+            <state relative-caret-position="457">
+              <caret line="87" selection-start-line="87" selection-end-line="87" />
             </state>
           </provider>
         </entry>
@@ -209,7 +277,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="827" />
@@ -220,6 +288,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -256,7 +325,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,12 +412,14 @@
       <workItem from="1553529784996" duration="29000" />
       <workItem from="1553529819799" duration="2468000" />
       <workItem from="1553603643480" duration="7839000" />
-      <workItem from="1553692223872" duration="1183000" />
+      <workItem from="1553692223872" duration="1968000" />
+      <workItem from="1553712317232" duration="534000" />
+      <workItem from="1553714074810" duration="533000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146871000" />
+    <option name="totallyTimeSpent" value="148723000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -361,7 +431,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -546,20 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/video.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controlers/upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/videos.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -588,17 +644,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controlers/video.js">
+    <entry file="file://$PROJECT_DIR$/controlers/comment.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="50" column="30" selection-start-line="50" selection-end-line="51" />
+        <state relative-caret-position="713">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controlers/comment.js">
+    <entry file="file://$PROJECT_DIR$/routes/video.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+        <state relative-caret-position="690">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlers/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlers/video.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
         </state>
       </provider>
     </entry>

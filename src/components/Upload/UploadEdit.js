@@ -1,8 +1,8 @@
 import React from "react";
 import { WithContext as ReactTags } from 'react-tag-input';
 
-import { request, formatBytes, formatSecond } from "../../utils";
-import LoadingSpinner from "../LoadingSpinner";
+import { request, formatBytes, formatSecond } from "utils";
+import LoadingSpinner from "components/LoadingSpinner";
 
 class UploadEdit extends React.Component{
 

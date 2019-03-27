@@ -20,6 +20,13 @@
     "import/newline-after-import": "error",
     "import/prefer-default-export": 0
   },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  },
   "globals": {
     "window": true,
     "document": true,

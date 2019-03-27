@@ -1,7 +1,7 @@
 import  React from "react";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
-import { formatTimestamps } from "../../utils";
+import { formatTimestamps } from "utils";
 
 export default class VideoDescription extends React.Component{
 

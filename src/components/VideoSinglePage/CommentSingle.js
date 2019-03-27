@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom"
 
-import Avatar from "../Header/Avatar";
-import { formatTimestamps } from "../../utils";
+import Avatar from "components/Header/Avatar";
+import { formatTimestamps } from "utils";
 
 export default function CommentSingle({ text, author: { username }, createdAt }){
   return(

@@ -2,9 +2,9 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { request } from "../../utils";
+import { request } from "utils";
 
-import Avatar from "../Header/Avatar";
+import Avatar from "components/Header/Avatar";
 
 export default class AuthorSection extends React.Component{
 

@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 import toJson from "enzyme-to-json";
 
-import SearchBar from "../../components/Header/SearchBar";
+import SearchBar from "components/Header/SearchBar";
 
 
 describe("SearchBar", () => {
