@@ -12,8 +12,13 @@ module.exports.addCommentToVideo = (req, res) => {
   };
 
   Comment.create(comment)
-      .then(() => res.send({ error: false }))
-      .catch(err => res.send({ error: true, msg: err }));
+      .then((comment) => {
+        comment.populate("author", "username", (err, doc) => {
+          if(err) return res.send({ error: true, msg: err});
+          res.send({ error: false, comment: doc});
+        })
+      })
+      .catch(err => console.log(err));
 };
 
 module.exports.getCommentCountOfVideo = (req, res) => {

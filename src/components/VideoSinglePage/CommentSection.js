@@ -4,13 +4,14 @@ import { connect } from "react-redux";
 import Avatar from "../Header/Avatar";
 import CommentSingle from "./CommentSingle";
 import { request } from "../../utils";
+import { startGetComments, startAddComments } from "../../actions";
 
 class CommentSection extends React.Component{
 
   state = {
     commentText: "",
     commentTotal: 0,
-    comments: []
+    loadMore: false
   };
 
   checkIfCanComment = () => {
@@ -21,22 +22,36 @@ class CommentSection extends React.Component{
   handleCommentSubmit = (e) => {
     e.preventDefault();
 
-    const { commentText } = this.state;
-    const { id } = this.props;
+    const { commentText, commentTotal } = this.state;
+    const { id, addComments } = this.props;
 
     if(!commentText) return;
 
-    request("post", `/comment/video/${id}`, {}, { commentText })
-        .then(({ data }) =>{
-          if(!data.error)
-            this.setState({ commentText: "" });
+    addComments({ commentText } , id)
+        .then(({ error }) =>{
+          if(!error)
+            this.setState({ commentText: "", commentTotal: commentTotal + 1 });
           // then handling error
         })
         .catch(err => console.log(err));
   };
 
+  loadMoreComment = () => {
+    const { getComments, offset, id } = this.props;
+
+    // TODO: Handling loading and error
+    getComments({ offset }, id)
+        .then(({ error, end}) => {
+          if(!error) {
+            if(end) this.setState({ loadMore: false });
+          }
+        })
+        .catch(err => console.log(err));
+  };
+
   renderCommentList = () => {
-    const { comments } = this.state;
+    const { comments } = this.props;
+    if(!comments) return <div>Loading...</div>;
 
     return comments.map(({ _id, text, author, createdAt}) => {
       return <CommentSingle text={text} key={_id} author={author} createdAt={createdAt}/>
@@ -44,15 +59,18 @@ class CommentSection extends React.Component{
   };
 
   componentDidMount = () => {
-    const { id } = this.props;
+    const { id, getComments, offset } = this.props;
 
     const getVideoCountPromise = request("get",  `/comment/count/video/${id}`);
-    const getCommentsList = request("get", `/comment/video/${id}`);
+    const getCommentsListPromise = getComments({ offset }, id);
 
-    Promise.all([getVideoCountPromise, getCommentsList])
+    Promise.all([getVideoCountPromise, getCommentsListPromise])
         .then(res => {
-          if(!res[0].data.error && !res[1].data.error)
-              this.setState({ commentTotal: res[0].data.count, comments: res[1].data.comments});
+          if(!res[0].data.error && !res[1].error){
+            const { count } = res[0].data;
+            this.setState({ commentTotal: count, loadMore: count > 0 });
+          }
+
         })
         .catch(err => console.log(err));
   };
@@ -60,7 +78,7 @@ class CommentSection extends React.Component{
   render(){
 
     const { userName } = this.props;
-    const { commentText, commentTotal} = this.state;
+    const { commentText, commentTotal, loadMore } = this.state;
 
     return(
         <div className="comments">
@@ -100,7 +118,7 @@ class CommentSection extends React.Component{
             <div className="row">
               <div className="col-lg-12">
                 <div className="loadmore-comments">
-                    <button type="submit" className="btn btn-default h-btn">Load more Comments</button>
+                  {loadMore && <button onClick={this.loadMoreComment} type="submit" className="btn btn-default h-btn">Load more Comments</button>}
                 </div>
               </div>
             </div>
@@ -112,6 +130,13 @@ class CommentSection extends React.Component{
 
 const mapStateToProps = (state) => ({
   userName: state.user.username,
+  comments: state.comment.comments,
+  offset: state.comment.offset,
 });
 
-export default connect(mapStateToProps)(CommentSection);
+const mapDispatchToProps = (dispatch) => ({
+  getComments: (options, id) => dispatch(startGetComments(options, id)),
+  addComments: (comment, id) => dispatch(startAddComments(comment, id))
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(CommentSection);
