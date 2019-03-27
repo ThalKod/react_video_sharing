@@ -1,3 +1,5 @@
+import moment from "moment";
+
 export const formatBytes = (bytes) => {
     if(bytes < 1024) return `${bytes} bytes`;
     if(bytes < 1048576) return `${(bytes / 1024).toFixed(2)}  KB`;
@@ -25,4 +27,8 @@ export const formatSecondForRendering  = (second) => {
   const mDisplay = m <= 0 ? "0:" : `${m}:`;
   const sDisplay = s > 0 ? s : "";
   return hDisplay + mDisplay + sDisplay;
+};
+
+export const formatTimestamps = (timestamps) => {
+  return moment(timestamps).fromNow();
 };

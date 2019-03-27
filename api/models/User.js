@@ -13,6 +13,10 @@ const userSchema = new mongoose.Schema({
         lowercase: true
     },
     password: String,
+    subscribersCount: {
+      type: Number,
+      default: 0
+    }
 }, {timestamps: true});
 
 userSchema.pre("save", function(next){
@@ -22,10 +26,10 @@ userSchema.pre("save", function(next){
         if(err){ return next(err); }
 
         bcrypt.hash(user.password, salt, null, (err, hash) => {
-            if(err) { return next(err);}
-            user.password = hash;
-            return next();
-        });
+        if(err) { return next(err);}
+        user.password = hash;
+        return next();
+      });
     })
 });
 

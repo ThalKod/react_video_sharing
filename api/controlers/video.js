@@ -57,3 +57,31 @@ module.exports.getVideos = async (req, res) => {
       .then(rVideos => res.send({ error: false, videos: rVideos}))
       .catch(err => res.send({ error: true, msg: err }));
 };
+
+module.exports.getVideoById = (req, res) => {
+  const { id } = req.params;
+
+  Video.findById(id)
+      .then(video => {
+        if(!video) res.send({ error: true, msg: "Video Not Found"});
+        res.send({ error: false, video });
+      })
+      .catch(err => res.send({ error: true, msg: err}));
+};
+
+// Getting similar videos by tags
+module.exports.getSimilarVideosById = (req, res) => {
+  const { id } = req.params;
+  if(!id) return res.send({ error: true, msg: "Please provide a video id"});
+
+  Video.findById(id)
+      .then(video => {
+        if(!video) res.send({ error: true, msg: "Video Not Found"});
+        const tags = video.tags.map(({ text }) => text);
+        console.log(tags);
+        Video.find({ "tags.text": {"$in": [ ...tags]}, _id: {"$ne": video.id}})
+          .then(rVideo => res.send({ error: false, videos: rVideo}))
+            .catch(err => res.send({ error: true, msg: err}));
+      })
+      .catch(err => res.send({ error: true, msg: err}));
+};
