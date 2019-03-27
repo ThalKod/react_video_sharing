@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 import Avatar from "../Header/Avatar";
 import CommentSingle from "./CommentSingle";
@@ -87,7 +88,9 @@ class CommentSection extends React.Component{
                 className="semibold">{commentTotal}</span> Comments
             </div>
             { userName && <div className="rc-ava">
-                            <Avatar username={userName}/>
+                            <Link to="/">
+                              <Avatar username={userName}/>
+                            </Link>
                           </div>
             }
             <div className="rc-comment">
