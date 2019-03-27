@@ -10,7 +10,7 @@ axios.interceptors.response.use((response) => {
   return response;
 }, (error) => {
   const originalRequest = error.config;
-  if(error.response.status === 401){
+  if(error.response && error.response.status === 401){
     return refresh.get(`${API_URL}/token`, {headers: {'Authorization': getRefreshToken()}})
         .then((res) => {
           //  axios.defaults.headers.common.Authorization = res.data.token;

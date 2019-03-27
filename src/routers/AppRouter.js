@@ -28,7 +28,9 @@ const AppRouter = () => (
               render={(props) => <RegistrationPage {...props} signup />}
           />
           <Route path="/upload" component={UploadContainer}/>
-          <Route path="/video/:id" component={VideoSinglePage}/>
+          <Route path="/video/:id" render={(props) => (
+              <VideoSinglePage key={props.match.params.id} {...props}/>
+          )}/>
           <Route component={NotFoundPage}/>
         </Switch>
         <Footer/>

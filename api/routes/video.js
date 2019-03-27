@@ -4,7 +4,9 @@ const {
   getDefaultImageCoverById,
   updateVideo,
   getRecommended,
-  getVideos } = require("../controlers/video");
+  getVideos,
+  getVideoById,
+  getSimilarVideosById } = require("../controlers/video");
 const { requireAuth } = require("../middlewares/auth");
 const { isVideoOwner } = require("../middlewares/ownership");
 const router = express.Router();
@@ -20,6 +22,10 @@ router.get("/video/cover/default/:id", getDefaultImageCoverById);
 router.get("/video/list/recommended/", getRecommended);
 
 router.get("/video/list", getVideos); // With /video/list?limit=10&offset=5
+
+router.get("/video/:id/similar", getSimilarVideosById);
+
+router.get("/video/:id", getVideoById);
 
 router.put("/video/:id", requireAuth, isVideoOwner, updateVideo);
 
