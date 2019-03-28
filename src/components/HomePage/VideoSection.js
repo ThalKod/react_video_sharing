@@ -45,6 +45,7 @@ class VideoSection extends React.Component{
   render() {
     const { type } = this.props;
     return (
+        // TODO: make it more generics...
         <div className="content-block head-div">
           <div className="cb-header">
             <div className="row">

@@ -6,7 +6,8 @@ const {
   getRecommended,
   getVideos,
   getVideoById,
-  getSimilarVideosById } = require("../controlers/video");
+  getSimilarVideosById,
+  getVideosListByUserId } = require("../controlers/video");
 const { requireAuth } = require("../middlewares/auth");
 const { isVideoOwner } = require("../middlewares/ownership");
 const router = express.Router();
@@ -20,6 +21,8 @@ router.get("/video/cover/default/:id", getDefaultImageCoverById);
 
 // For now we just fetch the eight most watched video... as recommended
 router.get("/video/list/recommended/", getRecommended);
+
+router.get("/video/list/user/:id", getVideosListByUserId);
 
 router.get("/video/list", getVideos); // With /video/list?limit=10&offset=5
 

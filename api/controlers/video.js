@@ -85,3 +85,12 @@ module.exports.getSimilarVideosById = (req, res) => {
       })
       .catch(err => res.send({ error: true, msg: err}));
 };
+
+module.exports.getVideosListByUserId = (req, res) => {
+  const { id } = req.params;
+  if(!id) return res.send({ error: true, msg: "Please provide a user id"});
+
+  Video.find({ author: id})
+      .then(videos => res.send({ videos }))
+      .catch(err => res.send({ error: false, msg: err}));
+};
