@@ -12,6 +12,7 @@ import UploadContainer from "components/Upload/UploadContainer";
 import Header from "components/Header/Header";
 import Footer from "components/Footer";
 import VideoSinglePage from "components/VideoSinglePage/VideoSinglePage";
+import ChannelPage from "components/ChannelPage";
 
 const AppRouter = () => (
     <Router>
@@ -31,6 +32,7 @@ const AppRouter = () => (
           <Route path="/video/:id" render={(props) => (
               <VideoSinglePage key={props.match.params.id} {...props}/>
           )}/>
+          <Router path="/channel/:id" component={ChannelPage}/>
           <Route component={NotFoundPage}/>
         </Switch>
         <Footer/>

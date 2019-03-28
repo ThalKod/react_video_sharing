@@ -1,6 +1,6 @@
 import { GET_MY_INFO, AUTH_USER, SIGN_OUT_USER } from "actions/types";
 
-const defaultState = { username: "", email: "" };
+const defaultState = { username: "", email: "", _id: "" };
 
 export default (state= defaultState, action) => {
   switch(action.type){
@@ -13,6 +13,7 @@ export default (state= defaultState, action) => {
 
     case SIGN_OUT_USER:
       return {...state, username: "", email: "" };
+
 
     default:
       return state;
