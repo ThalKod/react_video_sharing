@@ -32,7 +32,7 @@ const AppRouter = () => (
           <Route path="/video/:id" render={(props) => (
               <VideoSinglePage key={props.match.params.id} {...props}/>
           )}/>
-          <Router path="/channel/:id" component={ChannelPage}/>
+          <Route path="/channel/:id" component={ChannelPage}/>
           <Route component={NotFoundPage}/>
         </Switch>
         <Footer/>

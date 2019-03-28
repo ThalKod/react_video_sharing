@@ -1,0 +1,234 @@
+/*
+* Content Channel
+*/
+
+.channel {
+  .h-grid {
+    margin-top: 6px;
+    i {
+      padding-left: 25px;
+    }
+  }
+  .img {
+    position: relative;
+    .c-avatar {
+      position: absolute;
+      bottom: -80px ;
+      left:50%;
+      margin-left: -585px;
+    }
+    .c-social {
+      position: absolute;
+      bottom:0;
+      left:50%;
+      margin-left: 380px;
+      background-color: rgba(54,54,54,0.7);
+      color: @c-white;
+      padding: 15px;
+      //opacity: 0.5;
+      a {
+        display: inline-block;
+        padding-top: 8px;
+        padding-left: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        color: @c-white;
+        font-size: 15px;
+        margin-left: 11px;
+      }
+      .fb {
+        background-color: @c-fb;
+      }
+      .tw {
+        background-color: @c-tw;
+        padding-top: 7px;
+        padding-left: 8px;
+      }
+      .gp {
+        background-color: @c-gp;
+        padding-top: 7px;
+        padding-left: 5px;
+      }
+    }
+    .c-banner {
+      width: 100%;
+
+    }
+  }
+  .c-details {
+    height: 75px;
+    border-bottom: solid 1px @c-divider;
+    padding-top: 23px;
+    .c-name{
+      width: 21%;
+      float: left;
+      position: relative;
+      padding-top: 5px;
+      font-weight: 500;
+      font-size: @fs-deff;
+      .c-checkbox {
+        position: absolute;
+        top:0;
+        left: 100px;
+        input {
+          height: 20px;
+          width: 20px;
+          margin-left: 16px;
+          margin-top: 5px;
+          background-color: red;
+        }
+        img {
+          margin-left: 16px;
+          margin-top: 5px;
+        }
+      }
+    }
+    .c-nav{
+      width: 59%;
+      float: left;
+      font-weight: 500;
+      padding-top: 4px;
+      font-family: @ff-hind;
+      li {
+        margin: 0;
+        padding: 0;
+        margin-right: 23px;
+        a {
+          position: relative;
+          &:before {
+            content: "";
+            position: absolute;
+            bottom: -25px;
+            display: inline-block;
+            background-color: @c-active;
+            height: 3px;
+            width: 100%;
+            left: 0;
+            opacity: 0;
+            -moz-transition: all 0.12s linear;
+            -o-transition: all 0.12s linear;
+            -webkit-transition: all 0.12s linear;
+          }
+          &:hover {
+            &:before {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    .c-sub{
+      float: left;
+      .c-f {
+        float: left;
+        width: 86px;
+        padding: 5px 10px 0px 10px;
+        border: solid 1px @c-active;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        background-color: @c-active;
+        color: @c-white;
+      }
+      .c-s {
+        float: left;
+        width: 92px;
+        padding: 5px 10px 0px 10px;
+        border: solid 1px @c-divider;
+        border-left: none;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        color: @c-light;
+      }
+    }
+  }
+}
+
+@media (min-width: 100px) and (max-width: 767px) {
+  .channel {
+    .img{
+      .c-avatar{
+        position: relative;
+        margin: 0;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        padding: 10px 0;
+      }
+      .c-social{
+        position: relative;
+        margin: 0;
+        left: 0;
+        bottom: 0;
+      }
+    }
+    .c-details {
+      height: auto;
+      padding-bottom: 15px;
+      .c-name{
+        float: none;
+        width: 100%;
+      }
+      .c-nav{
+        float: none;
+        width: 100%;
+        .list-inline {
+          margin-left: 0;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1365px) {
+  .channel-details {
+    margin-top: 40px;
+  }
+  .channel{
+    .img {
+      .c-avatar {
+        //position: absolute;
+        bottom: -50px;
+        left: 20px;
+        margin-left: 0;
+        img {
+          width: 120px;
+        }
+      }
+      .c-social {
+        //position: absolute;
+        bottom: 0;
+        left: auto;
+        margin-left: 0;
+        right: 0;
+        //background-color: rgba(54, 54, 54, 0.7);
+        //color: #ffffff;
+        //padding: 15px;
+      }
+    }
+    .c-details{
+      height: auto;
+      padding-bottom: 15px;
+      .c-name {
+        width: 100%;
+      }
+      .c-nav {
+        width: 75%;
+        .list-inline {
+          margin-left: 0;
+          padding: 10px 0;
+        }
+      }
+      .c-sub {
+        width: 25%;
+        padding: 10px 0;
+      }
+    }
+  }
+}
+
+
+/*
+* Content Channel END
+*/
