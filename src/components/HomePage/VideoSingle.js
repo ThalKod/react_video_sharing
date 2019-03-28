@@ -30,7 +30,7 @@ class VideoSingle extends React.Component{
         <div className="col-lg-3 col-sm-6 videoitem">
           <div className="b-video">
             <div className="v-img">
-              <Link to={`/video/${_id}`}><img src={videoImage} alt="placeholder" /></Link>
+              <Link to={`/video/${_id}`}><img src={videoImage} alt="videoimage" /></Link>
               <div className="time">{formatSecondForRendering(duration)}</div>
             </div>
             <div className="v-desc">

@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f6ba216-dee2-489f-9342-55d1a1c7e4e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/commentActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/commentActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VideoSinglePage/CommentSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoSinglePage/CommentSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HomePage/VideoSingle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/VideoSingle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/actions/auth.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/actions/auth.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/reducers/auth.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/reducers/auth.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/reducers/user.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/reducers/user.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,7 +23,7 @@
     <session id="-1172035160">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="46" />
+          <entry key="project.closed" value="47" />
           <entry key="project.open.time.1" value="10" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="3" />
@@ -44,13 +46,13 @@
           <entry key="eslintrc" value="10" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="4" />
-          <entry key="js" value="442" />
-          <entry key="json" value="10" />
+          <entry key="js" value="455" />
+          <entry key="json" value="11" />
           <entry key="less" value="56" />
           <entry key="png" value="2" />
           <entry key="prettierrc" value="1" />
           <entry key="scss" value="5" />
-          <entry key="snap" value="19" />
+          <entry key="snap" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -59,9 +61,9 @@
           <entry key="CSS" value="4" />
           <entry key="HTML" value="4" />
           <entry key="Image" value="2" />
-          <entry key="JSON" value="21" />
-          <entry key="JavaScript" value="442" />
-          <entry key="Jest Snapshot" value="19" />
+          <entry key="JSON" value="22" />
+          <entry key="JavaScript" value="455" />
+          <entry key="Jest Snapshot" value="21" />
           <entry key="Less" value="56" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="5" />
@@ -77,8 +79,8 @@
           <entry key="env" value="68" />
           <entry key="eslintrc" value="136" />
           <entry key="html" value="51" />
-          <entry key="js" value="50101" />
-          <entry key="json" value="67" />
+          <entry key="js" value="51043" />
+          <entry key="json" value="70" />
           <entry key="less" value="644" />
           <entry key="scss" value="4" />
         </counts>
@@ -87,8 +89,8 @@
         <counts>
           <entry key=".env file" value="68" />
           <entry key="HTML" value="51" />
-          <entry key="JSON" value="203" />
-          <entry key="JavaScript" value="50101" />
+          <entry key="JSON" value="206" />
+          <entry key="JavaScript" value="51043" />
           <entry key="Less" value="644" />
           <entry key="SCSS" value="4" />
         </counts>
@@ -98,85 +100,57 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/userActions.js">
+        <entry file="file://$PROJECT_DIR$/src/components/HomePage/VideoSingle.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+            <state relative-caret-position="261">
+              <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/components/LoadingSpinner.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/components/VIdeoSingle.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="2" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/HomePage/VideoSection.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="18" column="55" lean-forward="true" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/CommentSection.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="80" selection-start-line="80" selection-end-line="80" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/types.js">
+        <entry file="file://$PROJECT_DIR$/src/test/components/VideoSection.test.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/VideoSinglePage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1520">
-              <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/authActions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/CommentSingle.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/commentActions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reducers/comment.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -221,15 +195,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/utils/username.test.js" />
-        <option value="$PROJECT_DIR$/src/test/utils/format.test.js" />
-        <option value="$PROJECT_DIR$/src/styles/components/_singlevideo.less" />
-        <option value="$PROJECT_DIR$/src/styles/components/_v-tabs.less" />
-        <option value="$PROJECT_DIR$/src/styles/base/_subscription.less" />
-        <option value="$PROJECT_DIR$/src/actions/actionTypes.js" />
-        <option value="$PROJECT_DIR$/src/actions/authActions.js" />
-        <option value="$PROJECT_DIR$/src/reducers/auth.js" />
-        <option value="$PROJECT_DIR$/src/reducers/user.js" />
         <option value="$PROJECT_DIR$/src/components/Register/RegistrationForm.js" />
         <option value="$PROJECT_DIR$/src/actions/userActions.js" />
         <option value="$PROJECT_DIR$/.eslintrc" />
@@ -245,7 +210,6 @@
         <option value="$PROJECT_DIR$/src/components/VideoSection.js" />
         <option value="$PROJECT_DIR$/src/components/VideoSingle.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/components/HomePage/VideoSingle.js" />
         <option value="$PROJECT_DIR$/src/actions/videoActions.js" />
         <option value="$PROJECT_DIR$/src/components/HomePage/VideoSection.js" />
         <option value="$PROJECT_DIR$/src/components/HomePage/HomePage.js" />
@@ -272,6 +236,16 @@
         <option value="$PROJECT_DIR$/src/actions/types.js" />
         <option value="$PROJECT_DIR$/src/reducers/comment.js" />
         <option value="$PROJECT_DIR$/src/components/VideoSinglePage/CommentSection.js" />
+        <option value="$PROJECT_DIR$/src/test/actions/auth.test.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/test/reducers/user.test.js" />
+        <option value="$PROJECT_DIR$/src/test/reducers/auth.test.js" />
+        <option value="$PROJECT_DIR$/src/test/components/VIdeoSingle.js" />
+        <option value="$PROJECT_DIR$/src/test/components/Avatar.test.js" />
+        <option value="$PROJECT_DIR$/src/components/HomePage/VideoSingle.js" />
+        <option value="$PROJECT_DIR$/src/test/components/VIdeoSingle.test.js" />
+        <option value="$PROJECT_DIR$/src/test/components/VideoSection.js" />
+        <option value="$PROJECT_DIR$/src/test/components/VideoSection.test.js" />
       </list>
     </option>
   </component>
@@ -295,10 +269,11 @@
       <path value="$PROJECT_DIR$/public/js/vendor/player/johndyer-mediaelement-89793bc/info/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="827" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="103" />
+    <option name="y" value="30" />
+    <option name="width" value="1221" />
+    <option name="height" value="765" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -322,19 +297,14 @@
               <item name="Circle_Video" type="b2602c69:ProjectViewProjectNode" />
               <item name="Circle_Video" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circle_Video" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circle_Video" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Circle_Video" type="b2602c69:ProjectViewProjectNode" />
               <item name="Circle_Video" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Header" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Circle_Video" type="b2602c69:ProjectViewProjectNode" />
@@ -346,7 +316,28 @@
               <item name="Circle_Video" type="b2602c69:ProjectViewProjectNode" />
               <item name="Circle_Video" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Circle_Video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Circle_Video" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Circle_Video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Circle_Video" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Circle_Video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Circle_Video" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -450,17 +441,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198969000" />
+    <option name="totallyTimeSpent" value="200977000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
+    <frame x="103" y="30" width="1221" height="765" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.24947146" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.295" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.27641279" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.36377475" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -475,6 +465,26 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info id="npm" order="1" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.24947146" />
+      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.2113022" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32923833" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.32923833" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -489,61 +499,10 @@
           <url>file://$PROJECT_DIR$/src/App.js</url>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/test/actions/auth.test.js</url>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/utils/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/VideoList.js" />
-    <entry file="file://$PROJECT_DIR$/src/styles/base/_account.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2530">
-          <caret line="110" column="43" selection-start-line="110" selection-start-column="43" selection-end-line="110" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/HOC/alreadyLoggedIn.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/HOC/requireLoggedIn.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Register/RegistrationPage.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Footer.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LoadingSpinner.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/NotFoundPage.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Upload/UploadPicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Register/RegistrationForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1504">
-          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/auth.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -596,13 +555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/Avatar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -676,20 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/HomePage/VideoSection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/HomePage/VideoSingle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/VideoDescription.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -701,13 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/HomePage/HomePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="4" column="79" lean-forward="true" selection-start-line="4" selection-start-column="79" selection-end-line="4" selection-end-column="79" />
         </state>
       </provider>
     </entry>
@@ -767,9 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1520">
           <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -777,9 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -808,9 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
           <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -818,6 +740,140 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
           <caret line="80" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="108" column="58" selection-start-line="108" selection-start-column="58" selection-end-line="108" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/actions/auth.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="80" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/reducers/user.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/reducers/auth.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/HomePage/HomePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-849">
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/components/Header.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-637">
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/components/__snapshots__/VIdeoSingle.test.js.snap">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-512" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header/Avatar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/components/Homepage.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/HomePage/VideoSingle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/components/LoadingSpinner.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/components/VIdeoSingle.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/components/Avatar.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="17" column="50" lean-forward="true" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/HomePage/VideoSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="18" column="55" lean-forward="true" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/components/VideoSection.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

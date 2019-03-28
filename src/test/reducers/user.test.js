@@ -1,4 +1,4 @@
-import { AUTH_USER, SIGN_OUT_USER } from "../../actions/actionTypes";
+import { AUTH_USER, SIGN_OUT_USER } from "../../actions/types";
 import userReducer from "../../reducers/user";
 
 describe("User Reducers", () => {

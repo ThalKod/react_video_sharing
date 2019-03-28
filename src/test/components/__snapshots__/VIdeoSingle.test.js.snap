@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoSingle should render the components Correctly 1`] = `
+<div
+  className="col-lg-3 col-sm-6 videoitem"
+>
+  <div
+    className="b-video"
+  >
+    <div
+      className="v-img"
+    >
+      <Link
+        replace={false}
+        to="/video/wSLFcn283231"
+      >
+        <img
+          alt="videoimage"
+          src={null}
+        />
+      </Link>
+      <div
+        className="time"
+      >
+        59:14:2
+      </div>
+    </div>
+    <div
+      className="v-desc"
+    >
+      <Link
+        replace={false}
+        to="/video/wSLFcn283231"
+      >
+        Test Video
+      </Link>
+    </div>
+    <div
+      className="v-views"
+    >
+      2500
+       views.
+    </div>
+  </div>
+</div>
+`;

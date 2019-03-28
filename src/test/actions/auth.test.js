@@ -3,7 +3,7 @@ import thunk from "redux-thunk";
 import moxios from 'moxios';
 
 
-import { AUTH_USER, SIGN_OUT_USER } from "../../actions/actionTypes";
+import { AUTH_USER, SIGN_OUT_USER } from "../../actions/types";
 import { startSigninUser, startSignupUser, signOut } from "../../actions/index";
 
 const createMockStore = configureMockStore([thunk]);
