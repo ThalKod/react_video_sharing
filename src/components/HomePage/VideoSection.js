@@ -5,16 +5,15 @@ import VideoSingle from "components/HomePage/VideoSingle";
 export default class VideoSection extends React.Component{
 
   renderVideoList = () => {
-    const { recommendedVideos, featuredVideos, scrollable, videos } = this.props;
+    const { recommendedVideos, featuredVideos, videos } = this.props;
 
-
-    if(scrollable){
+    if(featuredVideos && featuredVideos.length > 0 ){
       return featuredVideos.map(video => {
         return <VideoSingle key={video._id} {...video} />
       })
     }
 
-    if(recommendedVideos.length > 0){
+    if(recommendedVideos && recommendedVideos.length > 0){
       return recommendedVideos.map(video => {
         return <VideoSingle key={video._id} {...video} />
       })
@@ -27,12 +26,11 @@ export default class VideoSection extends React.Component{
   };
 
   onScroll = () => {
-    const { getMoreVideos, offset } = this.props;
+    const { getMoreVideos } = this.props;
     if (// TODO: refactor scrolling and implement a better infinite bottom scroll for this component. lets' keep this for this mvp...
         window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight
     ) {
-      getMoreVideos({ offset })
-          .catch(err => console.log(err));
+      getMoreVideos()
     }
   };
 

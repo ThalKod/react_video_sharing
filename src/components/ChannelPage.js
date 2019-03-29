@@ -15,28 +15,44 @@ class ChannelPage extends React.Component{
   state = {
     loading: true,
     videos: [],
+    offset: 0
+  };
+
+  getMoreVideos = () => {
+    const { match: { params: { id } } } = this.props;
+    const { offset } = this.state;
+
+    request("get", `/video/list/user/${id}?limit=8&offset=${offset}`)
+        .then(({ data }) => {
+          if(!data.error) {
+            return this.setState((prevState) => {
+              return {
+                videos: prevState.videos.concat(data.videos),
+                loading: false,
+                offset: prevState.offset + data.videos.length
+              }
+            });
+          }
+          return console.log(data.msg); // handle error later
+        })
+        .catch(err => console.log(err));
   };
 
   renderVideoList = () => {
-      const { loading, videos} = this.state;
+    const { loading, videos } = this.state;
+    if(loading) return <LoadingSpinner/>;
 
-      if(loading) return <LoadingSpinner/>;
-
-      return (
-         <VideoSection videos={videos}/>
-      );
+    return (
+        <VideoSection
+            getMoreVideos={() => this.getMoreVideos()}
+            scrollable
+            videos={videos}
+        />
+    );
   };
 
   componentDidMount = () => {
-
-    const { match: { params: { id } } } = this.props;
-
-    request("get", `/video/list/user/${id}`)
-        .then(({ data }) => {
-          if(!data.error) return this.setState({ videos: data.videos, loading: false });
-          return console.log(data.error); // handle error later
-        })
-        .catch(err => console.log(err));
+    this.getMoreVideos();
   };
 
   render(){
@@ -62,7 +78,7 @@ class ChannelPage extends React.Component{
           </div>
           <div className="content-wrapper">
             <div className="container">
-              <div className="row" style={{ "margin-bottom": "50px"}}>
+              <div className="row" style={{ "marginBottom": "50px"}}>
                 <div className="col-lg-12">
                   <div className="channel-details">
                     <div className="row">
