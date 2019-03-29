@@ -4,10 +4,12 @@ import { connect } from "react-redux";
 import VideoSingle from "components/HomePage/VideoSingle";
 import { startGetVideos } from "actions";
 
+// TODO: Refractor to make infinite scrolling for channel
 class VideoSection extends React.Component{
 
   renderVideoList = () => {
-    const { recommendedVideos, featuredVideos, scrollable } = this.props;
+    const { recommendedVideos, featuredVideos, scrollable, videos } = this.props;
+
 
     if(scrollable){
       return featuredVideos.map(video => {
@@ -15,9 +17,19 @@ class VideoSection extends React.Component{
       })
     }
 
-    return recommendedVideos.map(video => {
+    if(recommendedVideos.length > 0){
+      console.log("Videos:", recommendedVideos);
+      return recommendedVideos.map(video => {
+        return <VideoSingle key={video._id} {...video} />
+      })
+    }
+
+
+
+    return videos.map(video => {
       return <VideoSingle key={video._id} {...video} />
     })
+
   };
 
   onScroll = () => {
@@ -43,19 +55,19 @@ class VideoSection extends React.Component{
   };
 
   render() {
-    const { type } = this.props;
+    const { type, header } = this.props;
     return (
         // TODO: make it more generics...
         <div className="content-block head-div">
-          <div className="cb-header">
-            <div className="row">
-              <div className="col-lg-10 col-sm-10 col-xs-8">
-                <ul className="list-inline">
-                  <li><a href="/" className="color-active">{type}</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          { header && <div className="cb-header">
+                        <div className="row">
+                          <div className="col-lg-10 col-sm-10 col-xs-8">
+                            <ul className="list-inline">
+                              <li><a href="/" className="color-active">{type}</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div> }
           <div className="cb-content videolist">
             <div className="row">
               {this.renderVideoList()}

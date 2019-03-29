@@ -91,6 +91,6 @@ module.exports.getVideosListByUserId = (req, res) => {
   if(!id) return res.send({ error: true, msg: "Please provide a user id"});
 
   Video.find({ author: id})
-      .then(videos => res.send({ videos }))
+      .then(videos => res.send({ error:false,  videos }))
       .catch(err => res.send({ error: false, msg: err}));
 };

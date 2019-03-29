@@ -34,8 +34,8 @@ export class HomePage extends React.Component{
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-               <VideoSection type="Recommended" />
-               <VideoSection scrollable type="Featured"/>
+               <VideoSection type="Recommended" header />
+               <VideoSection scrollable type="Featured" header/>
               </div>
             </div>
           </div>
