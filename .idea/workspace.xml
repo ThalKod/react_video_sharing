@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f6ba216-dee2-489f-9342-55d1a1c7e4e4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controlers/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controlers/video.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ChannelPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ChannelPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HomePage/VideoSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HomePage/VideoSection.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,7 +45,7 @@
           <entry key="html" value="4" />
           <entry key="js" value="534" />
           <entry key="json" value="11" />
-          <entry key="less" value="58" />
+          <entry key="less" value="63" />
           <entry key="png" value="2" />
           <entry key="prettierrc" value="1" />
           <entry key="scss" value="6" />
@@ -62,7 +61,7 @@
           <entry key="JSON" value="23" />
           <entry key="JavaScript" value="534" />
           <entry key="Jest Snapshot" value="19" />
-          <entry key="Less" value="58" />
+          <entry key="Less" value="63" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="6" />
         </counts>
@@ -77,9 +76,9 @@
           <entry key="env" value="72" />
           <entry key="eslintrc" value="137" />
           <entry key="html" value="51" />
-          <entry key="js" value="53324" />
+          <entry key="js" value="53740" />
           <entry key="json" value="69" />
-          <entry key="less" value="695" />
+          <entry key="less" value="717" />
           <entry key="scss" value="4" />
         </counts>
       </usages-collector>
@@ -88,8 +87,8 @@
           <entry key=".env file" value="72" />
           <entry key="HTML" value="51" />
           <entry key="JSON" value="206" />
-          <entry key="JavaScript" value="53324" />
-          <entry key="Less" value="695" />
+          <entry key="JavaScript" value="53740" />
+          <entry key="Less" value="717" />
           <entry key="SCSS" value="4" />
         </counts>
       </usages-collector>
@@ -97,16 +96,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/ChannelPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="265">
+              <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#164#219#0" expanded="true" />
                 <element signature="e#331#385#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/base/_colors.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="47" column="3" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/base/_custom.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="201" selection-start-line="201" selection-end-line="201" />
             </state>
           </provider>
         </entry>
@@ -132,7 +149,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/HomePage/VideoSection.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="212">
@@ -148,7 +165,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>btn</find>
       <find>btn-color-toggle</find>
       <find>bg-image</find>
       <find>login</find>
@@ -178,6 +194,7 @@
       <find>Promise</find>
       <find>setupTestFrameworkScriptFile&quot;</find>
       <find>.flex</find>
+      <find>list-inline</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -186,7 +203,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/Header/Avatar.js" />
         <option value="$PROJECT_DIR$/src/components/HomePage/VideoSingle.js" />
         <option value="$PROJECT_DIR$/src/components/Register/RegistrationForm.js" />
         <option value="$PROJECT_DIR$/src/components/Register/RegistrationPage.js" />
@@ -235,8 +251,9 @@
         <option value="$PROJECT_DIR$/src/styles/components/_channel.scss" />
         <option value="$PROJECT_DIR$/src/styles/styles.less" />
         <option value="$PROJECT_DIR$/src/components/HomePage/HomePage.js" />
-        <option value="$PROJECT_DIR$/src/components/ChannelPage.js" />
         <option value="$PROJECT_DIR$/src/components/HomePage/VideoSection.js" />
+        <option value="$PROJECT_DIR$/src/styles/base/_custom.less" />
+        <option value="$PROJECT_DIR$/src/components/ChannelPage.js" />
       </list>
     </option>
   </component>
@@ -430,12 +447,12 @@
       <workItem from="1553713926795" duration="2149000" />
       <workItem from="1553773294248" duration="474000" />
       <workItem from="1553783715986" duration="362000" />
-      <workItem from="1553865188448" duration="6411000" />
+      <workItem from="1553865188448" duration="7669000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213303000" />
+    <option name="totallyTimeSpent" value="214561000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -445,7 +462,7 @@
       <window_info id="npm" order="1" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.26779422" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.18058968" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.14127764" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -498,20 +515,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/SimilarVideos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="59" lean-forward="true" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/VideoDescription.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/VideoPlayer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -790,13 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/components/_channel.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="225" column="7" lean-forward="true" selection-start-line="225" selection-start-column="7" selection-end-line="225" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoSinglePage/VideoSinglePage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-657">
@@ -810,18 +806,6 @@
           <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
           <folding>
             <element signature="e#0#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ChannelPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#164#219#0" expanded="true" />
-            <element signature="e#331#385#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -849,6 +833,39 @@
           <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/components/_channel.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="174" column="9" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/base/_colors.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="47" column="3" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/base/_custom.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="201" selection-start-line="201" selection-end-line="201" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ChannelPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#164#219#0" expanded="true" />
+            <element signature="e#331#385#0" expanded="true" />
           </folding>
         </state>
       </provider>

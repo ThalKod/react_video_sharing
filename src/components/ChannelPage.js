@@ -15,7 +15,8 @@ class ChannelPage extends React.Component{
   state = {
     loading: true,
     videos: [],
-    offset: 0
+    offset: 0,
+    tab: "videos"
   };
 
   getMoreVideos = () => {
@@ -51,12 +52,17 @@ class ChannelPage extends React.Component{
     );
   };
 
+  renderChannelList = () => {
+    return <div>Channels here...</div>
+  };
+
   componentDidMount = () => {
     this.getMoreVideos();
   };
 
   render(){
     const { username } = this.props;
+    const { tab } = this.state;
 
     return (
         <div className="channel">
@@ -89,8 +95,8 @@ class ChannelPage extends React.Component{
                           </div>
                           <div className="c-nav">
                             <ul className="list-inline">
-                              <li><a href="/">Videos</a></li>
-                              <li><a href="/">Followed Channels</a></li>
+                              <li><a onClick={(e) => { e.preventDefault(); this.setState({ tab: "videos"}) }} href="/">Videos</a></li>
+                              <li><a onClick={(e) => { e.preventDefault(); this.setState({ tab: "channels"}) }} href="/">Followed Channels</a></li>
                             </ul>
                           </div>
                           <div className="c-sub pull-right">
@@ -111,7 +117,7 @@ class ChannelPage extends React.Component{
                   </div>
                 </div>
               </div>
-              {this.renderVideoList()}
+              {tab === "videos"? this.renderVideoList() : this.renderChannelList()}
             </div>
           </div>
         </div>
