@@ -1,11 +1,8 @@
 import React from "react";
-import { connect } from "react-redux";
 
 import VideoSingle from "components/HomePage/VideoSingle";
-import { startGetVideos } from "actions";
 
-// TODO: Refractor to make infinite scrolling for channel
-class VideoSection extends React.Component{
+export default class VideoSection extends React.Component{
 
   renderVideoList = () => {
     const { recommendedVideos, featuredVideos, scrollable, videos } = this.props;
@@ -18,13 +15,10 @@ class VideoSection extends React.Component{
     }
 
     if(recommendedVideos.length > 0){
-      console.log("Videos:", recommendedVideos);
       return recommendedVideos.map(video => {
         return <VideoSingle key={video._id} {...video} />
       })
     }
-
-
 
     return videos.map(video => {
       return <VideoSingle key={video._id} {...video} />
@@ -78,14 +72,3 @@ class VideoSection extends React.Component{
   }
 }
 
-const mapStateToProps = (state) => ({
-  recommendedVideos: state.video.recommended,
-  featuredVideos: state.video.featured.videos,
-  offset: state.video.featured.offset,
-});
-
-const mapDispatchToProps = (dispatch) => ({
-  getMoreVideos: (options) => dispatch(startGetVideos(options))
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(VideoSection);
