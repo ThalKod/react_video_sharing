@@ -16,10 +16,11 @@ class ChannelPage extends React.Component{
     loading: true,
     videos: [],
     offset: 0,
-    tab: "videos"
+    tab: "videos",
+    subscribersCount: 0
   };
 
-  getMoreVideos = () => {
+  getVideos = () => {
     const { match: { params: { id } } } = this.props;
     const { offset } = this.state;
 
@@ -45,7 +46,7 @@ class ChannelPage extends React.Component{
 
     return (
         <VideoSection
-            getMoreVideos={() => this.getMoreVideos()}
+            getMoreVideos={() => this.getVideos()}
             scrollable
             videos={videos}
         />
@@ -57,12 +58,23 @@ class ChannelPage extends React.Component{
   };
 
   componentDidMount = () => {
-    this.getMoreVideos();
+    const { match: { params: { id } } } = this.props;
+
+    this.getVideos();
+
+    request("get", `/user/${id}/subscribers/count`)
+        .then(res => {
+          console.log(res.data);
+          if(!res.data.error) this.setState({ subscribersCount: res.data.subscribersCount });
+        })
+        .catch(err => {
+          console.log(err);
+        })
   };
 
   render(){
     const { username } = this.props;
-    const { tab } = this.state;
+    const { tab, subscribersCount } = this.state;
 
     return (
         <div className="channel">
@@ -105,7 +117,7 @@ class ChannelPage extends React.Component{
                                 Subscribe
                               </div>
                               <div className="c-s">
-                                22,548,145
+                                {subscribersCount}
                               </div>
                               <div className="clearfix"/>
                             </div>
