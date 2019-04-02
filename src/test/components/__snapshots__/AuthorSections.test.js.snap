@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthorSection should render the component correctly 1`] = `
+<div
+  className="author"
+>
+  <Link
+    replace={false}
+    to="/"
+  >
+    <_default
+      className="sv-avatar"
+      username=""
+    />
+  </Link>
+  <div
+    className="sv-name"
+  >
+    <div>
+      <Link
+        replace={false}
+        to="/"
+      />
+       . 0 Videos
+    </div>
+    <div
+      className="c-sub"
+    >
+      <div
+        className="c-f"
+      >
+        Subscribe
+      </div>
+      <div
+        className="c-s"
+      >
+        0
+      </div>
+      <div
+        className="clearfix"
+      />
+    </div>
+  </div>
+  <div
+    className="sv-views"
+  >
+    <div
+      className="sv-views-count"
+    >
+       Views
+    </div>
+  </div>
+  <div
+    className="clearfix"
+  />
+</div>
+`;

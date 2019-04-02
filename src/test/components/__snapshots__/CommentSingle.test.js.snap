@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CommentSingle should render correctly the CommentSingle components 1`] = `
+<div
+  className="cl-comment"
+>
+  <div
+    className="cl-avatar"
+  >
+    <Link
+      replace={false}
+      to="/"
+    >
+      <_default
+        username="My name"
+      />
+    </Link>
+  </div>
+  <div
+    className="cl-comment-text"
+  >
+    <div
+      className="cl-name-date"
+    >
+      <a
+        href="/"
+      >
+        My name
+      </a>
+       . 
+      13 years ago
+    </div>
+    <div
+      className="cl-text"
+    >
+      Hello World !
+    </div>
+  </div>
+  <div
+    className="clearfix"
+  />
+</div>
+`;
