@@ -85,3 +85,19 @@ module.exports.getSimilarVideosById = (req, res) => {
       })
       .catch(err => res.send({ error: true, msg: err}));
 };
+
+module.exports.getVideosListByUserId = (req, res) => {
+  const { id } = req.params;
+  const { limit, offset } = req.query;
+
+  console.log("params", limit, offset);
+
+  if(!id || !limit || !offset) return res.send({ error: true, msg: "Please provide the correct params"});
+
+  Video.find({ author: id})
+      .sort({ createdAt: -1 })
+      .skip(parseInt(offset))
+      .limit(parseInt(limit))
+      .then(videos => res.send({ error:false,  videos }))
+      .catch(err => res.send({ error: false, msg: err}));
+};

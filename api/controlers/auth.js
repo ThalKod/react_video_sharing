@@ -33,7 +33,7 @@ module.exports.signUp = (req, res, next) => {
         user.save((err, rUser) => {
           if(err) return next(err);
           const jwtToken = createJwtToken(rUser, "refreshToken");
-          return res.json({ user: { email, username }, token: `jwt ${jwtToken}`});
+          return res.json({ user: { email, username, _id: rUser.id }, token: `jwt ${jwtToken}`});
         });
     });
 };
@@ -42,8 +42,8 @@ module.exports.signIn = (req, res) => {
   const jwtToken = createJwtToken(req.user, "refreshToken");
 
   User.findById(req.user.id)
-      .then(({ email, username }) => {
-        return res.json({ user: {email, username}, token: `jwt ${jwtToken}`});
+      .then(({ email, username, _id }) => {
+        return res.json({ user: {email, username, _id}, token: `jwt ${jwtToken}`});
       })
 
 };

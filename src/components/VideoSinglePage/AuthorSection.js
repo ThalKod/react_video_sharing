@@ -2,9 +2,9 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { request } from "../../utils";
+import { request } from "utils";
 
-import Avatar from "../Header/Avatar";
+import Avatar from "components/Header/Avatar";
 
 export default class AuthorSection extends React.Component{
 
@@ -31,14 +31,14 @@ export default class AuthorSection extends React.Component{
 
 
   render(){
-    const { viewCount } = this.props;
+    const { viewCount, author } = this.props;
     const { videosCount, subscribersCount, username } = this.state;
 
     return(
         <div className="author">
-          <Link to="/"><Avatar username={username} className="sv-avatar"/></Link>
+          <Link to={`/channel/${author}`}><Avatar username={username} className="sv-avatar"/></Link>
           <div className="sv-name">
-            <div><Link to="/">{username.charAt(0).toUpperCase() + username.slice(1)}</Link>{` . ${videosCount} Videos`}</div>
+            <div><Link to={`/channel/${author}`}>{username.charAt(0).toUpperCase() + username.slice(1)}</Link>{` . ${videosCount} Videos`}</div>
             <div className="c-sub">
               <div className="c-f">
                 Subscribe

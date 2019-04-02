@@ -1,5 +1,5 @@
-import { GET_MY_INFO } from "./types";
-import { request } from "../utils";
+import { GET_MY_INFO } from "actions/types";
+import { request } from "utils";
 
 export const startGetMyInfo = (callback) => (dispatch) =>{
   return request("get", "/user/me")

@@ -1,5 +1,6 @@
-import { AUTH_USER, SIGN_OUT_USER } from "../../actions/types";
-import userReducer from "../../reducers/user";
+import { AUTH_USER, SIGN_OUT_USER } from "actions/types";
+import userReducer from "reducers/user";
+
 
 describe("User Reducers", () => {
   it("should set email and username in state", () => {

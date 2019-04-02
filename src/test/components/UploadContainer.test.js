@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 import toJson from "enzyme-to-json";
 
-import { UploadContainer } from "../../components/Upload/UploadContainer";
+import { UploadContainer } from "components/Upload/UploadContainer";
 
 describe("LoadingSpinner", () => {
   it("should correctly render the UploadPicker components", () => {

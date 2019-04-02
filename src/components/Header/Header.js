@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from "react-router-dom"
 import { connect } from "react-redux";
 
-import SearchBar from "./SearchBar";
-import Avatar from "./Avatar";
-import bulbLight from "../../assets/images/icon_bulb_light.png";
-import logo from "../../assets/images/logo.svg";
-import { signOut, startGetMyInfo } from "../../actions/index";
+import SearchBar from "components/Header/SearchBar";
+import Avatar from "components/Header/Avatar";
+import bulbLight from "assets/images/icon_bulb_light.png";
+import logo from "assets/images/logo.svg";
+import { signOut, startGetMyInfo } from "actions";
 
 export class Header extends React.Component{
 
@@ -34,10 +34,12 @@ export class Header extends React.Component{
   };
 
   renderAvatarAndOthers = () => {
-    const { username, signOutUser} = this.props;
+    const { username, signOutUser, id} = this.props;
     return (
         <div className="flex">
-          <Avatar username={username} />
+          <Link to={`/channel/${id}`}>
+            <Avatar username={username} />
+          </Link>
           <button className="unStyledButton" type="submit" onClick={signOutUser}>Sign Out</button>
           <Link className="upload-button" to="/upload"><i className="cv cvicon-cv-upload-video"/></Link>
         </div>
@@ -87,6 +89,7 @@ export class Header extends React.Component{
 const mapStateToProps = (state) => ({
   token: state.auth.userToken,
   username: state.user.username,
+  id: state.user._id,
 });
 
 const mapDispatchToProps = (dispatch) => ({

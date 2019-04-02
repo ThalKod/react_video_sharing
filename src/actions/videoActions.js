@@ -1,5 +1,5 @@
-import { GET_RECOMMENDED_VIDEO, GET_VIDEOS } from "./types";
-import { request } from "../utils";
+import { GET_RECOMMENDED_VIDEO, GET_VIDEOS } from "actions/types";
+import { request } from "utils";
 
 export const startGetRecommendedVideo = () => (dispatch) => {
   return request("get", "/video/list/recommended")

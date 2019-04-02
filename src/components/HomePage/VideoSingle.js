@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { request, formatSecondForRendering } from "../../utils/index";
+import { request, formatSecondForRendering } from "utils";
 
 // import videoPlaceholder from "../assets/images/video_placeholder.png";
 

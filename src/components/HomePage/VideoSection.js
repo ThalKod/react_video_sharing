@@ -1,32 +1,36 @@
 import React from "react";
-import { connect } from "react-redux";
 
-import VideoSingle from "./VideoSingle";
-import { startGetVideos } from "../../actions/index";
+import VideoSingle from "components/HomePage/VideoSingle";
 
-class VideoSection extends React.Component{
+export default class VideoSection extends React.Component{
 
   renderVideoList = () => {
-    const { recommendedVideos, featuredVideos, scrollable } = this.props;
+    const { recommendedVideos, featuredVideos, videos } = this.props;
 
-    if(scrollable){
+    if(featuredVideos && featuredVideos.length > 0 ){
       return featuredVideos.map(video => {
         return <VideoSingle key={video._id} {...video} />
       })
     }
 
-    return recommendedVideos.map(video => {
+    if(recommendedVideos && recommendedVideos.length > 0){
+      return recommendedVideos.map(video => {
+        return <VideoSingle key={video._id} {...video} />
+      })
+    }
+
+    return videos.map(video => {
       return <VideoSingle key={video._id} {...video} />
     })
+
   };
 
   onScroll = () => {
-    const { getMoreVideos, offset } = this.props;
+    const { getMoreVideos } = this.props;
     if (// TODO: refactor scrolling and implement a better infinite bottom scroll for this component. lets' keep this for this mvp...
         window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight
     ) {
-      getMoreVideos({ offset })
-          .catch(err => console.log(err));
+      getMoreVideos()
     }
   };
 
@@ -43,18 +47,19 @@ class VideoSection extends React.Component{
   };
 
   render() {
-    const { type } = this.props;
+    const { type, header } = this.props;
     return (
+        // TODO: make it more generics...
         <div className="content-block head-div">
-          <div className="cb-header">
-            <div className="row">
-              <div className="col-lg-10 col-sm-10 col-xs-8">
-                <ul className="list-inline">
-                  <li><a href="/" className="color-active">{type}</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          { header && <div className="cb-header">
+                        <div className="row">
+                          <div className="col-lg-10 col-sm-10 col-xs-8">
+                            <ul className="list-inline">
+                              <li><a href="/" className="color-active">{type}</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div> }
           <div className="cb-content videolist">
             <div className="row">
               {this.renderVideoList()}
@@ -65,14 +70,3 @@ class VideoSection extends React.Component{
   }
 }
 
-const mapStateToProps = (state) => ({
-  recommendedVideos: state.video.recommended,
-  featuredVideos: state.video.featured.videos,
-  offset: state.video.featured.offset,
-});
-
-const mapDispatchToProps = (dispatch) => ({
-  getMoreVideos: (options) => dispatch(startGetVideos(options))
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(VideoSection);

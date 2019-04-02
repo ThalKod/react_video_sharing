@@ -2,8 +2,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import logo from "../assets/images/logo.svg";
-import loveIcon from "../assets/images/like.png";
+import logo from "assets/images/logo.svg";
+import loveIcon from "assets/images/like.png";
 
 
 export default function Footer(){

@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 import toJson from "enzyme-to-json";
 
-import Avatar from "../../components/Header/Avatar";
+import Avatar from "components/Header/Avatar";
 
 describe("Avatar", () => {
   let wrapper;

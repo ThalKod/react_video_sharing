@@ -1,5 +1,5 @@
-import {ADD_COMMENTS, CLEAR_COMMENTS, GET_COMMENTS} from "./types";
-import {request} from "../utils";
+import {ADD_COMMENTS, CLEAR_COMMENTS, GET_COMMENTS} from "actions/types";
+import {request} from "utils";
 
 export const startGetComments = ({ limit = 5, offset = 0}, id) => (dispatch) => {
   return request("get", `/comment/video/${id}?limit=${limit}&offset=${offset}`)

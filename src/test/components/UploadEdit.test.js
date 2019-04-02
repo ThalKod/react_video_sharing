@@ -2,7 +2,7 @@ import React from "react";
 import {shallow} from "enzyme/build";
 import toJson from "enzyme-to-json";
 
-import UploadEdit from "../../components/Upload/UploadEdit";
+import UploadEdit from "components/Upload/UploadEdit";
 
 describe("UploadEdit", () => {
   let wrapper;

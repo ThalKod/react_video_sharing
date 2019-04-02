@@ -1,4 +1,4 @@
-import { GET_RECOMMENDED_VIDEO, GET_VIDEOS } from "../actions/types";
+import { GET_RECOMMENDED_VIDEO, GET_VIDEOS } from "actions/types";
 
 const defaultState = {
   recommended: [],

@@ -3,7 +3,7 @@ const Video = require("../models/Video");
 
 module.exports.getUser = (req, res) => {
   User.findById(req.user.id)
-      .then(({ email, username }) => res.send({ error: false, user: { email, username } }))
+      .then(({ email, username, _id }) => res.send({ error: false, user: { email, username, _id } }))
       .catch(err => res.send({error: true, msg: err}));
 };
 
