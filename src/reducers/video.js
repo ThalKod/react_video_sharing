@@ -1,8 +1,12 @@
-import { GET_RECOMMENDED_VIDEO, GET_VIDEOS } from "actions/types";
+import { GET_RECOMMENDED_VIDEO, GET_VIDEOS, SEARCH_VIDEOS } from "actions/types";
 
 const defaultState = {
   recommended: [],
   featured: {
+    videos: [],
+    offset: 0
+  },
+  searched: {
     videos: [],
     offset: 0
   }
@@ -22,6 +26,12 @@ export default (state = defaultState, action) => {
 
     case GET_VIDEOS:
       return getVideos(state, action);
+
+    case SEARCH_VIDEOS:
+      return { 
+        ...state,
+        searched: { ...state.searched, videos: state.searched.videos.concat(action.payload), offset: state.searched.offset + action.payload.length }
+      };
 
     default:
       return state;
