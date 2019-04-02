@@ -13,6 +13,7 @@ import Header from "components/Header/Header";
 import Footer from "components/Footer";
 import VideoSinglePage from "components/VideoSinglePage/VideoSinglePage";
 import ChannelPage from "components/ChannelPage";
+import Search from "components/Search/Search";
 
 const AppRouter = () => (
     <Router>
@@ -33,6 +34,7 @@ const AppRouter = () => (
               <VideoSinglePage key={props.match.params.id} {...props}/>
           )}/>
           <Route path="/channel/:id" component={ChannelPage}/>
+          <Route path="/search" component={Search}/>
           <Route component={NotFoundPage}/>
         </Switch>
         <Footer/>

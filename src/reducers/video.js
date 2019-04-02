@@ -7,6 +7,7 @@ const defaultState = {
     offset: 0
   },
   searched: {
+    query: "",
     videos: [],
     offset: 0
   }
@@ -30,7 +31,12 @@ export default (state = defaultState, action) => {
     case SEARCH_VIDEOS:
       return {
         ...state,
-        searched: { ...state.searched, videos: state.searched.videos.concat(action.payload), offset: state.searched.offset + action.payload.length }
+        searched: {
+          ...state.searched,
+          videos: state.searched.videos.concat(action.payload.videos),
+          offset: state.searched.offset + action.payload.videos.length,
+          query: action.payload.query
+        }
       };
 
     default:

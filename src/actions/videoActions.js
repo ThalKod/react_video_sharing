@@ -31,7 +31,7 @@ export const startSearchVideos = ({ limit = 16, offset = 0 }, query) => (dispatc
   return request("post", `/video/search?limit=${limit}&offset=${offset}`, {}, { query })
       .then(res => {
         if(res.data.error) return { error: true, msg: res.data.msg};
-        dispatch({ type: SEARCH_VIDEOS, payload: res.data.videos });
+        dispatch({ type: SEARCH_VIDEOS, payload: { videos: res.data.videos, query } });
         return { error: false };
       })
       .catch(err => {

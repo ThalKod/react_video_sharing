@@ -106,7 +106,7 @@ module.exports.searchVideosByText = (req, res) => {
   const { query } = req.body;
   const { limit, offset } = req.query;
 
-  if(!id || !limit || !offset) return res.send({ error: true, msg: "Please provide the correct params"});
+  if(!limit || !offset) return res.send({ error: true, msg: "Please provide the correct params"});
 
   Video.find({$text: {$search: query}})
       .sort({ createdAt: -1 })
