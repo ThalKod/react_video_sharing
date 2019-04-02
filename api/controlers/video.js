@@ -101,3 +101,17 @@ module.exports.getVideosListByUserId = (req, res) => {
       .then(videos => res.send({ error:false,  videos }))
       .catch(err => res.send({ error: false, msg: err}));
 };
+
+module.exports.searchVideosByText = (req, res) => {
+  const { query } = req.body;
+  const { limit, offset } = req.query;
+
+  if(!id || !limit || !offset) return res.send({ error: true, msg: "Please provide the correct params"});
+
+  Video.find({$text: {$search: query}})
+      .sort({ createdAt: -1 })
+      .skip(parseInt(offset))
+      .limit(parseInt(limit))
+      .then(rVideos => res.send({ error: false, videos: rVideos}))
+      .catch(err => res.send({ error: true, msg: err}));
+};
