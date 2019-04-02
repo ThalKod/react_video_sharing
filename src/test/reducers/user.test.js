@@ -1,6 +1,7 @@
 import { AUTH_USER, SIGN_OUT_USER } from "actions/types";
 import userReducer from "reducers/user";
 
+
 describe("User Reducers", () => {
   it("should set email and username in state", () => {
     const payload = { token: "token", user: { username: "test", email: "test@mail.com" }}

@@ -1,6 +1,7 @@
 import { AUTH_USER, SIGN_OUT_USER } from "actions/types";
 import authReducer from "reducers/auth";
 
+
 describe("Auth Reducers", () => {
 
   it("should set userToken in state", () => {
