@@ -28,7 +28,7 @@ export default (state = defaultState, action) => {
       return getVideos(state, action);
 
     case SEARCH_VIDEOS:
-      return { 
+      return {
         ...state,
         searched: { ...state.searched, videos: state.searched.videos.concat(action.payload), offset: state.searched.offset + action.payload.length }
       };
