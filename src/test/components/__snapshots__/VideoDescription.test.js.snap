@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoDescripition should render the component correctly 1`] = `
+<div
+  className="info"
+>
+  <h4>
+    Categories:
+  </h4>
+  <p>
+    None Yet :)
+  </p>
+  <CSSTransitionGroup
+    transitionAppear={false}
+    transitionEnter={true}
+    transitionEnterTimeout={1000}
+    transitionLeave={true}
+    transitionLeaveTimeout={1000}
+    transitionName="menu"
+  />
+  <div
+    className="showless"
+  >
+    <button
+      onClick={[Function]}
+      type="submit"
+    >
+      Show more
+    </button>
+  </div>
+</div>
+`;
+
+exports[`VideoDescripition should show the full description on button click 1`] = `
+<div
+  className="info"
+>
+  <h4>
+    Categories:
+  </h4>
+  <p>
+    None Yet :)
+  </p>
+  <CSSTransitionGroup
+    transitionAppear={false}
+    transitionEnter={true}
+    transitionEnterTimeout={1000}
+    transitionLeave={true}
+    transitionLeaveTimeout={1000}
+    transitionName="menu"
+  >
+    <div>
+      <h4>
+        About:
+      </h4>
+      <p>
+        description
+      </p>
+      <h4>
+        Tags:
+      </h4>
+      <p
+        className="sv-tags"
+      >
+        <span
+          key="text"
+        >
+          text
+        </span>
+        <span
+          key="hello"
+        >
+          hello
+        </span>
+      </p>
+      <div
+        className="row date-lic"
+      >
+        <div
+          className="col-lg-6"
+        >
+          <h4>
+            Release Date: 
+          </h4>
+          <br />
+          <p>
+            in 362 years
+          </p>
+        </div>
+      </div>
+    </div>
+  </CSSTransitionGroup>
+  <div
+    className="showless"
+  >
+    <button
+      onClick={[Function]}
+      type="submit"
+    >
+      Show Less
+    </button>
+  </div>
+</div>
+`;
