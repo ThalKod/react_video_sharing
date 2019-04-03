@@ -4,7 +4,7 @@ import toJson from "enzyme-to-json";
 import {Link} from "react-router-dom";
 
 
-import VideoSingle from "../../components/HomePage/VideoSingle";
+import VideoSingle from "../../components/Home/VideoSingle";
 import {formatSecondForRendering} from "../../utils";
 
 describe("VideoSingle", () => {

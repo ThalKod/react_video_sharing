@@ -1,8 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import VideoSection from "components/HomePage/VideoSection";
-import LoadingSpinner from "components/LoadingSpinner";
+import VideoSection from "components/Home/VideoSection";
+import LoadingSpinner from "components/Common/LoadingSpinner";
 import { startGetRecommendedVideo, startGetVideos } from "actions";
 
 export class HomePage extends React.Component{
@@ -39,7 +39,8 @@ export class HomePage extends React.Component{
                <VideoSection recommendedVideos={recommendedVideos} type="Recommended" header />
                <VideoSection
                    featuredVideos={featuredVideos}
-                   scrollable type="Featured"
+                   scrollable
+                   type="Featured"
                    header
                    getMoreVideos={() => getVideos({ offset })}
                />

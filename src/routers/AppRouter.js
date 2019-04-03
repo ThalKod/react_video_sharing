@@ -4,15 +4,16 @@ import {
   Route,
   Switch, } from "react-router-dom";
 
-import HomePage from "components/HomePage/HomePage";
-import NotFoundPage from "components/NotFoundPage";
+import HomePage from "components/Home/HomePage";
+import NotFoundPage from "components/Common/NotFoundPage";
 import RegistrationPage from "components/Register/RegistrationPage";
 import UploadContainer from "components/Upload/UploadContainer";
 
 import Header from "components/Header/Header";
-import Footer from "components/Footer";
-import VideoSinglePage from "components/VideoSinglePage/VideoSinglePage";
-import ChannelPage from "components/ChannelPage";
+import Footer from "components/Footer/Footer";
+import VideoSinglePage from "components/VideoSingle/VideoSinglePage";
+import ChannelPage from "components/Channel/ChannelPage";
+import Search from "components/Search/Search";
 
 const AppRouter = () => (
     <Router>
@@ -33,6 +34,7 @@ const AppRouter = () => (
               <VideoSinglePage key={props.match.params.id} {...props}/>
           )}/>
           <Route path="/channel/:id" component={ChannelPage}/>
+          <Route path="/search" component={Search}/>
           <Route component={NotFoundPage}/>
         </Switch>
         <Footer/>

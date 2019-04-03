@@ -3,12 +3,12 @@ import { connect } from "react-redux";
 import { request } from "utils";
 
 // import VideoSection from "components/HomePage/VideoSection";
-import LoadingSpinner from "components/LoadingSpinner";
+import LoadingSpinner from "components/Common/LoadingSpinner";
 
 import tempBanner from "assets/images/channel-banner.png";
 // import Avatar  from "components/Header/Avatar";
 import tempUser from "assets/images/channel-user.png";
-import VideoSection from "./HomePage/VideoSection";
+import VideoSection from "../Home/VideoSection";
 
 class ChannelPage extends React.Component{
 

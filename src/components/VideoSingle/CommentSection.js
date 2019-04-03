@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
 import Avatar from "components/Header/Avatar";
-import CommentSingle from "components/VideoSinglePage/CommentSingle";
+import CommentSingle from "components/VideoSingle/CommentSingle";
 import { request } from "utils";
 import { startGetComments, startAddComments, clearComment } from "actions";
 

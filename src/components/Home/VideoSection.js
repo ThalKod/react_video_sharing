@@ -1,6 +1,7 @@
 import React from "react";
 
-import VideoSingle from "components/HomePage/VideoSingle";
+import VideoSingle from "components/Home/VideoSingle";
+import SimpleNote from "../Common/SimpleNote";
 
 export default class VideoSection extends React.Component{
 
@@ -19,10 +20,13 @@ export default class VideoSection extends React.Component{
       })
     }
 
-    return videos.map(video => {
-      return <VideoSingle key={video._id} {...video} />
-    })
+    if(videos && videos.length > 0) {
+      return videos.map(video => {
+        return <VideoSingle key={video._id} {...video} />
+      })
+    }
 
+    return <SimpleNote text="No Videos found"/>;
   };
 
   onScroll = () => {
@@ -47,7 +51,8 @@ export default class VideoSection extends React.Component{
   };
 
   render() {
-    const { type, header } = this.props;
+    const { type, header, query, videos } = this.props;
+    if(videos && videos.length <= 0) return <SimpleNote text="No Videos found"/>;
     return (
         // TODO: make it more generics...
         <div className="content-block head-div">
@@ -55,7 +60,7 @@ export default class VideoSection extends React.Component{
                         <div className="row">
                           <div className="col-lg-10 col-sm-10 col-xs-8">
                             <ul className="list-inline">
-                              <li><a href="/" className="color-active">{type}</a></li>
+                              {type === "Search" ?  <li>Results for "{query}"</li> : <li><a href="/" className="color-active">{type}</a></li>}
                             </ul>
                           </div>
                         </div>

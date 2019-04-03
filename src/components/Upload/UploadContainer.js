@@ -3,7 +3,7 @@ import React from "react";
 import UploadEdit from "components/Upload/UploadEdit"
 import UploadPicker from "components/Upload/UploadPicker";
 import requireLoggedIn from "components/HOC/requireLoggedIn";
-import LoadingSpinner from "components/LoadingSpinner";
+import LoadingSpinner from "components/Common/LoadingSpinner";
 import { request } from "utils";
 
 

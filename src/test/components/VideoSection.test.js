@@ -3,7 +3,7 @@ import { shallow } from "enzyme";
 import toJson from "enzyme-to-json";
 
 
-import VideoSection from "../../components/HomePage/VideoSection";
+import VideoSection from "../../components/Home/VideoSection";
 
 describe("VideoSection", () => {
   it("should render the component correctly", () => {
