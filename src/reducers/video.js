@@ -1,4 +1,4 @@
-import { GET_RECOMMENDED_VIDEO, GET_VIDEOS, SEARCH_VIDEOS, INITIATE_SEARCH_VIDEOS } from "actions/types";
+import { GET_RECOMMENDED_VIDEO, GET_VIDEOS, SEARCH_VIDEOS_SUCCESS, SEARCHING_VIDEOS, CLEAR_SEARCH } from "actions/types";
 
 const defaultState = {
   recommended: [],
@@ -30,20 +30,24 @@ export default (state = defaultState, action) => {
     case GET_VIDEOS:
       return getVideos(state, action);
 
-    case SEARCH_VIDEOS:
+    case SEARCHING_VIDEOS:
+      return { ...state, searched: {...state.searched, loading: true, query: action.payload.query }};
+
+    case SEARCH_VIDEOS_SUCCESS:
       return {
         ...state,
         searched: {
           ...state.searched,
-          videos: action.payload.videos.videos, // Set whole new videos at each new search
-          offset: state.searched.offset + action.payload.videos.videos.length,
-          found: action.payload.videos.found, // Did we find videos ??
-          loading: false
+          loading: false,
+          query: action.payload.query,
+          found: action.payload.videos.found,
+          videos: state.searched.query !== action.payload.query ? action.payload.videos.videos : state.searched.videos.concat(action.payload.videos.videos),
+          offset: state.searched.offset + action.payload.videos.videos.length
         }
       };
 
-    case INITIATE_SEARCH_VIDEOS :
-      return { ...state, searched: {...state, loading: true, query: action.payload.query }};
+    case CLEAR_SEARCH:
+      return {...state, searched: defaultState.searched};
 
     default:
       return state;

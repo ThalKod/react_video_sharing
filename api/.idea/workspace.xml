@@ -4,10 +4,10 @@
     <list default="true" id="63415b28-8174-4354-9629-d6b6324e3c8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlers/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/controlers/video.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/actions/types.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/actions/videoActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/actions/videoActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/Home/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Home/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Home/VideoSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Home/VideoSection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/Search/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Search/Search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/reducers/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/reducers/video.js" afterDir="false" />
     </list>
@@ -387,12 +387,12 @@
       <workItem from="1554135351034" duration="399000" />
       <workItem from="1554224521545" duration="1784000" />
       <workItem from="1554297493176" duration="1804000" />
-      <workItem from="1554310634499" duration="132000" />
+      <workItem from="1554310634499" duration="733000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165992000" />
+    <option name="totallyTimeSpent" value="166593000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -411,7 +411,7 @@
       <window_info id="npm" order="1" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.18796068" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.45577395" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />

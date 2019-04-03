@@ -6,7 +6,7 @@ import SearchBar from "components/Header/SearchBar";
 import Avatar from "components/Header/Avatar";
 import bulbLight from "assets/images/icon_bulb_light.png";
 import logo from "assets/images/logo.svg";
-import { signOut, startGetMyInfo, startSearchVideos} from "actions";
+import { signOut, startGetMyInfo, startSearchVideos, clearVideoSearch } from "actions";
 
 export class Header extends React.Component{
 
@@ -47,8 +47,9 @@ export class Header extends React.Component{
   };
 
   handleSubmitSearch = (query) => {
-    const { searchVideos, history } = this.props;
+    const { searchVideos, history, clearSearchHistory} = this.props;
 
+    clearSearchHistory();
     searchVideos({}, query);
     history.push("/search");
   };
@@ -102,7 +103,8 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   getMyInfo: (callback) => dispatch(startGetMyInfo(callback)),
   signOutUser: () => dispatch(signOut()),
-  searchVideos: (options, query) => dispatch(startSearchVideos(options, query))
+  searchVideos: (options, query) => dispatch(startSearchVideos(options, query)),
+  clearSearchHistory: () => dispatch(clearVideoSearch())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Header));

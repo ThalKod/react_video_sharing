@@ -3,9 +3,10 @@ import { connect } from "react-redux";
 
 import VideoSection from "components/Home/VideoSection";
 import LoadingSpinner from "components/Common/LoadingSpinner";
-import SimpleNote from "components/Common/SimpleNote";
+// import SimpleNote from "components/Common/SimpleNote";
+import { startSearchVideos } from "actions";
 
-function Search({query, videos, found, loading}){
+function Search({query, videos, loading, getMoreVideos, offset }){
     if(loading && query) return <LoadingSpinner/>;
 
     return (
@@ -13,14 +14,14 @@ function Search({query, videos, found, loading}){
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-                { found ?
-                      <VideoSection
-                      videos={videos}
-                      getMoreVideos={() => console.log("Should get more videos")}
-                      />
-                    :
-                    <SimpleNote text="No Videos found. Please try again with new words..."/>
-                }
+                <VideoSection
+                    videos={videos}
+                    type="Search"
+                    header
+                    scrollable
+                    query={query}
+                    getMoreVideos={() => getMoreVideos({ offset }, query)}
+                />
               </div>
             </div>
           </div>
@@ -30,10 +31,15 @@ function Search({query, videos, found, loading}){
 
 const mapStateToProps = (state) => ({
   query: state.video.searched.query,
+  offset: state.video.searched.offset,
   videos: state.video.searched.videos,
   found: state.video.searched.found,
   loading: state.video.searched.loading,
 });
 
-export default connect(mapStateToProps)(Search);
+const mapDispatchToProps = (dispatch) => ({
+  getMoreVideos: (options, query) => dispatch(startSearchVideos(options, query)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Search);
 
