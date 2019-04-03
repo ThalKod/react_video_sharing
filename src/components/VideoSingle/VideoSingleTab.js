@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom"
 
 // import VideoPlaceholder from "../../assets/images/video_placeholder.png";
-import { request, formatSecondForRendering } from "../../utils";
+import { request, formatSecondForRendering } from "utils";
 
 
 export default class VideoSingleTab extends React.Component{

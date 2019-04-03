@@ -2,10 +2,10 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
-import Avatar from "../Header/Avatar";
-import CommentSingle from "./CommentSingle";
-import { request } from "../../utils";
-import { startGetComments, startAddComments, clearComment } from "../../actions";
+import Avatar from "components/Header/Avatar";
+import CommentSingle from "components/VideoSingle/CommentSingle";
+import { request } from "utils";
+import { startGetComments, startAddComments, clearComment } from "actions";
 
 class CommentSection extends React.Component{
 
@@ -83,7 +83,7 @@ class CommentSection extends React.Component{
 
   render(){
 
-    const { userName } = this.props;
+    const { userName, userId } = this.props;
     const { commentText, commentTotal, loadMore } = this.state;
 
     return(
@@ -93,7 +93,7 @@ class CommentSection extends React.Component{
                 className="semibold">{commentTotal}</span> Comments
             </div>
             { userName && <div className="rc-ava">
-                            <Link to="/">
+                            <Link to={`/channel/${userId}`}>
                               <Avatar username={userName}/>
                             </Link>
                           </div>
@@ -138,6 +138,7 @@ class CommentSection extends React.Component{
 
 const mapStateToProps = (state) => ({
   userName: state.user.username,
+  userId: state.user._id,
   comments: state.comment.comments,
   offset: state.comment.offset,
 });

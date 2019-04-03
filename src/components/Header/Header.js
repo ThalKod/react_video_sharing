@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from "react-router-dom"
+import { Link, withRouter } from "react-router-dom"
 import { connect } from "react-redux";
 
-import SearchBar from "./SearchBar";
-import Avatar from "./Avatar";
-import bulbLight from "../../assets/images/icon_bulb_light.png";
-import logo from "../../assets/images/logo.svg";
-import { signOut, startGetMyInfo } from "../../actions/index";
+import SearchBar from "components/Header/SearchBar";
+import Avatar from "components/Header/Avatar";
+import bulbLight from "assets/images/icon_bulb_light.png";
+import logo from "assets/images/logo.svg";
+import { signOut, startGetMyInfo, startSearchVideos, clearVideoSearch } from "actions";
 
 export class Header extends React.Component{
 
@@ -34,14 +34,24 @@ export class Header extends React.Component{
   };
 
   renderAvatarAndOthers = () => {
-    const { username, signOutUser} = this.props;
+    const { username, signOutUser, id} = this.props;
     return (
         <div className="flex">
-          <Avatar username={username} />
+          <Link to={`/channel/${id}`}>
+            <Avatar username={username} />
+          </Link>
           <button className="unStyledButton" type="submit" onClick={signOutUser}>Sign Out</button>
           <Link className="upload-button" to="/upload"><i className="cv cvicon-cv-upload-video"/></Link>
         </div>
     )
+  };
+
+  handleSubmitSearch = (query) => {
+    const { searchVideos, history, clearSearchHistory} = this.props;
+
+    clearSearchHistory();
+    searchVideos({}, query);
+    history.push("/search");
   };
 
   render() {
@@ -62,7 +72,7 @@ export class Header extends React.Component{
                   </div>
                   <div className="visible-xs visible-sm clearfix"/>
                   <div className="col-lg-6 col-sm-6 col-xs-12">
-                    <SearchBar/>
+                    <SearchBar submit={(query) => this.handleSubmitSearch(query)}/>
                   </div>
                   <div className="visible-xs clearfix"/>
                   <div className="col-lg-2 col-sm-4  col-xs-8">
@@ -87,11 +97,14 @@ export class Header extends React.Component{
 const mapStateToProps = (state) => ({
   token: state.auth.userToken,
   username: state.user.username,
+  id: state.user._id,
 });
 
 const mapDispatchToProps = (dispatch) => ({
   getMyInfo: (callback) => dispatch(startGetMyInfo(callback)),
-  signOutUser: () => dispatch(signOut())
+  signOutUser: () => dispatch(signOut()),
+  searchVideos: (options, query) => dispatch(startSearchVideos(options, query)),
+  clearSearchHistory: () => dispatch(clearVideoSearch())
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Header);
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Header));

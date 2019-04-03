@@ -29,7 +29,7 @@
     "eslint-config-react-app": "^3.0.6",
     "eslint-loader": "^2.1.2",
     "eslint-plugin-flowtype": "2.50.1",
-    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "6.1.2",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
@@ -41,7 +41,7 @@
     "html-webpack-plugin": "4.0.0-alpha.2",
     "husky": "^1.3.1",
     "identity-obj-proxy": "3.0.0",
-    "jest": "23.6.0",
+    "jest": "24.5.0",
     "jest-pnp-resolver": "1.0.1",
     "jest-resolve": "23.6.0",
     "less": "^3.9.0",
@@ -106,7 +106,7 @@
       "!src/**/*.d.ts"
     ],
     "resolver": "jest-pnp-resolver",
-    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js",
+    "setupFilesAfterEnv": ["<rootDir>/src/setupTests.js"],
     "setupFiles": [
       "react-app-polyfill/jsdom"
     ],

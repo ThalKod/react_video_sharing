@@ -85,3 +85,38 @@ module.exports.getSimilarVideosById = (req, res) => {
       })
       .catch(err => res.send({ error: true, msg: err}));
 };
+
+module.exports.getVideosListByUserId = (req, res) => {
+  const { id } = req.params;
+  const { limit, offset } = req.query;
+
+  console.log("params", limit, offset);
+
+  if(!id || !limit || !offset) return res.send({ error: true, msg: "Please provide the correct params"});
+
+  Video.find({ author: id})
+      .sort({ createdAt: -1 })
+      .skip(parseInt(offset))
+      .limit(parseInt(limit))
+      .then(videos => res.send({ error:false,  videos }))
+      .catch(err => res.send({ error: false, msg: err}));
+};
+
+module.exports.searchVideosByText = (req, res) => {
+  const { query } = req.body;
+  const { limit, offset } = req.query;
+
+  if(!limit || !offset) return res.send({ error: true, msg: "Please provide the correct params"});
+
+  Video.find({$text: {$search: query}})
+      .sort({ createdAt: -1 })
+      .skip(parseInt(offset))
+      .limit(parseInt(limit))
+      .then(rVideos => {
+        if(rVideos.length <= 0)
+          return res.send({ error: false, videos: { found: false, videos: rVideos }});
+
+        return res.send({ error: false, videos: {found: true, videos: rVideos }});
+      })
+      .catch(err => res.send({ error: true, msg: err}));
+};

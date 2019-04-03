@@ -1,8 +1,8 @@
 import React from "react";
 
-import RegistrationForm from "./RegistrationForm";
-import bgLogin from "../../assets/images/login.jpg";
-import alreadyLoggedIn from "../HOC/alreadyLoggedIn";
+import RegistrationForm from "components/Register/RegistrationForm";
+import bgLogin from "assets/images/login.jpg";
+import alreadyLoggedIn from "components/HOC/alreadyLoggedIn";
 
 export const RegistrationPage = ({ signup, history }) => {
     return (

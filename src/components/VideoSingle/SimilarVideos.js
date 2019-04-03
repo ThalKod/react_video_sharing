@@ -1,7 +1,7 @@
 import React from "react";
 
-import { request } from "../../utils";
-import VideoSingle from "../HomePage/VideoSingle";
+import { request } from "utils";
+import VideoSingle from "components/Home/VideoSingle";
 
 export default class SimilarVideos extends React.Component{
 

@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 import toJson from "enzyme-to-json";
 
-import { RegistrationForm } from "../../components/Register/RegistrationForm";
+import { RegistrationForm } from "components/Register/RegistrationForm";
 
 describe("RegistrationForm component", () => {
 

@@ -1,10 +1,10 @@
 import React from "react";
 
-import UploadEdit from "./UploadEdit"
-import UploadPicker from "./UploadPicker";
-import requireLoggedIn from "../HOC/requireLoggedIn";
-import LoadingSpinner from "../LoadingSpinner";
-import { request } from "../../utils";
+import UploadEdit from "components/Upload/UploadEdit"
+import UploadPicker from "components/Upload/UploadPicker";
+import requireLoggedIn from "components/HOC/requireLoggedIn";
+import LoadingSpinner from "components/Common/LoadingSpinner";
+import { request } from "utils";
 
 
 export class UploadContainer extends React.Component{
