@@ -1,4 +1,4 @@
-import { GET_RECOMMENDED_VIDEO, GET_VIDEOS, SEARCH_VIDEOS } from "actions/types";
+import { GET_RECOMMENDED_VIDEO, GET_VIDEOS, SEARCH_VIDEOS, INITIATE_SEARCH_VIDEOS } from "actions/types";
 
 const defaultState = {
   recommended: [],
@@ -9,7 +9,9 @@ const defaultState = {
   searched: {
     query: "",
     videos: [],
-    offset: 0
+    offset: 0,
+    loading: true,
+    found: false
   }
 };
 
@@ -33,11 +35,15 @@ export default (state = defaultState, action) => {
         ...state,
         searched: {
           ...state.searched,
-          videos: state.searched.videos.concat(action.payload.videos),
-          offset: state.searched.offset + action.payload.videos.length,
-          query: action.payload.query
+          videos: action.payload.videos.videos, // Set whole new videos at each new search
+          offset: state.searched.offset + action.payload.videos.videos.length,
+          found: action.payload.videos.found, // Did we find videos ??
+          loading: false
         }
       };
+
+    case INITIATE_SEARCH_VIDEOS :
+      return { ...state, searched: {...state, loading: true, query: action.payload.query }};
 
     default:
       return state;

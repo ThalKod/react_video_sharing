@@ -1,4 +1,4 @@
-import { GET_RECOMMENDED_VIDEO, GET_VIDEOS, SEARCH_VIDEOS } from "actions/types";
+import { GET_RECOMMENDED_VIDEO, GET_VIDEOS, SEARCH_VIDEOS, INITIATE_SEARCH_VIDEOS } from "actions/types";
 import { request } from "utils";
 
 export const startGetRecommendedVideo = () => (dispatch) => {
@@ -28,10 +28,11 @@ export const startGetVideos = ({ limit = 16, offset = 0 }) => (dispatch) => {
 
 // Async action creator to search a videos by text
 export const startSearchVideos = ({ limit = 16, offset = 0 }, query) => (dispatch) => {
+  dispatch({ type: INITIATE_SEARCH_VIDEOS, payload: { query } }); // Set Loading state
   return request("post", `/video/search?limit=${limit}&offset=${offset}`, {}, { query })
       .then(res => {
         if(res.data.error) return { error: true, msg: res.data.msg};
-        dispatch({ type: SEARCH_VIDEOS, payload: { videos: res.data.videos, query } });
+        dispatch({ type: SEARCH_VIDEOS, payload: { videos: res.data.videos } });
         return { error: false };
       })
       .catch(err => {

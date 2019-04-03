@@ -39,7 +39,8 @@ export class HomePage extends React.Component{
                <VideoSection recommendedVideos={recommendedVideos} type="Recommended" header />
                <VideoSection
                    featuredVideos={featuredVideos}
-                   scrollable type="Featured"
+                   scrollable
+                   type="Featured"
                    header
                    getMoreVideos={() => getVideos({ offset })}
                />

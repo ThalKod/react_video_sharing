@@ -112,6 +112,11 @@ module.exports.searchVideosByText = (req, res) => {
       .sort({ createdAt: -1 })
       .skip(parseInt(offset))
       .limit(parseInt(limit))
-      .then(rVideos => res.send({ error: false, videos: rVideos}))
+      .then(rVideos => {
+        if(rVideos.length <= 0)
+          return res.send({ error: false, videos: { found: false, videos: rVideos }});
+
+        return res.send({ error: false, videos: {found: true, videos: rVideos }});
+      })
       .catch(err => res.send({ error: true, msg: err}));
 };
