@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import { shallow } from "enzyme";
 import toJson from "enzyme-to-json"
 
-import AuthorSection from "../../components/VideoSinglePage/AuthorSection";
+import AuthorSection from "../../components/VideoSingle/AuthorSection";
 
 describe("AuthorSection", () => {
 

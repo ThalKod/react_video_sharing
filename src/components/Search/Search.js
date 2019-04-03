@@ -7,6 +7,9 @@ class Search extends React.Component{
 
   };
 
+
+
+
   render(){
     const { query } = this.props;
     return <div>Hello World ! {query}</div>
@@ -14,7 +17,8 @@ class Search extends React.Component{
 }
 
 const mapStateToProps = (state) => ({
-  query: state.video.searched.query
+  query: state.video.searched.query,
+  videos: state.video.searched.videos,
 });
 
 export default connect(mapStateToProps)(Search);

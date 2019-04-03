@@ -1,12 +1,12 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import VideoPlayer from "components/VideoSinglePage/VideoPlayer";
-import VideoSingleTab from "components/VideoSinglePage/VideoSingleTab";
-import AuthorSection from "components/VideoSinglePage/AuthorSection";
-import VideoDescription from "components/VideoSinglePage/VideoDescription";
-import SimilarVideos from "components/VideoSinglePage/SimilarVideos";
-import CommentSection from "components/VideoSinglePage/CommentSection";
+import VideoPlayer from "components/VideoSingle/VideoPlayer";
+import VideoSingleTab from "components/VideoSingle/VideoSingleTab";
+import AuthorSection from "components/VideoSingle/AuthorSection";
+import VideoDescription from "components/VideoSingle/VideoDescription";
+import SimilarVideos from "components/VideoSingle/SimilarVideos";
+import CommentSection from "components/VideoSingle/CommentSection";
 import { request } from "utils";
 
 class VideoSinglePage extends React.Component{

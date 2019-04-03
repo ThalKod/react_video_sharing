@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 import toJson from "enzyme-to-json";
 
-import NotFoundPage from "components/NotFoundPage";
+import NotFoundPage from "components/Common/NotFoundPage";
 
 describe("NotFoundPage component", () => {
   it("should render the NotFoundPage correctly", () => {
