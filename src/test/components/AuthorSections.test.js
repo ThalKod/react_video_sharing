@@ -8,9 +8,10 @@ import AuthorSection from "../../components/VideoSingle/AuthorSection";
 describe("AuthorSection", () => {
 
   let wrapper;
+  const author = "DSACQEK1238321JLKNE";
 
   beforeEach(() => {
-    wrapper = shallow(<AuthorSection/>);
+    wrapper = shallow(<AuthorSection author={author}/>);
   });
 
   it("should render the component correctly", () => {
@@ -28,7 +29,7 @@ describe("AuthorSection", () => {
 
     expect(
         wrapper.containsMatchingElement(
-            <div><Link to="/">{state.username.charAt(0).toUpperCase() + state.username.slice(1)}</Link>{` . ${state.videosCount} Videos`}</div>
+            <div><Link to={`/channel/${author}`}>{state.username.charAt(0).toUpperCase() + state.username.slice(1)}</Link>{` . ${state.videosCount} Videos`}</div>
         )
     ).toBe(true);
 
