@@ -45,7 +45,9 @@ exports[`Header should render the Avatar and signout button if login 1`] = `
           <div
             className="col-lg-6 col-sm-6 col-xs-12"
           >
-            <SearchBar />
+            <SearchBar
+              submit={[Function]}
+            />
           </div>
           <div
             className="visible-xs clearfix"
@@ -59,9 +61,14 @@ exports[`Header should render the Avatar and signout button if login 1`] = `
               <div
                 className="flex"
               >
-                <_default
-                  username="John Doe"
-                />
+                <Link
+                  replace={false}
+                  to="/channel/undefined"
+                >
+                  <_default
+                    username="John Doe"
+                  />
+                </Link>
                 <button
                   className="unStyledButton"
                   type="submit"
@@ -135,7 +142,9 @@ exports[`Header should render the signin and logout link when not login 1`] = `
           <div
             className="col-lg-6 col-sm-6 col-xs-12"
           >
-            <SearchBar />
+            <SearchBar
+              submit={[Function]}
+            />
           </div>
           <div
             className="visible-xs clearfix"

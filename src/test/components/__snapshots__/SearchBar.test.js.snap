@@ -15,12 +15,18 @@ exports[`SearchBar should render the SearchBar correctly 1`] = `
         className="fa fa-search"
       />
     </span>
-    <input
-      aria-describedby="sizing-addon2"
-      className="form-control"
-      placeholder="Search"
-      type="text"
-    />
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        aria-describedby="sizing-addon2"
+        className="form-control"
+        onChange={[Function]}
+        placeholder="Search"
+        type="text"
+        value=""
+      />
+    </form>
   </div>
 </div>
 `;

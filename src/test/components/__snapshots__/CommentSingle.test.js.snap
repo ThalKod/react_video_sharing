@@ -9,7 +9,7 @@ exports[`CommentSingle should render correctly the CommentSingle components 1`] 
   >
     <Link
       replace={false}
-      to="/"
+      to="/channel/undefined"
     >
       <_default
         username="My name"
@@ -22,11 +22,12 @@ exports[`CommentSingle should render correctly the CommentSingle components 1`] 
     <div
       className="cl-name-date"
     >
-      <a
-        href="/"
+      <Link
+        replace={false}
+        to="/channel/undefined"
       >
         My name
-      </a>
+      </Link>
        . 
       13 years ago
     </div>

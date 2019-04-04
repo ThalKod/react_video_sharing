@@ -1,7 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`VideoSection should render the component correctly 1`] = `
-<ContextConsumer>
-  <Component />
-</ContextConsumer>
+<div
+  className="content-block head-div"
+>
+  <div
+    className="cb-content videolist"
+  >
+    <div
+      className="row"
+    >
+      <SimpleNote
+        text="No Videos found"
+      />
+    </div>
+  </div>
+</div>
 `;

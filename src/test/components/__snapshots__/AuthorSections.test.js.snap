@@ -6,7 +6,7 @@ exports[`AuthorSection should render the component correctly 1`] = `
 >
   <Link
     replace={false}
-    to="/"
+    to="/channel/DSACQEK1238321JLKNE"
   >
     <_default
       className="sv-avatar"
@@ -19,7 +19,7 @@ exports[`AuthorSection should render the component correctly 1`] = `
     <div>
       <Link
         replace={false}
-        to="/"
+        to="/channel/DSACQEK1238321JLKNE"
       />
        . 0 Videos
     </div>
