@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoPlayer should render the video player correctly 1`] = `
+<div
+  className="sv-video"
+>
+  <Player
+    aspectRatio="auto"
+    fluid={true}
+    muted={false}
+    playsInline={false}
+    preload="auto"
+    src="myurl"
+  >
+    <BigPlayButton
+      position="center"
+    />
+    <LoadingSpinner />
+    <ControlBar
+      autoHide={true}
+      disableCompletely={false}
+    >
+      <PlaybackRateMenuButton
+        order={2.1}
+        rates={
+          Array [
+            5,
+            2,
+            1,
+            0.5,
+            0.1,
+          ]
+        }
+      />
+      <ReplayControl
+        order={2.2}
+        seconds={10}
+      />
+      <ForwardControl
+        order={3.2}
+        seconds={10}
+      />
+      <VolumeMenuButton
+        vertical={true}
+      />
+    </ControlBar>
+  </Player>
+</div>
+`;
