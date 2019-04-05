@@ -6,8 +6,9 @@ import Avatar from "components/Header/Avatar";
 import CommentSingle from "components/VideoSingle/CommentSingle";
 import { request } from "utils";
 import { startGetComments, startAddComments, clearComment } from "actions";
+import SimpleNote from "components/Common/SimpleNote";
 
-class CommentSection extends React.Component{
+export class CommentSection extends React.Component{
 
   state = {
     commentText: "",
@@ -52,7 +53,7 @@ class CommentSection extends React.Component{
 
   renderCommentList = () => {
     const { comments } = this.props;
-    if(!comments) return <div>Loading...</div>;
+    if(!comments || comments.length <= 0) return <SimpleNote medium text="No Comments"/>;
 
     return comments.map(({ _id, text, author, createdAt}) => {
       return <CommentSingle text={text} key={_id} author={author} createdAt={createdAt}/>
@@ -62,10 +63,10 @@ class CommentSection extends React.Component{
   componentDidMount = () => {
     const { id, getComments, offset } = this.props;
 
-    const getVideoCountPromise = request("get",  `/comment/count/video/${id}`);
+    const getCommentTotalPromise = request("get",  `/comment/count/video/${id}`);
     const getCommentsListPromise = getComments({ offset }, id);
 
-    Promise.all([getVideoCountPromise, getCommentsListPromise])
+    Promise.all([getCommentTotalPromise, getCommentsListPromise])
         .then(res => {
           if(!res[0].data.error && !res[1].error){
             const { count } = res[0].data;

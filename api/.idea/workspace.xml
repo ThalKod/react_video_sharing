@@ -4,13 +4,11 @@
     <list default="true" id="63415b28-8174-4354-9629-d6b6324e3c8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/components/AuthorSections.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/AuthorSections.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/components/__snapshots__/AuthorSections.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/__snapshots__/AuthorSections.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/components/__snapshots__/CommentSingle.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/__snapshots__/CommentSingle.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/components/__snapshots__/Header.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/__snapshots__/Header.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/components/__snapshots__/SearchBar.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/__snapshots__/SearchBar.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/components/__snapshots__/VideoSection.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/__snapshots__/VideoSection.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/reducers/user.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/reducers/user.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Common/LoadingSpinner.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Common/LoadingSpinner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Common/SimpleNote.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Common/SimpleNote.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/VideoSingle/CommentSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSingle/CommentSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/VideoSingle/SimilarVideos.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSingle/SimilarVideos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/CommentSingle.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/CommentSingle.test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -69,7 +67,7 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="56" />
-          <entry key="project.open.time.1" value="25" />
+          <entry key="project.open.time.1" value="26" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.19" value="1" />
@@ -79,7 +77,7 @@
           <entry key="project.open.time.7" value="5" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="56" />
+          <entry key="project.opened" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -115,7 +113,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -178,7 +176,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="827" />
@@ -326,11 +324,12 @@
       <workItem from="1554297493176" duration="1804000" />
       <workItem from="1554310634499" duration="742000" />
       <workItem from="1554384587547" duration="440000" />
+      <workItem from="1554466557230" duration="1155000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167042000" />
+    <option name="totallyTimeSpent" value="168197000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -342,13 +341,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="827" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.2837274" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.5945946" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
