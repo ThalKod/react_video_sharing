@@ -30,7 +30,7 @@ describe("Comment Reducer", () => {
       type: CLEAR_COMMENTS,
     };
 
-    const data = commentReducer(undefined, action);
+    const data = commentReducer({ comments }, action);
     expect(data.offset).toBe(0);
     expect(data.comments).toEqual([]);
   })

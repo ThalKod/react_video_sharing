@@ -1,6 +1,12 @@
-import { GET_RECOMMENDED_VIDEO, GET_VIDEOS, SEARCH_VIDEOS_SUCCESS, SEARCHING_VIDEOS, CLEAR_SEARCH } from "actions/types";
+import {
+  GET_RECOMMENDED_VIDEO,
+  GET_VIDEOS,
+  SEARCH_VIDEOS_SUCCESS,
+  SEARCHING_VIDEOS,
+  CLEAR_SEARCH
+} from "actions/types";
 
-const defaultState = {
+export const defaultState = {
   recommended: [],
   featured: {
     videos: [],
