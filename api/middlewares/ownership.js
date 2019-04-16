@@ -7,7 +7,6 @@ module.exports.isVideoOwner = (req, res, next) => {
         if(rVideo.author.equals(req.user.id)) next();
       })
       .catch(err => {
-        console.log("i'm Here===============", err);
         res.send({ error: true, msg: err});
       })
 };

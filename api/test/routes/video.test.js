@@ -50,3 +50,17 @@ describe("PUT /video/:id",  () => {
     expect(updatedVideo.length).toBe(1);
   });
 });
+
+describe("GET /video/list/recommended/", () => {
+  it("should return the list of the most watched videos", async () => {
+    // create a second video
+    videos[1].viewCount = 1250;
+    const newVideos = await Video.create(videos[1]);
+
+    const res = await request(app).get(`/api/v0/video/list/recommended/`);
+
+    expect(res.body.error).toBe(false);
+    console.log(newVideos._id);
+    expect(res.body.videos[0]._id).toBe(newVideos._id.toString());
+  })
+});
