@@ -60,7 +60,6 @@ describe("GET /video/list/recommended/", () => {
     const res = await request(app).get(`/api/v0/video/list/recommended/`);
 
     expect(res.body.error).toBe(false);
-    console.log(newVideos._id);
     expect(res.body.videos[0]._id).toBe(newVideos._id.toString());
   })
 });

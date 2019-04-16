@@ -5,7 +5,6 @@ const User = require("../models/User");
 
 // Create an access or refresh token based on type
 const createJwtToken = (user, type) => {
-  console.log(_.pick(user, ["id"]));
 
     if(type === "refreshToken")
         return  jwt.sign({user: _.pick(user, ["id"])}, process.env.JWT_REFRESH_TOKEN_SECRET, { expiresIn: '7d' });
@@ -56,7 +55,6 @@ module.exports.getToken = (req, res) => {
   const token = req.headers.authorization.substring(4);
   if(token){
     jwt.verify(token, process.env.JWT_REFRESH_TOKEN_SECRET, (err, decoded) => {
-      console.log(err);
       if(err)
         return res.status(401).json({"error": true, "message": 'Unauthorized access.' });
        User.findById(decoded.user.id)

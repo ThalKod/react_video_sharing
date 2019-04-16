@@ -17,7 +17,7 @@ module.exports.getDefaultImageCoverById = (req, res) => {
       .then(rVideo => {
         if(!rVideo) return res.send({ error: true, msg: "No Video"});
         fs.readFile(rVideo.defaultCoverPhoto, "base64", (err, base64) => {
-          if(err) return console.log("err",err);
+          if(err) return res.send({ error: true, msg: "Internal server error"});
           const data = `data:image/png;base64, ${base64}`;
           res.send({ error: false, coverPhoto: data});
         });
@@ -78,7 +78,6 @@ module.exports.getSimilarVideosById = (req, res) => {
       .then(video => {
         if(!video) res.send({ error: true, msg: "Video Not Found"});
         const tags = video.tags.map(({ text }) => text);
-        console.log(tags);
         Video.find({ "tags.text": {"$in": [ ...tags]}, _id: {"$ne": video.id}})
           .then(rVideo => res.send({ error: false, videos: rVideo}))
             .catch(err => res.send({ error: true, msg: err}));
@@ -89,8 +88,6 @@ module.exports.getSimilarVideosById = (req, res) => {
 module.exports.getVideosListByUserId = (req, res) => {
   const { id } = req.params;
   const { limit, offset } = req.query;
-
-  console.log("params", limit, offset);
 
   if(!id || !limit || !offset) return res.send({ error: true, msg: "Please provide the correct params"});
 

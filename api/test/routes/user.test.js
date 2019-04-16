@@ -65,7 +65,7 @@ describe("GET /user/:id/name",  () => {
   it("should return user name", async () => {
     const { body: { user } } = await request(app).post("/api/v0/signin").send(users[0]);
     const res = await request(app).get(`/api/v0/user/${user._id}/name`);
-    expect(res.body.name).toBe(users[0].name);
+    expect(res.body.username).toBe(users[0].username);
   })
 });
 
