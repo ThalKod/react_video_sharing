@@ -1,11 +1,13 @@
 import { AUTH_USER, SIGN_OUT_USER } from "actions/types";
 
-const defaultState = { userToken: localStorage.getItem("token") || "" };
+const defaultState = { userToken: "" };
 
 export default (state= defaultState, action) => {
+
   switch(action.type){
 
     case AUTH_USER:
+      console.log("action:", action.payload.token);
       return {...state, userToken: action.payload.token };
 
     case SIGN_OUT_USER:

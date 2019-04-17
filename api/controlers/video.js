@@ -110,8 +110,10 @@ module.exports.searchVideosByText = (req, res) => {
       .skip(parseInt(offset))
       .limit(parseInt(limit))
       .then(rVideos => {
-        if(rVideos.length <= 0)
+        if(rVideos.length <= 0){
+          console.log("return this");
           return res.send({ error: false, videos: { found: false, videos: rVideos }});
+        }
 
         return res.send({ error: false, videos: {found: true, videos: rVideos }});
       })

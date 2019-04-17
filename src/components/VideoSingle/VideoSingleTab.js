@@ -18,7 +18,6 @@ export default class VideoSingleTab extends React.Component{
     const { id } = this.props;
     request("get", `/video/cover/default/${id}`, { cancelToken: this.signal.token })
         .then(res => {
-          console.log("res tested",res);
           if(!res.data.error) this.setState({ videoImage: res.data.coverPhoto })
         })
         .catch(err => console.log(err));
