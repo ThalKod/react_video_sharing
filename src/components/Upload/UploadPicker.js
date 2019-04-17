@@ -34,7 +34,6 @@ const UploadPicker = ({ onUploadSuccess }) => {
                       apikey={process.env.REACT_APP_API_KEY}
                       options={options}
                       onSuccess={(res) => {
-                        console.log("upload Res", res);
                         const file = res.filesUploaded[0];
                         const video = {
                           name: file.filename,

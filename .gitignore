@@ -28,5 +28,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
 /api/.env
+/api/DB_Seed_Dump/
 

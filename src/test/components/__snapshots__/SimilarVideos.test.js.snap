@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SimilarVideos should render the videos list 1`] = `
+<div>
+  <div
+    className="caption"
+  >
+    <div
+      className="left"
+    >
+      <a
+        href="/"
+      >
+        Similar Videos
+      </a>
+    </div>
+    <div
+      className="clearfix"
+    />
+  </div>
+  <div
+    className="list similar-videos"
+  >
+    <div
+      className="row"
+    >
+      <VideoSingle
+        _id="wSLFcn28aaad3231"
+        duration={13242}
+        key="wSLFcn28aaad3231"
+        name="My Video"
+        viewCount={25000}
+      />
+      <VideoSingle
+        _id="wSL32Fcn283231"
+        duration={213242}
+        key="wSL32Fcn283231"
+        name="Test Video"
+        viewCount={2500}
+      />
+      <VideoSingle
+        _id="wSLFc930n283231"
+        duration={213242}
+        key="wSLFc930n283231"
+        name="Video 2"
+        viewCount={2500}
+      />
+      <VideoSingle
+        _id="wSLFcn23s0983231"
+        duration={2133242}
+        key="wSLFcn23s0983231"
+        name="New feature"
+        viewCount={22500}
+      />
+      <VideoSingle
+        _id="wSLFcn2829033231"
+        duration={213242}
+        key="wSLFcn2829033231"
+        name="Video 23"
+        viewCount={2500}
+      />
+    </div>
+  </div>
+</div>
+`;

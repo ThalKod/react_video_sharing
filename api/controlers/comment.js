@@ -1,10 +1,9 @@
-const Comment = require("../models/comment");
+const Comment = require("../models/Comment");
 
 module.exports.addCommentToVideo = (req, res) => {
   const { id } = req.params;
   if(!id) res.send({ error: true, msg: "Please provide video id "});
 
-  console.log(req.body);
   const comment = {
     text: req.body.commentText,
     author:  req.user.id,

@@ -7,6 +7,8 @@ export const startGetMyInfo = (callback) => (dispatch) =>{
         dispatch({ type: GET_MY_INFO, payload: res.data });
         callback({error: false});
       })
-      .catch(err => callback({error: true, msg: err}));
+      .catch(err => {
+        callback({error: true, msg: err})
+      });
 };
 

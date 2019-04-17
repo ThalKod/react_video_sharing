@@ -7,6 +7,8 @@ import { AUTH_USER, SIGN_OUT_USER } from "actions/types";
 import { startSigninUser, startSignupUser, signOut } from "actions";
 
 const createMockStore = configureMockStore([thunk]);
+const store = createMockStore({});
+
 
 describe("Auth actions creators", () => {
   it(" `signOut` actions creator should dispatch SIGN_OUT_USER ", () => {
@@ -15,8 +17,6 @@ describe("Auth actions creators", () => {
        type: SIGN_OUT_USER,
      })
   });
-
-  const store = createMockStore({});
 
   describe("", () => {
     beforeEach(() => {

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoSingleTab should render the components correctly 1`] = `
+<div
+  className="h-video row"
+>
+  <div
+    className="col-lg-6 col-sm-6"
+  >
+    <div
+      className="v-img"
+    >
+      <Link
+        replace={false}
+        to="/video/as0133"
+      >
+        <img
+          alt="cover"
+          src=""
+        />
+      </Link>
+      <div
+        className="time"
+      >
+        3:40:42
+      </div>
+    </div>
+  </div>
+  <div
+    className="col-lg-6 col-sm-6"
+  >
+    <div
+      className="v-desc"
+    >
+      <Link
+        replace={false}
+        to="/video/as0133"
+      >
+        My Video
+      </Link>
+    </div>
+    <div
+      className="v-views"
+    >
+      25000
+       Views
+    </div>
+  </div>
+  <div
+    className="clearfix"
+  />
+</div>
+`;

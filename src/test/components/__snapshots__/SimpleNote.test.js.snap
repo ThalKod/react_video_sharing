@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SimpleNote Components should render the components correctly 1`] = `
+<div
+  className="content-wrapper"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-lg-12 upload-page"
+      >
+        <div
+          className="u-area"
+        >
+          test
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

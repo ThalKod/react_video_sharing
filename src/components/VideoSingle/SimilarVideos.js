@@ -2,6 +2,7 @@ import React from "react";
 
 import { request } from "utils";
 import VideoSingle from "components/Home/VideoSingle";
+import LoadingSpinner from "components/Common/LoadingSpinner";
 
 export default class SimilarVideos extends React.Component{
 
@@ -31,7 +32,7 @@ export default class SimilarVideos extends React.Component{
   render(){
     const { loading, videos } = this.state;
 
-    if(loading) return <div>Loading...</div>;
+    if(loading) return <LoadingSpinner medium/>;
 
     if(videos.length <= 0) return null; // We don't show the similar videos section if we didn't find any
 

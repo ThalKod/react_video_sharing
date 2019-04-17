@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CommentSection should render a list of comments 1`] = `
+<div
+  className="comments"
+>
+  <div
+    className="reply-comment"
+  >
+    <div
+      className="rc-header"
+    >
+      <i
+        className="cv cvicon-cv-comment"
+      />
+       
+      <span
+        className="semibold"
+      >
+        0
+      </span>
+       Comments
+    </div>
+    <div
+      className="rc-comment"
+    >
+      <form>
+        <textarea
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Enter comment here..."
+          rows="3"
+          value=""
+        />
+        <button
+          onClick={[Function]}
+          type="submit"
+        >
+          <i
+            className="cv cvicon-cv-add-comment"
+          />
+        </button>
+      </form>
+    </div>
+    <div
+      className="clearfix"
+    />
+  </div>
+  <div
+    className="comments-list"
+  >
+    <div
+      className="cl-header"
+    >
+      <div
+        className="c-nav"
+      >
+        <ul
+          className="list-inline"
+        >
+          <li
+            className="active"
+          >
+            Newest Comments
+          </li>
+        </ul>
+      </div>
+    </div>
+    <CommentSingle
+      author={
+        Object {
+          "username": "Joseph",
+        }
+      }
+      createdAt={1129910012010}
+      key="dLKasdsN1212i12LNK"
+      text="Hello World !"
+    />
+    <CommentSingle
+      author={
+        Object {
+          "username": "Tim",
+        }
+      }
+      createdAt={1129910012010}
+      key="dLKN1212sdfsi12LNK"
+      text="Hello World !"
+    />
+    <CommentSingle
+      author={
+        Object {
+          "username": "Sarah",
+        }
+      }
+      createdAt={1129910012010}
+      key="dLKN12sdsd12i12LNK"
+      text="Hello World !"
+    />
+    <div
+      className="row"
+    >
+      <div
+        className="col-lg-12"
+      >
+        <div
+          className="loadmore-comments"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
