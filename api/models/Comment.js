@@ -1,13 +1,13 @@
 const mongoose = require("mongoose");
 
-const commentSchema = mongoose.Schema({
+const commentSchema = new mongoose.Schema({
   text: String,
   author: {
-    type: mongoose.Schema.Types.ObjectId,
+    type: mongoose.Schema.ObjectId,
     ref: "User"
   },
   video: {
-    type: mongoose.Schema.Types.ObjectId,
+    type: mongoose.Schema.ObjectId,
     ref: "Video"
   }
 }, {timestamps: true});

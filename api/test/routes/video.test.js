@@ -7,7 +7,6 @@ const User = require("../../models/User");
 const videos = require("../__mock__/videos");
 const users = require("../__mock__/users");
 
-
 let app, id;
 
 beforeAll(async () => {
