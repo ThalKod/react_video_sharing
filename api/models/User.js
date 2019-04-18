@@ -16,7 +16,13 @@ const userSchema = new mongoose.Schema({
     subscribersCount: {
       type: Number,
       default: 0
-    }
+    },
+    subscribers: [
+      {
+          type: mongoose.Schema.ObjectId,
+          ref: "User"
+      }
+    ],
 }, {timestamps: true});
 
 userSchema.pre("save", function(next){

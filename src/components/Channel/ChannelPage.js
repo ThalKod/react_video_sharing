@@ -1,6 +1,7 @@
 import React from "react";
-import { connect } from "react-redux";
+
 import { request } from "utils";
+import Subscriber from "components/Subscriber";
 
 // import VideoSection from "components/HomePage/VideoSection";
 import LoadingSpinner from "components/Common/LoadingSpinner";
@@ -17,7 +18,7 @@ class ChannelPage extends React.Component{
     videos: [],
     offset: 0,
     tab: "videos",
-    subscribersCount: 0
+    username: ""
   };
 
   getVideos = () => {
@@ -62,19 +63,18 @@ class ChannelPage extends React.Component{
 
     this.getVideos();
 
-    request("get", `/user/${id}/subscribers/count`)
-        .then(res => {
-          console.log(res.data);
-          if(!res.data.error) this.setState({ subscribersCount: res.data.subscribersCount });
+    request("get",  `/user/${id}/name`)
+        .then((res) => {
+          if(!res.data.error) return this.setState({ username: res.data.username });
+
+          return console.log(res.data.msg)
         })
-        .catch(err => {
-          console.log(err);
-        })
+        .catch(err => console.log(err));
   };
 
   render(){
-    const { username } = this.props;
-    const { tab, subscribersCount } = this.state;
+    const { tab, username } = this.state;
+    const { match: { params: { id } } } = this.props;
 
     return (
         <div className="channel">
@@ -112,15 +112,7 @@ class ChannelPage extends React.Component{
                             </ul>
                           </div>
                           <div className="c-sub pull-right">
-                            <div className="c-sub-wrap">
-                              <div className="c-f">
-                                Subscribe
-                              </div>
-                              <div className="c-s">
-                                {subscribersCount}
-                              </div>
-                              <div className="clearfix"/>
-                            </div>
+                            <Subscriber id={id} />
                           </div>
                           <div className="clearfix"/>
                         </div>
@@ -137,9 +129,4 @@ class ChannelPage extends React.Component{
   }
 }
 
-const mapStateToProps = (state) => ({
-  id: state.user.id,
-  username: state.user.username
-});
-
-export default connect(mapStateToProps)(ChannelPage);
+export default ChannelPage;
