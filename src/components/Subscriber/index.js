@@ -1,7 +1,7 @@
 import React from "react";
-import { connect } from "react-redux";
 
 import { request } from "utils";
+import { connect }  from "react-redux"
 
 class Subscriber extends React.Component{
   state = {
@@ -10,7 +10,7 @@ class Subscriber extends React.Component{
   };
 
   handleClick = () => {
-    const { author: toSubscribeId } = this.props;
+    const { id: toSubscribeId } = this.props;
 
     request("post", `/user/${toSubscribeId}/subscriber`)
         .then((res) => {
@@ -21,27 +21,49 @@ class Subscriber extends React.Component{
   };
 
   componentDidMount = () => {
-    const { author: toSubscribeId } = this.props;
+    const { id: toSubscribeId } = this.props;
 
-    request("get", `/user/${toSubscribeId}/subscribers/count`)
+    const getSubscribersCountPromise = request("get", `/user/${toSubscribeId}/subscribers/count`);
+    const checkIfIsSubscriberPromise = request("post", `/check/subscribers/${toSubscribeId}`);
+
+    Promise.all([getSubscribersCountPromise, checkIfIsSubscriberPromise])
         .then((res) => {
-          if(!res.data.error) return this.setState({ subscribersCount: res.data.subscribersCount });
-          return console.log(res.data.msg) // TODO: handling error
+          if(!res[0].data.error) this.setState({ subscribersCount: res[0].data.subscribersCount });
+
+          if(!res[1].data.error){
+            if(res[1].data.subscribed) return this.setState({ subscribeState: "Subscribed"});
+            return this.setState({ subscribeState: "Subscribe"});
+          }
+          return console.log(res);
         })
-        .catch((err) => console.log(err))// TODO: Handling error
+        .catch(err => console.log(err)) // TODO: handling error
+  };
+
+  renderSubscribeState = () => {
+    const { currentUserId, id: toSubscribeId } = this.props;
+    const { subscribeState } = this.state;
+
+    if(currentUserId === toSubscribeId){
+      return <p className="c-f" style={{ "borderColor": "lightgreen", "backgroundColor": "lightgreen" }}>Followers:</p>
+    }
+
+    if(subscribeState === "Subscribe") {
+      return (
+          (<button onClick={this.handleClick} className="c-f" type="submit">
+            {subscribeState}
+          </button>)
+      )
+    }
+
+    return <p className="c-f" style={{ "borderColor": "lightgreen", "backgroundColor": "lightgreen" }}>{subscribeState}</p>
   };
 
   render(){
-    const { subscribersCount, subscribeState } = this.state;
+    const { subscribersCount } = this.state;
 
     return (
         <div className="c-sub">
-          {subscribeState === "Subscribe" ?
-              (<button onClick={this.handleClick} className="c-f" type="submit">
-                {subscribeState}
-              </button>) :
-              <p className="c-f" style={{ "borderColor": "lightgreen", "backgroundColor": "lightgreen" }}>{subscribeState}</p>
-          }
+          {this.renderSubscribeState()}
           <div className="c-s">
             {subscribersCount}
           </div>
@@ -52,7 +74,7 @@ class Subscriber extends React.Component{
 }
 
 const mapStateToProps = (state) => ({
-  currentUserID: state.user._id,
+  currentUserId: state.user._id
 });
 
 export default connect(mapStateToProps)(Subscriber);

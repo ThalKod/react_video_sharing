@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f6ba216-dee2-489f-9342-55d1a1c7e4e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controlers/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controlers/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/controlers/check.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controlers/check.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/routes/check.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/check.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Channel/ChannelPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Channel/ChannelPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Subscriber/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Subscriber/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/VideoSingle/AuthorSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoSingle/AuthorSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/AppRouter.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,7 +50,7 @@
           <entry key="eslintrc" value="11" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="4" />
-          <entry key="js" value="756" />
+          <entry key="js" value="757" />
           <entry key="json" value="12" />
           <entry key="less" value="66" />
           <entry key="png" value="2" />
@@ -63,7 +66,7 @@
           <entry key="HTML" value="4" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="24" />
-          <entry key="JavaScript" value="755" />
+          <entry key="JavaScript" value="756" />
           <entry key="Jest Snapshot" value="30" />
           <entry key="Less" value="66" />
           <entry key="PLAIN_TEXT" value="2" />
@@ -80,7 +83,7 @@
           <entry key="env" value="72" />
           <entry key="eslintrc" value="137" />
           <entry key="html" value="51" />
-          <entry key="js" value="68773" />
+          <entry key="js" value="70189" />
           <entry key="json" value="69" />
           <entry key="less" value="765" />
           <entry key="scss" value="4" />
@@ -91,7 +94,7 @@
           <entry key=".env file" value="72" />
           <entry key="HTML" value="51" />
           <entry key="JSON" value="206" />
-          <entry key="JavaScript" value="68773" />
+          <entry key="JavaScript" value="70189" />
           <entry key="Less" value="765" />
           <entry key="SCSS" value="4" />
         </counts>
@@ -126,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/VideoSingle/AuthorSection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+            <state relative-caret-position="230">
+              <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#46#72#0" expanded="true" />
@@ -136,11 +139,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Subscriber/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+            <state relative-caret-position="751">
+              <caret line="49" column="40" lean-forward="true" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -184,23 +187,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Channel/ChannelPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="115" column="30" selection-start-line="115" selection-start-column="30" selection-end-line="115" selection-end-column="30" />
+            <state relative-caret-position="206">
+              <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="878">
-              <caret line="124" column="47" lean-forward="true" selection-start-line="124" selection-start-column="47" selection-end-line="124" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -252,8 +246,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/VideoSingle/VideoSinglePage.js" />
-        <option value="$PROJECT_DIR$/src/test/components/Footer.test.js" />
         <option value="$PROJECT_DIR$/src/test/components/Homepage.test.js" />
         <option value="$PROJECT_DIR$/src/test/components/LoadingSpinner.test.js" />
         <option value="$PROJECT_DIR$/src/test/components/NotFoundPage.test.js" />
@@ -299,10 +291,12 @@
         <option value="$PROJECT_DIR$/src/actions/authActions.js" />
         <option value="$PROJECT_DIR$/src/components/Upload/UploadPicker.js" />
         <option value="$PROJECT_DIR$/src/components/Upload/UploadContainer.js" />
-        <option value="$PROJECT_DIR$/src/components/VideoSingle/AuthorSection.js" />
         <option value="$PROJECT_DIR$/src/styles/components/_channel.less" />
         <option value="$PROJECT_DIR$/src/styles/components/_video.less" />
+        <option value="$PROJECT_DIR$/src/routers/AppRouter.js" />
+        <option value="$PROJECT_DIR$/src/components/VideoSingle/AuthorSection.js" />
         <option value="$PROJECT_DIR$/src/components/Subscriber/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Channel/ChannelPage.js" />
       </list>
     </option>
   </component>
@@ -360,7 +354,27 @@
               <item name="Circle_Video" type="b2602c69:ProjectViewProjectNode" />
               <item name="Circle_Video" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Channel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Circle_Video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Circle_Video" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Subscriber" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Circle_Video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Circle_Video" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="reducers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Circle_Video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Circle_Video" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="routers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -480,12 +494,12 @@
       <workItem from="1555419082040" duration="108000" />
       <workItem from="1555512676194" duration="5410000" />
       <workItem from="1555521217259" duration="40000" />
-      <workItem from="1555598418838" duration="4021000" />
+      <workItem from="1555598418838" duration="8404000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="271261000" />
+    <option name="totallyTimeSpent" value="275644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -495,7 +509,7 @@
       <window_info id="npm" order="1" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.23749119" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.21253072" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.14987715" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -565,9 +579,6 @@
           <caret column="1" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routers/AppRouter.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/reducers/auth.test.js">
       <provider selected="true" editor-type-id="text-editor" />
@@ -769,6 +780,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -833,16 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Channel/ChannelPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="115" column="30" selection-start-line="115" selection-start-column="30" selection-end-line="115" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/auth.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -854,17 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/VideoSingle/AuthorSection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#46#72#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -882,10 +875,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/routers/AppRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/VideoSingle/AuthorSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#46#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Subscriber/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        <state relative-caret-position="751">
+          <caret line="49" column="40" lean-forward="true" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Channel/ChannelPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

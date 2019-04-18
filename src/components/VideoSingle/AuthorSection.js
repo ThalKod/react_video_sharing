@@ -40,7 +40,7 @@ export default class AuthorSection extends React.Component{
           <Link to={`/channel/${author}`}><Avatar username={username} className="sv-avatar"/></Link>
           <div className="sv-name">
             <div><Link to={`/channel/${author}`}>{username.charAt(0).toUpperCase() + username.slice(1)}</Link>{` . ${videosCount} Videos`}</div>
-            <Subscriber sub={subscribersCount} author={author}/>
+            <Subscriber sub={subscribersCount} id={author}/>
           </div>
           <div className="sv-views">
             <div className="sv-views-count">{ viewCount } Views</div>
