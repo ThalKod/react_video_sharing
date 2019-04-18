@@ -24,6 +24,6 @@ const router = express.Router();
   router.get("/user/:id/name", getUserNameById);
 
   // Add a subscriber to user
-  router.post("/user/:id/subscriber", addSubscribersByUserId);
+  router.post("/user/:id/subscriber", requireAuth, addSubscribersByUserId);
 
   module.exports = router;

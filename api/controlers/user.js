@@ -48,5 +48,8 @@ module.exports.addSubscribersByUserId = (req, res) => {
 
         return res.send({ error: false });
       })
-      .catch((err) => res.send({ error: true, msg: err}));
+      .catch((err) => {
+        console.log(err);
+        res.send({ error: true, msg: err})
+      });
 };

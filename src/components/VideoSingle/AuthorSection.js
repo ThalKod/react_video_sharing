@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { request } from "utils";
 
 import Avatar from "components/Header/Avatar";
+import Subscriber from "components/Subscriber";
 
 export default class AuthorSection extends React.Component{
 
@@ -39,15 +40,7 @@ export default class AuthorSection extends React.Component{
           <Link to={`/channel/${author}`}><Avatar username={username} className="sv-avatar"/></Link>
           <div className="sv-name">
             <div><Link to={`/channel/${author}`}>{username.charAt(0).toUpperCase() + username.slice(1)}</Link>{` . ${videosCount} Videos`}</div>
-            <div className="c-sub">
-              <div className="c-f">
-                Subscribe
-              </div>
-              <div className="c-s">
-                {subscribersCount}
-              </div>
-              <div className="clearfix"></div>
-            </div>
+            <Subscriber sub={subscribersCount} author={author}/>
           </div>
           <div className="sv-views">
             <div className="sv-views-count">{ viewCount } Views</div>
