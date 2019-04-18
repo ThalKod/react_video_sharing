@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5f6ba216-dee2-489f-9342-55d1a1c7e4e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/controlers/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controlers/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/user.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -403,12 +404,12 @@
       <workItem from="1555419082040" duration="108000" />
       <workItem from="1555512676194" duration="5410000" />
       <workItem from="1555521217259" duration="40000" />
-      <workItem from="1555598418838" duration="440000" />
+      <workItem from="1555598418838" duration="896000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267680000" />
+    <option name="totallyTimeSpent" value="268136000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />

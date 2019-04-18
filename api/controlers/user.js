@@ -35,3 +35,18 @@ module.exports.getUserNameById = (req, res) => {
       .then(({ username }) => res.send({ error: false, username}))
       .catch(err => res.send({error: true, msg: err}));
 };
+
+module.exports.addSubscribersByUserId = (req, res) => {
+  const { id } = req.params;
+  if(!id) return res.send({ error: true, msg: "Please provide a user id"});
+
+  User.findById(id)
+      .then((rUser) => {
+        rUser.subscribersCount += 1;
+        rUser.subscribers.push(req.user.id);
+        rUser.save();
+
+        return res.send({ error: false });
+      })
+      .catch((err) => res.send({ error: true, msg: err}));
+};
