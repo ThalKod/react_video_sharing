@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom"
 
 // import VideoPlaceholder from "../../assets/images/video_placeholder.png";
-import { request, formatSecondForRendering } from "utils";
+import { request, formatSecondForRendering, formatCount } from "utils";
 
 
 export default class VideoSingleTab extends React.Component{
@@ -43,7 +43,7 @@ export default class VideoSingleTab extends React.Component{
             <div className="v-desc">
               <Link to={`/video/${id}`}>{name}</Link>
             </div>
-            <div className="v-views">{viewCount} Views</div>
+            <div className="v-views">{formatCount(viewCount)} Views</div>
           </div>
           <div className="clearfix"/>
         </div>

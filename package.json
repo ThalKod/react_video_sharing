@@ -51,6 +51,7 @@
     "moment": "^2.24.0",
     "moxios": "^0.4.0",
     "node-sass": "^4.11.0",
+    "numeral": "^2.0.6",
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "pnp-webpack-plugin": "1.1.0",
     "postcss-flexbugs-fixes": "4.1.0",
@@ -106,7 +107,9 @@
       "!src/**/*.d.ts"
     ],
     "resolver": "jest-pnp-resolver",
-    "setupFilesAfterEnv": ["<rootDir>/src/setupTests.js"],
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ],
     "setupFiles": [
       "react-app-polyfill/jsdom"
     ],

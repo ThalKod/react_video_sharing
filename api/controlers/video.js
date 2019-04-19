@@ -111,11 +111,25 @@ module.exports.searchVideosByText = (req, res) => {
       .limit(parseInt(limit))
       .then(rVideos => {
         if(rVideos.length <= 0){
-          console.log("return this");
           return res.send({ error: false, videos: { found: false, videos: rVideos }});
         }
 
         return res.send({ error: false, videos: {found: true, videos: rVideos }});
       })
       .catch(err => res.send({ error: true, msg: err}));
+};
+
+module.exports.addViewByVideoId = (req, res) => {
+  const { id } = req.params;
+  if(!id) return res.send({ error: true, msg: "Please provide a video id"});
+
+  Video.findById(id)
+      .then(rVideo => {
+        if(!rVideo) return res.send({ error: false, msg: "Video Not Found"});
+
+        rVideo.viewCount += 1;
+        rVideo.save();
+        return res.send({ error: false });
+      })
+      .catch(err => res.send({ error: true, msg: err }));
 };

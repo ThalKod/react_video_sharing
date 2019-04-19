@@ -81,7 +81,7 @@ class VideoSinglePage extends React.Component{
             <div className="container">
               <div className="row">
                 <div className="col-lg-8 col-xs-12 col-sm-12">
-                  <VideoPlayer videoUrl={videoUrl}/>
+                  <VideoPlayer videoUrl={videoUrl} id={currentVideoId}/>
                   <h1>{name}</h1>
                   {author && <AuthorSection author={author} viewCount={viewCount}/>}
                   <VideoDescription createdAt={createdAt} description={description} tags={tags}/>
