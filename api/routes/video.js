@@ -8,7 +8,8 @@ const {
   getVideoById,
   getSimilarVideosById,
   getVideosListByUserId,
-  searchVideosByText } = require("../controlers/video");
+  searchVideosByText,
+  addViewByVideoId} = require("../controlers/video");
 const { requireAuth } = require("../middlewares/auth");
 const { isVideoOwner } = require("../middlewares/ownership");
 const router = express.Router();
@@ -34,5 +35,7 @@ router.get("/video/:id", getVideoById);
 router.put("/video/:id", requireAuth, isVideoOwner, updateVideo);
 
 router.post("/video/search", searchVideosByText);
+
+router.post("/video/:id/view", addViewByVideoId);
 
 module.exports = router;

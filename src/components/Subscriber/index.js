@@ -1,6 +1,6 @@
 import React from "react";
 
-import { request } from "utils";
+import { request, formatCount } from "utils";
 import { connect }  from "react-redux"
 
 class Subscriber extends React.Component{
@@ -44,7 +44,7 @@ class Subscriber extends React.Component{
     const { subscribeState } = this.state;
 
     if(currentUserId === toSubscribeId){
-      return <p className="c-f" style={{ "borderColor": "lightgreen", "backgroundColor": "lightgreen" }}>Followers:</p>
+      return <p className="c-f" style={{ "borderColor": "lightgreen", "backgroundColor": "lightgreen" }}>Subscribers</p>
     }
 
     if(subscribeState === "Subscribe") {
@@ -65,7 +65,7 @@ class Subscriber extends React.Component{
         <div className="c-sub">
           {this.renderSubscribeState()}
           <div className="c-s">
-            {subscribersCount}
+            {formatCount(subscribersCount)}
           </div>
           <div className="clearfix"/>
         </div>

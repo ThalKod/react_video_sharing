@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { request, formatSecondForRendering } from "utils";
+import { request, formatSecondForRendering, formatCount } from "utils";
 
 // import videoPlaceholder from "../assets/images/video_placeholder.png";
 
@@ -37,7 +37,7 @@ class VideoSingle extends React.Component{
               <Link to={`/video/${_id}`}>{name}</Link>
             </div>
             <div className="v-views">
-              {viewCount} views.
+              {formatCount(viewCount)} views.
             </div>
           </div>
         </div>
