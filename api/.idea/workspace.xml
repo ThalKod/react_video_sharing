@@ -3,9 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="63415b28-8174-4354-9629-d6b6324e3c8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlers/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/controlers/video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/video.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Home/VideoSingle.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Home/VideoSingle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Subscriber/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Subscriber/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/VideoSingle/AuthorSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSingle/AuthorSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/VideoSingle/CommentSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSingle/CommentSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/VideoSingle/VideoPlayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSingle/VideoPlayer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/VideoSingle/VideoSinglePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSingle/VideoSinglePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/VideoSingle/VideoSingleTab.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSingle/VideoSingleTab.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utils/format.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/utils/format.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -112,11 +119,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controlers/video.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="125" column="20" lean-forward="true" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
+              <caret line="125" column="20" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -143,7 +150,7 @@
         <entry file="file://$PROJECT_DIR$/controlers/check.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
-              <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+              <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -175,11 +182,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/video.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="18" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="18" />
+            <state relative-caret-position="306">
+              <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -267,11 +274,10 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="144" />
-    <option name="y" value="52" />
-    <option name="width" value="1216" />
-    <option name="height" value="761" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="827" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -428,12 +434,12 @@
       <workItem from="1555508765853" duration="993000" />
       <workItem from="1555509765356" duration="4244000" />
       <workItem from="1555598435586" duration="6112000" />
-      <workItem from="1555684611638" duration="656000" />
+      <workItem from="1555684611638" duration="1487000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198000000" />
+    <option name="totallyTimeSpent" value="198831000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -445,14 +451,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="827" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.28470755" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.23464373" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.26564673" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -694,24 +700,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/video.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controlers/check.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controlers/video.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="125" column="20" lean-forward="true" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
+          <caret line="125" column="20" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/video.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="28" />
         </state>
       </provider>
     </entry>

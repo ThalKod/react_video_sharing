@@ -1,4 +1,5 @@
 import moment from "moment";
+import numeral from "numeral";
 
 export const formatBytes = (bytes) => {
     if(bytes < 1024) return `${bytes} bytes`;
@@ -19,16 +20,21 @@ export const formatSecond = (second) => {
 };
 
 export const formatSecondForRendering  = (second) => {
-  const h = Math.floor(second / 3600);
+  return numeral(second).format("00:00:00");
+  /* const h = Math.floor(second / 3600);
   const m = Math.floor(second % 3600 / 60);
   const s = Math.floor(second % 3600 % 60);
 
   const hDisplay = h <= 0 ? "" : `${h}:`;
   const mDisplay = m <= 0 ? "0:" : `${m}:`;
   const sDisplay = s > 0 ? s : "";
-  return hDisplay + mDisplay + sDisplay;
+  return hDisplay + mDisplay + sDisplay; */
 };
 
 export const formatTimestamps = (timestamps) => {
   return moment(timestamps).fromNow();
+};
+
+export const formatCount = (views) => {
+  return numeral(views).format("0a");
 };
