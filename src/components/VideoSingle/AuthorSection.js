@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { request } from "utils";
+import { request, formatCount } from "utils";
 
 import Avatar from "components/Header/Avatar";
 import Subscriber from "components/Subscriber";
@@ -43,7 +43,7 @@ export default class AuthorSection extends React.Component{
             <Subscriber sub={subscribersCount} id={author}/>
           </div>
           <div className="sv-views">
-            <div className="sv-views-count">{ viewCount } Views</div>
+            <div className="sv-views-count">{ formatCount(viewCount) } Views</div>
           </div>
           <div className="clearfix"></div>
         </div>

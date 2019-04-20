@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import Avatar from "components/Header/Avatar";
 import CommentSingle from "components/VideoSingle/CommentSingle";
-import { request } from "utils";
+import { request, formatCount } from "utils";
 import { startGetComments, startAddComments, clearComment } from "actions";
 import SimpleNote from "components/Common/SimpleNote";
 
@@ -91,7 +91,7 @@ export class CommentSection extends React.Component{
         <div className="comments">
           <div className="reply-comment">
             <div className="rc-header"><i className="cv cvicon-cv-comment"/> <span
-                className="semibold">{commentTotal}</span> Comments
+                className="semibold">{formatCount(commentTotal)}</span> Comments
             </div>
             { userName && <div className="rc-ava">
                             <Link to={`/channel/${userId}`}>
