@@ -11,8 +11,12 @@ export default class CommentSingle extends React.Component{
     replyBox: false
   };
 
-  reply = () => {
+  showReplyBox = () => {
     this.setState({ replyBox: true});
+  };
+
+  hideReplyBox = () => {
+    this.setState({ replyBox: false});
   };
 
   render(){
@@ -31,7 +35,7 @@ export default class CommentSingle extends React.Component{
             <div className="cl-text">{text}</div>
             { !replyBox ?
                 <div className="cl-meta">
-                  <button onClick={this.reply} className="reply-button" type="submit">Reply</button>
+                  <button onClick={this.showReplyBox} className="reply-button" type="submit">Reply</button>
                 </div>
                 :
                 <div className="reply-comment">
@@ -40,6 +44,7 @@ export default class CommentSingle extends React.Component{
                       <textarea
                           rows="3"
                           placeholder="Enter comment here..."
+                          onBlur={this.hideReplyBox}
                       />
                       <button type="submit" onClick={this.handleCommentSubmit}>
                         <i className="cv cvicon-cv-add-comment"/>
