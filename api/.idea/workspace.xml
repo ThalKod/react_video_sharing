@@ -4,8 +4,8 @@
     <list default="true" id="63415b28-8174-4354-9629-d6b6324e3c8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/HOC/alreadyLoggedIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/HOC/alreadyLoggedIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/HOC/requireLoggedIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/HOC/requireLoggedIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/VideoSingle/CommentSingle.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSingle/CommentSingle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/styles/components/_v_tabs.less" beforeDir="false" afterPath="$PROJECT_DIR$/../src/styles/components/_v_tabs.less" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -142,7 +142,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/Video.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13">
+            <state relative-caret-position="460">
               <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
             </state>
           </provider>
@@ -230,8 +230,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="720" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
+    <option name="width" value="720" />
     <option name="height" value="827" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -401,12 +402,12 @@
       <workItem from="1555509765356" duration="4244000" />
       <workItem from="1555598435586" duration="6112000" />
       <workItem from="1555684611638" duration="1487000" />
-      <workItem from="1555933467673" duration="317000" />
+      <workItem from="1555933467673" duration="1330000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199543000" />
+    <option name="totallyTimeSpent" value="200556000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -425,7 +426,7 @@
       <window_info id="npm" order="1" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.28470755" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.22604422" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.4054054" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -676,7 +677,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/Video.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
+        <state relative-caret-position="460">
           <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
         </state>
       </provider>
