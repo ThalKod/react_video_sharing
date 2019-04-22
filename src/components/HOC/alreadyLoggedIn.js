@@ -13,7 +13,7 @@ export default (ChildComponent) => {
 
     shouldRedirectToHomePage = () => {
       const { token, history } = this.props;
-      if(token) history.push("/")
+      if(token && token !== "undefined") history.push("/")
     };
 
     render(){
