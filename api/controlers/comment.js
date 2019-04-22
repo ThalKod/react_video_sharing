@@ -45,3 +45,28 @@ module.exports.getVideoComment = (req, res) => {
       })
       .catch(err => res.send({ error: true, msg: err}));
 };
+
+
+module.exports.addReplyToCommentById = (req, res) => {
+  const { id } = req.params;
+  if(!id) res.send({ error: true, msg: "Please provide comment id "});
+
+  const comment = {
+    text: req.body.commentText,
+    author:  req.user.id,
+  };
+
+  Comment.findById(id)
+      .then(async (rComment) => {
+        if(!rComment) return res.send({ error: true, msg: "No Comment record"});
+        
+        comment.video = rComment.video;
+        const newComment = await Comment.create(comment);
+
+        rComment.push(newComment);
+        rComment.save();
+
+        return res.send({ error: false, comment: newComment });
+      })
+      .catch(err => console.log(err));
+};
