@@ -12,10 +12,14 @@ const commentSchema = new mongoose.Schema({
   },
   reply: [
     {
-      type:mongoose.Schema.ObjectId,
+      type: mongoose.Schema.ObjectId,
       ref: "Comment"
     }
-  ]
+  ],
+  isReply: {
+    type: Boolean,
+    default: false
+  }
 }, {timestamps: true});
 
 module.exports = mongoose.model("Comment", commentSchema);

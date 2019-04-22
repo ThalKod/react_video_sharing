@@ -1,4 +1,4 @@
-import {ADD_COMMENTS, CLEAR_COMMENTS, GET_COMMENTS} from "actions/types";
+import {ADD_COMMENTS, CLEAR_COMMENTS, GET_COMMENTS, ADD_REPLY} from "actions/types";
 import {request} from "utils";
 
 export const startGetComments = ({ limit = 5, offset = 0}, id) => (dispatch) => {
@@ -24,6 +24,16 @@ export const startAddComments = (comment, id) => (dispatch) => {
       .catch(err => {
         return { error: true, msg: err};
       });
+};
+
+export const startAddReply = (comment, id) => (dispatch) => {
+  return request("post", `/comment/reply/${id}`, {}, comment)
+      .then(res => {
+        if(res.data.error) return { error: true, msg: res.data.msg};
+        dispatch({type: ADD_REPLY, payload: { comment: res.data.comment, parentId: id }});
+        return ({ error: false});
+      })
+      .catch(err => ({ error: true, msg: err }));
 };
 
 export const clearComment = () => {

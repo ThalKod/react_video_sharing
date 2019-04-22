@@ -35,15 +35,21 @@ module.exports.getVideoComment = (req, res) => {
 
   if(!id || ! limit ) return res.send({ error: true, msg: "Please provide the correct params"});
 
-  Comment.find({ video: id })
+  Comment.find({ video: id, isReply: false })
       .sort({ createdAt: -1 })
       .skip(parseInt(offset))
       .limit(parseInt(limit))
-      .populate("author", "username")
+      .populate({
+          path: "reply",
+          populate: { path: "author", select: "username" }
+        })
+      .populate({ path: "author", select: "username"})
       .then(rComments => {
         res.send({ error: false, comments: rComments});
       })
-      .catch(err => res.send({ error: true, msg: err}));
+      .catch(err =>{
+        res.send({ error: true, msg: err});
+      });
 };
 
 
@@ -54,17 +60,20 @@ module.exports.addReplyToCommentById = (req, res) => {
   const comment = {
     text: req.body.commentText,
     author:  req.user.id,
+    isReply: true
   };
 
   Comment.findById(id)
       .then(async (rComment) => {
         if(!rComment) return res.send({ error: true, msg: "No Comment record"});
-        
+
         comment.video = rComment.video;
         const newComment = await Comment.create(comment);
 
-        rComment.push(newComment);
+        rComment.reply.push(newComment);
         rComment.save();
+
+        console.log(newComment);
 
         return res.send({ error: false, comment: newComment });
       })

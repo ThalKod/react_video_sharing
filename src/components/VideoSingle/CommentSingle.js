@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom"
 
 import Avatar from "components/Header/Avatar";
+import CommentBox from "components/VideoSingle/CommentBox";
 import { formatTimestamps } from "utils";
 
 
@@ -16,11 +17,11 @@ export default class CommentSingle extends React.Component{
   };
 
   hideReplyBox = () => {
-    this.setState({ replyBox: false});
+      this.setState({ replyBox: false });
   };
 
   render(){
-    const { text, author: { username, _id }, createdAt } = this.props;
+    const { text, author: { username, _id }, createdAt, id : commentId } = this.props;
     const { replyBox } = this.state;
 
     return(
@@ -38,20 +39,7 @@ export default class CommentSingle extends React.Component{
                   <button onClick={this.showReplyBox} className="reply-button" type="submit">Reply</button>
                 </div>
                 :
-                <div className="reply-comment">
-                  <div className="rc-comment">
-                    <form>
-                      <textarea
-                          rows="3"
-                          placeholder="Enter comment here..."
-                          onBlur={this.hideReplyBox}
-                      />
-                      <button type="submit" onClick={this.handleCommentSubmit}>
-                        <i className="cv cvicon-cv-add-comment"/>
-                      </button>
-                    </form>
-                  </div>
-                </div>
+                <CommentBox reply commentId={commentId} hideReplyBox={this.hideReplyBox} onSubmit={this.hideReplyBox} />
             }
           </div>
           <div className="clearfix"/>

@@ -39,7 +39,7 @@ export class CommentSection extends React.Component{
     if(!comments || comments.length <= 0) return <SimpleNote medium text="No Comments"/>;
 
     return comments.map(({ _id, text, author, createdAt}) => {
-      return <CommentSingle text={text} key={_id} author={author} createdAt={createdAt}/>
+      return <CommentSingle text={text} key={_id} id={_id} author={author} createdAt={createdAt}/>
     });
   };
 
@@ -82,7 +82,7 @@ export class CommentSection extends React.Component{
                             </Link>
                           </div>
             }
-            <CommentBox id={id} onComment={() => this.setState({commentTotal: commentTotal + 1})}/>
+            <CommentBox id={id} onSubmit={() => this.setState({commentTotal: commentTotal + 1})}/>
             <div className="clearfix"/>
           </div>
           <div className="comments-list">

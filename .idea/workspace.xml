@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f6ba216-dee2-489f-9342-55d1a1c7e4e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/VideoSingle/CommentBox.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/controlers/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controlers/comment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/models/Comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/Comment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/commentActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/commentActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/VideoSingle/CommentBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoSingle/CommentBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/VideoSingle/CommentSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoSingle/CommentSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/VideoSingle/CommentSingle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoSingle/CommentSingle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/comment.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,7 +51,7 @@
           <entry key="eslintrc" value="11" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="4" />
-          <entry key="js" value="770" />
+          <entry key="js" value="775" />
           <entry key="json" value="12" />
           <entry key="less" value="67" />
           <entry key="png" value="2" />
@@ -63,7 +67,7 @@
           <entry key="HTML" value="4" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="24" />
-          <entry key="JavaScript" value="769" />
+          <entry key="JavaScript" value="774" />
           <entry key="Jest Snapshot" value="30" />
           <entry key="Less" value="67" />
           <entry key="PLAIN_TEXT" value="2" />
@@ -80,7 +84,7 @@
           <entry key="env" value="72" />
           <entry key="eslintrc" value="137" />
           <entry key="html" value="51" />
-          <entry key="js" value="72370" />
+          <entry key="js" value="73516" />
           <entry key="json" value="69" />
           <entry key="less" value="818" />
           <entry key="scss" value="4" />
@@ -91,7 +95,7 @@
           <entry key=".env file" value="72" />
           <entry key="HTML" value="51" />
           <entry key="JSON" value="206" />
-          <entry key="JavaScript" value="72370" />
+          <entry key="JavaScript" value="73516" />
           <entry key="Less" value="818" />
           <entry key="SCSS" value="4" />
         </counts>
@@ -115,8 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/VideoSingle/CommentSingle.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+            <state relative-caret-position="320">
+              <caret line="37" column="41" lean-forward="true" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -139,8 +143,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/VideoSingle/CommentSection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2089">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="98">
+              <caret line="40" column="62" lean-forward="true" selection-start-line="40" selection-start-column="62" selection-end-line="40" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/VideoSingle/CommentBox.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -149,49 +165,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/VideoSingle/CommentBox.js">
+        <entry file="file://$PROJECT_DIR$/src/actions/commentActions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+            <state relative-caret-position="261">
+              <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#73#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/VideoSingle/VideoPlayer.js">
+        <entry file="file://$PROJECT_DIR$/src/reducers/comment.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-205">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="345">
+              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Home/VideoSingle.js">
+        <entry file="file://$PROJECT_DIR$/src/actions/types.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/format.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="276">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -243,7 +241,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/components/AuthorSections.test.js" />
         <option value="$PROJECT_DIR$/src/test/components/CommentSingle.test.js" />
         <option value="$PROJECT_DIR$/src/components/Common/SimpleNote.js" />
         <option value="$PROJECT_DIR$/src/test/components/CommentSection.test.js" />
@@ -257,13 +254,11 @@
         <option value="$PROJECT_DIR$/src/test/reducers/user.test.js" />
         <option value="$PROJECT_DIR$/src/styles/components/_header.less" />
         <option value="$PROJECT_DIR$/src/test/__mock__/comments.js" />
-        <option value="$PROJECT_DIR$/src/reducers/comment.js" />
         <option value="$PROJECT_DIR$/src/test/reducers/comment.test.js" />
         <option value="$PROJECT_DIR$/src/reducers/video.js" />
         <option value="$PROJECT_DIR$/src/test/reducers/video.test.js" />
         <option value="$PROJECT_DIR$/src/test/actions/auth.test.js" />
         <option value="$PROJECT_DIR$/src/test/actions/user.test.js" />
-        <option value="$PROJECT_DIR$/src/actions/commentActions.js" />
         <option value="$PROJECT_DIR$/src/test/actions/comment.test.js" />
         <option value="$PROJECT_DIR$/src/test/actions/video.test.js" />
         <option value="$PROJECT_DIR$/src/test/components/SimpleNote.test.js" />
@@ -291,9 +286,12 @@
         <option value="$PROJECT_DIR$/src/components/HOC/alreadyLoggedIn.js" />
         <option value="$PROJECT_DIR$/src/components/HOC/requireLoggedIn.js" />
         <option value="$PROJECT_DIR$/src/styles/components/_v_tabs.less" />
-        <option value="$PROJECT_DIR$/src/components/VideoSingle/CommentSingle.js" />
-        <option value="$PROJECT_DIR$/src/components/VideoSingle/CommentBox.js" />
+        <option value="$PROJECT_DIR$/src/actions/types.js" />
         <option value="$PROJECT_DIR$/src/components/VideoSingle/CommentSection.js" />
+        <option value="$PROJECT_DIR$/src/actions/commentActions.js" />
+        <option value="$PROJECT_DIR$/src/components/VideoSingle/CommentBox.js" />
+        <option value="$PROJECT_DIR$/src/components/VideoSingle/CommentSingle.js" />
+        <option value="$PROJECT_DIR$/src/reducers/comment.js" />
       </list>
     </option>
   </component>
@@ -317,10 +315,9 @@
       <path value="$PROJECT_DIR$/public/js/vendor/player/johndyer-mediaelement-89793bc/info/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="720" />
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
-    <option name="width" value="720" />
+    <option name="width" value="1440" />
     <option name="height" value="827" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -340,6 +337,12 @@
               <item name="Circle_Video" type="b2602c69:ProjectViewProjectNode" />
               <item name="Circle_Video" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Circle_Video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Circle_Video" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Circle_Video" type="b2602c69:ProjectViewProjectNode" />
@@ -520,22 +523,22 @@
       <workItem from="1555521217259" duration="40000" />
       <workItem from="1555598418838" duration="8404000" />
       <workItem from="1555684601611" duration="3636000" />
-      <workItem from="1555933428850" duration="5906000" />
+      <workItem from="1555933428850" duration="12723000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285197000" />
+    <option name="totallyTimeSpent" value="292014000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="827" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.23749119" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.23749119" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.15233415" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.29207233" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -578,23 +581,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/reducers/comment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/commentActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/components/__snapshots__/SimpleNote.test.js.snap">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -921,32 +907,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/VideoSingle/CommentSection.js">
+    <entry file="file://$PROJECT_DIR$/src/actions/types.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2089">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="276">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoSingle/CommentSingle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+        <state relative-caret-position="320">
+          <caret line="37" column="41" lean-forward="true" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/comment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoSingle/CommentBox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        <state relative-caret-position="400">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/VideoSingle/CommentSection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="40" column="62" lean-forward="true" selection-start-line="40" selection-start-column="62" selection-end-line="40" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/commentActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
           </folding>
         </state>
       </provider>
