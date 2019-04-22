@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 import Avatar from "components/Header/Avatar";
 import CommentSingle from "components/VideoSingle/CommentSingle";
 import { request, formatCount } from "utils";
-import { startGetComments, startAddComments, clearComment } from "actions";
+import { startGetComments, clearComment } from "actions";
 import SimpleNote from "components/Common/SimpleNote";
+import CommentBox from "components/VideoSingle/CommentBox";
 
 export class CommentSection extends React.Component{
 
   state = {
-    commentText: "",
     commentTotal: 0,
     loadMore: false
   };
@@ -19,23 +19,6 @@ export class CommentSection extends React.Component{
   checkIfCanComment = () => {
     const  { userName, redirect } = this.props;
     if(!userName) redirect();
-  };
-
-  handleCommentSubmit = (e) => {
-    e.preventDefault();
-
-    const { commentText, commentTotal } = this.state;
-    const { id, addComments } = this.props;
-
-    if(!commentText) return;
-
-    addComments({ commentText } , id)
-        .then(({ error }) =>{
-          if(!error)
-            this.setState({ commentText: "", commentTotal: commentTotal + 1 });
-          // then handling error
-        })
-        .catch(err => console.log(err));
   };
 
   loadMoreComment = () => {
@@ -84,8 +67,8 @@ export class CommentSection extends React.Component{
 
   render(){
 
-    const { userName, userId } = this.props;
-    const { commentText, commentTotal, loadMore } = this.state;
+    const { userName, userId, id } = this.props;
+    const { commentTotal, loadMore } = this.state;
 
     return(
         <div className="comments">
@@ -99,20 +82,7 @@ export class CommentSection extends React.Component{
                             </Link>
                           </div>
             }
-            <div className="rc-comment">
-              <form>
-                <textarea
-                    rows="3"
-                    value={commentText}
-                    placeholder="Enter comment here..."
-                    onChange={({ target: { value }}) => { this.setState({ commentText: value }) }}
-                    onFocus={this.checkIfCanComment}
-                    />
-                <button type="submit" onClick={this.handleCommentSubmit}>
-                  <i className="cv cvicon-cv-add-comment"/>
-                </button>
-              </form>
-            </div>
+            <CommentBox id={id} onComment={() => this.setState({commentTotal: commentTotal + 1})}/>
             <div className="clearfix"/>
           </div>
           <div className="comments-list">
@@ -146,7 +116,6 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   getComments: (options, id) => dispatch(startGetComments(options, id)),
-  addComments: (comment, id) => dispatch(startAddComments(comment, id)),
   clearComments: () => dispatch(clearComment())
 });
 
