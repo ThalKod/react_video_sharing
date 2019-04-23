@@ -39,7 +39,6 @@ export class CommentSection extends React.Component{
     if(!comments || comments.length <= 0) return <SimpleNote medium text="No Comments"/>;
 
     return comments.map(({ _id, text, author, createdAt, reply}) => {
-      console.log(author);
       return <CommentSingle text={text} key={_id} id={_id} author={author} createdAt={createdAt} reply={reply}/>
     });
   };

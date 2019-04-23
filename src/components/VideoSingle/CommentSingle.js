@@ -9,7 +9,8 @@ import { formatTimestamps } from "utils";
 export default class CommentSingle extends React.Component{
 
   state= {
-    replyBox: false
+    replyBox: false,
+    showReplies: false
   };
 
   showReplyBox = () => {
@@ -26,40 +27,30 @@ export default class CommentSingle extends React.Component{
 
     return replies.map(({ _id, text, author, createdAt, reply}) => {
       if(author)
-        return <CommentSingle isReply text={text} key={_id} id={_id} author={author} createdAt={createdAt} reply={reply}/>
-      return null
+        return <CommentSingle
+                  isReply
+                  text={text}
+                  key={_id}
+                  id={_id}
+                  author={author}
+                  createdAt={createdAt}
+                  reply={reply}
+              />;
+      return <p style={{"color": "red"}}>Not implemented yet</p> // TODO: Refractor <CommentSingle /> to recursively fetch and show all subComment...
     })
-
-
-    /* return (
-        <div className="cl-comment-reply">
-          <div className="cl-avatar">
-            <Link to={`/channel/${reply[0].author._id}`}>
-              <Avatar username={reply[0].author.username}/>
-            </Link>
-          </div>
-          <div className="cl-comment-text">
-            <div className="cl-name-date"><a href="/">kingPIN</a> . 6 days ago</div>
-            <div className="cl-text"> I was stuck too. then I started to shoot everything in Doom.</div>
-            <div className="cl-meta"><span className="green"><span className="circle"/> 70</span> <span
-                className="grey"><span className="circle"/> 9</span> . <a href="/">Reply</a></div>
-          </div>
-          <div className="clearfix"/>
-        </div>
-    ) */
 
   };
 
   render(){
     const { isReply, text, author: { username, _id }, createdAt, id : commentId, reply } = this.props;
-    const { replyBox } = this.state;
+    const { replyBox, showReplies } = this.state;
 
     return(
         <div>
           <div className={isReply ? "cl-comment-reply" : "cl-comment"}>
             <div className="cl-avatar">
               <Link to={`/channel/${_id}`}>
-                {username && <Avatar username={username}/>}
+                <Avatar username={username}/>
               </Link>
             </div>
             <div className="cl-comment-text">
@@ -73,13 +64,18 @@ export default class CommentSingle extends React.Component{
                   <CommentBox reply commentId={commentId} hideReplyBox={this.hideReplyBox} onSubmit={this.hideReplyBox} />
               }
               {reply.length > 0 && <div className="cl-replies">
-                                    <button type="button">View replies <i className="fa fa-chevron-down" aria-hidden="true"/></button>
+                                    <button
+                                        onClick={() => this.setState({ showReplies: !showReplies})}
+                                        type="button"
+                                    >
+                                      {showReplies ? "Hide" : "View"} replies <i className={showReplies ? "fa fa-chevron-up" : "fa fa-chevron-down"} aria-hidden="true"/>
+                                    </button>
                                   </div>
               }
             </div>
             <div className="clearfix"/>
           </div>
-          {reply.length > 0 && this.renderReplies()}
+          {reply.length > 0 && showReplies && this.renderReplies()}
         </div>
   )
   }

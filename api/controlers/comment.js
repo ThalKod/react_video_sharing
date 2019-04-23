@@ -39,11 +39,11 @@ module.exports.getVideoComment = (req, res) => {
       .sort({ createdAt: -1 })
       .skip(parseInt(offset))
       .limit(parseInt(limit))
-      .populate({
+      /* .populate({
           path: "reply",
           populate: { path: "author", select: "username" }
         })
-      .populate({ path: "author", select: "username"})
+      .populate({ path: "author", select: "username"}) */
       .then(rComments => {
         res.send({ error: false, comments: rComments});
       })
