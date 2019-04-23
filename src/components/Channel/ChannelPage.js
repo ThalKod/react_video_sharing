@@ -9,7 +9,8 @@ import LoadingSpinner from "components/Common/LoadingSpinner";
 import tempBanner from "assets/images/channel-banner.png";
 // import Avatar  from "components/Header/Avatar";
 import tempUser from "assets/images/channel-user.png";
-import VideoSection from "../Home/VideoSection";
+import VideoSection from "components/Home/VideoSection";
+import ChannelSection from "components/Channel/ChannelSection";
 
 class ChannelPage extends React.Component{
 
@@ -55,7 +56,7 @@ class ChannelPage extends React.Component{
   };
 
   renderChannelList = () => {
-    return <div>Channels here...</div>
+    return <ChannelSection/>
   };
 
   componentDidMount = () => {

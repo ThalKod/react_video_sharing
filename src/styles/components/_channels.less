@@ -1,0 +1,170 @@
+.channels {
+  h4 {
+    font-size: 16px;
+  }
+  .content-block {
+    .cb-header {
+      padding: @space-xs 0;
+      margin-bottom: @space-smmm;
+      color: @c-light;
+      border-bottom: solid 1px @c-divider;
+      .list-inline {
+        margin: 0;
+        margin-top: 4px;
+        margin-left: -5px;
+        line-height: 34px;
+        a {
+          color: @c-light;
+          &.color-active {
+            color: @c-active;
+          }
+          &:not(.color-active):hover {
+            color: @c-caption;
+          }
+        }
+      }
+      .cb-search {
+        position: relative;
+        label {
+          display: block;
+          margin: 0;
+        }
+        input[type="search"] {
+          border-radius: 20px;
+          padding-left: 40px;
+        }
+        i {
+          position: absolute;
+          left: 16px;
+          top: 11px;
+        }
+      }
+    }
+    .b-category {
+      border-radius: 2px;
+      margin-bottom: 45px;
+      &.last-row {
+        margin-bottom: 0;
+      }
+      .name {
+        font-weight: 500;
+        margin-top: @space-sms;
+        display: block;
+      }
+      .desc {
+        color: @c-light;
+        display: block;
+        font-size: @fs-defs;
+        margin-top: 5px;
+      }
+    }
+    .channels-content {
+      padding-bottom: 16px;
+      & > h4 {
+        float: left;
+      }
+      .btn-view-more {
+        display: block;
+        float: right;
+        color: @c-light;
+        margin: 8px 0 11px;
+        &:hover {
+          color: @c-caption;
+        }
+      }
+      .theme-section {
+        padding-top: 10px;
+        .cns-block {
+          display: block;
+          margin-bottom: 30px;
+          border-right: 4px;
+          overflow: hidden;
+          .cns-image {
+            position: relative;
+            display: block;
+            max-height: 116px;
+            overflow: hidden;
+            & > img {
+              width: 100%;
+              height: auto;
+            }
+          }
+          .cns-img-small {
+            position: relative;
+            .cns-small-wrapp {
+              position: absolute;
+              width: 78px;
+              height: 70px;
+              margin-left: -39px;
+              left: 50%;
+              bottom: -35px;
+              background-color: white;
+              border-radius: 36px;
+              overflow: hidden;
+              & > img {
+                position: absolute;
+                width: 70px;
+                height: 62px;
+                top: 4px;
+                left: 4px;
+                border-radius: 36px;
+              }
+            }
+          }
+          .cns-info {
+            text-align: center;
+            padding: 42px 0 22px;
+            margin-top: -4px;
+            border: solid 1px @c-divider;
+            border-top: none;
+            h5 {
+              position: relative;
+              display: inline-block;
+              margin-top: 18px;
+              margin-bottom: 6px;
+              color: @c-caption;
+              i {
+                position: absolute;
+                display: block;
+                width: 20px;
+                height: 20px;
+                right: -34px;
+                top: -3px;
+                border-radius: 4px;
+                background-color: @c-blue-play;
+                &::after {
+                  display: block;
+                  content: "";
+                  position: absolute;
+                  width: 11px;
+                  height: 7px;
+                  left: 4.5px;
+                  top: 5px;
+                  border-bottom: solid 3px white;
+                  border-left: solid 3px white;
+                  .rotate(-45deg);
+                }
+              }
+            }
+            & > span:not(.cv-percent) {
+              display: block;
+              color: @c-light;
+            }
+            & > span {
+              margin-bottom: 2px;
+            }
+          }
+        }
+      }
+      .theme-section:not(:last-child) {
+        border-bottom: solid 1px @c-divider;
+        margin-bottom: 16px;
+      }
+      @media only screen and(max-width: 414px) {
+        .theme-section > .row > div {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
