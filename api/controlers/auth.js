@@ -42,6 +42,8 @@ module.exports.signIn = (req, res) => {
 
   User.findById(req.user.id)
       .then(({ email, username, _id }) => {
+        if(!_id) return res.send({ error: true, msg: "No user recordds"});
+
         return res.json({ user: {email, username, _id}, token: `jwt ${jwtToken}`});
       })
 
@@ -59,6 +61,8 @@ module.exports.getToken = (req, res) => {
         return res.status(401).json({"error": true, "message": 'Unauthorized access.' });
        User.findById(decoded.user.id)
            .then(rUser => {
+             if(!rUser) return res.send({ error: false, msg: "No user records"});
+
              const jwtToken = createJwtToken(rUser, "accessToken");
              res.json({ token: `jwt ${jwtToken}` });
            })

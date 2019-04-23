@@ -25,6 +25,7 @@
     "jwt-simple": "^0.5.5",
     "lodash": "^4.17.11",
     "mongoose": "^5.3.12",
+    "mongoose-autopopulate": "^0.9.1",
     "mongoose-paginate": "^5.0.3",
     "morgan": "^1.9.1",
     "passport": "^0.4.0",

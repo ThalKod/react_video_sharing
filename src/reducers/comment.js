@@ -1,4 +1,4 @@
-import { GET_COMMENTS, ADD_COMMENTS, CLEAR_COMMENTS } from "actions/types";
+import { GET_COMMENTS, ADD_COMMENTS, CLEAR_COMMENTS, ADD_REPLY } from "actions/types";
 
 const defaultState = {
   offset: 0,
@@ -21,6 +21,17 @@ export default (state = defaultState, action) => {
           comments: [ action.payload, ...state.comments],
           offset: state.offset + 1
       };
+
+    case ADD_REPLY:
+      return {
+          ...state,
+          comments: state.comments.map(comment => {
+            if(comment._id === action.payload.parentId)
+              comment.reply.push(action.payload.comment);
+            return comment;
+          })
+      };
+
 
     case CLEAR_COMMENTS:
       return defaultState;

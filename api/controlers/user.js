@@ -3,7 +3,11 @@ const Video = require("../models/Video");
 
 module.exports.getUser = (req, res) => {
   User.findById(req.user.id)
-      .then(({ email, username, _id }) => res.send({ error: false, user: { email, username, _id } }))
+      .then(({ email, username, _id }) => {
+        if(!_id) return res.send({ error: true, msg: "No users record"});
+
+        res.send({ error: false, user: { email, username, _id } })
+      })
       .catch(err => res.send({error: true, msg: err}));
 };
 
@@ -13,6 +17,8 @@ module.exports.getVideoCountByUserId = (req, res) => {
 
   Video.find({ author: id })
       .then(rVideo => {
+        if(!rVideo) return res.send({ error: true, msg: "No videos record"});
+
         res.send({ error: false, videosCount: rVideo.length})
       })
       .catch(err => res.send({ error: true, msg: err }));
@@ -23,7 +29,11 @@ module.exports.getSubscribersCountByUserId = (req, res) => {
   if(!id) return res.send({ error: true, msg: "Please provide a user id"});
 
   User.findById(id)
-      .then(({ subscribersCount }) => res.send({ error: false, subscribersCount}))
+      .then((rUser) => {
+        if(!rUser) return res.send({ error: true, msg: "No user record"});
+
+        res.send({ error: false, subscribersCount: rUser.subscribersCount})
+      })
       .catch(err => res.send({error: true, msg: err}));
 };
 
@@ -32,7 +42,10 @@ module.exports.getUserNameById = (req, res) => {
   if(!id) return res.send({ error: true, msg: "Please provide a user id"});
 
   User.findById(id)
-      .then(({ username }) => res.send({ error: false, username}))
+      .then(({ username }) => {
+        if(!username) return res.send({ error: true, msg: "No user record"});
+        res.send({ error: false, username})
+      })
       .catch(err => res.send({error: true, msg: err}));
 };
 
@@ -42,6 +55,8 @@ module.exports.addSubscribersByUserId = (req, res) => {
 
   User.findById(id)
       .then((rUser) => {
+        if(!rUser) return res.send({ error: true, msg: "No user found"});
+
         rUser.subscribersCount += 1;
         rUser.subscribers.push(req.user.id);
         rUser.save();
@@ -49,7 +64,6 @@ module.exports.addSubscribersByUserId = (req, res) => {
         return res.send({ error: false });
       })
       .catch((err) => {
-        console.log(err);
         res.send({ error: true, msg: err})
       });
 };
