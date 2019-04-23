@@ -19,7 +19,6 @@ class CommentBox extends React.Component {
     if(!commentText) return;
 
     if(!reply){
-      console.log("add comments")
        addComments({ commentText } , id)
           .then(({ error }) =>{
             if(!error)
@@ -29,7 +28,6 @@ class CommentBox extends React.Component {
           })
           .catch(err => console.log(err));
     }else{
-      console.log("add reply");
       addReply({ commentText }, commentId)
           .then(({ error }) => {
             if(!error)

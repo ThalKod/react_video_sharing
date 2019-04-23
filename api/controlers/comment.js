@@ -70,12 +70,14 @@ module.exports.addReplyToCommentById = (req, res) => {
         comment.video = rComment.video;
         const newComment = await Comment.create(comment);
 
-        rComment.reply.push(newComment);
-        rComment.save();
+        newComment.populate("author", "username", (err, result) => {
+          if(err) return res.send({ error: true, msg: err});
 
-        console.log(newComment);
+          rComment.reply.push(newComment);
+          rComment.save();
 
-        return res.send({ error: false, comment: newComment });
+          return res.send({ error: false, comment: result });
+        });
       })
       .catch(err => console.log(err));
 };

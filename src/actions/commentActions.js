@@ -30,6 +30,7 @@ export const startAddReply = (comment, id) => (dispatch) => {
   return request("post", `/comment/reply/${id}`, {}, comment)
       .then(res => {
         if(res.data.error) return { error: true, msg: res.data.msg};
+        console.log("Comment+========",res.data.comment);
         dispatch({type: ADD_REPLY, payload: { comment: res.data.comment, parentId: id }});
         return ({ error: false});
       })
