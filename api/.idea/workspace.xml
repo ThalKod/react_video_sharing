@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63415b28-8174-4354-9629-d6b6324e3c8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../src/actions/channel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/reducers/channel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlers/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/controlers/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/actions/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/Channel/ChannelPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Channel/ChannelPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/Channel/ChannelSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Channel/ChannelSection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/Channel/ChannelSingle.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Channel/ChannelSingle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/store/configureStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/store/configureStore.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -411,12 +404,12 @@
       <workItem from="1555933467673" duration="10720000" />
       <workItem from="1556023445240" duration="2622000" />
       <workItem from="1556036737389" duration="244000" />
-      <workItem from="1556105924964" duration="5095000" />
+      <workItem from="1556105924964" duration="5599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217992000" />
+    <option name="totallyTimeSpent" value="218496000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

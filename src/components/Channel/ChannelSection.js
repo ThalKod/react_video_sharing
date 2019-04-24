@@ -2,6 +2,7 @@
 import React from "react";
 
 import ChannelSingle from "components/Channel/ChannelSingle";
+import SimpleNote from "../Common/SimpleNote";
 
 export default class ChannelSection extends React.Component{
 
@@ -11,6 +12,9 @@ export default class ChannelSection extends React.Component{
 
   renderChannelList = () => {
     const { channels } = this.props;
+
+    if(!channels || channels.length <= 0)
+      return <SimpleNote text="No channels found"/>;
 
     return channels.map(({ _id, username, subscribersCount}) => {
       return <ChannelSingle key={_id} id={_id} username={username} subscribersCount={subscribersCount}/>
