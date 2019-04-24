@@ -5,11 +5,14 @@ import temp2 from "assets/images/video2-8.png";
 
 export default class ChannelSingle extends React.Component{
 
-  state = {
+  state = {// We will handle loading images state....
 
   };
 
   render(){
+
+    const { username, subscribersCount } = this.props;
+
     return (
         <div className="col-md-3 col-sm-4 col-xs-6">
           <div className="cns-block">
@@ -22,8 +25,8 @@ export default class ChannelSingle extends React.Component{
               </div>
             </div>
             <div className="cns-info">
-              <h5>Grainz<i className="arrow"/></h5>
-              <span>27,548 Subscribers</span>
+              <h5>{username}<i className="arrow"/></h5>
+              <span>{subscribersCount} Subscribers</span>
               <span>615 Videos</span>
               <span>10 Million Views</span>
               <span className="cv-percent"><span className="cv-circle"/>78%</span>

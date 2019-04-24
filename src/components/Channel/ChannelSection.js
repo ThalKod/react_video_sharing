@@ -10,13 +10,11 @@ export default class ChannelSection extends React.Component{
   };
 
   renderChannelList = () => {
-    const array = [];
+    const { channels } = this.props;
 
-    for(let i = 0; i < 8; i++) {
-      array.push(<ChannelSingle/>);
-    }
-
-    return array;
+    return channels.map(({ _id, username, subscribersCount}) => {
+      return <ChannelSingle key={_id} id={_id} username={username} subscribersCount={subscribersCount}/>
+    });
   };
 
   render(){

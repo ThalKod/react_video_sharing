@@ -78,6 +78,7 @@ module.exports.getUserSubscriberListById = (req, res) => {
   User.find({ subscribers: id})
       .skip(parseInt(offset))
       .limit(parseInt(limit))
+      .select("username subscribersCount")
       .then(rUsers => {
         if(!rUsers) return res.send({ error: true, msg: "Internal server record"});
 
