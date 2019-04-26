@@ -5,7 +5,7 @@ import authReducer from "reducers/auth"
 import userReducer from "reducers/user";
 import videoReducer from "reducers/video";
 import commentReducer from "reducers/comment";
-import channelReducer from "reducers/channel";
+// import channelReducer from "reducers/channel";
 
 import { loadToken } from "utils";
 
@@ -22,7 +22,7 @@ export default () => {
         user: userReducer,
         video: videoReducer,
         comment: commentReducer,
-        channel: channelReducer
+        // channel: channelReducer
       }),
       initialState,
       composeEnhancers(applyMiddleware(thunk))

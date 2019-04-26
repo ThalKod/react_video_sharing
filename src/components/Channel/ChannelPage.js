@@ -52,12 +52,19 @@ class ChannelPage extends React.Component{
         .catch(err => console.log(err));
   };
 
-  getChannels = () => {
+  getChannels = ({ offset }) => {
+    let nOffset;
     const { match: { params: { id } } } = this.props;
-    const { channelsState: { offset } } = this.state;
+    if(!offset){
+      const { channelsState }  = this.state;
+      nOffset = channelsState.offset;
+    }else{
+      nOffset = offset;
+    }
 
-    request("get", `/user/${id}/subscriber?limit=8&offset=${offset}`)
+    request("get", `/user/${id}/subscriber?limit=8&offset=${nOffset}`)
         .then(({data}) => {
+          console.log(data);
           if(!data.error) {
             return this.setState((prevState) => {
               return {
@@ -92,14 +99,18 @@ class ChannelPage extends React.Component{
     const { channelsState: { channels, loading } } = this.state;
     if(loading) return <LoadingSpinner/>;
 
-    return <ChannelSection channels={channels}/>
+    return <ChannelSection
+        channels={channels}
+        scrollable
+        getMoreChannels={({ offset }) => this.getChannels({ offset })}
+    />
   };
 
   componentDidMount = () => {
     const { match: { params: { id } } } = this.props;
 
     this.getVideos();
-    this.getChannels();
+    this.getChannels({});
 
     request("get",  `/user/${id}/name`)
         .then((res) => {

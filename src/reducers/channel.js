@@ -1,4 +1,4 @@
-const { GET_SUBSCRIBED_CHANNELS } = "actions/types";
+/* const { GET_SUBSCRIBED_CHANNELS } = "actions/types";
 
 const defaultState = { subscribedChannels: { offset: 0, channels: [] } };
 
@@ -17,4 +17,4 @@ export default (state= defaultState, action) => {
     default:
       return state;
   }
-}
+} */

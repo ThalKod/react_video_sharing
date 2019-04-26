@@ -1,4 +1,4 @@
-import { GET_SUBSCRIBED_CHANNELS } from "actions/types";
+/* import { GET_SUBSCRIBED_CHANNELS } from "actions/types";
 
 import { request } from "utils";
 
@@ -11,4 +11,4 @@ export const startGetSubscribedChannel = ({ limit = 16, offset = 0 }) => (dispat
         return { error: false };
       })
       .catch(err => ({ error: false, msg: err }))
-};
+}; */

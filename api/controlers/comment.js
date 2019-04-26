@@ -70,7 +70,7 @@ module.exports.addReplyToCommentById = (req, res) => {
         comment.video = rComment.video;
         const newComment = await Comment.create(comment);
 
-        newComment.populate("author", "username", (err, result) => {
+        newComment.populate(e, (err, result) => {
           if(err) return res.send({ error: true, msg: err});
 
           rComment.reply.push(newComment);

@@ -76,6 +76,7 @@ module.exports.getUserSubscriberListById = (req, res) => {
   if(!id || !limit || !offset) return res.send({ error: true, msg: "Please provide the correct params"});
 
   User.find({ subscribers: id})
+      .sort({ subscribersCount: -1 }) // Let's just sort it by number of subscribers
       .skip(parseInt(offset))
       .limit(parseInt(limit))
       .select("username subscribersCount")

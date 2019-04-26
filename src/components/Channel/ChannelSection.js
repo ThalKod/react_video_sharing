@@ -2,12 +2,29 @@
 import React from "react";
 
 import ChannelSingle from "components/Channel/ChannelSingle";
-import SimpleNote from "../Common/SimpleNote";
+import SimpleNote from "components/Common/SimpleNote";
 
 export default class ChannelSection extends React.Component{
 
-  state = {
+  componentDidMount = () => {
+    const { scrollable } = this.props;
+    if(!scrollable) return;
+    window.addEventListener("scroll", this.onScroll, false);
+  };
 
+  componentWillUnmount = () => {
+    const { scrollable } = this.props;
+    if(!scrollable) return;
+    window.removeEventListener("scroll", this.onScroll, false);
+  };
+
+  onScroll = () => {
+    const { getMoreChannels, channels } = this.props;
+    if (// TODO: refactor scrolling and implement a better infinite bottom scroll for this component. lets' keep this for this mvp...
+        window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight
+    ) {
+      getMoreChannels({ offset: channels.length});
+    }
   };
 
   renderChannelList = () => {
