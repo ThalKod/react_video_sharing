@@ -4,13 +4,12 @@
     <list default="true" id="63415b28-8174-4354-9629-d6b6324e3c8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlers/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/controlers/comment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlers/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/controlers/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/actions/channel.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/actions/channel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/Channel/ChannelPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Channel/ChannelPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/Channel/ChannelSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Channel/ChannelSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/reducers/channel.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/reducers/channel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/store/configureStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/store/configureStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controlers/check.js" beforeDir="false" afterPath="$PROJECT_DIR$/controlers/check.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Upload/UploadContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Upload/UploadContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/reducers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/reducers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/styles/base/_content.less" beforeDir="false" afterPath="$PROJECT_DIR$/../src/styles/base/_content.less" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -68,26 +67,26 @@
     <session id="-311914715">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="76" />
+          <entry key="project.closed" value="78" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="36" />
+          <entry key="project.open.time.1" value="37" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="9" />
           <entry key="project.open.time.3" value="4" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="13" />
+          <entry key="project.open.time.6" value="14" />
           <entry key="project.open.time.7" value="5" />
           <entry key="project.open.time.8" value="3" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="76" />
+          <entry key="project.opened" value="78" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="env" value="32" />
-          <entry key="js" value="25412" />
+          <entry key="js" value="25449" />
           <entry key="json" value="49" />
         </counts>
       </usages-collector>
@@ -95,7 +94,7 @@
         <counts>
           <entry key=".env file" value="32" />
           <entry key="JSON" value="49" />
-          <entry key="JavaScript" value="25412" />
+          <entry key="JavaScript" value="25449" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -136,11 +135,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controlers/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="79" column="29" lean-forward="true" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
+            <state relative-caret-position="1817">
+              <caret line="79" column="29" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -154,11 +153,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controlers/check.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+            <state relative-caret-position="-187">
+              <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -202,7 +201,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controlers/video.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
+            <state relative-caret-position="2576">
               <caret line="112" column="32" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
             </state>
           </provider>
@@ -254,7 +253,6 @@
         <option value="$PROJECT_DIR$/test/routes/comment.test.js" />
         <option value="$PROJECT_DIR$/models/User.js" />
         <option value="$PROJECT_DIR$/routes/check.js" />
-        <option value="$PROJECT_DIR$/controlers/check.js" />
         <option value="$PROJECT_DIR$/routes/video.js" />
         <option value="$PROJECT_DIR$/controlers/video.js" />
         <option value="$PROJECT_DIR$/routes/comment.js" />
@@ -262,6 +260,7 @@
         <option value="$PROJECT_DIR$/routes/user.js" />
         <option value="$PROJECT_DIR$/controlers/comment.js" />
         <option value="$PROJECT_DIR$/controlers/user.js" />
+        <option value="$PROJECT_DIR$/controlers/check.js" />
       </list>
     </option>
   </component>
@@ -283,7 +282,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="100" />
-    <option name="y" value="29" />
+    <option name="y" value="28" />
     <option name="width" value="1216" />
     <option name="height" value="761" />
   </component>
@@ -293,6 +292,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -340,7 +340,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -461,11 +460,13 @@
       <workItem from="1556115582101" duration="1982000" />
       <workItem from="1556208850709" duration="367000" />
       <workItem from="1556291213977" duration="902000" />
+      <workItem from="1556629846902" duration="566000" />
+      <workItem from="1556630813776" duration="1039000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222114000" />
+    <option name="totallyTimeSpent" value="223719000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -477,13 +478,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="100" y="29" width="1216" height="761" extended-state="0" />
+    <frame x="100" y="28" width="1216" height="761" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.28870293" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.24267782" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.27258804" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.38744256" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -710,17 +711,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controlers/check.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/Video.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
           <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Comment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -738,24 +739,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Comment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controlers/video.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
+        <state relative-caret-position="2576">
           <caret line="112" column="32" selection-start-line="112" selection-start-column="32" selection-end-line="112" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controlers/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="79" column="29" lean-forward="true" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
+        <state relative-caret-position="1817">
+          <caret line="79" column="29" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlers/check.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
         </state>
       </provider>
     </entry>

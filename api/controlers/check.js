@@ -1,8 +1,15 @@
 const User = require("../models/User");
 
 
+function validateEmail(email) {
+  let re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
+
 // Check if email already used to signup...
 module.exports.checkEmail = (req, res) => {
+  if(!validateEmail(req.body.email)) return res.send({error: false, valid: false});
+
   User.findOne({email: req.body.email})
       .then(rUser => {
         if(!rUser) return res.send({error: false, valid: true});
