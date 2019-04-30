@@ -21,27 +21,9 @@ exports[`CommentSection should render a list of comments 1`] = `
       </span>
        Comments
     </div>
-    <div
-      className="rc-comment"
-    >
-      <form>
-        <textarea
-          onChange={[Function]}
-          onFocus={[Function]}
-          placeholder="Enter comment here..."
-          rows="3"
-          value=""
-        />
-        <button
-          onClick={[Function]}
-          type="submit"
-        >
-          <i
-            className="cv cvicon-cv-add-comment"
-          />
-        </button>
-      </form>
-    </div>
+    <Connect(CommentBox)
+      onSubmit={[Function]}
+    />
     <div
       className="clearfix"
     />
@@ -73,6 +55,7 @@ exports[`CommentSection should render a list of comments 1`] = `
         }
       }
       createdAt={1129910012010}
+      id="dLKasdsN1212i12LNK"
       key="dLKasdsN1212i12LNK"
       text="Hello World !"
     />
@@ -83,6 +66,7 @@ exports[`CommentSection should render a list of comments 1`] = `
         }
       }
       createdAt={1129910012010}
+      id="dLKN1212sdfsi12LNK"
       key="dLKN1212sdfsi12LNK"
       text="Hello World !"
     />
@@ -93,6 +77,7 @@ exports[`CommentSection should render a list of comments 1`] = `
         }
       }
       createdAt={1129910012010}
+      id="dLKN12sdsd12i12LNK"
       key="dLKN12sdsd12i12LNK"
       text="Hello World !"
     />

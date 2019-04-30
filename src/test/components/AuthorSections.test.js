@@ -3,7 +3,8 @@ import {Link} from "react-router-dom";
 import { shallow } from "enzyme";
 import toJson from "enzyme-to-json"
 
-import AuthorSection from "../../components/VideoSingle/AuthorSection";
+import AuthorSection from "components/VideoSingle/AuthorSection";
+import Subscriber from "components/Subscriber";
 
 describe("AuthorSection", () => {
 
@@ -35,9 +36,7 @@ describe("AuthorSection", () => {
 
     expect(
         wrapper.containsMatchingElement(
-            <div className="c-s">
-              {state.subscribersCount}
-            </div>
+            <Subscriber sub={state.subscribersCount} id={author}/>
         )
     ).toBe(true);
 

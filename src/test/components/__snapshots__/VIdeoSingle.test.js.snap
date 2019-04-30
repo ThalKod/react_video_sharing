@@ -22,7 +22,7 @@ exports[`VideoSingle should render the components Correctly 1`] = `
       <div
         className="time"
       >
-        59:14:2
+        59:14:02
       </div>
     </div>
     <div
@@ -38,7 +38,7 @@ exports[`VideoSingle should render the components Correctly 1`] = `
     <div
       className="v-views"
     >
-      2500
+      3k
        views.
     </div>
   </div>

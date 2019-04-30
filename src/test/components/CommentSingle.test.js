@@ -10,6 +10,7 @@ describe("CommentSingle", () => {
       text: "Hello World !",
       author: { username: "My name" },
       createdAt: 1129910012010,
+      reply: []
     };
     const wrapper = shallow(<CommentSingle {...props} />);
 

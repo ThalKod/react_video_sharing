@@ -7,7 +7,6 @@ export default (state= defaultState, action) => {
   switch(action.type){
 
     case AUTH_USER:
-      console.log("action:", action.payload.token);
       return {...state, userToken: action.payload.token };
 
     case SIGN_OUT_USER:

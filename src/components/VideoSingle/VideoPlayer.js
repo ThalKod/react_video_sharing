@@ -21,7 +21,8 @@ export default class VideoPlayer extends React.Component{
   };
 
   componentDidMount = () => {
-    this.playerRef.current.subscribeToStateChange(this.handleStateChange);
+    if(process.env.NODE_ENV !== "test")
+      this.playerRef.current.subscribeToStateChange(this.handleStateChange);
   };
 
   handleStateChange = ({ duration, currentTime }) => {

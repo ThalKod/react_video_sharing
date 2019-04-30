@@ -7,6 +7,7 @@ const {
   getSubscribersCountByUserId,
   getUserNameById,
   addSubscribersByUserId,
+  getUserSubscriberListById
 } = require("../controlers/user");
 const router = express.Router();
 
@@ -25,6 +26,9 @@ const router = express.Router();
 
   // Add a subscriber to user
   router.post("/user/:id/subscriber", requireAuth, addSubscribersByUserId);
+
+  // Get list of users subscription
+  router.get("/user/:id/subscriber", getUserSubscriberListById);
 
 
   module.exports = router;
