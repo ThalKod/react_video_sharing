@@ -9,30 +9,71 @@ import LoadingSpinner from "components/Common/LoadingSpinner";
 import tempBanner from "assets/images/channel-banner.png";
 // import Avatar  from "components/Header/Avatar";
 import tempUser from "assets/images/channel-user.png";
-import VideoSection from "../Home/VideoSection";
+import VideoSection from "components/Home/VideoSection";
+import ChannelSection from "components/Channel/ChannelSection";
 
 class ChannelPage extends React.Component{
 
   state = {
-    loading: true,
-    videos: [],
-    offset: 0,
+    videosState: {
+      videos: [],
+      offset: 0,
+      loading: true
+    },
+    channelsState: {
+      channels: [],
+      offset: 0,
+      loading: true
+    },
     tab: "videos",
     username: ""
   };
 
   getVideos = () => {
     const { match: { params: { id } } } = this.props;
-    const { offset } = this.state;
+    const { videosState: { offset } } = this.state;
 
     request("get", `/video/list/user/${id}?limit=8&offset=${offset}`)
         .then(({ data }) => {
           if(!data.error) {
             return this.setState((prevState) => {
               return {
-                videos: prevState.videos.concat(data.videos),
-                loading: false,
-                offset: prevState.offset + data.videos.length
+                videosState: {
+                  ...prevState.videosState,
+                  videos: prevState.videosState.videos.concat(data.videos),
+                  offset: prevState.videosState.offset + data.videos.length,
+                  loading: false
+                },
+              }
+            });
+          }
+          return console.log(data.msg); // handle error later
+        })
+        .catch(err => console.log(err));
+  };
+
+  getChannels = ({ offset }) => {
+    let nOffset;
+    const { match: { params: { id } } } = this.props;
+    if(!offset){
+      const { channelsState }  = this.state;
+      nOffset = channelsState.offset;
+    }else{
+      nOffset = offset;
+    }
+
+    request("get", `/user/${id}/subscriber?limit=8&offset=${nOffset}`)
+        .then(({data}) => {
+          console.log(data);
+          if(!data.error) {
+            return this.setState((prevState) => {
+              return {
+                channelsState: {
+                  ...prevState.channelsState,
+                  channels: prevState.channelsState.channels.concat(data.channels),
+                  offset: prevState.channelsState.offset + data.channels.length,
+                  loading: false
+                },
               }
             });
           }
@@ -42,7 +83,7 @@ class ChannelPage extends React.Component{
   };
 
   renderVideoList = () => {
-    const { loading, videos } = this.state;
+    const { videosState: { videos, loading } } = this.state;
     if(loading) return <LoadingSpinner/>;
 
     return (
@@ -55,13 +96,21 @@ class ChannelPage extends React.Component{
   };
 
   renderChannelList = () => {
-    return <div>Channels here...</div>
+    const { channelsState: { channels, loading } } = this.state;
+    if(loading) return <LoadingSpinner/>;
+
+    return <ChannelSection
+        channels={channels}
+        scrollable
+        getMoreChannels={({ offset }) => this.getChannels({ offset })}
+    />
   };
 
   componentDidMount = () => {
     const { match: { params: { id } } } = this.props;
 
     this.getVideos();
+    this.getChannels({});
 
     request("get",  `/user/${id}/name`)
         .then((res) => {

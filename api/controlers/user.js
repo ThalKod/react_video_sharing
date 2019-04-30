@@ -67,3 +67,23 @@ module.exports.addSubscribersByUserId = (req, res) => {
         res.send({ error: true, msg: err})
       });
 };
+
+
+module.exports.getUserSubscriberListById = (req, res) => {
+  const { id } = req.params;
+  const { limit, offset } = req.query;
+
+  if(!id || !limit || !offset) return res.send({ error: true, msg: "Please provide the correct params"});
+
+  User.find({ subscribers: id})
+      .sort({ subscribersCount: -1 }) // Let's just sort it by number of subscribers
+      .skip(parseInt(offset))
+      .limit(parseInt(limit))
+      .select("username subscribersCount")
+      .then(rUsers => {
+        if(!rUsers) return res.send({ error: true, msg: "Internal server record"});
+
+        res.send({ error: false, channels: rUsers });
+      })
+      .catch(err => res.send({ error: false, msg: err}));
+};

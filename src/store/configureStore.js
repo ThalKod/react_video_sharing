@@ -5,6 +5,8 @@ import authReducer from "reducers/auth"
 import userReducer from "reducers/user";
 import videoReducer from "reducers/video";
 import commentReducer from "reducers/comment";
+// import channelReducer from "reducers/channel";
+
 import { loadToken } from "utils";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -19,7 +21,8 @@ export default () => {
         auth: authReducer,
         user: userReducer,
         video: videoReducer,
-        comment: commentReducer
+        comment: commentReducer,
+        // channel: channelReducer
       }),
       initialState,
       composeEnhancers(applyMiddleware(thunk))
