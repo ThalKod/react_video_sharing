@@ -23,23 +23,10 @@ exports[`AuthorSection should render the component correctly 1`] = `
       />
        . 0 Videos
     </div>
-    <div
-      className="c-sub"
-    >
-      <div
-        className="c-f"
-      >
-        Subscribe
-      </div>
-      <div
-        className="c-s"
-      >
-        0
-      </div>
-      <div
-        className="clearfix"
-      />
-    </div>
+    <Connect(Subscriber)
+      id="DSACQEK1238321JLKNE"
+      sub={0}
+    />
   </div>
   <div
     className="sv-views"
@@ -47,6 +34,7 @@ exports[`AuthorSection should render the component correctly 1`] = `
     <div
       className="sv-views-count"
     >
+      0
        Views
     </div>
   </div>

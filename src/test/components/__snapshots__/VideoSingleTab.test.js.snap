@@ -42,7 +42,7 @@ exports[`VideoSingleTab should render the components correctly 1`] = `
     <div
       className="v-views"
     >
-      25000
+      25k
        Views
     </div>
   </div>

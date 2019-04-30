@@ -6,6 +6,7 @@ exports[`VideoPlayer should render the video player correctly 1`] = `
 >
   <Player
     aspectRatio="auto"
+    autoplay={true}
     fluid={true}
     muted={false}
     playsInline={false}

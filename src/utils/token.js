@@ -1,4 +1,4 @@
-import{ store } from "App";
+import { store } from "App";
 
 export const getRefreshToken = () => {
   return store.getState().auth.userToken;

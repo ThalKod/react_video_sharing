@@ -11,9 +11,12 @@ import { loadToken } from "utils";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const initialState = {
-  auth: { userToken: loadToken()}
-};
+let initialState;
+if(process.env.NODE_ENV !== "test"){
+  initialState = {
+    auth: { userToken: loadToken()}
+  };
+}
 
 export default () => {
   return createStore(

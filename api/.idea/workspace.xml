@@ -3,13 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="63415b28-8174-4354-9629-d6b6324e3c8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlers/check.js" beforeDir="false" afterPath="$PROJECT_DIR$/controlers/check.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/Upload/UploadContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Upload/UploadContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/reducers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/reducers/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/styles/base/_content.less" beforeDir="false" afterPath="$PROJECT_DIR$/../src/styles/base/_content.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/VideoSingle/VideoPlayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSingle/VideoPlayer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/store/configureStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/store/configureStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/AuthorSections.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/AuthorSections.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/CommentSingle.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/CommentSingle.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/VIdeoSingle.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/VIdeoSingle.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/__snapshots__/AuthorSections.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/__snapshots__/AuthorSections.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/__snapshots__/CommentSection.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/__snapshots__/CommentSection.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/__snapshots__/CommentSingle.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/__snapshots__/CommentSingle.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/__snapshots__/VIdeoSingle.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/__snapshots__/VIdeoSingle.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/__snapshots__/VideoPlayer.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/__snapshots__/VideoPlayer.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/test/components/__snapshots__/VideoSingleTab.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/components/__snapshots__/VideoSingleTab.test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/utils/token.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/utils/token.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -69,7 +74,7 @@
         <counts>
           <entry key="project.closed" value="78" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="37" />
+          <entry key="project.open.time.1" value="38" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.19" value="1" />
@@ -80,7 +85,7 @@
           <entry key="project.open.time.7" value="5" />
           <entry key="project.open.time.8" value="3" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="78" />
+          <entry key="project.opened" value="79" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -156,7 +161,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controlers/check.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187">
+            <state relative-caret-position="23">
               <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
             </state>
           </provider>
@@ -280,7 +285,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="100" />
     <option name="y" value="28" />
     <option name="width" value="1216" />
@@ -292,7 +297,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -340,6 +344,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -462,11 +467,12 @@
       <workItem from="1556291213977" duration="902000" />
       <workItem from="1556629846902" duration="566000" />
       <workItem from="1556630813776" duration="1039000" />
+      <workItem from="1556636796251" duration="149000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223719000" />
+    <option name="totallyTimeSpent" value="223868000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -478,13 +484,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="100" y="28" width="1216" height="761" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.24267782" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.24242425" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.38744256" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.38697788" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -704,6 +711,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controlers/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1817">
+          <caret line="79" column="29" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/check.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -746,16 +760,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controlers/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1817">
-          <caret line="79" column="29" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controlers/check.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
+        <state relative-caret-position="23">
           <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
         </state>
       </provider>
