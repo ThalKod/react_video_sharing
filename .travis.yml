@@ -4,8 +4,10 @@ node_js:
 cache:
   directories:
   - node_modules
+install:
+  - yarn install
 script:
-  - npm test
-  - npm run build
+  - yarn test
+  - yarn run build
   - cd api/
   - npm test
