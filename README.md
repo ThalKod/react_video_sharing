@@ -1,6 +1,18 @@
-# Circle
+<p align="center">
+  <img width="260" height="150" src="https://github.com/ThalKod/react_video_sharing/blob/master/src/assets/images/logo.svg">
+ <h1 align="center">Circle</h1>
 
-Circle is a video sharing web app, simple to view, shares and discover new videos...
+ <p align="center">
+ <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"/></a>
+ </p>
+
+ Circle is a video sharing web app, simple to view, shares and discover new videos...
+</p>
+
+
+
+## Demo
+Check Out the [Demo](demo) 
 
 ## Documentation
 * [Requirements](Requirements) 
