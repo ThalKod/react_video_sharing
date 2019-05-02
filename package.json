@@ -17,6 +17,7 @@
     "bfj": "6.1.1",
     "case-sensitive-paths-webpack-plugin": "2.1.2",
     "chalk": "2.4.1",
+    "concurrently": "^4.1.0",
     "css-loader": "1.0.0",
     "dotenv": "6.0.0",
     "dotenv-expand": "4.2.0",
@@ -88,9 +89,13 @@
   },
   "proxy": "http://localhost:3080",
   "scripts": {
-    "start": "node scripts/start.js",
+    "start": "npm start --prefix api",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "api-install": "npm install --prefix api",
+    "client-start": "node scripts/start.js",
+    "api-start": "npm start --prefix api",
+    "heroku-postbuild": "npm run build && npm install --prefix api"
   },
   "eslintConfig": {
     "extends": "react-app"

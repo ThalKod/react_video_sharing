@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const path = require("path");
 
 // API routes
 const auth = require("./routes/auth");
@@ -14,7 +15,7 @@ const comment = require("./routes/comment");
 
 // Prevent .env dev variable on deployement...
 if (process.env.NODE_ENV !== 'production') {
-  require('dotenv').config()
+  require('dotenv').config();
 }
 
 // Initialise passport
@@ -38,6 +39,13 @@ app.use(process.env.API_BASE_URL, user);
 app.use(process.env.API_BASE_URL, upload);
 app.use(process.env.API_BASE_URL, video);
 app.use(process.env.API_BASE_URL, comment);
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "../build")));
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../build/index.html'));
+  })
+}
 
 const server = app.listen(port, () => {
     console.log(`Listenning on ${port}` );
