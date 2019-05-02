@@ -14,9 +14,9 @@ const video = require("./routes/video");
 const comment = require("./routes/comment");
 
 // Prevent .env dev variable on deployement...
-// if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config();
-// }
+}
 
 // Initialise passport
 require("./services/passport");
