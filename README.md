@@ -12,7 +12,7 @@
 
 
 ## Demo
-Check Out the [Demo](demo) 
+Check Out the [Demo](circlevideo.thal.tech) 
 
 ## Documentation
 * [Requirements](Requirements) 
