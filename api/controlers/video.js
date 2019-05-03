@@ -46,7 +46,7 @@ module.exports.getVideos = async (req, res) => {
   const { limit, offset } = req.query;
 
   Video.find()
-      .sort({ createdAt: -1 })
+      .sort({ createdAt: 1 }) // TODO: Fix on last videos fetch one bug...
       .skip(parseInt(offset))
       .limit(parseInt(limit))
       .then(rVideos => res.send({ error: false, videos: rVideos}))
