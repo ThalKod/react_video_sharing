@@ -5,7 +5,7 @@
  <p align="center">
  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"/></a>
  </p>
-  <img align="center"  src="https://github.com/ThalKod/react_video_sharing/blob/update_readme/Screen%20Shot%202019-05-03%20at%2012.10.56%20PM.png">
+  <img align="center"  src="https://github.com/ThalKod/react_video_sharing/blob/master/Screen%20Shot%202019-05-03%20at%2012.10.56%20PM.png">
 
  Circle is a video sharing web app, simple to view, shares and discover new videos...
 </p>
