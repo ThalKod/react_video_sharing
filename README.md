@@ -5,6 +5,7 @@
  <p align="center">
  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"/></a>
  </p>
+  <img align="center"  src="https://github.com/ThalKod/react_video_sharing/blob/update_readme/Screen%20Shot%202019-05-03%20at%2012.10.56%20PM.png">
 
  Circle is a video sharing web app, simple to view, shares and discover new videos...
 </p>
@@ -12,13 +13,21 @@
 
 
 ## Demo
-Check Out the [Demo](demo) 
+Check out the [Demo](http://circlevideo.thal.tech).
+N.B. If you try to upload new videos on the demo site and it fails it's probably because the filestack files upload quota is reached... This being just a demo i'm subscribed to their free plans... and it only allow 100 uploads per month.
+
+## Built With:
+* [React Js](https://reactjs.org/) - A JavaScript library for building user interfaces.
+* [Node Js](https://nodejs.org/en/) - A JavaScript runtime built on Chrome's V8 JavaScript engine.
+
+Fan of [Typescript](https://www.typescriptlang.org/) ? check out the typescript version of the [Restfull API](https://github.com/ThalKod/typescript_circle_api)
 
 ## Documentation
-* [Requirements](Requirements) 
-* [Installation](Installation)
-* [Contribution](Installation)
-* [License](License)
+* [Requirements](#requirements) 
+* [Installation](#installation)
+* [Contribution](#contribution)
+* [TODO](#todo)
+* [License](#license)
 
 
 
@@ -49,6 +58,9 @@ Clone the repo:
 
  #Database
  DB_URL = YOUR_DB-URL
+ 
+ #Filestack
+ FILESTACK_API_KEY= YOUR_FILESTACK_API_KEY
 
  #API
  API_BASE_URL = /api/v0   
@@ -75,7 +87,7 @@ Create a .env file at the root of your client folder:
  REACT_APP_API_URL = /api/v0
  
  #Filestack
- REACT_APP_API_KEY = YOUR_FILE_STACK_API_KEY
+ REACT_APP_FILESTACK_API_KEY  = YOUR_FILE_STACK_API_KEY
 
  NODE_PATH=src   
  ```
@@ -89,6 +101,21 @@ Client is running on localhost:3000
 ## Contribution
 
 Feel Free to contribute, PR are the most welcome :) , fork the development branch and start working...
+
+## TODO
+
+I'll will keep working on :
+- [ ] Adding banner image and profile photo upload on channel page.
+- [ ] Adding Filter on Search result page.
+- [ ] Add caching with redis.
+- [ ] Refactor recursive coments logic
+- [ ] Fix mobile responsive UI issue
+- [ ] Add Like videos Feature
+- [ ] More filter overall
+- [ ] Add Like comment Feature
+- [ ] Add more test
+- [ ] And more... 
+
 
 ## License
 
