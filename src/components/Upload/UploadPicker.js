@@ -31,7 +31,7 @@ const UploadPicker = ({ onUploadSuccess }) => {
                 <div className="col-lg-12 upload-page">
                   <div className="u-area">
                     <ReactFilestack
-                      apikey={process.env.REACT_APP_API_KEY}
+                      apikey={process.env.REACT_APP_FILESTACK_API_KEY}
                       options={options}
                       onSuccess={(res) => {
                         const file = res.filesUploaded[0];
