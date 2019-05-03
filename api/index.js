@@ -25,7 +25,9 @@ const app = express();
 const port = process.env.PORT || 3080;
 
 // Db Setting
-mongoose.connect(process.env.DB_URL, { useNewUrlParser: true });
+mongoose.connect(process.env.NODE_ENV !== "production" ? "mongodb://localhost:27017/circle" : process.env.DB_URL,
+    { useNewUrlParser: true }
+    );
 
 // App Setting
 app.use(morgan("combined"));
