@@ -5,6 +5,11 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const path = require("path");
 
+// Prevent .env dev variable on deployement...
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
+
 // API routes
 const auth = require("./routes/auth");
 const check = require("./routes/check");
@@ -13,11 +18,6 @@ const upload = require("./routes/upload");
 const video = require("./routes/video");
 const comment = require("./routes/comment");
 
-// Prevent .env dev variable on deployement...
-if (process.env.NODE_ENV !== 'production') {
-  require('dotenv').config();
-}
-
 // Initialise passport
 require("./services/passport");
 
@@ -25,7 +25,9 @@ const app = express();
 const port = process.env.PORT || 3080;
 
 // Db Setting
-mongoose.connect(process.env.DB_URL, { useNewUrlParser: true });
+mongoose.connect(process.env.NODE_ENV !== "production" ? "mongodb://localhost:27017/circle" : process.env.DB_URL,
+    { useNewUrlParser: true }
+    );
 
 // App Setting
 app.use(morgan("combined"));

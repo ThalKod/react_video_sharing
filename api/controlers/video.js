@@ -1,4 +1,3 @@
-const fs = require("fs");
 const _ = require("lodash");
 const Video = require("../models/Video");
 
@@ -16,11 +15,7 @@ module.exports.getDefaultImageCoverById = (req, res) => {
   Video.findById(req.params.id)
       .then(rVideo => {
         if(!rVideo) return res.send({ error: true, msg: "No Video"});
-        fs.readFile(rVideo.defaultCoverPhoto, "base64", (err, base64) => {
-          if(err) return res.send({ error: true, msg: "Internal server error"});
-          const data = `data:image/png;base64, ${base64}`;
-          res.send({ error: false, coverPhoto: data});
-        });
+        res.send({ error: false, coverPhoto: rVideo.defaultCoverPhoto});
       })
       .catch(err => res.send({ error: true, msg: err}))
 };
@@ -51,7 +46,7 @@ module.exports.getVideos = async (req, res) => {
   const { limit, offset } = req.query;
 
   Video.find()
-      .sort({ createdAt: -1 })
+      .sort({ createdAt: 1 }) // TODO: Fix on last videos fetch one bug...
       .skip(parseInt(offset))
       .limit(parseInt(limit))
       .then(rVideos => res.send({ error: false, videos: rVideos}))
