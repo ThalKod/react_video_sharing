@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63415b28-8174-4354-9629-d6b6324e3c8a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../src/components/Subscriber/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Subscriber/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Home/VideoSingle.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Home/VideoSingle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/VideoSingle/VideoSingleTab.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSingle/VideoSingleTab.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -433,12 +436,12 @@
       <workItem from="1556800750402" duration="4317000" />
       <workItem from="1556884057745" duration="4595000" />
       <workItem from="1556896903645" duration="551000" />
-      <workItem from="1557146603310" duration="4361000" />
+      <workItem from="1557146603310" duration="5023000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="238520000" />
+    <option name="totallyTimeSpent" value="239182000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

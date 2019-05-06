@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { Link } from "react-router-dom"
 
-// import VideoPlaceholder from "../../assets/images/video_placeholder.png";
+import videoPlaceholder from "assets/images/video_placeholder.png";
 import { request, formatSecondForRendering, formatCount } from "utils";
 
 
@@ -11,7 +11,7 @@ export default class VideoSingleTab extends React.Component{
   signal = axios.CancelToken.source();
 
   state = {
-    videoImage: ""
+    videoImage: videoPlaceholder
   };
 
   componentDidMount = () => {
@@ -35,7 +35,7 @@ export default class VideoSingleTab extends React.Component{
         <div className="h-video row">
           <div className="col-lg-6 col-sm-6">
             <div className="v-img">
-              <Link to={`/video/${id}`}><img src={videoImage} alt="cover" /></Link>
+              <Link to={`/video/${id}`}><img src={videoImage} style={{ "border-radius": "5px"}} alt="cover" /></Link>
               <div className="time">{formatSecondForRendering(duration)}</div>
             </div>
           </div>
