@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63415b28-8174-4354-9629-d6b6324e3c8a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlers/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/controlers/comment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/VideoSingle/CommentBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSingle/CommentBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/VideoSingle/CommentSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/VideoSingle/CommentSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/Subscriber/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/Subscriber/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -126,7 +122,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controlers/comment.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
+            <state relative-caret-position="193">
               <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
             </state>
           </provider>
@@ -437,12 +433,12 @@
       <workItem from="1556800750402" duration="4317000" />
       <workItem from="1556884057745" duration="4595000" />
       <workItem from="1556896903645" duration="551000" />
-      <workItem from="1557146603310" duration="4042000" />
+      <workItem from="1557146603310" duration="4361000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="238201000" />
+    <option name="totallyTimeSpent" value="238520000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -726,7 +722,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controlers/comment.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
+        <state relative-caret-position="193">
           <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
         </state>
       </provider>

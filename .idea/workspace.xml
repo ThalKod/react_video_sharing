@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f6ba216-dee2-489f-9342-55d1a1c7e4e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controlers/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controlers/comment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VideoSingle/CommentBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoSingle/CommentBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VideoSingle/CommentSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoSingle/CommentSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Subscriber/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Subscriber/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,7 +43,7 @@
           <entry key="eslintrc" value="11" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="4" />
-          <entry key="js" value="841" />
+          <entry key="js" value="842" />
           <entry key="json" value="15" />
           <entry key="less" value="73" />
           <entry key="png" value="2" />
@@ -63,7 +59,7 @@
           <entry key="HTML" value="4" />
           <entry key="Image" value="2" />
           <entry key="JSON" value="27" />
-          <entry key="JavaScript" value="840" />
+          <entry key="JavaScript" value="841" />
           <entry key="Jest Snapshot" value="30" />
           <entry key="Less" value="73" />
           <entry key="PLAIN_TEXT" value="2" />
@@ -80,7 +76,7 @@
           <entry key="env" value="82" />
           <entry key="eslintrc" value="137" />
           <entry key="html" value="51" />
-          <entry key="js" value="78369" />
+          <entry key="js" value="78382" />
           <entry key="json" value="300" />
           <entry key="less" value="865" />
           <entry key="scss" value="4" />
@@ -91,7 +87,7 @@
           <entry key=".env file" value="82" />
           <entry key="HTML" value="51" />
           <entry key="JSON" value="437" />
-          <entry key="JavaScript" value="78369" />
+          <entry key="JavaScript" value="78382" />
           <entry key="Less" value="865" />
           <entry key="SCSS" value="4" />
         </counts>
@@ -101,17 +97,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Upload/UploadEdit.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/HomePage.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -120,11 +105,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/VideoSingle/CommentBox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
+            <state relative-caret-position="-282">
               <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Subscriber/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="47">
+              <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -269,7 +266,6 @@
         <option value="$PROJECT_DIR$/src/components/Home/VideoSingle.js" />
         <option value="$PROJECT_DIR$/src/components/VideoSingle/VideoSingleTab.js" />
         <option value="$PROJECT_DIR$/src/components/VideoSingle/AuthorSection.js" />
-        <option value="$PROJECT_DIR$/src/components/Subscriber/index.js" />
         <option value="$PROJECT_DIR$/src/components/HOC/alreadyLoggedIn.js" />
         <option value="$PROJECT_DIR$/src/components/HOC/requireLoggedIn.js" />
         <option value="$PROJECT_DIR$/src/reducers/comment.js" />
@@ -302,6 +298,7 @@
         <option value="$PROJECT_DIR$/src/components/Upload/UploadPicker.js" />
         <option value="$PROJECT_DIR$/src/components/VideoSingle/CommentSection.js" />
         <option value="$PROJECT_DIR$/src/components/VideoSingle/CommentBox.js" />
+        <option value="$PROJECT_DIR$/src/components/Subscriber/index.js" />
       </list>
     </option>
   </component>
@@ -369,6 +366,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Circle_Video" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Circle_Video" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Subscriber" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Circle_Video" type="b2602c69:ProjectViewProjectNode" />
@@ -526,12 +530,12 @@
       <workItem from="1556800274653" duration="5053000" />
       <workItem from="1556884019058" duration="2689000" />
       <workItem from="1556896397426" duration="689000" />
-      <workItem from="1557148904180" duration="1728000" />
+      <workItem from="1557148904180" duration="2047000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="330313000" />
+    <option name="totallyTimeSpent" value="330632000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -541,7 +545,7 @@
       <window_info id="npm" order="1" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.26779422" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.3894349" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.22481573" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -595,13 +599,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/styles/styles.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/components/_channel.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3358">
@@ -928,8 +925,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoSingle/CommentBox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
+        <state relative-caret-position="-282">
           <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Subscriber/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
