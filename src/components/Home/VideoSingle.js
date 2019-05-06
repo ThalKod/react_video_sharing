@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 import { request, formatSecondForRendering, formatCount } from "utils";
 
-// import videoPlaceholder from "../assets/images/video_placeholder.png";
+import videoPlaceholder from "assets/images/video_placeholder.png";
 
 class VideoSingle extends React.Component{
 
   state = {
-    videoImage: null,
+    videoImage: videoPlaceholder,
     // videoThumbnails: null,
   };
 
@@ -30,7 +30,7 @@ class VideoSingle extends React.Component{
         <div className="col-lg-3 col-sm-6 videoitem">
           <div className="b-video">
             <div className="v-img">
-              <Link to={`/video/${_id}`}><img src={videoImage} alt="videoimage" /></Link>
+              <Link to={`/video/${_id}`}><img src={videoImage} style={{ "border-radius": "5px"}} alt="videoimage" /></Link>
               <div className="time">{formatSecondForRendering(duration)}</div>
             </div>
             <div className="v-desc">

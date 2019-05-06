@@ -14,12 +14,14 @@ class CommentBox extends React.Component {
     e.preventDefault();
 
     const { commentText  } = this.state;
-    const { id, addComments, onSubmit, reply, addReply, commentId } = this.props;
+    const { id, addComments, onSubmit, reply, addReply, commentId, userId, redirect } = this.props;
 
-    if(!commentText) return;
+    if(!userId) return redirect();
+
+    if(!commentText) return null;
 
     if(!reply){
-       addComments({ commentText } , id)
+       return addComments({ commentText } , id)
           .then(({ error }) =>{
             if(!error)
               this.setState({ commentText: "" });
@@ -27,15 +29,15 @@ class CommentBox extends React.Component {
             // then handling error
           })
           .catch(err => console.log(err));
-    }else{
-      addReply({ commentText }, commentId)
+    } // else{
+      return addReply({ commentText }, commentId)
           .then(({ error }) => {
             if(!error)
               this.setState({ commentText: "" });
             onSubmit();
           })
           .catch(err => console.log(err));
-    }
+    // }
   };
 
   render() {
@@ -66,9 +68,13 @@ class CommentBox extends React.Component {
   }
 }
 
+const mapStateToProps = (state) => ({
+  userId: state.user._id
+});
+
 const mapDispatchToProps = (dispatch) => ({
   addComments: (comment, id) => dispatch(startAddComments(comment, id)),
   addReply: (comment, id) => dispatch(startAddReply(comment, id)),
 });
 
-export default connect(null, mapDispatchToProps)(CommentBox);
+export default connect(mapStateToProps, mapDispatchToProps)(CommentBox);

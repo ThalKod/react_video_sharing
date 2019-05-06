@@ -43,7 +43,7 @@ class Subscriber extends React.Component{
     const { currentUserId, id: toSubscribeId } = this.props;
     const { subscribeState } = this.state;
 
-    if(currentUserId === toSubscribeId){
+    if(!currentUserId || currentUserId === toSubscribeId){
       return <p className="c-f" style={{ "borderColor": "lightgreen", "backgroundColor": "lightgreen" }}>Subscribers</p>
     }
 

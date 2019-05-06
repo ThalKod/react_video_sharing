@@ -67,7 +67,7 @@ export class CommentSection extends React.Component{
 
   render(){
 
-    const { userName, userId, id } = this.props;
+    const { userName, userId, id, redirect } = this.props;
     const { commentTotal, loadMore } = this.state;
 
     return(
@@ -82,7 +82,7 @@ export class CommentSection extends React.Component{
                             </Link>
                           </div>
             }
-            <CommentBox id={id} onSubmit={() => this.setState({commentTotal: commentTotal + 1})}/>
+            <CommentBox id={id} redirect={redirect} onSubmit={() => this.setState({commentTotal: commentTotal + 1})}/>
             <div className="clearfix"/>
           </div>
           <div className="comments-list">
