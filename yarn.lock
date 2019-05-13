@@ -8669,10 +8669,10 @@ react-router@^4.3.1:
     prop-types "^15.6.1"
     warning "^4.0.1"
 
-react-spinners@^0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/react-spinners/-/react-spinners-0.5.1.tgz#fc2d66ba36e52c8769b119de0f4a79591fc8313d"
-  integrity sha512-8MW2565BOoh2VrJNFXDayT0yMw6VPh7xc7UtvY7lX2Ci1V2dvKrjeVBM3ojj8vWrR0pKqY9MyZ9Ehx9wOxi47g==
+react-spinners@^0.5.4:
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/react-spinners/-/react-spinners-0.5.4.tgz#58166f8bf84cbf06dd7accad4b94a5797cfea9b9"
+  integrity sha512-jo7BE8prvnZNL7xNrQL16geVXH6LmaWrhvvXnmUwz2MhFO14bhlAdCLuKCwqmUJ37kGphH0C2CJRThwkjfpVzw==
   dependencies:
     "@emotion/core" "^10.0.4"
     prop-types "^15.5.10"
@@ -9247,7 +9247,7 @@ saxes@^3.1.5:
   dependencies:
     xmlchars "^1.3.1"
 
-scheduler@^0.13.1, scheduler@^0.13.4, scheduler@^0.13.6:
+scheduler@^0.13.1, scheduler@^0.13.6:
   version "0.13.6"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.13.6.tgz#466a4ec332467b31a91b9bf74e5347072e4cd889"
   integrity sha512-IWnObHt413ucAYKsD9J1QShUKkbKLQQHdxRyw73sw4FN26iWr3DY/H34xGPe4nmL1DwXyWmSWmMrA9TfQbE/XQ==
