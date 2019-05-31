@@ -7,7 +7,7 @@
     "@babel/plugin-syntax-json-strings": "^7.2.0",
     "@babel/plugin-transform-react-jsx-self": "^7.2.0",
     "@svgr/webpack": "2.4.1",
-    "axios": "^0.18.0",
+    "axios": "^0.19.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "23.6.0",
