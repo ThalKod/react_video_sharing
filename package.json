@@ -42,7 +42,7 @@
     "html-webpack-plugin": "4.0.0-beta.5",
     "husky": "^2.2.0",
     "identity-obj-proxy": "3.0.0",
-    "jest": "24.5.0",
+    "jest": "24.8.0",
     "jest-pnp-resolver": "1.2.1",
     "jest-resolve": "23.6.0",
     "less": "^3.9.0",
