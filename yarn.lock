@@ -8518,10 +8518,10 @@ react-router@^4.3.1:
     prop-types "^15.6.1"
     warning "^4.0.1"
 
-react-spinners@^0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/react-spinners/-/react-spinners-0.5.1.tgz#fc2d66ba36e52c8769b119de0f4a79591fc8313d"
-  integrity sha512-8MW2565BOoh2VrJNFXDayT0yMw6VPh7xc7UtvY7lX2Ci1V2dvKrjeVBM3ojj8vWrR0pKqY9MyZ9Ehx9wOxi47g==
+react-spinners@^0.5.4:
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/react-spinners/-/react-spinners-0.5.4.tgz#58166f8bf84cbf06dd7accad4b94a5797cfea9b9"
+  integrity sha512-jo7BE8prvnZNL7xNrQL16geVXH6LmaWrhvvXnmUwz2MhFO14bhlAdCLuKCwqmUJ37kGphH0C2CJRThwkjfpVzw==
   dependencies:
     "@emotion/core" "^10.0.4"
     prop-types "^15.5.10"
