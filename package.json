@@ -71,7 +71,7 @@
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
     "react-spinners": "^0.5.4",
-    "react-tag-input": "^6.3.0",
+    "react-tag-input": "^6.4.0",
     "react-test-renderer": "^16.8.1",
     "redux": "^4.0.1",
     "redux-mock-store": "^1.5.3",
