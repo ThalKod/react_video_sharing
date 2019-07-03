@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@babel/core": "7.1.6",
+    "@babel/core": "7.4.5",
     "@babel/plugin-syntax-json-strings": "^7.2.0",
     "@babel/plugin-transform-react-jsx-self": "^7.2.0",
     "@svgr/webpack": "4.3.0",
