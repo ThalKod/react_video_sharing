@@ -35,7 +35,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.12.4",
     "file-loader": "2.0.0",
-    "filestack-js": "^1.0.1",
+    "filestack-js": "^3.11.0",
     "filestack-react": "^3.0.0",
     "fork-ts-checker-webpack-plugin-alt": "0.4.14",
     "fs-extra": "7.0.0",
